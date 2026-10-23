@@ -1,0 +1,1682 @@
+% ============================================================
+% CHAPITRE 8 — Calques et organisation des projets
+% ============================================================
+
+\chapter{Calques et organisation des projets}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons appris à créer et gérer des documents, à manipuler des images, à les recadrer, à les transformer, à les préparer pour l'écran ou pour l'impression. Ces compétences sont essentielles, mais elles ne suffisent pas à produire des compositions complexes et professionnelles. Pour cela, il faut maîtriser l'un des piliers de Photoshop : les calques.}
+
+\vspace{1em}
+
+\noindent
+Les \terme{calques} sont au cœur du travail dans Photoshop. Ils permettent de superposer des éléments, de les organiser, de les modifier indépendamment les uns des autres, de travailler de manière \terme{non destructive}. Sans les calques, Photoshop ne serait qu'un simple éditeur d'images : avec les calques, il devient un véritable outil de composition graphique. Un designer qui ne maîtrise pas les calques ne peut pas travailler efficacement, ni produire des visuels de qualité professionnelle.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser les calques et l'organisation des projets dans Photoshop. Nous commencerons par définir ce qu'est un calque et comment il fonctionne. Nous apprendrons ensuite à créer, supprimer, dupliquer, renommer et organiser des calques, à utiliser les groupes de calques, à comprendre l'opacité et les modes de fusion, à utiliser les calques de réglage, les objets dynamiques, les masques de fusion et les masques d'écrêtage. Nous verrons enfin les méthodes de travail non destructives et comment organiser un fichier PSD professionnel. À la fin de ce chapitre, tu sauras structurer tes projets de manière claire, efficace et professionnelle.
+
+% ============================================================
+\section{Définition et fonctionnement des calques}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un calque ?}
+
+\begin{quote}
+\textbf{Un calque (ou \emph{layer}) est une couche transparente sur laquelle on place des éléments graphiques. Les calques se superposent les uns aux autres pour former l'image finale.}
+\end{quote}
+
+Le calque est l'unité de base du travail dans Photoshop. Chaque calque peut contenir :
+
+\begin{itemize}
+    \item Des \terme{pixels} (image, photographie, dessin).
+    \item Du \terme{texte} (texte modifiable).
+    \item Des \terme{formes vectorielles} (rectangles, cercles, tracés).
+    \item Des \terme{réglages} (luminosité, contraste, courbes, etc.).
+    \item Des \terme{effets} (ombre, contour, etc.).
+    \item Des \terme{masques} (qui contrôlent la visibilité).
+\end{itemize}
+
+\subsection{L'analogie de la superposition}
+
+Pour comprendre le fonctionnement des calques, on peut imaginer une pile de feuilles transparentes. Chaque feuille contient un élément (une image, un texte, une forme). Les feuilles sont empilées les unes sur les autres. L'image finale est la superposition de toutes les feuilles.
+
+\begin{itemize}
+    \item La \terme{première feuille} (en bas) est vue à travers toutes les autres.
+    \item La \terme{dernière feuille} (en haut) est vue en premier.
+    \item Les zones \terme{transparentes} laissent voir les feuilles du dessous.
+    \item Les zones \terme{opaques} cachent les feuilles du dessous.
+\end{itemize}
+
+Cette analogie est fondamentale : elle explique pourquoi l'ordre des calques est essentiel, et pourquoi les zones transparentes jouent un rôle crucial.
+
+\subsection{Le panneau Calques}
+
+\subsubsection{Accès au panneau Calques}
+
+Le panneau Calques est accessible par :
+
+\begin{itemize}
+    \item \texttt{Fenêtre > Calques}.
+    \item Le raccourci \texttt{F7}.
+    \item L'onglet \emph{Calques} dans le panneau de droite (par défaut).
+\end{itemize}
+
+\subsubsection{Anatomie du panneau Calques}
+
+Le panneau Calques affiche la liste des calques du document, de haut en bas :
+
+\begin{itemize}
+    \item Le calque \terme{du haut} est vu en premier.
+    \item Le calque \terme{du bas} est vu en dernier.
+\end{itemize}
+
+Chaque ligne du panneau comporte plusieurs éléments :
+
+\begin{itemize}
+    \item \terme{L'icône d'œil} : affiche ou masque le calque.
+    \item \terme{La vignette} : aperçu du contenu du calque.
+    \item \terme{Le nom} : nom du calque (modifiable).
+    \item \terme{L'icône de calque} : indique le type de calque (pixel, texte, forme, réglage, objet dynamique).
+    \item \terme{Le mode de fusion} : mode de fusion du calque (Normal par défaut).
+    \item \terme{L'opacité} : opacité du calque (100\% par défaut).
+    \item \terme{Le verrou} : verrouille le calque (verrou de transparence, de pixels, de position).
+    \item \terme{Les options de filtre} : filtre les calques par type.
+\end{itemize}
+
+\subsubsection{Les boutons en bas du panneau Calques}
+
+En bas du panneau Calques se trouvent plusieurs boutons :
+
+\begin{itemize}
+    \item \terme{Lier les calques} : lie plusieurs calques ensemble.
+    \item \terme{Styles de calque} (\texttt{fx}) : ajoute des effets (ombre, contour, etc.).
+    \item \terme{Masque de fusion} : ajoute un masque de fusion.
+    \item \terme{Calque de réglage} : crée un calque de réglage.
+    \item \terme{Nouveau groupe} : crée un groupe de calques.
+    \item \terme{Nouveau calque} : crée un nouveau calque vide.
+    \item \terme{Supprimer} (icône de corbeille) : supprime le calque sélectionné.
+\end{itemize}
+
+\subsection{Les types de calques}
+
+\subsubsection{Calque de pixels}
+
+Un \terme{calque de pixels} contient des pixels (image, photographie, dessin). Il est modifiable avec les outils de peinture, de retouche, etc.
+
+\subsubsection{Calque de texte}
+
+Un \terme{calque de texte} contient du texte modifiable. On peut changer la police, la taille, la couleur, le contenu à tout moment (tant que le texte n'est pas vectorisé).
+
+\subsubsection{Calque de forme}
+
+Un \terme{calque de forme} contient une forme vectorielle (rectangle, cercle, tracé). Il est redimensionnable sans perte de qualité.
+
+\subsubsection{Calque de réglage}
+
+Un \terme{calque de réglage} applique un réglage (luminosité, contraste, courbes, teinte/saturation, etc.) à tous les calques situés en dessous. Il est non destructif.
+
+\subsubsection{Calque d'objet dynamique}
+
+Un \terme{calque d'objet dynamique} contient un objet dynamique, qui conserve ses données d'origine. Il est modifiable sans perte de qualité.
+
+\subsubsection{Calque d'arrière-plan}
+
+Le \terme{calque d'arrière-plan} (Background) est un calque particulier, verrouillé par défaut. Il est toujours en bas de la pile, sans transparence.
+
+\subsection{L'ordre des calques}
+
+L'\terme{ordre des calques} est essentiel : il détermine ce qui est visible et ce qui est caché. Un calque placé au-dessus cache les calques du dessous. Un calque placé en dessous est caché par les calques du dessus.
+
+Pour \terme{modifier l'ordre} des calques :
+
+\begin{itemize}
+    \item Cliquer-glisser un calque vers le haut ou vers le bas dans le panneau Calques.
+    \item Utiliser les raccourcis \texttt{Ctrl + ]} (monter) et \texttt{Ctrl + [} (descendre).
+    \item Utiliser \texttt{Ctrl + Maj + ]} (tout en haut) et \texttt{Ctrl + Maj + [} (tout en bas).
+\end{itemize}
+
+\subsection{Les actions de base sur les calques}
+
+\subsubsection{Afficher ou masquer un calque}
+
+Cliquer sur l'\terme{icône d'œil} à gauche du calque pour l'afficher ou le masquer.
+
+\subsubsection{Sélectionner un calque}
+
+Cliquer sur la ligne du calque dans le panneau Calques pour le sélectionner.
+
+\subsubsection{Sélectionner plusieurs calques}
+
+Maintenir \texttt{Ctrl} (ou \texttt{Cmd}) pour sélectionner plusieurs calques, ou \texttt{Maj} pour sélectionner une plage.
+
+\subsubsection{Verrouiller un calque}
+
+Cliquer sur l'\terme{icône de verrou} en haut du panneau Calques pour verrouiller le calque (verrou de transparence, de pixels, de position).
+
+\subsection*{Conclusion de la section}
+
+Un \terme{calque} est une couche transparente sur laquelle on place des éléments graphiques. Les calques se superposent pour former l'image finale. Le panneau Calques affiche la liste des calques et permet de les organiser, de les masquer, de les verrouiller, de les supprimer. Il existe plusieurs types de calques : pixels, texte, forme, réglage, objet dynamique. L'ordre des calques est essentiel : un calque placé au-dessus cache les calques du dessous. Maîtriser les calques est indispensable pour travailler efficacement dans Photoshop.
+
+Maintenant que nous savons ce qu'est un calque, nous allons, dans la section suivante, apprendre à \terme{créer, supprimer et dupliquer un calque}.
+
+% ============================================================
+\section{Créer, supprimer et dupliquer un calque}
+% ============================================================
+
+\subsection{Créer un calque}
+
+\subsubsection{Créer un calque vide}
+
+Pour créer un calque vide :
+
+\begin{itemize}
+    \item Cliquer sur le bouton \terme{Nouveau calque} en bas du panneau Calques.
+    \item Utiliser le raccourci \texttt{Ctrl + Maj + N} (ou \texttt{Cmd + Maj + N}).
+    \item Utiliser le menu \texttt{Calque > Nouveau > Calque}.
+\end{itemize}
+
+Une boîte de dialogue permet de nommer le calque, de choisir sa couleur (pour l'identification), son mode de fusion, son opacité.
+
+\subsubsection{Créer un calque à partir d'une sélection}
+
+Pour créer un calque à partir d'une sélection :
+
+\begin{enumerate}
+    \item Créer une sélection (avec un outil de sélection).
+    \item Utiliser le menu \texttt{Calque > Nouveau > Calque via copie} (raccourci \texttt{Ctrl + J} ou \texttt{Cmd + J}).
+    \item Le contenu de la sélection est copié dans un nouveau calque.
+\end{enumerate}
+
+\subsubsection{Créer un calque à partir d'un texte}
+
+Pour créer un calque de texte : sélectionner l'outil Texte (\texttt{T}), cliquer sur l'image, saisir le texte. Un calque de texte est automatiquement créé.
+
+\subsubsection{Créer un calque de forme}
+
+Pour créer un calque de forme : sélectionner un outil de forme (\texttt{U}), dessiner sur l'image. Un calque de forme est automatiquement créé.
+
+\subsubsection{Créer un calque de réglage}
+
+Pour créer un calque de réglage : cliquer sur le bouton \terme{Calque de réglage} en bas du panneau Calques, ou utiliser le menu \texttt{Calque > Nouveau calque de réglage}.
+
+\subsection{Supprimer un calque}
+
+\subsubsection{Supprimer un calque sélectionné}
+
+Pour supprimer un calque :
+
+\begin{itemize}
+    \item Cliquer sur l'icône de \terme{corbeille} en bas du panneau Calques.
+    \item Utiliser le raccourci \texttt{Suppr} (ou \texttt{Retour arrière}).
+    \item Utiliser le menu \texttt{Calque > Supprimer > Calque}.
+\end{itemize}
+
+\subsubsection{Supprimer plusieurs calques}
+
+Sélectionner plusieurs calques (avec \texttt{Ctrl} ou \texttt{Maj}), puis supprimer.
+
+\subsubsection{Supprimer les calques vides}
+
+\texttt{Fichier > Scripts > Supprimer tous les calques vides}.
+
+\subsubsection{Supprimer les calques masqués}
+
+\texttt{Calque > Supprimer > Calques masqués}.
+
+\subsection{Dupliquer un calque}
+
+\subsubsection{Dupliquer un calque dans le même document}
+
+Pour dupliquer un calque :
+
+\begin{itemize}
+    \item Clic droit sur le calque > \texttt{Dupliquer le calque}.
+    \item Utiliser le raccourci \texttt{Ctrl + J} (ou \texttt{Cmd + J}).
+    \item Faire glisser le calque sur le bouton \terme{Nouveau calque} en bas du panneau.
+\end{itemize}
+
+\subsubsection{Dupliquer un calque dans un autre document}
+
+Clic droit sur le calque > \texttt{Dupliquer le calque}, puis choisir le document de destination dans la boîte de dialogue.
+
+\subsubsection{Dupliquer plusieurs calques}
+
+Sélectionner plusieurs calques, puis dupliquer.
+
+\subsection{Convertir un calque}
+
+\subsubsection{Convertir le calque d'arrière-plan en calque normal}
+
+Le calque d'arrière-plan est verrouillé par défaut. Pour le déverrouiller :
+
+\begin{itemize}
+    \item Double-cliquer sur le calque \emph{Arrière-plan} dans le panneau Calques.
+    \item Clic droit > \texttt{Calque à partir de l'arrière-plan}.
+\end{itemize}
+
+\subsubsection{Convertir un calque en objet dynamique}
+
+Clic droit sur le calque > \texttt{Convertir en objet dynamique}. L'objet dynamique conserve ses données d'origine et peut être transformé sans perte.
+
+\subsubsection{Convertir un texte en forme}
+
+Clic droit sur le calque de texte > \texttt{Convertir en forme}. Le texte devient une forme vectorielle (non modifiable).
+
+\subsubsection{Convertir un texte en pixels}
+
+Clic droit sur le calque de texte > \texttt{Vectoriser le texte}. Le texte devient un calque de pixels (non modifiable).
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Nommer} chaque calque dès sa création.
+    \item \terme{Ne pas travailler directement} sur le calque d'arrière-plan.
+    \item \terme{Dupliquer les calques} avant de les modifier (pour préserver l'original).
+    \item \terme{Convertir en objet dynamique} les calques qui seront transformés plusieurs fois.
+    \item \terme{Supprimer les calques inutiles} pour alléger le fichier.
+    \item \terme{Utiliser les raccourcis} (\texttt{Ctrl + J}, \texttt{Ctrl + Maj + N}).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Créer, supprimer et dupliquer des calques sont des opérations fondamentales dans Photoshop. On peut créer des calques vides, des calques à partir d'une sélection, des calques de texte, de forme, de réglage. On peut supprimer des calques, les dupliquer, les convertir. Il est essentiel de nommer les calques, de ne pas travailler directement sur le calque d'arrière-plan, de dupliquer avant de modifier.
+
+Maintenant que nous savons créer, supprimer et dupliquer des calques, nous allons, dans la section suivante, apprendre à \terme{renommer et organiser les calques}.
+
+% ============================================================
+\section{Renommer et organiser les calques}
+% ============================================================
+
+\subsection{Pourquoi organiser les calques ?}
+
+L'organisation des calques est essentielle pour plusieurs raisons :
+
+\begin{itemize}
+    \item \terme{Clarté} : un fichier bien organisé est plus facile à comprendre.
+    \item \terme{Efficacité} : on retrouve rapidement les calques dont on a besoin.
+    \item \terme{Collaboration} : d'autres designers peuvent reprendre le fichier.
+    \item \terme{Modifications} : on peut modifier un élément sans affecter les autres.
+    \item \terme{Professionnalisme} : un fichier bien organisé est un gage de qualité.
+\end{itemize}
+
+Un fichier PSD avec des calques nommés « Calque 1 », « Calque 2 », « Calque 3 », etc., est un fichier mal organisé. Un fichier avec des calques nommés « Titre principal », « Image de fond », « Logo », etc., est un fichier professionnel.
+
+\subsection{Renommer un calque}
+
+\subsubsection{Renommer par double-clic}
+
+Double-cliquer sur le \terme{nom} du calque dans le panneau Calques pour le renommer. Saisir le nouveau nom, puis valider avec \texttt{Entrée}.
+
+\subsubsection{Renommer par clic droit}
+
+Clic droit sur le calque > \texttt{Renommer le calque}.
+
+\subsubsection{Renommer plusieurs calques}
+
+Sélectionner plusieurs calques, puis renommer. Photoshop permet de renommer plusieurs calques en série, avec un nom suivi d'un numéro.
+
+\subsection{Le nommage des calques}
+
+\subsubsection{Les bonnes pratiques de nommage}
+
+\begin{itemize}
+    \item \terme{Utiliser des noms descriptifs} : « Titre », « Image de fond », « Logo », etc.
+    \item \terme{Utiliser des noms cohérents} : toujours la même structure (par exemple, « Bouton - Primaire », « Bouton - Secondaire »).
+    \item \terme{Éviter les noms génériques} : « Calque 1 », « Calque 2 », etc.
+    \item \terme{Éviter les noms trop longs} : rester concis.
+    \item \terme{Utiliser des préfixes} : « Bg - Image », « Txt - Titre », « Ic - Logo », etc.
+    \item \terme{Respecter une casse} : Première lettre en majuscule, ou tout en minuscules, selon la convention choisie.
+\end{itemize}
+
+\subsubsection{Les conventions de nommage}
+
+Il existe plusieurs conventions de nommage :
+
+\begin{itemize}
+    \item \terme{Descriptif} : nommer par contenu (« Titre », « Image », « Logo »).
+    \item \terme{Fonctionnel} : nommer par fonction (« Bouton - CTA », « Bannière - Promo »).
+    \item \terme{Hiérarchique} : nommer par niveau (« H1 - Titre », « H2 - Sous-titre »).
+    \item \terme{Typologique} : nommer par type (« Txt - Titre », « Img - Photo », « Forme - Rectangle »).
+\end{itemize}
+
+\subsection{Colorer les calques}
+
+\subsubsection{Pourquoi colorer les calques ?}
+
+La \terme{coloration} des calques permet de les identifier rapidement par catégorie. Par exemple :
+
+\begin{itemize}
+    \item \terme{Rouge} : calques de texte.
+    \item \terme{Bleu} : calques d'image.
+    \item \terme{Vert} : calques de forme.
+    \item \terme{Jaune} : calques de réglage.
+    \item \terme{Violet} : calques d'objet dynamique.
+\end{itemize}
+
+\subsubsection{Comment colorer un calque ?}
+
+Clic droit sur le calque > \texttt{Couleur du calque} > choisir une couleur.
+
+On peut aussi colorer les groupes de calques.
+
+\subsection{Les groupes de calques}
+
+\subsubsection{Définition}
+
+Un \terme{groupe de calques} est un conteneur qui regroupe plusieurs calques. Il permet de :
+
+\begin{itemize}
+    \item \terme{Organiser} les calques par catégorie.
+    \item \terme{Masquer} ou \terme{afficher} plusieurs calques en même temps.
+    \item \terme{Appliquer} des modifications à tous les calques du groupe (opacité, mode de fusion, masque).
+    \item \terme{Déplacer} les calques ensemble.
+\end{itemize}
+
+\subsubsection{Créer un groupe de calques}
+
+\begin{itemize}
+    \item Cliquer sur le bouton \terme{Nouveau groupe} en bas du panneau Calques.
+    \item Utiliser le raccourci \texttt{Ctrl + G} (ou \texttt{Cmd + G}) sur une sélection de calques.
+    \item Utiliser le menu \texttt{Calque > Nouveau > Groupe}.
+\end{itemize}
+
+\subsubsection{Ajouter un calque à un groupe}
+
+\begin{itemize}
+    \item Faire glisser le calque dans le groupe.
+    \item Sélectionner le calque, puis utiliser \texttt{Calque > Grouper les calques}.
+\end{itemize}
+
+\subsubsection{Dégrouper un groupe}
+
+Clic droit sur le groupe > \texttt{Dégrouper le groupe}, ou \texttt{Ctrl + Maj + G}.
+
+\subsubsection{Imbriquer les groupes}
+
+Les groupes peuvent contenir d'autres groupes, ce qui permet de créer une hiérarchie :
+
+\begin{itemize}
+    \item \terme{Groupe principal} : « Affiche ».
+    \item \terme{Sous-groupes} : « Titre », « Image », « Logo », « Pied de page ».
+\end{itemize}
+
+\subsection{Les bonnes pratiques d'organisation}
+
+\begin{itemize}
+    \item \terme{Créer un groupe par catégorie} : « Titre », « Image », « Logo », etc.
+    \item \terme{Nommer les groupes} de manière claire.
+    \item \terme{Colorer les groupes} pour les identifier rapidement.
+    \item \terme{Imbriquer les groupes} si nécessaire.
+    \item \terme{Garder le calque d'arrière-plan} en bas.
+    \item \terme{Placer les calques de réglage} au-dessus des calques concernés.
+    \item \terme{Éviter les calques vides} ou inutiles.
+    \item \terme{Enregistrer régulièrement}.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Renommer et organiser les calques est essentiel pour travailler efficacement dans Photoshop. On renomme les calques avec des noms descriptifs et cohérents. On peut colorer les calques pour les identifier rapidement. On utilise des groupes de calques pour organiser les calques par catégorie. Un fichier bien organisé est plus facile à comprendre, à modifier, à partager.
+
+Maintenant que nous savons renommer et organiser les calques, nous allons, dans la section suivante, approfondir l'utilisation des \terme{groupes de calques}.
+
+% ============================================================
+\section{Utiliser les groupes de calques}
+% ============================================================
+
+\subsection{Le rôle des groupes}
+
+Les \terme{groupes de calques} jouent un rôle essentiel dans l'organisation d'un projet. Ils permettent de :
+
+\begin{itemize}
+    \item \terme{Structurer} la composition en zones logiques.
+    \item \terme{Masquer} ou \terme{afficher} plusieurs calques en même temps.
+    \item \terme{Appliquer} des modifications globales (opacité, mode de fusion, masque).
+    \item \terme{Déplacer} plusieurs calques ensemble.
+    \item \terme{Créer} des variantes d'une composition.
+\end{itemize}
+
+\subsection{Les propriétés des groupes}
+
+\subsubsection{L'opacité du groupe}
+
+L'\terme{opacité} d'un groupe s'applique à l'ensemble des calques du groupe. Si on baisse l'opacité d'un groupe à 50\%, tous les calques du groupe deviennent semi-transparents (mais leur opacité individuelle reste inchangée).
+
+\subsubsection{Le mode de fusion du groupe}
+
+Le \terme{mode de fusion} d'un groupe s'applique à l'ensemble des calques du groupe. Il détermine comment le groupe se mélange avec les calques situés en dessous.
+
+\subsubsection{Le masque de groupe}
+
+Un \terme{masque de groupe} s'applique à l'ensemble des calques du groupe. Il permet de masquer ou de révéler certaines zones du groupe.
+
+\subsubsection{Les styles de groupe}
+
+On peut appliquer des \terme{styles de calque} à un groupe (ombre, contour, etc.). Les styles s'appliquent à l'ensemble du groupe.
+
+\subsection{Organiser les groupes}
+
+\subsubsection{Structurer par zones}
+
+On peut organiser les groupes par zones de la composition :
+
+\begin{itemize}
+    \item \terme{Groupe En-tête} : logo, titre, navigation.
+    \item \terme{Groupe Corps} : contenu principal.
+    \item \terme{Groupe Pied de page} : mentions, contact.
+\end{itemize}
+
+\subsubsection{Structurer par type}
+
+On peut organiser les groupes par type d'élément :
+
+\begin{itemize}
+    \item \terme{Groupe Textes} : tous les textes.
+    \item \terme{Groupe Images} : toutes les images.
+    \item \terme{Groupe Formes} : toutes les formes.
+    \item \terme{Groupe Réglages} : tous les calques de réglage.
+\end{itemize}
+
+\subsubsection{Structurer par variante}
+
+On peut organiser les groupes par variante :
+
+\begin{itemize}
+    \item \terme{Groupe Version A} : première version de la composition.
+    \item \terme{Groupe Version B} : deuxième version.
+    \item \terme{Groupe Version C} : troisième version.
+\end{itemize}
+
+\subsection{Imbriquer les groupes}
+
+Les groupes peuvent être imbriqués les uns dans les autres, ce qui permet de créer une hiérarchie profonde :
+
+\begin{itemize}
+    \item \terme{Groupe principal} : « Affiche ».
+    \item \terme{Sous-groupe 1} : « Titre ».
+    \item \terme{Sous-groupe 2} : « Image ».
+    \item \terme{Sous-groupe 3} : « Logo ».
+    \item \terme{Sous-sous-groupe} : « Logo - Variante ».
+\end{itemize}
+
+Cette hiérarchie permet de structurer des compositions complexes.
+
+\subsection{Les raccourcis des groupes}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Action} & \textbf{Raccourci} \\
+\midrule
+Créer un groupe & Ctrl + G (Cmd + G) \\
+Dégrouper & Ctrl + Maj + G (Cmd + Maj + G) \\
+Afficher/masquer le groupe & Clic sur l'œil \\
+Sélectionner tous les calques du groupe & Clic droit > Sélectionner les calques \\
+Déplacer le groupe & Glisser-déposer \\
+Renommer le groupe & Double-clic sur le nom \\
+\bottomrule
+\end{tabular}
+\caption{Raccourcis des groupes de calques.}
+\end{table}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Créer des groupes} dès le début du projet.
+    \item \terme{Nommer les groupes} de manière claire.
+    \item \terme{Structurer} les groupes par zone, par type, ou par variante.
+    \item \terme{Colorer les groupes} pour les identifier.
+    \item \terme{Ne pas trop imbriquer} les groupes (limiter à 2-3 niveaux).
+    \item \terme{Fermer les groupes} pour gagner de la place dans le panneau.
+    \item \terme{Utiliser les raccourcis} pour créer et dégrouper.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{groupes de calques} permettent d'organiser les calques par catégorie, de masquer ou d'afficher plusieurs calques en même temps, d'appliquer des modifications globales, de créer des variantes. On peut structurer les groupes par zone, par type, ou par variante. Les groupes peuvent être imbriqués pour créer une hiérarchie. Il est essentiel de créer des groupes dès le début du projet, de les nommer, de les colorer, et de ne pas trop les imbriquer.
+
+Maintenant que nous savons utiliser les groupes de calques, nous allons, dans la section suivante, approfondir la compréhension de \terme{l'opacité et du fond}.
+
+% ============================================================
+\section{Comprendre l'opacité et le fond}
+% ============================================================
+
+\subsection{L'opacité}
+
+\subsubsection{Définition}
+
+L'\terme{opacité} détermine le degré de transparence d'un calque. Elle s'exprime en pourcentage :
+
+\begin{itemize}
+    \item \terme{100\%} : calque totalement opaque.
+    \item \terme{50\%} : calque semi-transparent.
+    \item \terme{0\%} : calque totalement transparent (invisible).
+\end{itemize}
+
+\subsubsection{Modifier l'opacité}
+
+Pour modifier l'opacité d'un calque :
+
+\begin{itemize}
+    \item Utiliser le curseur \terme{Opacité} en haut du panneau Calques.
+    \item Saisir une valeur précise dans le champ.
+    \item Utiliser les raccourcis : \texttt{1} (10\%), \texttt{2} (20\%), ..., \texttt{0} (100\%).
+\end{itemize}
+
+\subsubsection{Opacité et remplissage}
+
+Il existe deux notions proches :
+
+\begin{itemize}
+    \item \terme{Opacité} : agit sur l'ensemble du calque, y compris les styles de calque.
+    \item \terme{Remplissage} : agit sur le contenu du calque, mais pas sur les styles de calque.
+\end{itemize}
+
+Par exemple, un calque avec une ombre portée et une opacité de 50\% aura une ombre à 50\% d'opacité. Avec un remplissage de 50\%, l'ombre reste à 100\%, mais le contenu du calque est à 50\%.
+
+\subsection{Le fond}
+
+\subsubsection{Le calque d'arrière-plan}
+
+Le \terme{calque d'arrière-plan} (Background) est un calque particulier :
+
+\begin{itemize}
+    \item Il est toujours en bas de la pile.
+    \item Il est verrouillé par défaut.
+    \item Il ne peut pas avoir de transparence.
+    \item Il ne peut pas avoir de masque.
+    \item Il ne peut pas être déplacé au-dessus d'un autre calque (tant qu'il est verrouillé).
+\end{itemize}
+
+\subsubsection{Déverrouiller le calque d'arrière-plan}
+
+Double-cliquer sur le calque \emph{Arrière-plan}, ou clic droit > \texttt{Calque à partir de l'arrière-plan}. Le calque devient un calque normal, avec transparence possible.
+
+\subsubsection{Les fonds transparents}
+
+Un calque sans fond est \terme{transparent} : il laisse voir les calques du dessous. La transparence est représentée par un \terme{damier gris}.
+
+Pour créer un fond transparent :
+
+\begin{itemize}
+    \item Créer un nouveau document avec \texttt{Transparent} comme couleur de fond.
+    \item Masquer le calque d'arrière-plan.
+    \item Supprimer le contenu d'un calque (avec la gomme ou en supprimant la sélection).
+\end{itemize}
+
+\subsubsection{Les fonds colorés}
+
+Un fond coloré est un calque rempli d'une couleur unie. On peut :
+
+\begin{itemize}
+    \item Créer un calque, puis le remplir avec une couleur (\texttt{Édition > Remplir}).
+    \item Utiliser un calque de réglage \emph{Couleur unie}.
+    \item Utiliser l'outil Pot de peinture sur un calque vide.
+\end{itemize}
+
+\subsection{L'opacité et les styles de calque}
+
+\subsubsection{Les styles de calque}
+
+Les \terme{styles de calque} sont des effets appliqués à un calque (ombre, contour, biseau, etc.). Ils peuvent avoir leur propre opacité, indépendante de l'opacité du calque.
+
+\subsubsection{Opacité et remplissage}
+
+Comme nous l'avons vu, l'opacité agit sur l'ensemble du calque (contenu + styles), tandis que le remplissage agit sur le contenu uniquement.
+
+\subsection{L'opacité et les groupes}
+
+L'opacité d'un groupe s'applique à l'ensemble des calques du groupe. Si un calque du groupe a une opacité de 50\% et le groupe a une opacité de 50\%, le calque résultant a une opacité de 25\% (50\% × 50\%).
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser l'opacité} pour créer des effets de transparence.
+    \item \terme{Utiliser le remplissage} pour les styles de calque.
+    \item \terme{Déverrouiller le calque d'arrière-plan} si nécessaire.
+    \item \terme{Créer des fonds transparents} pour les logos, les éléments à détourer.
+    \item \terme{Ne pas abuser de la transparence} : trop de transparence rend la composition confuse.
+    \item \terme{Vérifier le rendu final} sur différents fonds.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{opacité} détermine le degré de transparence d'un calque. Elle s'exprime en pourcentage (0\% à 100\%). Le \terme{remplissage} agit sur le contenu du calque, mais pas sur les styles. Le \terme{calque d'arrière-plan} est un calque particulier, verrouillé par défaut. Les fonds peuvent être transparents ou colorés. Il est essentiel de comprendre l'opacité et le fond pour créer des compositions efficaces.
+
+Maintenant que nous comprenons l'opacité et le fond, nous allons, dans la section suivante, étudier les \terme{modes de fusion}.
+
+% ============================================================
+\section{Les modes de fusion}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un mode de fusion ?}
+
+\begin{quote}
+\textbf{Un mode de fusion (ou \emph{blend mode}) détermine comment les pixels d'un calque se mélangent avec les pixels des calques situés en dessous.}
+\end{quote}
+
+Les modes de fusion permettent de créer des effets de superposition, de transparence, de lumière, de couleur. Ils sont essentiels pour les compositions complexes, les retouches, les effets.
+
+\subsection{Les principaux modes de fusion}
+
+Photoshop propose de nombreux modes de fusion, classés par catégories.
+
+\subsubsection{Les modes normaux}
+
+\begin{itemize}
+    \item \terme{Normal} : le calque recouvre les calques du dessous (opacité de 100\%).
+    \item \terme{Dissolution} : le calque se dissout dans les calques du dessous (effet de bruit).
+\end{itemize}
+
+\subsubsection{Les modes d'assombrissement}
+
+\begin{itemize}
+    \item \terme{Obscurcir} : conserve les pixels les plus sombres.
+    \item \terme{Multiplier} : multiplie les couleurs (assombrit).
+    \item \terme{Superposition des couleurs} : assombrit les couleurs.
+    \item \terme{Écran} : inverse les couleurs et multiplie (éclaircit).
+    \item \terme{Éclaircir} : conserve les pixels les plus clairs.
+    \item \terme{Addition} : additionne les couleurs (éclaircit).
+    \item \terme{Soustraction} : soustrait les couleurs (assombrit).
+\end{itemize}
+
+\subsubsection{Les modes d'éclaircissement}
+
+\begin{itemize}
+    \item \terme{Éclaircir} : conserve les pixels les plus clairs.
+    \item \terme{Densite couleur -} : éclaircit.
+    \item \terme{Densite couleur +} : assombrit.
+    \item \terme{Lumière tamisée} : combine les effets d'assombrissement et d'éclaircissement.
+    \item \terme{Lumière crue} : effet de lumière intense.
+    \item \terme{Lumière vive} : effet de lumière colorée.
+    \item \terme{Lumière linéaire} : effet de lumière linéaire.
+    \item \terme{Lumière ponctuelle} : effet de lumière ponctuelle.
+    \item \terme{Mélange maximal} : combine les effets de lumière.
+\end{itemize}
+
+\subsubsection{Les modes de contraste}
+
+\begin{itemize}
+    \item \terme{Superposition} : combine les effets d'assombrissement et d'éclaircissement.
+    \item \terme{Éclaircir} : conserve les pixels les plus clairs.
+    \item \terme{Obscurcir} : conserve les pixels les plus sombres.
+\end{itemize}
+
+\subsubsection{Les modes de comparaison}
+
+\begin{itemize}
+    \item \terme{Différence} : soustrait les couleurs (effet de négatif).
+    \item \terme{Exclusion} : effet similaire à Différence, mais plus doux.
+    \item \terme{Soustraction} : soustrait les couleurs.
+    \item \terme{Division} : divise les couleurs.
+\end{itemize}
+
+\subsubsection{Les modes de couleur}
+
+\begin{itemize}
+    \item \terme{Teinte} : conserve la teinte du calque, mais prend la saturation et la luminosité du calque du dessous.
+    \item \terme{Saturation} : conserve la saturation du calque, mais prend la teinte et la luminosité du calque du dessous.
+    \item \terme{Couleur} : conserve la teinte et la saturation du calque, mais prend la luminosité du calque du dessous.
+    \item \terme{Luminosité} : conserve la luminosité du calque, mais prend la teinte et la saturation du calque du dessous.
+\end{itemize}
+
+\subsection{Comment utiliser les modes de fusion ?}
+
+\subsubsection{Sélectionner un mode de fusion}
+
+Sélectionner un calque, puis choisir un mode de fusion dans le menu déroulant en haut du panneau Calques (ou dans le panneau Propriétés).
+
+\subsubsection{Les raccourcis des modes de fusion}
+
+Avec un calque sélectionné et l'outil Déplacement ou un outil de peinture, utiliser les raccourcis :
+
+\begin{itemize}
+    \item \texttt{Maj + +} : mode suivant.
+    \item \texttt{Maj + -} : mode précédent.
+    \item \texttt{Maj + Alt + N} : mode Normal.
+    \item \texttt{Maj + Alt + M} : mode Multiplier.
+    \item \texttt{Maj + Alt + S} : mode Écran.
+    \item \texttt{Maj + Alt + O} : mode Superposition.
+\end{itemize}
+
+\subsection{Les applications des modes de fusion}
+
+\subsubsection{Pour la retouche photo}
+
+Les modes de fusion sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Éclaircir} une image (mode Écran).
+    \item \terme{Assombrir} une image (mode Multiplier).
+    \item \terme{Augmenter} le contraste (mode Superposition).
+    \item \terme{Corriger} les couleurs (mode Couleur, Teinte).
+    \item \terme{Adoucir} une image (mode Lumière tamisée).
+\end{itemize}
+
+\subsubsection{Pour la création graphique}
+
+Les modes de fusion sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Créer} des effets de lumière.
+    \item \terme{Mélanger} des textures.
+    \item \terme{Créer} des effets de transparence.
+    \item \terme{Superposer} des images.
+    \item \terme{Créer} des ambiances.
+\end{itemize}
+
+\subsubsection{Pour le texte}
+
+Les modes de fusion sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Intégrer} du texte dans une image.
+    \item \terme{Créer} des effets de texte.
+    \item \terme{Mélanger} du texte avec un fond.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Expérimenter} : tester différents modes pour voir l'effet.
+    \item \terme{Combiner} plusieurs modes pour des effets complexes.
+    \item \terme{Jouer sur l'opacité} pour ajuster l'intensité de l'effet.
+    \item \terme{Ne pas abuser} : trop de modes de fusion rend la composition confuse.
+    \item \terme{Travailler} sur des calques dupliqués pour ne pas altérer l'original.
+    \item \terme{Utiliser les groupes} pour appliquer un mode de fusion à plusieurs calques.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{modes de fusion} déterminent comment les pixels d'un calque se mélangent avec les pixels des calques situés en dessous. Il existe de nombreux modes, classés par catégories : normaux, assombrissement, éclaircissement, contraste, comparaison, couleur. Les modes de fusion sont utilisés pour la retouche photo, la création graphique, le texte. Il est essentiel d'expérimenter, de combiner plusieurs modes, de jouer sur l'opacité, et de ne pas abuser.
+
+Maintenant que nous connaissons les modes de fusion, nous allons, dans la section suivante, étudier les \terme{calques de réglage}.
+
+% ============================================================
+\section{Les calques de réglage}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un calque de réglage ?}
+
+\begin{quote}
+\textbf{Un calque de réglage est un calque qui applique un réglage (luminosité, contraste, courbes, teinte/saturation, etc.) à tous les calques situés en dessous, sans modifier les pixels de ces calques.}
+\end{quote}
+
+Les calques de réglage sont un outil essentiel du travail \terme{non destructif} : ils permettent de modifier l'apparence d'une image sans altérer les pixels d'origine. On peut les modifier, les désactiver, les supprimer à tout moment.
+
+\subsection{Les avantages des calques de réglage}
+
+\begin{itemize}
+    \item \terme{Non destructif} : les pixels d'origine ne sont pas modifiés.
+    \item \terme{Modifiable} : on peut ajuster les réglages à tout moment.
+    \item \terme{Désactivable} : on peut désactiver un calque de réglage pour comparer.
+    \item \terme{Masquable} : on peut appliquer un réglage à certaines zones seulement (avec un masque).
+    \item \terme{Cumulable} : on peut empiler plusieurs calques de réglage.
+    \item \terme{Organisable} : on peut regrouper les calques de réglage.
+\end{itemize}
+
+\subsection{Les types de calques de réglage}
+
+Photoshop propose plusieurs types de calques de réglage :
+
+\begin{itemize}
+    \item \terme{Luminosité/Contraste} : ajuste la luminosité et le contraste.
+    \item \terme{Niveaux} : ajuste les niveaux (noir, gris, blanc).
+    \item \terme{Courbes} : ajuste les courbes (plus précis que les niveaux).
+    \item \terme{Exposition} : ajuste l'exposition (pour les images HDR).
+    \item \terme{Vibrance} : ajuste la vibrance et la saturation.
+    \item \terme{Teinte/Saturation} : ajuste la teinte, la saturation, la luminosité.
+    \item \terme{Balance des couleurs} : ajuste la balance des couleurs.
+    \item \terme{Noir et blanc} : convertit en noir et blanc.
+    \item \terme{Photo filtre} : applique un filtre coloré.
+    \item \terme{Correspondance de couleur} : harmonise les couleurs entre deux images.
+    \item \terme{Inverser} : inverse les couleurs.
+    \item \terme{Seuil} : convertit en noir et blanc pur.
+    \item \terme{Postériser} : réduit le nombre de couleurs.
+    \item \terme{Dégradé de cartographie} : applique un dégradé.
+    \item \terme{Couleur unie} : remplit avec une couleur unie.
+\end{itemize}
+
+\subsection{Créer un calque de réglage}
+
+\subsubsection{Par le panneau Calques}
+
+Cliquer sur le bouton \terme{Calque de réglage} en bas du panneau Calques, puis choisir le type de réglage.
+
+\subsubsection{Par le menu}
+
+Utiliser le menu \texttt{Calque > Nouveau calque de réglage}, puis choisir le type de réglage.
+
+\subsubsection{Par le panneau Réglages}
+
+Ouvrir le panneau \terme{Réglages} (\texttt{Fenêtre > Réglages}), puis cliquer sur le type de réglage.
+
+\subsection{Modifier un calque de réglage}
+
+\subsubsection{Le panneau Propriétés}
+
+Sélectionner le calque de réglage, puis utiliser le panneau \terme{Propriétés} pour ajuster les paramètres.
+
+\subsubsection{Les paramètres}
+
+Chaque type de réglage a ses propres paramètres. Par exemple :
+
+\begin{itemize}
+    \item \terme{Luminosité/Contraste} : curseur de luminosité, curseur de contraste.
+    \item \terme{Courbes} : courbe avec des points de contrôle.
+    \item \terme{Teinte/Saturation} : curseurs de teinte, saturation, luminosité.
+\end{itemize}
+
+\subsection{Les masques des calques de réglage}
+
+\subsubsection{Le masque de fusion}
+
+Chaque calque de réglage est automatiquement accompagné d'un \terme{masque de fusion} blanc (qui laisse tout visible). On peut peindre en noir sur le masque pour masquer le réglage sur certaines zones.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage.
+    \item Sélectionner le masque du calque.
+    \item Peindre en noir avec l'outil Pinceau pour masquer le réglage sur certaines zones.
+    \item Peindre en blanc pour révéler le réglage.
+\end{enumerate}
+
+\subsection{Les calques de réglage et les groupes}
+
+\subsubsection{Le réglage s'applique aux calques en dessous}
+
+Un calque de réglage s'applique à tous les calques situés en dessous, jusqu'au prochain calque de réglage.
+
+\subsubsection{Créer un groupe de réglages}
+
+Pour appliquer un réglage à un groupe de calques, on peut :
+
+\begin{itemize}
+    \item Créer un groupe contenant les calques à ajuster.
+    \item Créer un calque de réglage au-dessus du groupe.
+    \item Ou créer un groupe qui contient les calques + le calque de réglage.
+\end{itemize}
+
+\subsubsection{Le mode de fusion des calques de réglage}
+
+Les calques de réglage peuvent avoir un mode de fusion (par exemple, Multiplier, Écran). Cela permet de moduler l'effet du réglage.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Privilégier les calques de réglage} aux modifications directes.
+    \item \terme{Nommer} les calques de réglage (par exemple, « Réglage - Luminosité »).
+    \item \terme{Masquer} les réglages sur les zones non concernées.
+    \item \terme{Grouper} les calques de réglage pour organiser.
+    \item \terme{Désactiver} un calque de réglage pour comparer (icône d'œil).
+    \item \terme{Ajuster l'opacité} pour moduler l'effet.
+    \item \terme{Ne pas empiler trop de réglages} : préférer des réglages simples et efficaces.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{calques de réglage} appliquent un réglage (luminosité, contraste, courbes, teinte/saturation, etc.) à tous les calques situés en dessous, sans modifier les pixels d'origine. Ils sont non destructifs, modifiables, désactivables, masquables, cumulables. On les crée par le panneau Calques, le menu, ou le panneau Réglages. Ils sont accompagnés d'un masque de fusion qui permet de les appliquer à certaines zones. Il est essentiel de privilégier les calques de réglage aux modifications directes.
+
+Maintenant que nous connaissons les calques de réglage, nous allons, dans la section suivante, étudier les \terme{objets dynamiques}.
+
+% ============================================================
+\section{Les objets dynamiques}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un objet dynamique ?}
+
+\begin{quote}
+\textbf{Un objet dynamique (ou \emph{smart object}) est un calque qui conserve les données d'origine de l'image, quel que soit le nombre de transformations appliquées.}
+\end{quote}
+
+Les objets dynamiques sont un outil essentiel du travail \terme{non destructif} : ils permettent de transformer, de filtrer, d'appliquer des effets à un calque sans altérer les pixels d'origine.
+
+\subsection{Les avantages des objets dynamiques}
+
+\begin{itemize}
+    \item \terme{Transformations non destructives} : on peut redimensionner, faire pivoter, déformer sans perte de qualité.
+    \item \terme{Filtres dynamiques} : on peut appliquer des filtres de manière non destructive (ils restent modifiables).
+    \item \terme{Modifications préservées} : on peut revenir aux données d'origine à tout moment.
+    \item \terme{Réutilisables} : on peut dupliquer un objet dynamique et le modifier indépendamment.
+    \item \terme{Compatibles} : on peut importer des fichiers Illustrator ou Camera Raw en tant qu'objets dynamiques.
+\end{itemize}
+
+\subsection{Créer un objet dynamique}
+
+\subsubsection{Convertir un calque en objet dynamique}
+
+Clic droit sur le calque > \texttt{Convertir en objet dynamique}. Une petite icône apparaît sur la vignette du calque.
+
+\subsubsection{Importer un fichier en tant qu'objet dynamique}
+
+\texttt{Fichier > Importer et placer}, ou \texttt{Fichier > Ouvrir en tant qu'objet dynamique}. Le fichier est importé en tant qu'objet dynamique.
+
+\subsubsection{Créer un objet dynamique à partir d'un groupe}
+
+Clic droit sur un groupe > \texttt{Convertir en objet dynamique}. Le groupe devient un objet dynamique unique.
+
+\subsection{Les transformations non destructives}
+
+\subsubsection{Principe}
+
+Un objet dynamique conserve les données d'origine. Lorsqu'on le transforme, Photoshop applique une transformation virtuelle, mais les pixels d'origine sont conservés.
+
+\subsubsection{Application}
+
+\begin{enumerate}
+    \item Sélectionner l'objet dynamique.
+    \item Appuyer sur \texttt{Ctrl + T} (ou \texttt{Cmd + T}).
+    \item Transformer (mise à l'échelle, rotation, etc.).
+    \item Valider avec \texttt{Entrée}.
+\end{enumerate}
+
+\subsubsection{Répétition des transformations}
+
+On peut appliquer plusieurs transformations successives sans perte de qualité. Les transformations sont stockées dans l'objet dynamique.
+
+\subsection{Les filtres dynamiques}
+
+\subsubsection{Principe}
+
+Un \terme{filtre dynamique} est un filtre appliqué à un objet dynamique. Il reste modifiable et supprimable à tout moment.
+
+\subsubsection{Application}
+
+\begin{enumerate}
+    \item Sélectionner l'objet dynamique.
+    \item Appliquer un filtre (\texttt{Filtre > ...}).
+    \item Le filtre apparaît sous le calque dans le panneau Calques.
+    \item Double-cliquer sur le filtre pour le modifier.
+\end{enumerate}
+
+\subsubsection{Les avantages}
+
+\begin{itemize}
+    \item \terme{Modifiable} : on peut ajuster les paramètres du filtre à tout moment.
+    \item \terme{Supprimable} : on peut supprimer le filtre (icône d'œil ou glisser dans la corbeille).
+    \item \terme{Masquable} : on peut masquer le filtre sur certaines zones (avec un masque).
+    \item \terme{Cumulable} : on peut empiler plusieurs filtres.
+\end{itemize}
+
+\subsection{Le contenu des objets dynamiques}
+
+\subsubsection{Modifier le contenu}
+
+Double-cliquer sur la vignette de l'objet dynamique pour ouvrir son contenu dans une nouvelle fenêtre. Modifier le contenu, puis enregistrer (\texttt{Ctrl + S}). L'objet dynamique est automatiquement mis à jour dans le document d'origine.
+
+\subsubsection{Remplacer le contenu}
+
+Clic droit sur l'objet dynamique > \texttt{Remplacer le contenu}. Choisir un nouveau fichier. Le contenu est remplacé, mais les transformations et les filtres sont conservés.
+
+\subsection{Les objets dynamiques liés}
+
+\subsubsection{Principe}
+
+Lorsqu'on duplique un objet dynamique, les deux copies sont \terme{liées} : si on modifie le contenu de l'une, l'autre est automatiquement mise à jour.
+
+\subsubsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Cohérence} : les modifications sont répercutées sur toutes les copies.
+    \item \terme{Efficacité} : on modifie une seule fois pour toutes les copies.
+\end{itemize}
+
+\subsubsection{Créer une copie non liée}
+
+Clic droit sur l'objet dynamique > \texttt{Nouvel objet dynamique via copie}. La copie est indépendante.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Convertir en objet dynamique} les calques qui seront transformés plusieurs fois.
+    \item \terme{Convertir en objet dynamique} les calques qui recevront des filtres.
+    \item \terme{Convertir en objet dynamique} les fichiers importés (Illustrator, Camera Raw).
+    \item \terme{Nommer} les objets dynamiques.
+    \item \terme{Garder une copie non liée} si on veut modifier indépendamment.
+    \item \terme{Ne pas abuser} : les objets dynamiques peuvent alourdir le fichier.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{objet dynamique} est un calque qui conserve les données d'origine, quel que soit le nombre de transformations appliquées. Il permet de transformer, de filtrer, d'appliquer des effets de manière non destructive. On le crée en convertissant un calque, en important un fichier, ou en convertissant un groupe. On peut modifier son contenu, le remplacer, le dupliquer (lié ou non lié). Il est essentiel de convertir en objet dynamique les calques qui seront transformés ou filtrés plusieurs fois.
+
+Maintenant que nous connaissons les objets dynamiques, nous allons, dans la section suivante, étudier les \terme{masques de fusion}.
+
+% ============================================================
+\section{Les masques de fusion}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un masque de fusion ?}
+
+\begin{quote}
+\textbf{Un masque de fusion (ou \emph{layer mask}) est un masque attaché à un calque, qui contrôle la visibilité de ses pixels. Les zones blanches sont visibles, les zones noires sont masquées, les zones grises sont semi-transparentes.}
+\end{quote}
+
+Le masque de fusion est l'un des outils les plus puissants de Photoshop. Il permet de :
+
+\begin{itemize}
+    \item \terme{Masquer} une partie d'un calque sans la supprimer.
+    \item \terme{Révéler} une partie d'un calque.
+    \item \terme{Créer} des transitions douces entre les calques.
+    \item \terme{Travailler} de manière non destructive.
+    \item \terme{Modifier} le masque à tout moment.
+\end{itemize}
+
+\subsection{Le principe du masque de fusion}
+
+\subsubsection{Le masque en noir et blanc}
+
+Un masque de fusion est une image en niveaux de gris attachée à un calque :
+
+\begin{itemize}
+    \item \terme{Blanc} : les pixels du calque sont visibles à 100\%.
+    \item \terme{Noir} : les pixels du calque sont masqués à 100\%.
+    \item \terme{Gris} : les pixels du calque sont visibles à un pourcentage (par exemple, 50\% de gris = 50\% de visibilité).
+\end{itemize}
+
+\subsubsection{L'analogie du cache}
+
+On peut imaginer le masque comme un \terme{cache} placé sur le calque : là où le cache est blanc, on voit le calque ; là où il est noir, on ne le voit pas.
+
+\subsection{Créer un masque de fusion}
+
+\subsubsection{Créer un masque blanc}
+
+\begin{itemize}
+    \item Sélectionner le calque.
+    \item Cliquer sur le bouton \terme{Masque de fusion} en bas du panneau Calques.
+    \item Un masque blanc est créé (tout est visible).
+\end{itemize}
+
+\subsubsection{Créer un masque noir}
+
+Maintenir \texttt{Alt} (ou \texttt{Opt}) et cliquer sur le bouton \terme{Masque de fusion}. Un masque noir est créé (tout est masqué).
+
+\subsubsection{Créer un masque à partir d'une sélection}
+
+\begin{enumerate}
+    \item Créer une sélection.
+    \item Cliquer sur le bouton \terme{Masque de fusion}.
+    \item Le masque est créé à partir de la sélection : les zones sélectionnées sont blanches (visibles), les zones non sélectionnées sont noires (masquées).
+\end{enumerate}
+
+\subsection{Utiliser un masque de fusion}
+
+\subsubsection{Peindre sur le masque}
+
+\begin{enumerate}
+    \item Sélectionner le masque (cliquer sur la vignette du masque dans le panneau Calques).
+    \item Sélectionner l'outil Pinceau (\texttt{B}).
+    \item Peindre en \terme{noir} pour masquer, en \terme{blanc} pour révéler, en \terme{gris} pour semi-masquer.
+\end{enumerate}
+
+\subsubsection{Les couleurs du masque}
+
+\begin{itemize}
+    \item \terme{Noir} : masque les pixels.
+    \item \terme{Blanc} : révèle les pixels.
+    \item \terme{Gris} : rend les pixels semi-transparents.
+\end{itemize}
+
+\subsubsection{Voir le masque}
+
+Maintenir \texttt{Alt} (ou \texttt{Opt}) et cliquer sur la vignette du masque pour voir le masque en noir et blanc. Cliquer à nouveau pour revenir à l'image.
+
+\subsubsection{Désactiver le masque}
+
+Maintenir \texttt{Maj} et cliquer sur la vignette du masque pour le désactiver (une croix rouge apparaît). Cliquer à nouveau pour le réactiver.
+
+\subsubsection{Supprimer le masque}
+
+Clic droit sur le masque > \texttt{Supprimer le masque de fusion}, ou glisser le masque dans la corbeille.
+
+\subsubsection{Appliquer le masque}
+
+Clic droit sur le masque > \texttt{Appliquer le masque de fusion}. Les pixels masqués sont supprimés définitivement.
+
+\subsection{Les masques de fusion et les calques de réglage}
+
+Chaque calque de réglage est automatiquement accompagné d'un masque de fusion. On peut peindre sur ce masque pour appliquer le réglage à certaines zones seulement.
+
+\subsection{Les masques de fusion vectoriels}
+
+\subsubsection{Principe}
+
+Un \terme{masque vectoriel} est un masque basé sur un tracé vectoriel. Il est plus précis qu'un masque de fusion classique, mais moins souple.
+
+\subsubsection{Création}
+
+Clic droit sur le calque > \texttt{Ajouter un masque vectoriel}. Ou utiliser l'outil Plume pour créer un tracé, puis \texttt{Calque > Masque vectoriel > Révéler la sélection}.
+
+\subsection{Les masques d'écrêtage}
+
+(Voir section suivante.)
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser les masques} plutôt que la gomme (non destructif).
+    \item \terme{Nommer} les masques (si plusieurs masques).
+    \item \terme{Vérifier} le masque en maintenant \texttt{Alt} pour le voir.
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Utiliser} un pinceau dur pour les bords nets.
+    \item \terme{Ne pas appliquer} le masque sans être sûr (irréversible).
+    \item \terme{Utiliser} les masques vectoriels pour les formes précises.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{masque de fusion} contrôle la visibilité des pixels d'un calque. Les zones blanches sont visibles, les zones noires sont masquées, les zones grises sont semi-transparentes. On peut créer un masque blanc, noir, ou à partir d'une sélection. On peut peindre sur le masque pour le modifier. Le masque de fusion est un outil essentiel du travail non destructif.
+
+Maintenant que nous connaissons les masques de fusion, nous allons, dans la section suivante, étudier les \terme{masques d'écrêtage}.
+
+% ============================================================
+\section{Les masques d'écrêtage}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un masque d'écrêtage ?}
+
+\begin{quote}
+\textbf{Un masque d'écrêtage (ou \emph{clipping mask}) est un masque qui utilise les pixels d'un calque (le calque de base) pour limiter la visibilité d'un autre calque (le calque écrêté).}
+\end{quote}
+
+Le masque d'écrêtage permet de :
+
+\begin{itemize}
+    \item \terme{Limiter} la visibilité d'un calque à la forme d'un autre calque.
+    \item \terme{Intégrer} une image dans une forme.
+    \item \terme{Créer} des effets de texte (texte rempli d'une image).
+    \item \terme{Masquer} une partie d'un calque sans utiliser de masque de fusion.
+\end{itemize}
+
+\subsection{Le principe du masque d'écrêtage}
+
+\subsubsection{Calque de base et calque écrêté}
+
+Un masque d'écrêtage implique deux calques :
+
+\begin{itemize}
+    \item \terme{Le calque de base} : le calque dont la forme détermine la visibilité. Il est placé en dessous.
+    \item \terme{Le calque écrêté} : le calque dont la visibilité est limitée. Il est placé au-dessus.
+\end{itemize}
+
+Le calque écrêté n'est visible que là où le calque de base a des pixels opaques.
+
+\subsubsection{Exemple}
+
+Prenons l'exemple d'une image (photo) et d'un texte :
+
+\begin{enumerate}
+    \item Placer le texte en dessous (calque de base).
+    \item Placer l'image au-dessus (calque écrêté).
+    \item Créer un masque d'écrêtage : l'image n'apparaît que dans les lettres du texte.
+\end{enumerate}
+
+\subsection{Créer un masque d'écrêtage}
+
+\subsubsection{Par le menu}
+
+\begin{enumerate}
+    \item Sélectionner le calque à écrêter (au-dessus).
+    \item Utiliser \texttt{Calque > Créer un masque d'écrêtage}.
+    \item Le calque est écrêté sur le calque en dessous.
+\end{enumerate}
+
+\subsubsection{Par raccourci}
+
+Maintenir \texttt{Alt} (ou \texttt{Opt}) et cliquer entre les deux calques dans le panneau Calques. Un petit symbole de flèche apparaît.
+
+\subsubsection{Par clic droit}
+
+Clic droit sur le calque écrêté > \texttt{Créer un masque d'écrêtage}.
+
+\subsection{Utiliser un masque d'écrêtage}
+
+\subsubsection{Modifier le calque de base}
+
+On peut modifier la forme du calque de base (déplacer, redimensionner, changer le texte). Le calque écrêté s'adapte automatiquement.
+
+\subsubsection{Modifier le calque écrêté}
+
+On peut modifier le calque écrêté (déplacer, redimensionner) : il reste écrêté sur la forme du calque de base.
+
+\subsubsection{Libérer le masque d'écrêtage}
+
+Clic droit sur le calque écrêté > \texttt{Libérer le masque d'écrêtage}, ou maintenir \texttt{Alt} et cliquer entre les deux calques.
+
+\subsection{Les applications des masques d'écrêtage}
+
+\subsubsection{Intégrer une image dans une forme}
+
+Créer une forme (rectangle, cercle, etc.), puis placer une image au-dessus, et créer un masque d'écrêtage. L'image apparaît dans la forme.
+
+\subsubsection{Créer un texte rempli d'une image}
+
+Créer un texte, puis placer une image au-dessus, et créer un masque d'écrêtage. Le texte est rempli de l'image.
+
+\subsubsection{Créer un effet de superposition}
+
+Placer une texture au-dessus d'une forme, et créer un masque d'écrêtage. La texture apparaît dans la forme.
+
+\subsubsection{Limiter une retouche à une zone}
+
+Placer une retouche (par exemple, un calque de réglage) au-dessus d'une forme, et créer un masque d'écrêtage. La retouche ne s'applique qu'à la forme.
+
+\subsection{Les masques d'écrêtage et les groupes}
+
+\subsubsection{Écrêter sur un groupe}
+
+On peut écrêter un calque sur un groupe. Le calque écrêté n'est visible que dans les zones opaques du groupe.
+
+\subsubsection{Créer un groupe écrêté}
+
+On peut créer un groupe et le définir comme écrêté. Tous les calques du groupe sont alors écrêtés sur le calque en dessous.
+
+\subsection{Les différences avec les masques de fusion}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{4cm}p{5cm}p{5cm}@{}}
+\toprule
+\textbf{Critère} & \textbf{Masque de fusion} & \textbf{Masque d'écrêtage} \\
+\midrule
+Principe & Masque noir/blanc sur un calque & Utilise un autre calque comme masque \\
+Création & Bouton Masque de fusion & Menu, raccourci \\
+Modification & Peinture sur le masque & Modification du calque de base \\
+Utilisation & Masquer une partie d'un calque & Intégrer un calque dans une forme \\
+Flexibilité & Très flexible & Moins flexible \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison masque de fusion / masque d'écrêtage.}
+\end{table}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} les masques d'écrêtage pour intégrer une image dans une forme.
+    \item \terme{Organiser} les calques : le calque de base en dessous, le calque écrêté au-dessus.
+    \item \terme{Nommer} les calques pour s'y retrouver.
+    \item \terme{Modifier} le calque de base plutôt que le calque écrêté.
+    \item \terme{Combiner} avec les masques de fusion pour plus de flexibilité.
+    \item \terme{Ne pas confondre} avec les masques de fusion.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{masque d'écrêtage} utilise les pixels d'un calque (calque de base) pour limiter la visibilité d'un autre calque (calque écrêté). Il permet d'intégrer une image dans une forme, de créer un texte rempli d'une image, de limiter une retouche à une zone. On le crée par le menu, par raccourci, ou par clic droit. Il se distingue du masque de fusion : le masque d'écrêtage utilise un autre calque comme masque.
+
+Maintenant que nous connaissons les masques d'écrêtage, nous allons, dans la section suivante, étudier les \terme{méthodes de travail non destructives}.
+
+% ============================================================
+\section{Les méthodes de travail non destructives}
+% ============================================================
+
+\subsection{Qu'est-ce que le travail non destructif ?}
+
+\begin{quote}
+\textbf{Le travail non destructif consiste à modifier une image sans altérer les pixels d'origine, en utilisant des outils qui préservent les données originales et permettent de revenir en arrière à tout moment.}
+\end{quote}
+
+Le travail non destructif est une méthode de travail professionnelle. Il permet de :
+
+\begin{itemize}
+    \item \terme{Préserver} les données d'origine.
+    \item \terme{Modifier} les réglages à tout moment.
+    \item \terme{Revenir en arrière} sans perte.
+    \item \terme{Expérimenter} sans risque.
+    \item \terme{Adapter} le visuel à différents supports.
+\end{itemize}
+
+\subsection{Les principes du travail non destructif}
+
+\subsubsection{Ne pas modifier les pixels d'origine}
+
+Il faut éviter de modifier directement les pixels d'origine. On utilise des calques, des masques, des objets dynamiques.
+
+\subsubsection{Travailler sur des calques}
+
+Chaque élément doit être sur un calque séparé. On peut ainsi modifier, masquer, déplacer chaque élément indépendamment.
+
+\subsubsection{Utiliser les masques}
+
+Les masques permettent de masquer une partie d'un calque sans la supprimer. On peut les modifier à tout moment.
+
+\subsubsection{Utiliser les calques de réglage}
+
+Les calques de réglage permettent d'appliquer des réglages sans modifier les pixels. On peut les modifier, les désactiver, les supprimer.
+
+\subsubsection{Utiliser les objets dynamiques}
+
+Les objets dynamiques permettent de transformer, de filtrer sans perte de qualité.
+
+\subsubsection{Utiliser les styles de calque}
+
+Les styles de calque (ombre, contour, etc.) sont non destructifs : on peut les modifier, les désactiver, les supprimer.
+
+\subsubsection{Conserver les fichiers sources}
+
+Il faut toujours conserver les fichiers sources (PSD, fichiers originaux) pour pouvoir revenir en arrière.
+
+\subsection{Les outils non destructifs}
+
+\subsubsection{Les calques}
+
+Les calques permettent de superposer des éléments sans les fusionner. On peut les modifier indépendamment.
+
+\subsubsection{Les masques de fusion}
+
+Les masques de fusion permettent de masquer une partie d'un calque sans la supprimer.
+
+\subsubsection{Les masques d'écrêtage}
+
+Les masques d'écrêtage permettent de limiter la visibilité d'un calque à la forme d'un autre calque.
+
+\subsubsection{Les calques de réglage}
+
+Les calques de réglage permettent d'appliquer des réglages sans modifier les pixels.
+
+\subsubsection{Les objets dynamiques}
+
+Les objets dynamiques permettent de transformer, de filtrer sans perte.
+
+\subsubsection{Les styles de calque}
+
+Les styles de calque permettent d'appliquer des effets sans modifier les pixels.
+
+\subsubsection{Les filtres dynamiques}
+
+Les filtres dynamiques (sur les objets dynamiques) permettent d'appliquer des filtres sans perte.
+
+\subsubsection{Les groupes}
+
+Les groupes permettent d'organiser les calques et d'appliquer des modifications globales.
+
+\subsection{Les méthodes non destructives}
+
+\subsubsection{Pour la retouche photo}
+
+\begin{itemize}
+    \item \terme{Calques de réglage} : luminosité, contraste, courbes, teinte/saturation, etc.
+    \item \terme{Masques de fusion} : pour appliquer les réglages à certaines zones.
+    \item \terme{Objets dynamiques} : pour les transformations et les filtres.
+    \item \terme{Calques de duplication} : pour les retouches localisées.
+\end{itemize}
+
+\subsubsection{Pour la création graphique}
+
+\begin{itemize}
+    \item \terme{Calques} : un calque par élément.
+    \item \terme{Masques de fusion} : pour les transitions, les effets.
+    \item \terme{Masques d'écrêtage} : pour intégrer une image dans une forme.
+    \item \terme{Styles de calque} : pour les effets (ombre, contour, etc.).
+    \item \terme{Groupes} : pour organiser.
+\end{itemize}
+
+\subsubsection{Pour le texte}
+
+\begin{itemize}
+    \item \terme{Calques de texte} : pour garder le texte modifiable.
+    \item \terme{Styles de calque} : pour les effets.
+    \item \terme{Masques de fusion} : pour les effets.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Travailler directement sur le calque d'arrière-plan}
+
+Le calque d'arrière-plan est verrouillé. Il faut le déverrouiller ou travailler sur une copie.
+
+\subsubsection{Utiliser la gomme}
+
+La gomme supprime les pixels de manière destructive. Il vaut mieux utiliser des masques.
+
+\subsubsection{Appliquer les transformations}
+
+Appliquer les transformations (sans objet dynamique) dégrade l'image à chaque étape. Il vaut mieux utiliser des objets dynamiques.
+
+\subsubsection{Fusionner les calques trop tôt}
+
+Fusionner les calques supprime la possibilité de modifier chaque élément. Il vaut mieux garder les calques séparés.
+
+\subsubsection{Ne pas conserver les fichiers sources}
+
+Sans fichiers sources, on ne peut pas revenir en arrière. Il faut toujours conserver les PSD.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler} sur des calques.
+    \item \terme{Utiliser} des masques plutôt que la gomme.
+    \item \terme{Utiliser} des calques de réglage.
+    \item \terme{Utiliser} des objets dynamiques.
+    \item \terme{Utiliser} des styles de calque.
+    \item \terme{Garder} les calques séparés.
+    \item \terme{Conserver} les fichiers sources.
+    \item \terme{Nommer} et organiser les calques.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{travail non destructif} consiste à modifier une image sans altérer les pixels d'origine. Il repose sur les calques, les masques, les calques de réglage, les objets dynamiques, les styles de calque, les groupes. Il permet de préserver les données, de modifier à tout moment, de revenir en arrière, d'expérimenter sans risque. Il est essentiel d'adopter cette méthode pour travailler comme un professionnel.
+
+Maintenant que nous connaissons les méthodes de travail non destructives, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{organiser un fichier PSD professionnel}.
+
+% ============================================================
+\section{Organiser un fichier PSD professionnel}
+% ============================================================
+
+\subsection{Pourquoi organiser un fichier PSD ?}
+
+Un fichier PSD bien organisé est un gage de professionnalisme. Il permet de :
+
+\begin{itemize}
+    \item \terme{Comprendre} rapidement la structure du projet.
+    \item \terme{Modifier} facilement un élément.
+    \item \terme{Collaborer} avec d'autres designers.
+    \item \terme{Reprendre} un projet après un certain temps.
+    \item \terme{Adapter} le visuel à différents supports.
+    \item \terme{Préparer} les fichiers pour la production.
+\end{itemize}
+
+Un fichier PSD mal organisé est un fichier difficile à utiliser, à modifier, à transmettre. Il donne une mauvaise image du designer.
+
+\subsection{Les principes d'organisation}
+
+\subsubsection{Nommer les calques}
+
+Chaque calque doit avoir un nom descriptif. Éviter les noms génériques (« Calque 1 », « Calque 2 », etc.).
+
+\subsubsection{Structurer les calques}
+
+Les calques doivent être structurés de manière logique : par zone, par type, par variante.
+
+\subsubsection{Grouper les calques}
+
+Utiliser des groupes pour organiser les calques par catégorie.
+
+\subsubsection{Colorer les calques}
+
+Utiliser des couleurs pour identifier rapidement les catégories de calques.
+
+\subsubsection{Placer les calques de réglage}
+
+Les calques de réglage doivent être placés au-dessus des calques concernés, pour ne pas affecter les calques qui ne doivent pas l'être.
+
+\subsubsection{Garder le calque d'arrière-plan}
+
+Le calque d'arrière-plan doit être en bas de la pile.
+
+\subsubsection{Supprimer les calques inutiles}
+
+Supprimer les calques vides ou inutiles pour alléger le fichier.
+
+\subsubsection{Conserver les fichiers sources}
+
+Conserver les fichiers sources (PSD, images originales, polices) pour pouvoir modifier le projet.
+
+\subsection{La structure d'un fichier PSD professionnel}
+
+\subsubsection{Un exemple de structure}
+
+Voici un exemple de structure pour un fichier PSD d'affiche :
+
+\begin{itemize}
+    \item \terme{Groupe "Réglages"} : calques de réglage (couleur, luminosité, etc.).
+    \item \terme{Groupe "Pied de page"} : mentions légales, logo, contact.
+    \item \terme{Groupe "Corps"} : contenu principal (image, texte, forme).
+    \item \terme{Groupe "En-tête"} : logo, titre, navigation.
+    \item \terme{Calque d'arrière-plan} : fond.
+\end{itemize}
+
+\subsubsection{Un exemple plus détaillé}
+
+\begin{itemize}
+    \item \terme{Groupe "Affiche - Version A"} :
+    \begin{itemize}
+        \item \terme{Groupe "Réglages"} : luminosité, contraste.
+        \item \terme{Groupe "Pied de page"} : mentions, logo.
+        \item \terme{Groupe "Corps"} : image, texte, forme.
+        \item \terme{Groupe "En-tête"} : logo, titre.
+    \end{itemize}
+    \item \terme{Groupe "Affiche - Version B"} :
+    \begin{itemize}
+        \item ...
+    \end{itemize}
+    \item \terme{Calque d'arrière-plan} : fond.
+\end{itemize}
+
+\subsection{Les conventions de nommage}
+
+\subsubsection{Préfixes}
+
+Utiliser des préfixes pour identifier le type de calque :
+
+\begin{itemize}
+    \item \terme{Bg} : background (arrière-plan).
+    \item \terme{Img} : image.
+    \item \terme{Txt} : texte.
+    \item \terme{Ic} : icône.
+    \item \terme{Forme} : forme.
+    \item \terme{Adj} : calque de réglage.
+    \item \terme{Grp} : groupe.
+\end{itemize}
+
+\subsubsection{Noms descriptifs}
+
+Utiliser des noms descriptifs :
+
+\begin{itemize}
+    \item \terme{Txt - Titre principal}.
+    \item \terme{Img - Photo produit}.
+    \item \terme{Grp - En-tête}.
+    \item \terme{Adj - Luminosité}.
+\end{itemize}
+
+\subsubsection{Casse}
+
+Respecter une casse cohérente : première lettre en majuscule, ou tout en minuscules.
+
+\subsection{Les bonnes pratiques d'organisation}
+
+\subsubsection{Commencer par structurer}
+
+Dès le début du projet, créer les groupes et nommer les calques.
+
+\subsubsection{Organiser au fur et à mesure}
+
+Organiser les calques au fur et à mesure de leur création, pour éviter d'avoir à tout reprendre à la fin.
+
+\subsubsection{Fermer les groupes}
+
+Fermer les groupes non utilisés pour gagner de la place dans le panneau Calques.
+
+\subsubsection{Utiliser les couleurs}
+
+Colorer les calques et les groupes pour les identifier.
+
+\subsubsection{Verrouiller les calques}
+
+Verrouiller les calques que l'on ne veut pas modifier accidentellement.
+
+\subsubsection{Sauvegarder régulièrement}
+
+Sauvegarder régulièrement le fichier (avec \texttt{Ctrl + S}).
+
+\subsubsection{Créer des versions}
+
+Créer des versions (par exemple, « affiche-v1.psd », « affiche-v2.psd ») pour pouvoir revenir en arrière.
+
+\subsubsection{Nettoyer le fichier}
+
+Supprimer les calques vides ou inutiles, fusionner les calques qui ne seront plus modifiés.
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Calques non nommés}
+
+Des calques « Calque 1 », « Calque 2 », etc., rendent le fichier incompréhensible.
+
+\subsubsection{Pas de groupes}
+
+Sans groupes, le fichier est désorganisé, difficile à modifier.
+
+\subsubsection{Trop de calques}
+
+Trop de calques (surtout vides) alourdissent le fichier et le rendent difficile à utiliser.
+
+\subsubsection{Réglages mal placés}
+
+Les calques de réglage mal placés affectent des calques qu'ils ne devraient pas affecter.
+
+\subsubsection{Pas de sauvegarde}
+
+Travailler sans sauvegarder régulièrement expose à la perte de données.
+
+\subsubsection{Pas de version}
+
+Ne pas créer de versions expose à la perte de l'état précédent.
+
+\subsection*{Conclusion de la section}
+
+L'\terme{organisation d'un fichier PSD professionnel} est essentielle pour travailler efficacement, collaborer, reprendre un projet. Elle repose sur le nommage des calques, la structuration, les groupes, les couleurs, le placement des calques de réglage, la suppression des calques inutiles, la conservation des fichiers sources. Il est essentiel d'adopter une organisation rigoureuse dès le début du projet.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 8. Nous avons appris à maîtriser les calques et l'organisation des projets dans Photoshop :
+
+\begin{itemize}
+    \item \terme{Définition et fonctionnement des calques} : couches transparentes superposées, types de calques, panneau Calques.
+    \item \terme{Créer, supprimer, dupliquer} : calques vides, à partir d'une sélection, de texte, de forme, de réglage ; conversion.
+    \item \terme{Renommer et organiser} : nommage, coloration, groupes de calques.
+    \item \terme{Groupes de calques} : structuration par zone, type, variante ; imbrication ; propriétés.
+    \item \terme{Opacité et fond} : opacité, remplissage, calque d'arrière-plan, fonds transparents.
+    \item \terme{Modes de fusion} : normaux, assombrissement, éclaircissement, contraste, comparaison, couleur.
+    \item \terme{Calques de réglage} : luminosité, contraste, courbes, teinte/saturation, etc. ; masques.
+    \item \terme{Objets dynamiques} : transformations non destructives, filtres dynamiques.
+    \item \terme{Masques de fusion} : masquer, révéler, transitions douces, travail non destructif.
+    \item \terme{Masques d'écrêtage} : intégrer une image dans une forme, texte rempli d'une image.
+    \item \terme{Méthodes non destructives} : calques, masques, calques de réglage, objets dynamiques, styles de calque.
+    \item \terme{Organisation d'un fichier PSD} : nommage, structuration, groupes, couleurs, sauvegardes.
+\end{itemize}
+
+Les calques sont au cœur du travail dans Photoshop. Ils permettent de superposer, d'organiser, de modifier, de composer. Sans les calques, Photoshop ne serait qu'un simple éditeur d'images. Avec les calques, il devient un outil de création puissant. Un designer qui maîtrise les calques peut travailler efficacement, produire des visuels complexes, collaborer avec d'autres professionnels.
+
+Ce chapitre t'a donné les compétences essentielles pour maîtriser les calques. Mais la maîtrise vient avec la pratique. N'hésite pas à expérimenter, à créer des compositions complexes, à organiser tes fichiers avec rigueur. Chaque projet est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons les \terme{sélections et détourages}. Tu apprendras à utiliser les outils de sélection (rectangle, lasso, sélection rapide, baguette magique), à détourer un sujet, à affiner les contours, à utiliser les masques pour un détourage propre. Ces compétences te permettront de manipuler les images avec précision et de réaliser des photomontages de qualité.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 8 --- Calques et organisation des projets.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 9 --- Sélection et détourage.}
+\end{center}

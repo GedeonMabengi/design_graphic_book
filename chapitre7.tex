@@ -1,0 +1,1568 @@
+% ============================================================
+% CHAPITRE 7 — Documents, images et transformations
+% ============================================================
+
+\chapter{Documents, images et transformations}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons découvert Adobe Photoshop : son histoire, ses domaines d'utilisation, les notions d'image matricielle, de pixel, de dimension et de résolution, les formats d'image, l'installation, l'interface, les outils essentiels, la création et l'enregistrement de documents, les raccourcis clavier et l'organisation de l'espace de travail. Ce premier contact avec le logiciel t'a permis d'acquérir les bases. Il est maintenant temps d'entrer dans le vif du sujet et d'apprendre à manipuler concrètement des documents et des images.}
+
+\vspace{1em}
+
+\noindent
+La gestion des documents et la manipulation des images sont au cœur de la pratique de Photoshop. Avant de retoucher une photographie, avant de créer un photomontage, avant de composer une affiche, il faut savoir créer un document adapté, comprendre ses dimensions et sa résolution, recadrer une image, la redimensionner, la transformer, la préparer pour son usage final. Ces opérations, en apparence techniques, ont des conséquences directes sur la qualité du résultat : un document mal configuré, une image mal redimensionnée, un recadrage approximatif, et c'est tout le projet qui est compromis.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te donner les compétences pratiques nécessaires pour gérer des documents et manipuler des images dans Photoshop. Nous commencerons par apprendre à créer un nouveau document avec les bons paramètres. Nous verrons ensuite les notions de largeur, hauteur et résolution, puis comment choisir les dimensions adaptées à chaque usage. Nous distinguerons le redimensionnement du recadrage, et nous apprendrons à utiliser l'outil Recadrage. Nous étudierons les transformations (déplacement, rotation, mise à l'échelle), l'utilisation des repères et des règles, la compréhension des proportions et des déformations, et enfin la préparation des documents pour l'écran et pour l'impression. À la fin de ce chapitre, tu sauras préparer et manipuler des documents professionnels dans Photoshop.
+
+% ============================================================
+\section{Créer un nouveau document}
+% ============================================================
+
+\subsection{Pourquoi créer un nouveau document ?}
+
+La création d'un nouveau document est la \terme{première étape} de tout projet dans Photoshop. Que tu veuilles retoucher une photographie, créer une affiche, concevoir une bannière web, préparer un visuel pour les réseaux sociaux ou réaliser un photomontage, tu dois d'abord créer un document adapté à ton projet.
+
+Un document mal configuré peut entraîner :
+
+\begin{itemize}
+    \item \terme{Une qualité insuffisante} : une image trop petite ou à basse résolution sera pixellisée à l'impression.
+    \item \terme{Un poids excessif} : un document surdimensionné sera lourd, lent à manipuler, difficile à exporter.
+    \item \terme{Des proportions inadaptées} : un format inadapté obligera à recadrer ou à déformer l'image.
+    \item \terme{Des couleurs fausses} : un profil colorimétrique incorrect donnera des couleurs décevantes.
+\end{itemize}
+
+Il est donc essentiel de comprendre les paramètres d'un document et de les choisir avec soin.
+
+\subsection{La commande Nouveau}
+
+\subsubsection{Accès à la commande}
+
+Pour créer un nouveau document, utilise :
+
+\begin{itemize}
+    \item Le menu \texttt{Fichier > Nouveau}.
+    \item Le raccourci clavier \texttt{Ctrl + N} (Windows) ou \texttt{Cmd + N} (macOS).
+    \item Le bouton \emph{Créer} sur l'écran d'accueil de Photoshop.
+\end{itemize}
+
+\subsubsection{La boîte de dialogue Nouveau document}
+
+La boîte de dialogue \emph{Nouveau document} propose plusieurs sections :
+
+\begin{itemize}
+    \item \terme{Récent} : documents récents, pour reprendre un projet.
+    \item \terme{Enregistré} : documents enregistrés dans les bibliothèques Creative Cloud.
+    \item \terme{Photo} : formats prédéfinis pour la photographie.
+    \item \terme{Impression} : formats prédéfinis pour l'impression.
+    \item \terme{Film et vidéo} : formats pour la vidéo.
+    \item \terme{Art et illustration} : formats pour l'illustration.
+    \item \terme{Web} : formats pour le web.
+    \item \terme{Mobile} : formats pour mobiles.
+\end{itemize}
+
+Ces formats prédéfinis permettent de gagner du temps : ils configurent automatiquement les dimensions, la résolution et le profil colorimétrique adaptés à l'usage.
+
+\subsection{Les paramètres d'un nouveau document}
+
+\subsubsection{Le nom}
+
+Il est essentiel de \terme{nommer} le document de manière claire et descriptive. Un nom bien choisi facilite l'organisation et la recherche future. Par exemple : « affiche-concert-jazz-a3 », « banniere-promo-instagram », « carte-visite-recto ».
+
+\subsubsection{La largeur et la hauteur}
+
+La \terme{largeur} et la \terme{hauteur} définissent les dimensions du document. Elles peuvent être exprimées en :
+
+\begin{itemize}
+    \item \terme{Pixels} (px) : unité des écrans.
+    \item \terme{Centimètres} (cm) : unité courante pour l'impression.
+    \item \terme{Millimètres} (mm) : unité précise pour l'impression.
+    \item \terme{Pouces} (in) : unité anglo-saxonne.
+    \item \terme{Points} (pt) : unité typographique.
+    \item \terme{Picas} (pc) : unité typographique.
+\end{itemize}
+
+Le choix de l'unité dépend de l'usage : on utilise les pixels pour l'écran, les centimètres ou millimètres pour l'impression.
+
+\subsubsection{La résolution}
+
+La \terme{résolution} définit la quantité de détails d'une image. Elle s'exprime en \terme{pixels par pouce} (ppi) ou \terme{points par pouce} (dpi). Les valeurs courantes sont :
+
+\begin{itemize}
+    \item \terme{72 ppi} : résolution standard pour l'écran.
+    \item \terme{150 ppi} : résolution moyenne, pour des documents imprimés courants.
+    \item \terme{300 ppi} : résolution standard pour l'impression professionnelle.
+    \item \terme{600 ppi} : haute résolution, pour des tirages de qualité.
+\end{itemize}
+
+\subsubsection{L'orientation}
+
+L'\terme{orientation} définit le sens du document :
+
+\begin{itemize}
+    \item \terme{Portrait} : hauteur supérieure à la largeur (par exemple, une affiche, une page de magazine).
+    \item \terme{Paysage} : largeur supérieure à la hauteur (par exemple, une bannière web, une photo panoramique).
+\end{itemize}
+
+\subsubsection{La couleur de fond}
+
+La \terme{couleur de fond} définit le fond du document :
+
+\begin{itemize}
+    \item \terme{Blanc} : fond blanc, standard pour la plupart des projets.
+    \item \terme{Noir} : fond noir, pour des projets spécifiques.
+    \item \terme{Arrière-plan} : utilise la couleur d'arrière-plan définie dans la barre d'outils.
+    \item \terme{Transparent} : fond transparent (damier gris), utile pour les logos, les éléments à détourer.
+\end{itemize}
+
+\subsubsection{Le profil colorimétrique}
+
+Le \terme{profil colorimétrique} définit l'espace de couleurs du document. Les principaux sont :
+
+\begin{itemize}
+    \item \terme{sRGB IEC61966-2.1} : profil standard pour le web, universel.
+    \item \terme{Adobe RGB (1998)} : profil plus large, adapté à la photographie.
+    \item \terme{ProPhoto RGB} : profil très large, pour la retouche avancée.
+    \item \terme{CMJN} : profil pour l'impression (à définir selon l'imprimeur).
+    \item \terme{Niveaux de gris} : pour les images en noir et blanc.
+\end{itemize}
+
+\subsubsection{La profondeur de bits}
+
+La \terme{profondeur de bits} définit la précision des couleurs :
+
+\begin{itemize}
+    \item \terme{8 bits/canal} : standard, 256 niveaux par canal (16,7 millions de couleurs).
+    \item \terme{16 bits/canal} : haute précision, 65 536 niveaux par canal, pour la retouche avancée.
+    \item \terme{32 bits/canal} : très haute précision, pour l'imagerie HDR.
+\end{itemize}
+
+Pour la plupart des projets, 8 bits suffisent. On utilise 16 bits pour la retouche photographique avancée, où la précision des dégradés est importante.
+
+\subsubsection{Les options avancées}
+
+Selon les versions, la boîte de dialogue peut proposer des options avancées :
+
+\begin{itemize}
+    \item \terme{Profil colorimétrique avancé} : gestion avancée des couleurs.
+    \item \terme{Résolution} : affichage de la résolution en ppi.
+    \item \terme{Trame de pixels} : définition de la trame.
+\end{itemize}
+
+\subsection{Les formats prédéfinis}
+
+\subsubsection{Formats pour l'impression}
+
+\begin{itemize}
+    \item \terme{A4} : 21 × 29,7 cm, 300 ppi, CMJN.
+    \item \terme{A3} : 29,7 × 42 cm, 300 ppi, CMJN.
+    \item \terme{A5} : 14,8 × 21 cm, 300 ppi, CMJN.
+    \item \terme{Lettre} : 8,5 × 11 in, 300 ppi, CMJN.
+    \item \terme{Carte de visite} : 8,5 × 5,5 cm, 300 ppi, CMJN.
+\end{itemize}
+
+\subsubsection{Formats pour le web}
+
+\begin{itemize}
+    \item \terme{Web 1920 × 1080} : 1920 × 1080 px, 72 ppi, sRGB.
+    \item \terme{Web 1280 × 720} : 1280 × 720 px, 72 ppi, sRGB.
+    \item \terme{Bannière leaderboard} : 728 × 90 px, 72 ppi, sRGB.
+    \item \terme{Bannière skyscraper} : 120 × 600 px, 72 ppi, sRGB.
+\end{itemize}
+
+\subsubsection{Formats pour les réseaux sociaux}
+
+\begin{itemize}
+    \item \terme{Instagram carré} : 1080 × 1080 px.
+    \item \terme{Instagram portrait} : 1080 × 1350 px.
+    \item \terme{Instagram story} : 1080 × 1920 px.
+    \item \terme{Facebook partage} : 1200 × 630 px.
+    \item \terme{Twitter / X} : 1200 × 675 px.
+    \item \terme{LinkedIn} : 1200 × 627 px.
+    \item \terme{YouTube miniature} : 1280 × 720 px.
+\end{itemize}
+
+\subsubsection{Formats pour le mobile}
+
+\begin{itemize}
+    \item \terme{iPhone} : 1170 × 2532 px (iPhone 12/13/14).
+    \item \terme{iPad} : 2048 × 2732 px (iPad Pro).
+    \item \terme{Android} : 1080 × 1920 px (standard).
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Choisir le format adapté} à l'usage (web, impression, réseaux sociaux).
+    \item \terme{Définir les bonnes dimensions} dès le départ.
+    \item \terme{Choisir la bonne résolution} (72 ppi pour l'écran, 300 ppi pour l'impression).
+    \item \terme{Choisir le bon profil colorimétrique} (sRGB pour le web, Adobe RGB pour la photo, CMJN pour l'impression).
+    \item \terme{Travailler en 8 bits} pour la plupart des projets.
+    \item \terme{Nommer le document} de manière claire.
+    \item \terme{Anticiper l'usage final} : le document sera-t-il imprimé, affiché à l'écran, partagé sur les réseaux sociaux ?
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Créer un nouveau document est la première étape de tout projet dans Photoshop. La boîte de dialogue \emph{Nouveau} permet de définir les paramètres essentiels : nom, largeur, hauteur, résolution, orientation, couleur de fond, profil colorimétrique, profondeur de bits. Les formats prédéfinis permettent de gagner du temps pour les usages courants (impression, web, réseaux sociaux, mobile). Il est essentiel de choisir les bons paramètres dès le départ pour éviter les problèmes de qualité, de poids ou de couleur.
+
+Maintenant que nous savons créer un document, nous allons, dans la section suivante, approfondir les notions de \terme{largeur, hauteur et résolution}.
+
+% ============================================================
+\section{Comprendre la largeur, la hauteur et la résolution}
+% ============================================================
+
+\subsection{La largeur et la hauteur}
+
+\subsubsection{Définitions}
+
+La \terme{largeur} et la \terme{hauteur} sont les deux dimensions d'un document ou d'une image. Elles définissent sa taille.
+
+\subsubsection{Unités de mesure}
+
+La largeur et la hauteur peuvent être exprimées en :
+
+\begin{itemize}
+    \item \terme{Pixels} (px) : unité des écrans, la plus courante.
+    \item \terme{Centimètres} (cm) : unité courante pour l'impression.
+    \item \terme{Millimètres} (mm) : unité précise pour l'impression.
+    \item \terme{Pouces} (in) : unité anglo-saxonne.
+    \item \terme{Points} (pt) : unité typographique.
+    \item \terme{Picas} (pc) : unité typographique.
+\end{itemize}
+
+\subsubsection{Conversion entre unités}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Unité} & \textbf{Équivalence} \\
+\midrule
+1 pouce & 2,54 cm = 25,4 mm = 72 points \\
+1 centimètre & 0,3937 pouce = 28,35 points \\
+1 millimètre & 0,03937 pouce = 2,835 points \\
+1 point & 0,3528 mm = 1/72 pouce \\
+1 pica & 12 points = 4,233 mm \\
+\bottomrule
+\end{tabular}
+\caption{Correspondances entre unités de mesure.}
+\end{table}
+
+\subsection{La résolution}
+
+\subsubsection{Définition}
+
+La \terme{résolution} est la quantité de détails qu'une image peut contenir. Elle s'exprime en \terme{pixels par pouce} (ppi) ou \terme{points par pouce} (dpi). Elle définit la finesse de l'image.
+
+\subsubsection{Résolution et qualité}
+
+Plus la résolution est élevée, plus l'image est détaillée, mais plus le fichier est lourd. Il faut donc trouver un équilibre entre qualité et poids.
+
+\begin{itemize}
+    \item \terme{Basse résolution} (72 ppi) : image peu détaillée, fichiers légers, adaptée à l'écran.
+    \item \terme{Moyenne résolution} (150 ppi) : qualité correcte pour l'impression courante.
+    \item \terme{Haute résolution} (300 ppi) : qualité professionnelle pour l'impression.
+    \item \terme{Très haute résolution} (600 ppi et plus) : qualité maximale, pour l'impression fine.
+\end{itemize}
+
+\subsubsection{Relation entre dimensions, résolution et pixels}
+
+La relation entre dimensions physiques, résolution et nombre de pixels est donnée par la formule :
+
+\[
+\text{Nombre de pixels} = \text{Dimension physique (pouces)} \times \text{Résolution (ppi)}
+\]
+
+Par exemple, pour une image de 10 pouces de large à 300 ppi :
+
+\[
+10 \times 300 = 3\,000 \text{ pixels de large}
+\]
+
+Inversement, pour une image de 3 000 pixels de large à 300 ppi :
+
+\[
+3\,000 / 300 = 10 \text{ pouces de large}
+\]
+
+\subsubsection{Les conséquences pratiques}
+
+\begin{itemize}
+    \item Si on \terme{augmente la résolution} sans changer le nombre de pixels, la taille physique diminue.
+    \item Si on \terme{diminue la résolution} sans changer le nombre de pixels, la taille physique augmente.
+    \item Si on \terme{augmente le nombre de pixels} sans changer la résolution, la taille physique augmente.
+    \item Si on \terme{diminue le nombre de pixels} sans changer la résolution, la taille physique diminue.
+\end{itemize}
+
+Ces relations sont essentielles à comprendre pour éviter les erreurs de redimensionnement.
+
+\subsection{Les conséquences sur la qualité}
+
+\subsubsection{La pixellisation}
+
+La \terme{pixellisation} est l'apparition visible des pixels lorsqu'on agrandit une image au-delà de sa résolution native. Les pixels deviennent visibles, les bords des formes deviennent crénelés, les détails disparaissent.
+
+\subsubsection{La perte de qualité}
+
+Lorsqu'on agrandit une image matricielle, on ne peut pas créer de nouveaux détails : le logiciel interpole les pixels existants, ce qui donne un résultat flou. Il est donc essentiel de travailler à la bonne résolution dès le départ.
+
+\subsubsection{Le surdimensionnement}
+
+À l'inverse, un document surdimensionné (par exemple, une image de 6000 × 4000 px pour un affichage en 500 × 333 px) est inutilement lourd. Il faut choisir la résolution adaptée à l'usage.
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Travailler en 72 ppi pour l'impression}
+
+Une image en 72 ppi imprimée en grand format sera pixellisée. Il faut travailler en 300 ppi pour l'impression.
+
+\subsubsection{Agrandir une image de basse résolution}
+
+L'agrandissement ne crée pas de détails : l'image sera floue. Il faut repartir d'une image haute résolution ou utiliser des outils d'agrandissement intelligents (qui ne font que compenser partiellement).
+
+\subsubsection{Confondre les unités}
+
+Confondre les pixels et les centimètres peut entraîner des erreurs de dimension. Il faut toujours vérifier l'unité utilisée.
+
+\subsubsection{Ne pas anticiper l'usage final}
+
+Il faut déterminer dès le départ l'usage de l'image (écran, impression, réseaux sociaux) pour choisir les bonnes dimensions et la bonne résolution.
+
+\subsection*{Conclusion de la section}
+
+La \terme{largeur}, la \terme{hauteur} et la \terme{résolution} sont les trois paramètres fondamentaux d'un document. Ils déterminent la taille, la qualité et le poids de l'image. La relation entre ces paramètres est donnée par la formule : nombre de pixels = dimension physique × résolution. Il est essentiel de choisir les bonnes valeurs dès le départ pour éviter la pixellisation, la perte de qualité ou le surdimensionnement.
+
+Maintenant que nous comprenons ces notions, nous allons, dans la section suivante, voir comment \terme{choisir les dimensions d'un document selon son utilisation}.
+
+% ============================================================
+\section{Choisir les dimensions d'un document selon son utilisation}
+% ============================================================
+
+\subsection{Pourquoi choisir les bonnes dimensions ?}
+
+Le choix des dimensions d'un document dépend de son \terme{usage final}. Un document destiné à l'impression n'aura pas les mêmes dimensions qu'un document destiné à l'écran ou aux réseaux sociaux. Choisir les bonnes dimensions permet de :
+
+\begin{itemize}
+    \item \terme{Optimiser} la qualité du résultat.
+    \item \terme{Éviter} les recadrages ou les déformations.
+    \item \terme{Respecter} les contraintes du support.
+    \item \terme{Éviter} les pertes de temps et d'argent.
+\end{itemize}
+
+\subsection{Les dimensions pour l'impression}
+
+\subsubsection{Formats normalisés}
+
+Les formats normalisés sont définis par des normes internationales (ISO 216 pour les formats A, B, C). Les principaux sont :
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Format} & \textbf{Dimensions (mm)} & \textbf{Dimensions (cm)} \\
+\midrule
+A0 & 841 × 1 189 & 84,1 × 118,9 \\
+A1 & 594 × 841 & 59,4 × 84,1 \\
+A2 & 420 × 594 & 42,0 × 59,4 \\
+A3 & 297 × 420 & 29,7 × 42,0 \\
+A4 & 210 × 297 & 21,0 × 29,7 \\
+A5 & 148 × 210 & 14,8 × 21,0 \\
+A6 & 105 × 148 & 10,5 × 14,8 \\
+A7 & 74 × 105 & 7,4 × 10,5 \\
+\bottomrule
+\end{tabular}
+\caption{Formats normalisés ISO 216.}
+\end{table}
+
+\subsubsection{Formats spécifiques}
+
+Certains usages ont des formats spécifiques :
+
+\begin{itemize}
+    \item \terme{Carte de visite} : 85 × 55 mm (standard européen).
+    \item \terme{Carte postale} : 105 × 148 mm (format A6).
+    \item \terme{Affiche A0} : 841 × 1 189 mm.
+    \item \terme{Affiche 4 × 3 m} : 4 000 × 3 000 mm (grand format).
+    \item \terme{Flyer A5} : 148 × 210 mm.
+    \item \terme{Dépliant A4 plié} : 210 × 297 mm plié en 3 volets.
+\end{itemize}
+
+\subsubsection{Les marges et les fonds perdus}
+
+Pour l'impression, il faut prévoir :
+
+\begin{itemize}
+    \item \terme{Les marges de sécurité} : zones où l'on ne place pas d'éléments importants (généralement 3 à 5 mm des bords).
+    \item \terme{Les fonds perdus} (ou \emph{bleed}) : dépassement de l'image au-delà des bords (généralement 3 mm), pour éviter les bords blancs après découpe.
+    \item \terme{Les traits de coupe} : repères indiquant à l'imprimeur où couper.
+\end{itemize}
+
+\subsubsection{La résolution pour l'impression}
+
+Pour l'impression professionnelle, on utilise généralement :
+
+\begin{itemize}
+    \item \terme{300 ppi} : pour les documents courants (brochures, affiches).
+    \item \terme{150 ppi} : pour les grands formats (vu de loin).
+    \item \terme{600 ppi} : pour les images de haute qualité (photos d'art).
+\end{itemize}
+
+\subsection{Les dimensions pour l'écran}
+
+\subsubsection{Les résolutions d'écran}
+
+Les résolutions d'écran sont exprimées en pixels. Les principales sont :
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Résolution} & \textbf{Dimensions (px)} \\
+\midrule
+HD & 1280 × 720 \\
+Full HD & 1920 × 1080 \\
+2K / QHD & 2560 × 1440 \\
+4K / UHD & 3840 × 2160 \\
+8K & 7680 × 4320 \\
+\bottomrule
+\end{tabular}
+\caption{Résolutions d'écran courantes.}
+\end{table}
+
+\subsubsection{Les sites web}
+
+Pour un site web, il faut prévoir :
+
+\begin{itemize}
+    \item \terme{Une largeur maximale} : 1200 à 1440 px pour les sites modernes.
+    \item \terme{Une largeur adaptative} : les sites doivent s'adapter à toutes les tailles d'écran (responsive design).
+    \item \terme{Une hauteur variable} : selon le contenu.
+    \item \terme{Une résolution de 72 ppi} : standard pour l'écran.
+    \item \terme{Un profil sRGB} : standard pour le web.
+\end{itemize}
+
+\subsubsection{Les applications et interfaces}
+
+Pour les applications et interfaces, il faut prévoir :
+
+\begin{itemize}
+    \item \terme{Des dimensions adaptées} au type d'appareil (desktop, tablette, mobile).
+    \item \terme{Des résolutions multiples} (par exemple, @1x, @2x, @3x pour les écrans Retina).
+    \item \terme{Une résolution de 72 ppi} : standard pour l'écran.
+\end{itemize}
+
+\subsection{Les dimensions pour les réseaux sociaux}
+
+\subsubsection{Les dimensions par plateforme}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Plateforme} & \textbf{Type} & \textbf{Dimensions (px)} \\
+\midrule
+Instagram & Post carré & 1080 × 1080 \\
+Instagram & Post portrait & 1080 × 1350 \\
+Instagram & Story & 1080 × 1920 \\
+Instagram & Profil & 320 × 320 \\
+Facebook & Post & 1200 × 630 \\
+Facebook & Couverture & 851 × 315 \\
+Facebook & Profil & 170 × 170 \\
+Twitter / X & Post & 1200 × 675 \\
+Twitter / X & Profil & 400 × 400 \\
+LinkedIn & Post & 1200 × 627 \\
+LinkedIn & Couverture & 1584 × 396 \\
+YouTube & Miniature & 1280 × 720 \\
+Pinterest & Épingle & 1000 × 1500 \\
+\bottomrule
+\end{tabular}
+\caption{Dimensions des visuels pour les réseaux sociaux.}
+\end{table}
+
+\subsubsection{Les bonnes pratiques pour les réseaux sociaux}
+
+\begin{itemize}
+    \item \terme{Respecter les dimensions} spécifiques à chaque plateforme.
+    \item \terme{Prévoir une zone de sécurité} : certains éléments peuvent être masqués par l'interface.
+    \item \terme{Utiliser une résolution de 72 ppi}.
+    \item \terme{Utiliser un profil sRGB}.
+    \item \terme{Optimiser le poids} de l'image (pour un chargement rapide).
+    \item \terme{Tester le rendu} sur différentes tailles d'écran.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Utiliser les dimensions d'un support pour un autre}
+
+Une bannière web n'a pas les mêmes dimensions qu'une affiche. Il faut adapter les dimensions à chaque support.
+
+\subsubsection{Ne pas prévoir les marges et fonds perdus}
+
+Pour l'impression, il faut prévoir les marges et fonds perdus, sinon les éléments importants peuvent être coupés.
+
+\subsubsection{Utiliser une résolution inadaptée}
+
+Une image en 72 ppi pour l'impression sera pixellisée. Une image en 300 ppi pour le web sera inutilement lourde.
+
+\subsubsection{Ne pas respecter les zones de sécurité}
+
+Sur les réseaux sociaux, certains éléments peuvent être masqués par l'interface. Il faut prévoir des marges de sécurité.
+
+\subsection*{Conclusion de la section}
+
+Le choix des dimensions d'un document dépend de son \terme{usage final}. Pour l'impression, on utilise les formats normalisés (A4, A3, etc.) avec des marges, des fonds perdus et une résolution de 300 ppi. Pour l'écran, on utilise des dimensions en pixels (1920 × 1080, etc.) avec une résolution de 72 ppi. Pour les réseaux sociaux, on utilise des dimensions spécifiques à chaque plateforme, avec des zones de sécurité. Il est essentiel de choisir les bonnes dimensions dès le départ pour éviter les recadrages, les déformations ou les pertes de qualité.
+
+Maintenant que nous savons choisir les dimensions d'un document, nous allons, dans la section suivante, étudier la différence entre \terme{redimensionner une image et la recadrer}.
+
+% ============================================================
+\section{Différence entre redimensionner une image et la recadrer}
+% ============================================================
+
+\subsection{Deux opérations distinctes}
+
+Le \terme{redimensionnement} et le \terme{recadrage} sont deux opérations distinctes, souvent confondues par les débutants.
+
+\begin{itemize}
+    \item \terme{Redimensionner} : modifier la taille de l'image, en changeant ses dimensions (largeur et hauteur) ou sa résolution. L'image entière est conservée, mais sa taille change.
+    \item \terme{Recadrer} : supprimer une partie de l'image, en gardant seulement une zone. L'image est réduite, mais sa taille (en pixels) peut rester la même pour la zone conservée.
+\end{itemize}
+
+\subsection{Le redimensionnement}
+
+\subsubsection{Définition}
+
+Le \terme{redimensionnement} consiste à modifier les dimensions d'une image. On peut :
+
+\begin{itemize}
+    \item \terme{Agrandir} l'image (augmenter la largeur et la hauteur).
+    \item \terme{Réduire} l'image (diminuer la largeur et la hauteur).
+    \item \terme{Modifier la résolution} (changer les ppi).
+\end{itemize}
+
+\subsubsection{Les méthodes de redimensionnement}
+
+\begin{itemize}
+    \item \terme{Taille de l'image} (\texttt{Image > Taille de l'image}) : permet de modifier les dimensions, la résolution, et de rééchantillonner.
+    \item \terme{Transformation libre} (\texttt{Ctrl + T}) : permet de redimensionner visuellement.
+    \item \terme{Taille de la zone de travail} (\texttt{Image > Taille de la zone de travail}) : modifie la taille du canevas sans changer l'image.
+\end{itemize}
+
+\subsubsection{Le rééchantillonnage}
+
+Le \terme{rééchantillonnage} est le processus par lequel Photoshop ajoute ou supprime des pixels lors du redimensionnement.
+
+\begin{itemize}
+    \item \terme{Rééchantillonnage activé} : Photoshop ajoute ou supprime des pixels. L'image peut perdre en qualité si on l'agrandit.
+    \item \terme{Rééchantillonnage désactivé} : Photoshop ne modifie pas le nombre de pixels, mais change la taille physique (si on change la résolution) ou la résolution (si on change la taille physique).
+\end{itemize}
+
+\subsubsection{Les méthodes d'interpolation}
+
+Lorsqu'on agrandit une image, Photoshop doit \terme{interpoler} les pixels pour créer de nouveaux pixels. Les méthodes d'interpolation sont :
+
+\begin{itemize}
+    \item \terme{Aucune} (Nearest Neighbor) : conserve les pixels existants, résultat très pixellisé. Adapté aux images avec des aplats de couleur.
+    \item \terme{Bilinéaire} : interpolation simple, adaptée aux images avec peu de détails.
+    \item \terme{Bicubique} : interpolation plus fine, adaptée aux photographies.
+    \item \terme{Bicubique plus nette} : accentue la netteté, adaptée aux images avec des contours nets.
+    \item \terme{Bicubique plus lisse} : adoucit les contours, adaptée aux images avec des dégradés.
+    \item \terme{Automatique} : Photoshop choisit la méthode en fonction du type d'image.
+    \item \terme{Conserver les détails} : méthode avancée, préserve les détails et réduit le bruit.
+\end{itemize}
+
+\subsubsection{Les limites du redimensionnement}
+
+\begin{itemize}
+    \item \terme{Agrandissement} : on ne peut pas créer de nouveaux détails. L'image agrandie sera plus floue ou plus pixellisée.
+    \item \terme{Réduction} : on perd des détails, mais le résultat est généralement acceptable.
+    \item \terme{Répétition} : agrandir puis réduire plusieurs fois dégrade l'image à chaque étape.
+\end{itemize}
+
+\subsection{Le recadrage}
+
+\subsubsection{Définition}
+
+Le \terme{recadrage} consiste à supprimer une partie de l'image pour ne garder qu'une zone. On peut :
+
+\begin{itemize}
+    \item \terme{Recadrer} pour se concentrer sur un sujet.
+    \item \terme{Recadrer} pour changer le format (carré, portrait, paysage).
+    \item \terme{Recadrer} pour supprimer des éléments indésirables.
+    \item \terme{Recadrer} pour redresser une image.
+\end{itemize}
+
+\subsubsection{Les méthodes de recadrage}
+
+\begin{itemize}
+    \item \terme{Outil Recadrage} (\texttt{C}) : sélectionner la zone à conserver.
+    \item \terme{Recadrage par sélection} : sélectionner une zone, puis \texttt{Image > Recadrer}.
+    \item \terme{Recadrage automatique} : \texttt{Image > Recadrage} (Photoshop propose un recadrage automatique).
+    \item \terme{Recadrage avec redressement} : l'outil Recadrage propose un redressement automatique ou manuel.
+\end{itemize}
+
+\subsubsection{Les options de recadrage}
+
+\begin{itemize}
+    \item \terme{Ratio} : choisir un ratio (1:1, 4:3, 16:9, etc.).
+    \item \terme{Résolution} : choisir la résolution de l'image recadrée.
+    \item \terme{Supprimer les pixels coupés} : les pixels en dehors du recadrage sont supprimés.
+    \item \terme{Conserver les pixels coupés} : les pixels sont conservés (on peut les récupérer plus tard).
+    \item \terme{Contenu génératif} : Photoshop peut remplir automatiquement les zones vides (IA).
+\end{itemize}
+
+\subsection{Comparaison redimensionnement / recadrage}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{4cm}p{5cm}p{5cm}@{}}
+\toprule
+\textbf{Critère} & \textbf{Redimensionnement} & \textbf{Recadrage} \\
+\midrule
+Objectif & Modifier la taille & Supprimer une partie \\
+Image conservée & Entière & Partielle \\
+Perte de qualité & Possible (agrandissement) & Non (si on ne change pas la taille) \\
+Changement de format & Non (sauf si on le souhaite) & Oui (souvent) \\
+Utilisation & Adapter à un support & Se concentrer sur un sujet \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison redimensionnement / recadrage.}
+\end{table}
+
+\subsection{Quand utiliser l'un ou l'autre ?}
+
+\subsubsection{Utiliser le redimensionnement}
+
+\begin{itemize}
+    \item Pour \terme{adapter} une image à un support (par exemple, réduire une image pour le web).
+    \item Pour \terme{agrandir} une image (avec précaution).
+    \item Pour \terme{changer la résolution} (par exemple, passer de 72 à 300 ppi).
+\end{itemize}
+
+\subsubsection{Utiliser le recadrage}
+
+\begin{itemize}
+    \item Pour \terme{se concentrer} sur un sujet (par exemple, recadrer un portrait).
+    \item Pour \terme{supprimer} des éléments indésirables (par exemple, un objet au bord de l'image).
+    \item Pour \terme{changer le format} (par exemple, passer d'un format portrait à un format carré).
+    \item Pour \terme{redresser} une image (par exemple, une photo prise de travers).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{redimensionnement} et le \terme{recadrage} sont deux opérations distinctes. Le redimensionnement modifie la taille de l'image (largeur, hauteur, résolution), en conservant l'image entière. Le recadrage supprime une partie de l'image pour ne garder qu'une zone. Le redimensionnement peut entraîner une perte de qualité (surtout à l'agrandissement), tandis que le recadrage ne modifie pas la qualité de la zone conservée. Il est essentiel de comprendre la différence pour choisir la bonne opération selon le besoin.
+
+Maintenant que nous distinguons redimensionnement et recadrage, nous allons, dans la section suivante, apprendre à \terme{utiliser l'outil Recadrage}.
+
+% ============================================================
+\section{Utiliser l'outil Recadrage}
+% ============================================================
+
+\subsection{Présentation de l'outil Recadrage}
+
+L'\terme{outil Recadrage} (\texttt{C}) est l'un des outils les plus utilisés de Photoshop. Il permet de :
+
+\begin{itemize}
+    \item \terme{Recadrer} une image pour se concentrer sur une zone.
+    \item \terme{Changer} le format (carré, portrait, paysage).
+    \item \terme{Redresser} une image (corriger l'horizon, la perspective).
+    \item \terme{Modifier} la résolution de l'image recadrée.
+    \item \terme{Extension} : agrandir la zone de travail en conservant les pixels (ou en les supprimant).
+\end{itemize}
+
+\subsection{Utilisation de base}
+
+\subsubsection{Sélectionner l'outil}
+
+Appuie sur \texttt{C} pour sélectionner l'outil Recadrage. Le curseur devient une icône de recadrage.
+
+\subsubsection{Définir la zone de recadrage}
+
+Clique-glisse sur l'image pour définir la zone à conserver. Des poignées apparaissent aux coins et sur les côtés.
+
+\subsubsection{Ajuster la zone}
+
+Utilise les poignées pour ajuster la zone de recadrage. Tu peux :
+
+\begin{itemize}
+    \item \terme{Déplacer} la zone en cliquant à l'intérieur.
+    \item \terme{Redimensionner} la zone en tirant sur les poignées.
+    \item \terme{Pivoter} la zone en cliquant à l'extérieur.
+\end{itemize}
+
+\subsubsection{Valider le recadrage}
+
+Appuie sur \texttt{Entrée} (Windows) ou \texttt{Retour} (macOS) pour valider. Ou clique sur la coche dans la barre d'options.
+
+\subsection{Les options de la barre d'options}
+
+Lorsque l'outil Recadrage est sélectionné, la barre d'options propose plusieurs paramètres.
+
+\subsubsection{Le ratio}
+
+Le \terme{ratio} définit les proportions de la zone de recadrage :
+
+\begin{itemize}
+    \item \terme{Libre} : aucune contrainte de ratio.
+    \item \terme{Original} : conserve le ratio de l'image d'origine.
+    \item \terme{1:1} : carré.
+    \item \terme{4:3, 16:9, etc.} : ratios prédéfinis.
+    \item \terme{Personnalisé} : définir un ratio personnalisé.
+\end{itemize}
+
+\subsubsection{La résolution}
+
+La \terme{résolution} définit la résolution de l'image recadrée :
+
+\begin{itemize}
+    \item \terme{Vide} : conserve la résolution d'origine.
+    \item \terme{72 ppi} : standard pour l'écran.
+    \item \terme{300 ppi} : standard pour l'impression.
+\end{itemize}
+
+\subsubsection{Les options de recadrage}
+
+\begin{itemize}
+    \item \terme{Supprimer les pixels coupés} : les pixels en dehors du recadrage sont supprimés.
+    \item \terme{Conserver les pixels coupés} : les pixels sont conservés (on peut les récupérer).
+    \item \terme{Utiliser la rotation de la vue} : recadre en fonction de la rotation de la vue.
+    \item \terme{Contenu génératif} : remplit automatiquement les zones vides (IA).
+\end{itemize}
+
+\subsubsection{Les repères}
+
+L'outil Recadrage affiche des \terme{repères} (règle des tiers, grille, diagonale) pour aider à composer l'image. On peut choisir le type de repère dans la barre d'options.
+
+\subsection{Le redressement}
+
+\subsubsection{Redresser une image}
+
+L'outil Recadrage permet de \terme{redresser} une image (corriger l'horizon, la perspective).
+
+\subsubsection{Le redressement automatique}
+
+Clique sur \texttt{Redresser} dans la barre d'options pour activer le redressement automatique. Photoshop détecte l'horizon et redresse l'image.
+
+\subsubsection{Le redressement manuel}
+
+Trace une ligne le long d'un élément droit de l'image (par exemple, l'horizon). Photoshop redresse l'image en fonction de cette ligne.
+
+\subsection{Le recadrage avec contenu génératif}
+
+\subsubsection{Principe}
+
+Le \terme{contenu génératif} permet de remplir automatiquement les zones vides créées par un recadrage, grâce à l'IA. Par exemple, si on recadre une image en agrandissant la zone de travail, Photoshop peut remplir les nouvelles zones avec un contenu cohérent.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Recadrage.
+    \item Définir une zone de recadrage plus grande que l'image.
+    \item Dans la barre d'options, sélectionner \texttt{Contenu génératif}.
+    \item Valider le recadrage.
+    \item Photoshop remplit automatiquement les zones vides.
+\end{enumerate}
+
+\subsubsection{Précautions}
+
+Le contenu génératif est une technologie récente : les résultats peuvent être variables. Il faut vérifier le résultat et, si nécessaire, retoucher manuellement.
+
+\subsection{Les cas d'usage}
+
+\subsubsection{Recadrer un portrait}
+
+Pour un portrait, on peut :
+
+\begin{itemize}
+    \item Recadrer pour se concentrer sur le visage.
+    \item Utiliser la règle des tiers pour placer les yeux.
+    \item Choisir un ratio carré (1:1) pour les réseaux sociaux.
+    \item Choisir un ratio 4:5 ou 2:3 pour l'impression.
+\end{itemize}
+
+\subsubsection{Recadrer un paysage}
+
+Pour un paysage, on peut :
+
+\begin{itemize}
+    \item Recadrer pour supprimer des éléments indésirables (poteaux, personnes).
+    \item Recadrer pour changer le format (panoramique, carré).
+    \item Redresser l'horizon.
+\end{itemize}
+
+\subsubsection{Recadrer pour les réseaux sociaux}
+
+Pour les réseaux sociaux, on peut :
+
+\begin{itemize}
+    \item Recadrer au format carré (1:1) pour Instagram.
+    \item Recadrer au format portrait (4:5 ou 9:16) pour les stories.
+    \item Prévoir une zone de sécurité pour les éléments importants.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler sur une copie} : ne pas recadrer l'image originale (garder une version non recadrée).
+    \item \terme{Utiliser les repères} pour composer l'image.
+    \item \terme{Choisir le bon ratio} selon l'usage.
+    \item \terme{Vérifier la résolution} après recadrage (surtout pour l'impression).
+    \item \terme{Conserver les pixels coupés} si on n'est pas sûr du résultat.
+    \item \terme{Ne pas recadrer excessivement} : recadrer trop enlève des détails et peut réduire la qualité.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Recadrage} est un outil essentiel de Photoshop. Il permet de recadrer une image, de changer son format, de la redresser, de modifier sa résolution, d'utiliser le contenu génératif. La barre d'options propose plusieurs paramètres : ratio, résolution, options de recadrage, repères. L'outil Recadrage est utilisé pour les portraits, les paysages, les réseaux sociaux. Il est essentiel de l'utiliser avec précaution et de toujours conserver une version non recadrée de l'image.
+
+Maintenant que nous savons utiliser l'outil Recadrage, nous allons, dans la section suivante, apprendre à \terme{déplacer et transformer des objets}.
+
+% ============================================================
+\section{Déplacer et transformer des objets}
+% ============================================================
+
+\subsection{Le déplacement}
+
+\subsubsection{L'outil Déplacement}
+
+L'\terme{outil Déplacement} (\texttt{V}) permet de déplacer des calques, des sélections, des objets.
+
+\subsubsection{Déplacer un calque}
+
+\begin{enumerate}
+    \item Sélectionner le calque dans le panneau Calques.
+    \item Sélectionner l'outil Déplacement.
+    \item Cliquer-glisser sur l'image pour déplacer le contenu du calque.
+\end{enumerate}
+
+\subsubsection{Déplacer une sélection}
+
+\begin{enumerate}
+    \item Créer une sélection (avec un outil de sélection).
+    \item Sélectionner l'outil Déplacement.
+    \item Cliquer-glisser à l'intérieur de la sélection pour déplacer son contenu.
+\end{enumerate}
+
+\subsubsection{Déplacer avec les flèches}
+
+On peut déplacer un élément pixel par pixel avec les flèches du clavier. Avec \texttt{Maj}, on déplace de 10 pixels à la fois.
+
+\subsubsection{Aligner et distribuer}
+
+Photoshop propose des options d'\terme{alignement} et de \terme{distribution} dans la barre d'options de l'outil Déplacement. On peut aligner plusieurs calques ou objets.
+
+\subsection{Les transformations}
+
+\subsubsection{La transformation libre}
+
+La \terme{transformation libre} (\texttt{Ctrl + T} ou \texttt{Cmd + T}) permet de transformer un calque, une sélection ou un objet. Une boîte de transformation apparaît avec des poignées aux coins et sur les côtés.
+
+\subsubsection{Les types de transformation}
+
+\begin{itemize}
+    \item \terme{Mise à l'échelle} : redimensionner (tirer sur les poignées).
+    \item \terme{Rotation} : faire pivoter (placer le curseur à l'extérieur d'un coin).
+    \item \terme{Inclinaison} : incliner (maintenir \texttt{Ctrl} ou \texttt{Cmd} et tirer sur une poignée latérale).
+    \item \terme{Déformation} : déformer (maintenir \texttt{Ctrl} ou \texttt{Cmd} et tirer sur un coin).
+    \item \terme{Perspective} : créer un effet de perspective (maintenir \texttt{Ctrl + Maj + Alt} et tirer sur un coin).
+\end{itemize}
+
+\subsubsection{Les options de transformation}
+
+Dans la barre d'options de la transformation libre, on peut :
+
+\begin{itemize}
+    \item \terme{Changer les dimensions} : largeur (W) et hauteur (H).
+    \item \terme{Changer le ratio} : maintenir le ratio (icône de chaîne).
+    \item \terme{Rotation} : angle de rotation.
+    \item \terme{Inclinaison} : angle d'inclinaison (H et V).
+    \item \terme{Point de référence} : point autour duquel la transformation s'effectue.
+\end{itemize}
+
+\subsubsection{Les raccourcis de transformation}
+
+\begin{itemize}
+    \item \terme{Maj} : maintenir le ratio (mise à l'échelle proportionnelle).
+    \item \terme{Alt} (ou \texttt{Opt}) : transformer depuis le centre.
+    \item \terme{Ctrl} (ou \texttt{Cmd}) : déformation libre.
+    \item \terme{Ctrl + Maj + Alt} (ou \texttt{Cmd + Maj + Opt}) : perspective.
+    \item \terme{Maj} (pendant la rotation) : rotation par incréments de 15°.
+\end{itemize}
+
+\subsubsection{Valider ou annuler}
+
+\begin{itemize}
+    \item \terme{Valider} : \texttt{Entrée} (Windows) ou \texttt{Retour} (macOS).
+    \item \terme{Annuler} : \texttt{Échap}.
+    \item \terme{Annuler la dernière transformation} : \texttt{Ctrl + Z}.
+\end{itemize}
+
+\subsection{Les transformations spécifiques}
+
+\subsubsection{La rotation}
+
+\begin{itemize}
+    \item \terme{Rotation manuelle} : placer le curseur à l'extérieur d'un coin et faire glisser.
+    \item \terme{Rotation précise} : saisir l'angle dans la barre d'options.
+    \item \terme{Rotation de 90°, 180°} : \texttt{Image > Rotation de l'image}.
+    \item \terme{Rotation avec \texttt{Maj}} : rotation par incréments de 15°.
+\end{itemize}
+
+\subsubsection{Le retournement}
+
+\begin{itemize}
+    \item \terme{Retournement horizontal} : \texttt{Édition > Transformation > Retourner horizontalement}.
+    \item \terme{Retournement vertical} : \texttt{Édition > Transformation > Retourner verticalement}.
+\end{itemize}
+
+\subsubsection{La déformation}
+
+\begin{itemize}
+    \item \terme{Déformation libre} : \texttt{Édition > Transformation > Déformation}.
+    \item \terme{Déformation par grille} : créer une grille de déformation.
+    \item \terme{Déformation de l'image} : \texttt{Édition > Déformation}.
+\end{itemize}
+
+\subsection{Les transformations non destructives}
+
+\subsubsection{L'objet dynamique}
+
+Un \terme{objet dynamique} est un calque qui conserve ses données d'origine. Il peut être transformé plusieurs fois sans perte de qualité.
+
+\begin{itemize}
+    \item \terme{Convertir en objet dynamique} : clic droit sur le calque > \texttt{Convertir en objet dynamique}.
+    \item \terme{Avantage} : les transformations sont non destructives.
+    \item \terme{Inconvénient} : certaines opérations ne sont pas possibles directement (il faut convertir en calque normal).
+\end{itemize}
+
+\subsubsection{Les transformations répétées}
+
+On peut répéter une transformation avec \texttt{Ctrl + Maj + T} (ou \texttt{Cmd + Maj + T}). Par exemple, dupliquer un objet et le faire pivoter de 30° plusieurs fois.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler sur des calques} : ne jamais transformer directement le calque de fond.
+    \item \terme{Utiliser des objets dynamiques} : pour les transformations non destructives.
+    \item \terme{Maintenir le ratio} : pour éviter les déformations non voulues.
+    \item \terme{Utiliser les raccourcis} : pour gagner du temps.
+    \item \terme{Vérifier le résultat} : zoomer pour vérifier la qualité.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Déplacement} et les \terme{transformations} permettent de manipuler les éléments dans Photoshop. On peut déplacer des calques, des sélections, des objets. On peut transformer avec la transformation libre : mise à l'échelle, rotation, inclinaison, déformation, perspective. Les transformations peuvent être non destructives avec les objets dynamiques. Il est essentiel de travailler sur des calques et de vérifier le résultat.
+
+Maintenant que nous savons déplacer et transformer des objets, nous allons, dans la section suivante, approfondir la \terme{rotation et la mise à l'échelle}.
+
+% ============================================================
+\section{Effectuer une rotation et une mise à l'échelle}
+% ============================================================
+
+\subsection{La rotation}
+
+\subsubsection{Définition}
+
+La \terme{rotation} consiste à faire pivoter un élément autour d'un point. Elle peut être appliquée à un calque, une sélection, un objet dynamique.
+
+\subsubsection{La rotation libre}
+
+\begin{enumerate}
+    \item Sélectionner le calque.
+    \item Appuyer sur \texttt{Ctrl + T} (ou \texttt{Cmd + T}).
+    \item Placer le curseur à l'extérieur d'un coin (le curseur devient une flèche circulaire).
+    \item Cliquer-glisser pour faire pivoter.
+    \item Valider avec \texttt{Entrée}.
+\end{enumerate}
+
+\subsubsection{La rotation précise}
+
+\begin{enumerate}
+    \item Sélectionner le calque.
+    \item Appuyer sur \texttt{Ctrl + T}.
+    \item Saisir l'angle de rotation dans la barre d'options.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{La rotation par incréments}
+
+Maintenir \texttt{Maj} pendant la rotation pour obtenir des angles multiples de 15°.
+
+\subsubsection{Le point de référence}
+
+Le \terme{point de référence} est le point autour duquel la rotation s'effectue. Par défaut, il est au centre. On peut le déplacer en cliquant sur l'un des points de la grille dans la barre d'options.
+
+\subsubsection{La rotation de l'image}
+
+Pour faire pivoter l'image entière :
+
+\begin{itemize}
+    \item \texttt{Image > Rotation de l'image > 90° horaire}.
+    \item \texttt{Image > Rotation de l'image > 90° antihoraire}.
+    \item \texttt{Image > Rotation de l'image > 180°}.
+    \item \texttt{Image > Rotation de l'image > Rotation libre} (saisir un angle).
+\end{itemize}
+
+\subsection{La mise à l'échelle}
+
+\subsubsection{Définition}
+
+La \terme{mise à l'échelle} (ou \emph{redimensionnement}) consiste à agrandir ou réduire un élément. Elle peut être appliquée à un calque, une sélection, un objet dynamique.
+
+\subsubsection{La mise à l'échelle libre}
+
+\begin{enumerate}
+    \item Sélectionner le calque.
+    \item Appuyer sur \texttt{Ctrl + T}.
+    \item Tirer sur l'une des poignées pour redimensionner.
+    \item Maintenir \texttt{Maj} pour conserver le ratio.
+    \item Valider avec \texttt{Entrée}.
+\end{enumerate}
+
+\subsubsection{La mise à l'échelle précise}
+
+\begin{enumerate}
+    \item Sélectionner le calque.
+    \item Appuyer sur \texttt{Ctrl + T}.
+    \item Saisir la largeur (W) et la hauteur (H) dans la barre d'options.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{La mise à l'échelle depuis le centre}
+
+Maintenir \texttt{Alt} (ou \texttt{Opt}) pendant la mise à l'échelle pour redimensionner depuis le centre.
+
+\subsubsection{La mise à l'échelle proportionnelle}
+
+Maintenir \texttt{Maj} pendant la mise à l'échelle pour conserver le ratio. Dans les versions récentes de Photoshop, le ratio est conservé par défaut.
+
+\subsection{La relation entre rotation et mise à l'échelle}
+
+La rotation et la mise à l'échelle peuvent être combinées dans une même transformation libre. On peut :
+
+\begin{itemize}
+    \item Faire pivoter puis redimensionner.
+    \item Redimensionner puis faire pivoter.
+    \item Faire les deux simultanément (en tirant sur les poignées tout en maintenant \texttt{Maj} pour le ratio).
+\end{itemize}
+
+\subsection{Les transformations non destructives}
+
+\subsubsection{L'objet dynamique}
+
+Pour les transformations répétées ou de grande ampleur, il est recommandé d'utiliser un \terme{objet dynamique} :
+
+\begin{enumerate}
+    \item Clic droit sur le calque > \texttt{Convertir en objet dynamique}.
+    \item Appliquer les transformations souhaitées.
+    \item Les transformations sont non destructives : on peut revenir aux données d'origine.
+\end{enumerate}
+
+\subsubsection{Les avantages}
+
+\begin{itemize}
+    \item \terme{Pas de perte de qualité} : les transformations ne dégradent pas l'image.
+    \item \terme{Modifiable} : on peut ajuster les transformations à tout moment.
+    \item \terme{Réversible} : on peut revenir aux données d'origine.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Ne pas maintenir le ratio}
+
+Une mise à l'échelle sans maintenir le ratio déforme l'image. Il faut maintenir \texttt{Maj} pour conserver les proportions.
+
+\subsubsection{Appliquer trop de transformations}
+
+Chaque transformation appliquée sur un calque normal dégrade légèrement l'image. Il faut utiliser des objets dynamiques pour les transformations répétées.
+
+\subsubsection{Ne pas vérifier le résultat}
+
+Après une transformation, il faut zoomer pour vérifier la qualité (netteté, pixellisation).
+
+\subsubsection{Transformer le calque de fond}
+
+Le calque de fond est souvent verrouillé. Il faut le déverrouiller ou travailler sur une copie.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler sur des calques} : ne jamais transformer directement le calque de fond.
+    \item \terme{Utiliser des objets dynamiques} : pour les transformations non destructives.
+    \item \terme{Maintenir le ratio} : pour éviter les déformations.
+    \item \terme{Utiliser les raccourcis} : \texttt{Maj} pour le ratio, \texttt{Alt} pour le centre.
+    \item \terme{Vérifier le résultat} : zoomer pour vérifier la qualité.
+    \item \terme{Enregistrer régulièrement} : pour éviter les pertes.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{rotation} et la \terme{mise à l'échelle} sont deux transformations essentielles de Photoshop. On peut les appliquer avec la transformation libre, ou avec des options précises. On peut les combiner dans une même transformation. Pour les transformations répétées ou de grande ampleur, il est recommandé d'utiliser des objets dynamiques pour préserver la qualité. Il est essentiel de maintenir le ratio, de vérifier le résultat et de travailler sur des calques.
+
+Maintenant que nous savons effectuer des rotations et des mises à l'échelle, nous allons, dans la section suivante, apprendre à \terme{utiliser les repères et les règles}.
+
+% ============================================================
+\section{Utiliser les repères et les règles}
+% ============================================================
+
+\subsection{Pourquoi utiliser les repères et les règles ?}
+
+Les \terme{repères} et les \terme{règles} sont des outils d'aide à la composition. Ils permettent de :
+
+\begin{itemize}
+    \item \terme{Aligner} les éléments avec précision.
+    \item \terme{Mesurer} les distances.
+    \item \terme{Composer} selon une grille.
+    \item \terme{Respecter} les marges et les zones de sécurité.
+    \item \terme{Travailler} avec précision et rigueur.
+\end{itemize}
+
+\subsection{Les règles}
+
+\subsubsection{Afficher les règles}
+
+Pour afficher les règles : \texttt{Affichage > Règles} (raccourci \texttt{Ctrl + R} ou \texttt{Cmd + R}).
+
+Les règles apparaissent en haut et à gauche de la zone de travail.
+
+\subsubsection{Changer l'unité des règles}
+
+Pour changer l'unité des règles : clic droit sur une règle > choisir l'unité (pixels, centimètres, millimètres, pouces, points, picas).
+
+\subsubsection{Le point d'origine}
+
+Le \terme{point d'origine} des règles est le coin supérieur gauche de l'image. On peut le déplacer en cliquant-glissant dans le coin supérieur gauche des règles.
+
+\subsubsection{Utiliser les règles}
+
+Les règles permettent de :
+
+\begin{itemize}
+    \item \terme{Mesurer} la position d'un élément.
+    \item \terme{Aligner} les éléments.
+    \item \terme{Créer} des repères par glisser-déposer.
+\end{itemize}
+
+\subsection{Les repères}
+
+\subsubsection{Créer un repère}
+
+Pour créer un repère :
+
+\begin{enumerate}
+    \item Afficher les règles (\texttt{Ctrl + R}).
+    \item Cliquer sur une règle (horizontale ou verticale).
+    \item Glisser vers l'image pour créer un repère.
+\end{enumerate}
+
+\subsubsection{Déplacer un repère}
+
+Pour déplacer un repère : sélectionner l'outil Déplacement (\texttt{V}), puis cliquer-glisser sur le repère.
+
+\subsubsection{Supprimer un repère}
+
+Pour supprimer un repère : sélectionner l'outil Déplacement, puis glisser le repère vers la règle correspondante.
+
+\subsubsection{Afficher ou masquer les repères}
+
+Pour afficher ou masquer les repères : \texttt{Affichage > Extras} (raccourci \texttt{Ctrl + H}) ou \texttt{Affichage > Repères} (raccourci \texttt{Ctrl + ;}).
+
+\subsubsection{Verrouiller les repères}
+
+Pour verrouiller les repères : \texttt{Affichage > Verrouiller les repères}. Les repères ne peuvent plus être déplacés.
+
+\subsubsection{Effacer les repères}
+
+Pour effacer tous les repères : \texttt{Affichage > Effacer les repères}.
+
+\subsubsection{Les repères commentés}
+
+Les \terme{repères commentés} sont des repères qui apparaissent automatiquement lorsque l'on déplace un élément près d'un autre élément ou du centre de l'image. Ils permettent d'aligner les éléments avec précision.
+
+Pour activer les repères commentés : \texttt{Affichage > Repères commentés}.
+
+\subsection{La grille}
+
+\subsubsection{Afficher la grille}
+
+Pour afficher la grille : \texttt{Affichage > Afficher > Grille} (raccourci \texttt{Ctrl + '} ou \texttt{Cmd + '}).
+
+\subsubsection{Configurer la grille}
+
+Pour configurer la grille : \texttt{Édition > Préférences > Repères, grille et plans de coupe} (Windows) ou \texttt{Photoshop > Préférences > Repères, grille et plans de coupe} (macOS).
+
+On peut définir :
+
+\begin{itemize}
+    \item \terme{La couleur} de la grille.
+    \item \terme{Le style} (lignes, pointillés, traits pleins).
+    \item \terme{L'espacement} (par exemple, tous les 10 pixels).
+    \item \terme{Les subdivisions} (par exemple, 4 subdivisions).
+\end{itemize}
+
+\subsubsection{Aligner sur la grille}
+
+Pour aligner les éléments sur la grille : \texttt{Affichage > Aligner sur > Grille}.
+
+\subsection{Les plans de coupe}
+
+\subsubsection{Définition}
+
+Les \terme{plans de coupe} (ou \emph{slices}) sont des zones définies pour être exportées séparément. Ils sont utilisés principalement pour le web.
+
+\subsubsection{Créer un plan de coupe}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plan de coupe (dans le groupe de l'outil Recadrage).
+    \item Dessiner une zone sur l'image.
+    \item Définir les options (nom, type d'export, etc.).
+\end{enumerate}
+
+\subsubsection{Exporter les plans de coupe}
+
+Pour exporter les plans de coupe : \texttt{Fichier > Exporter > Plans de coupe}.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Afficher les règles} pour mesurer et aligner.
+    \item \terme{Créer des repères} pour les marges, les zones de sécurité, les alignements.
+    \item \terme{Utiliser les repères commentés} pour aligner automatiquement.
+    \item \terme{Activer la grille} pour composer selon une grille.
+    \item \terme{Verrouiller les repères} quand ils sont bien placés.
+    \item \terme{Ne pas abuser des repères} : trop de repères rendent la composition confuse.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{repères} et les \terme{règles} sont des outils essentiels pour composer avec précision dans Photoshop. Les règles permettent de mesurer et d'aligner. Les repères permettent de définir des lignes directrices. La grille permet de composer selon une structure. Les plans de coupe permettent d'exporter des zones séparément. Il est essentiel de maîtriser ces outils pour travailler avec rigueur et précision.
+
+Maintenant que nous savons utiliser les repères et les règles, nous allons, dans la section suivante, approfondir la compréhension des \terme{proportions et des déformations}.
+
+% ============================================================
+\section{Comprendre les proportions et les déformations}
+% ============================================================
+
+\subsection{Les proportions}
+
+\subsubsection{Définition}
+
+Les \terme{proportions} sont les relations entre les dimensions d'un élément (largeur, hauteur, rapport). Elles déterminent la forme de l'élément.
+
+\subsubsection{Le ratio}
+
+Le \terme{ratio} (ou \emph{rapport d'aspect}) est la relation entre la largeur et la hauteur. Il s'exprime sous la forme \texttt{largeur:hauteur}. Par exemple :
+
+\begin{itemize}
+    \item \terme{1:1} : carré.
+    \item \terme{4:3} : format classique des appareils photo.
+    \item \terme{3:2} : format des reflex.
+    \item \terme{16:9} : format des écrans modernes.
+    \item \terme{9:16} : format des stories.
+    \item \terme{A4} : 210:297, soit environ 1:1,414.
+\end{itemize}
+
+\subsubsection{Maintenir les proportions}
+
+Pour maintenir les proportions d'un élément lors d'une transformation, il faut :
+
+\begin{itemize}
+    \item \terme{Maintenir \texttt{Maj}} : lors de la mise à l'échelle.
+    \item \terme{Utiliser l'icône de chaîne} : dans la barre d'options de la transformation libre.
+    \item \terme{Utiliser le ratio} : dans l'outil Recadrage.
+\end{itemize}
+
+\subsubsection{Les proportions en composition}
+
+Les proportions jouent un rôle essentiel en composition :
+
+\begin{itemize}
+    \item \terme{Les proportions du format} : un format carré, portrait, paysage n'a pas le même impact.
+    \item \terme{Les proportions des éléments} : les éléments doivent être proportionnés entre eux.
+    \item \terme{Les proportions des marges} : les marges doivent être proportionnées au format.
+    \item \terme{Les proportions typographiques} : la hiérarchie typographique repose sur des proportions.
+\end{itemize}
+
+\subsection{Les déformations}
+
+\subsubsection{Définition}
+
+La \terme{déformation} consiste à modifier les proportions d'un élément (par exemple, étirer une image horizontalement ou verticalement). Elle peut être \terme{volontaire} ou \terme{accidentelle}.
+
+\subsubsection{Les déformations volontaires}
+
+Les déformations volontaires sont utilisées pour :
+
+\begin{itemize}
+    \item \terme{Créer} un effet (par exemple, un texte étiré, une image comprimée).
+    \item \terme{Adapter} un élément à un format (par exemple, étirer une image pour remplir un cadre).
+    \item \terme{Corriger} une perspective (par exemple, redresser un bâtiment).
+\end{itemize}
+
+\subsubsection{Les déformations accidentelles}
+
+Les déformations accidentelles sont dues à :
+
+\begin{itemize}
+    \item \terme{Ne pas maintenir le ratio} lors d'une mise à l'échelle.
+    \item \terme{Appliquer} une transformation inappropriée.
+    \item \terme{Utiliser} un format inadapté.
+\end{itemize}
+
+Elles sont généralement considérées comme des erreurs, sauf si elles sont volontaires.
+
+\subsubsection{Les outils de déformation}
+
+Photoshop propose plusieurs outils pour déformer :
+
+\begin{itemize}
+    \item \terme{Transformation libre} : tirer sur les poignées avec \texttt{Ctrl} (ou \texttt{Cmd}) pour déformer.
+    \item \terme{Déformation} (\texttt{Édition > Transformation > Déformation}) : déformer avec une grille.
+    \item \terme{Déformation de l'image} : \texttt{Édition > Déformation}.
+    \item \terme{Filtres de distorsion} : ondulation, spirale, etc.
+    \item \terme{Transformation manuelle} : \texttt{Édition > Transformation > Inclinaison, Perspective, etc.}
+\end{itemize}
+
+\subsection{Les proportions dans la composition}
+
+\subsubsection{La règle des tiers}
+
+La \terme{règle des tiers} est une règle de composition qui divise l'image en neuf parties égales (3 × 3). Les points d'intersection des lignes sont des points forts, où l'on place les éléments importants.
+
+\subsubsection{Le nombre d'or}
+
+Le \terme{nombre d'or} (environ 1,618) est une proportion harmonieuse, utilisée en art et en design. On peut l'utiliser pour définir les proportions d'une composition.
+
+\subsubsection{Les proportions typographiques}
+
+Les proportions typographiques définissent la hiérarchie des textes. On utilise souvent des échelles (1,25, 1,5, 2) pour créer une hiérarchie cohérente.
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Déformer sans le vouloir}
+
+Une mise à l'échelle sans maintenir le ratio déforme l'image. Il faut toujours maintenir le ratio, sauf si la déformation est volontaire.
+
+\subsubsection{Ne pas respecter les proportions du format}
+
+Un format carré n'a pas les mêmes proportions qu'un format portrait. Il faut adapter la composition au format.
+
+\subsubsection{Utiliser des proportions incohérentes}
+
+Les éléments doivent être proportionnés entre eux. Des proportions incohérentes créent un déséquilibre.
+
+\subsection*{Conclusion de la section}
+
+Les \terme{proportions} sont les relations entre les dimensions d'un élément. Elles sont définies par le ratio (largeur:hauteur). Maintenir les proportions est essentiel pour éviter les déformations. Les \terme{déformations} peuvent être volontaires (effet, adaptation) ou accidentelles (erreur). Photoshop propose plusieurs outils pour déformer. Les proportions jouent un rôle essentiel en composition (règle des tiers, nombre d'or, proportions typographiques). Il est essentiel de comprendre les proportions pour composer avec harmonie.
+
+Maintenant que nous comprenons les proportions et les déformations, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{préparer un document pour un écran ou pour l'impression}.
+
+% ============================================================
+\section{Préparer un document pour un écran ou pour l'impression}
+% ============================================================
+
+\subsection{Pourquoi préparer un document ?}
+
+La préparation d'un document est une étape essentielle pour garantir la qualité du résultat final. Un document mal préparé peut entraîner :
+
+\begin{itemize}
+    \item \terme{Une qualité insuffisante} (pixellisation, flou).
+    \item \terme{Des couleurs fausses} (profil colorimétrique inadapté).
+    \item \terme{Des éléments coupés} (marges insuffisantes).
+    \item \terme{Des problèmes d'impression} (fonds perdus, traits de coupe).
+    \item \terme{Des fichiers trop lourds} (pour le web).
+\end{itemize}
+
+Il est donc essentiel de préparer le document avec soin, en fonction de son usage final.
+
+\subsection{Préparer un document pour l'écran}
+
+\subsubsection{Les dimensions}
+
+Pour l'écran, on utilise des dimensions en \terme{pixels} :
+
+\begin{itemize}
+    \item \terme{Site web} : 1920 × 1080 px, 1440 × 900 px, etc.
+    \item \terme{Bannière web} : 728 × 90 px, 300 × 250 px, etc.
+    \item \terme{Réseaux sociaux} : selon la plateforme (1080 × 1080 px pour Instagram, etc.).
+    \item \terme{Application mobile} : 1170 × 2532 px (iPhone), 1080 × 1920 px (Android).
+\end{itemize}
+
+\subsubsection{La résolution}
+
+Pour l'écran, on utilise une résolution de \terme{72 ppi} (ou 144 ppi pour les écrans Retina).
+
+\subsubsection{Le profil colorimétrique}
+
+Pour l'écran, on utilise le profil \terme{sRGB}, qui est le standard du web.
+
+\subsubsection{Le format d'export}
+
+Pour l'écran, on exporte dans les formats adaptés :
+
+\begin{itemize}
+    \item \terme{JPEG} : pour les photographies.
+    \item \terme{PNG} : pour les logos, les images avec transparence.
+    \item \terme{GIF} : pour les animations simples.
+    \item \terme{WebP} : format moderne, plus léger.
+    \item \terme{SVG} : pour les images vectorielles.
+\end{itemize}
+
+\subsubsection{L'optimisation}
+
+Pour le web, il est essentiel d'\terme{optimiser} les images :
+
+\begin{itemize}
+    \item \terme{Réduire le poids} : compresser les images (JPEG qualité 60-80, PNG optimisé).
+    \item \terme{Réduire les dimensions} : adapter l'image à son affichage réel.
+    \item \terme{Utiliser le bon format} : JPEG, PNG, WebP, etc.
+    \item \terme{Utiliser des outils} : Photoshop (Exporter pour le web), TinyPNG, ImageOptim, etc.
+\end{itemize}
+
+\subsubsection{Les bonnes pratiques pour l'écran}
+
+\begin{itemize}
+    \item \terme{Définir les bonnes dimensions} dès le départ.
+    \item \terme{Utiliser 72 ppi} de résolution.
+    \item \terme{Utiliser le profil sRGB}.
+    \item \terme{Exporter dans le bon format}.
+    \item \terme{Optimiser le poids} des images.
+    \item \terme{Tester le rendu} sur différents écrans.
+\end{itemize}
+
+\subsection{Préparer un document pour l'impression}
+
+\subsubsection{Les dimensions}
+
+Pour l'impression, on utilise des dimensions en \terme{centimètres} ou \terme{millimètres} :
+
+\begin{itemize}
+    \item \terme{Affiche A3} : 29,7 × 42 cm.
+    \item \terme{Affiche A4} : 21 × 29,7 cm.
+    \item \terme{Carte de visite} : 8,5 × 5,5 cm.
+    \item \terme{Dépliant A4} : 21 × 29,7 cm (plié).
+    \item \terme{Brochure} : selon le format.
+\end{itemize}
+
+\subsubsection{La résolution}
+
+Pour l'impression, on utilise une résolution de \terme{300 ppi} pour les documents courants, \terme{150 ppi} pour les grands formats (vu de loin), \terme{600 ppi} pour les images de haute qualité.
+
+\subsubsection{Le profil colorimétrique}
+
+Pour l'impression, on utilise le profil \terme{CMJN}. Il faut se renseigner auprès de l'imprimeur pour connaître le profil exact à utiliser (par exemple, ISO Coated v2, FOGRA39, etc.).
+
+\subsubsection{Les marges de sécurité}
+
+Les \terme{marges de sécurité} sont des zones où l'on ne place pas d'éléments importants (généralement 3 à 5 mm des bords). Cela évite que les éléments soient coupés lors de la découpe.
+
+\subsubsection{Les fonds perdus}
+
+Les \terme{fonds perdus} (ou \emph{bleed}) sont un dépassement de l'image au-delà des bords (généralement 3 mm). Cela évite les bords blancs après découpe.
+
+\subsubsection{Les traits de coupe}
+
+Les \terme{traits de coupe} sont des repères qui indiquent à l'imprimeur où couper. Ils sont placés à l'extérieur des fonds perdus.
+
+\subsubsection{Le format d'export}
+
+Pour l'impression, on exporte généralement en \terme{PDF} (PDF/X-1a ou PDF/X-4), qui est le format standard pour l'impression. On peut aussi exporter en TIFF.
+
+\subsubsection{Les bonnes pratiques pour l'impression}
+
+\begin{itemize}
+    \item \terme{Définir les bonnes dimensions} (format + fonds perdus).
+    \item \terme{Utiliser 300 ppi} de résolution.
+    \item \terme{Utiliser le profil CMJN}.
+    \item \terme{Prévoir les marges de sécurité}.
+    \item \terme{Prévoir les fonds perdus}.
+    \item \terme{Ajouter les traits de coupe}.
+    \item \terme{Incorporer les polices} dans le PDF.
+    \item \terme{Vérifier les images} (résolution, couleurs).
+    \item \terme{Faire une épreuve} avant impression.
+\end{itemize}
+
+\subsection{Comparaison écran / impression}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{5cm}p{5cm}@{}}
+\toprule
+\textbf{Critère} & \textbf{Écran} & \textbf{Impression} \\
+\midrule
+Unités & Pixels & Centimètres, millimètres \\
+Résolution & 72 ppi (ou 144 ppi) & 300 ppi (ou 150, 600) \\
+Profil colorimétrique & sRGB & CMJN \\
+Format & JPEG, PNG, GIF, WebP & PDF, TIFF \\
+Marges & Optionnelles & Obligatoires \\
+Fonds perdus & Non & Oui (3 mm) \\
+Traits de coupe & Non & Oui \\
+Poids & Optimisé & Peut être lourd \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison écran / impression.}
+\end{table}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Utiliser le mauvais profil colorimétrique}
+
+Une image en RVB pour l'impression donnera des couleurs fausses. Il faut utiliser le profil CMJN.
+
+\subsubsection{Utiliser une résolution insuffisante}
+
+Une image en 72 ppi pour l'impression sera pixellisée. Il faut utiliser 300 ppi.
+
+\subsubsection{Ne pas prévoir les marges}
+
+Les éléments importants peuvent être coupés. Il faut prévoir des marges de sécurité.
+
+\subsubsection{Ne pas prévoir les fonds perdus}
+
+Des bords blancs peuvent apparaître après découpe. Il faut prévoir des fonds perdus.
+
+\subsubsection{Oublier d'incorporer les polices}
+
+Le PDF peut ne pas s'afficher correctement chez l'imprimeur. Il faut incorporer les polices.
+
+\subsection*{Conclusion de la section}
+
+La \terme{préparation d'un document} dépend de son usage final. Pour l'écran, on utilise des dimensions en pixels, une résolution de 72 ppi, un profil sRGB, et on optimise le poids. Pour l'impression, on utilise des dimensions en centimètres, une résolution de 300 ppi, un profil CMJN, des marges de sécurité, des fonds perdus, des traits de coupe, et on exporte en PDF. Il est essentiel de préparer le document avec soin pour garantir la qualité du résultat final.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 7. Nous avons appris à gérer des documents et à manipuler des images dans Photoshop :
+
+\begin{itemize}
+    \item \terme{Créer un nouveau document} : paramètres (nom, dimensions, résolution, profil colorimétrique, profondeur de bits), formats prédéfinis.
+    \item \terme{Comprendre largeur, hauteur, résolution} : notions fondamentales, relation entre dimensions, résolution et pixels.
+    \item \terme{Choisir les dimensions} : selon l'usage (impression, écran, réseaux sociaux), marges et fonds perdus.
+    \item \terme{Différence redimensionnement / recadrage} : deux opérations distinctes, quand utiliser l'une ou l'autre.
+    \item \terme{Utiliser l'outil Recadrage} : options (ratio, résolution, contenu génératif), redressement.
+    \item \terme{Déplacer et transformer des objets} : outil Déplacement, transformation libre, transformations non destructives (objets dynamiques).
+    \item \terme{Rotation et mise à l'échelle} : rotation libre, rotation précise, mise à l'échelle libre, mise à l'échelle précise.
+    \item \terme{Utiliser les repères et les règles} : afficher, créer, déplacer, supprimer, verrouiller, grille, plans de coupe.
+    \item \terme{Comprendre les proportions et déformations} : ratio, maintenir les proportions, déformations volontaires et accidentelles.
+    \item \terme{Préparer un document pour l'écran ou l'impression} : dimensions, résolution, profil colorimétrique, marges, fonds perdus, formats d'export.
+\end{itemize}
+
+La gestion des documents et la manipulation des images sont au cœur de la pratique de Photoshop. Elles conditionnent la qualité du résultat final, le respect des contraintes techniques, l'efficacité du travail. Un designer qui maîtrise ces opérations peut travailler avec précision et rigueur, et éviter les erreurs qui compromettent un projet.
+
+Ce chapitre t'a donné les compétences pratiques essentielles pour gérer des documents et manipuler des images dans Photoshop. Mais la maîtrise vient avec la pratique. N'hésite pas à expérimenter, à créer des documents variés, à recadrer des images, à les transformer, à les préparer pour différents usages. Chaque projet est une occasion d'apprendre.
+
+Dans le chapitre suivant, nous aborderons les \terme{calques et l'organisation des projets}. Les calques sont au cœur de Photoshop : ils permettent de travailler de manière non destructive, d'organiser les éléments, de créer des compositions complexes. Tu apprendras à créer, organiser, masquer, fusionner des calques, à utiliser les modes de fusion, les masques, les styles de calque. Ces compétences te permettront de travailler comme un professionnel.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 7 --- Documents, images et transformations.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 8 --- Calques et organisation des projets.}
+\end{center}

@@ -1,0 +1,143 @@
+% ============================================================
+% PREAMBLE.TEX — Packages et configuration
+% ============================================================
+
+% ------------------------------------------------------------
+% ENCODAGE ET LANGUE
+% ------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ------------------------------------------------------------
+% MISE EN PAGE
+% ------------------------------------------------------------
+\usepackage{geometry}
+\geometry{
+    margin=2.5cm,
+    headheight=15pt
+}
+
+% ------------------------------------------------------------
+% GRAPHIQUES ET COULEURS
+% ------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+
+% ------------------------------------------------------------
+% TABLEAUX
+% ------------------------------------------------------------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+
+% ------------------------------------------------------------
+% LISTES
+% ------------------------------------------------------------
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{itemsep=2pt,parsep=0pt}
+
+% ------------------------------------------------------------
+% TITRES DE CHAPITRES ET SECTIONS
+% ------------------------------------------------------------
+\usepackage{titlesec}
+
+% CORRECTION 1 : utiliser \@chapapp (qui vaut "Chapitre"
+% puis "Annexe" après \appendix) au lieu de la chaîne
+% "Chapitre" codée en dur. \makeatletter est nécessaire
+% pour tokeniser \@chapapp correctement.
+\makeatletter
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {\filright\Large \@chapapp\ \thechapter}
+  {1ex}
+  {\titlerule\vspace{1ex}\filleft}
+  [\vspace{1ex}\titlerule]
+
+% CORRECTION 2 : variante "numberless" pour \chapter*,
+% sinon titlesec imprime "Chapitre 0" sur l'Avant-propos,
+% la Table des matières, la bibliographie non numérotée, etc.
+\titleformat{name=\chapter,numberless}[display]
+  {\normalfont\huge\bfseries}
+  {}
+  {0pt}
+  {\titlerule\vspace{1ex}\filleft}
+  [\vspace{1ex}\titlerule]
+
+\makeatother
+
+\titleformat{\section}[hang]
+  {\normalfont\Large\bfseries}
+  {\thesection.}{1em}{}
+
+\titleformat{\subsection}[hang]
+  {\normalfont\large\bfseries}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}[hang]
+  {\normalfont\normalsize\bfseries}
+  {\thesubsubsection}{1em}{}
+
+% ------------------------------------------------------------
+% EN-TÊTES ET PIEDS DE PAGE
+% ------------------------------------------------------------
+% CORRECTION 3 : \nouppercase est fourni par le paquet
+% "textcase", PAS par fancyhdr ni par la classe book.
+% Sans ce paquet, la commande est indéfinie → erreur.
+\usepackage{textcase}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ------------------------------------------------------------
+% MATHÉMATIQUES (si nécessaire)
+% ------------------------------------------------------------
+% CORRECTION 4 : amsmath DOIT être chargé AVANT hyperref
+% (hyperref patche les environnements d'équations d'amsmath ;
+%  chargé après, \eqref et \tag ne créent pas de liens corrects).
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% ------------------------------------------------------------
+% HYPERLIENS — à charger EN DERNIER (avant les commandes perso)
+% ------------------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={Cours de design graphique},
+    pdfauthor={Ton nom},
+    bookmarksnumbered=true
+}
+
+% ------------------------------------------------------------
+% COMMANDES PERSONNALISÉES
+% ------------------------------------------------------------
+\newcommand{\terme}[1]{\textbf{#1}}
+\newcommand{\important}[1]{\textbf{\textcolor{red!70!black}{#1}}}
+\newcommand{\logiciel}[1]{\textsf{#1}}
+\newcommand{\anglais}[1]{\textit{#1}}
+
+% Encadrés pédagogiques
+\newtcolorbox{retenir}{enhanced,breakable,colback=blue!4,colframe=blue!60!black,
+  fonttitle=\bfseries,title={À retenir},left=6pt,right=6pt}
+\newtcolorbox{astuce}{enhanced,breakable,colback=green!5,colframe=green!45!black,
+  fonttitle=\bfseries,title={Astuce de pro},left=6pt,right=6pt}
+\newtcolorbox{erreur}{enhanced,breakable,colback=red!4,colframe=red!60!black,
+  fonttitle=\bfseries,title={Erreur fréquente},left=6pt,right=6pt}
+\newtcolorbox{defbox}[1][Définition]{enhanced,breakable,colback=orange!5,colframe=orange!70!black,
+  fonttitle=\bfseries,title={#1},left=6pt,right=6pt}

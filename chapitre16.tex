@@ -1,0 +1,1392 @@
+% ============================================================
+% CHAPITRE 16 — La plume et les courbes de Bézier
+% ============================================================
+
+\chapter{La plume et les courbes de Bézier}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons appris à dessiner des formes géométriques simples : rectangles, ellipses, polygones, étoiles. Ces formes suffisent pour de nombreux projets, mais elles ne permettent pas de dessiner des courbes libres, des silhouettes complexes, des illustrations détaillées. Pour cela, il faut un outil plus puissant, plus précis, plus difficile à maîtriser : la plume.}
+
+\vspace{1em}
+
+\noindent
+L'\terme{outil Plume} est l'outil emblématique d'Illustrator, et l'un des plus puissants du design graphique. Il permet de dessiner des tracés précis, composés de segments droits et de courbes de Bézier. Avec la plume, on peut dessiner n'importe quelle forme : un logo, une icône, un pictogramme, une illustration, un lettrage. C'est l'outil qui distingue le designer professionnel de l'amateur.
+
+\vspace{1em}
+
+\noindent
+Mais la plume est aussi l'outil le plus difficile à maîtriser. Beaucoup de débutants abandonnent devant la complexité des points d'ancrage, des poignées de direction, des courbes de Bézier. Pourtant, avec de la patience et de la pratique, la plume devient un outil naturel, rapide, précis. C'est un investissement qui vaut largement l'effort : un designer qui maîtrise la plume peut tout dessiner.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser la plume et les courbes de Bézier. Nous commencerons par comprendre les points d'ancrage. Nous étudierons ensuite les points d'angle et les points lisses, l'utilisation de l'outil Plume, la création de segments droits, le dessin de courbes, la modification des poignées de direction, la correction des tracés, la fermeture d'un tracé, les outils de sélection, la simplification des tracés, le dessin d'icônes, et la reproduction de formes complexes à partir de références. À la fin de ce chapitre, tu sauras dessiner avec la plume de manière professionnelle.
+
+% ============================================================
+\section{Comprendre les points d'ancrage}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un point d'ancrage ?}
+
+\begin{quote}
+\textbf{Un point d'ancrage (ou \emph{anchor point}) est un point qui définit un tracé. Il est situé à une position précise (coordonnées x, y) et détermine la forme du tracé.}
+\end{quote}
+
+Les points d'ancrage sont les \terme{points de contrôle} d'un tracé. Ils définissent où le tracé passe, comment il tourne, comment il se courbe. Sans points d'ancrage, il n'y a pas de tracé.
+
+\subsection{Les types de points d'ancrage}
+
+\subsubsection{Le point d'angle}
+
+Un \terme{point d'angle} (ou \emph{corner point}) est un point où le tracé forme un angle. Les deux segments qui partent de ce point sont indépendants : leurs poignées de direction ne sont pas alignées.
+
+\paragraph{Caractéristiques} :
+\begin{itemize}
+    \item Les segments forment un angle.
+    \item Les poignées de direction sont indépendantes.
+    \item Le tracé est « cassé » à cet endroit.
+\end{itemize}
+
+\paragraph{Exemples} :
+\begin{itemize}
+    \item Les coins d'un rectangle.
+    \item Les pointes d'une étoile.
+    \item Les angles d'un polygone.
+\end{itemize}
+
+\subsubsection{Le point lisse}
+
+Un \terme{point lisse} (ou \emph{smooth point}) est un point où le tracé est continu, sans angle. Les deux segments qui partent de ce point sont alignés : leurs poignées de direction sont sur la même ligne.
+
+\paragraph{Caractéristiques} :
+\begin{itemize}
+    \item Les segments forment une courbe lisse.
+    \item Les poignées de direction sont alignées.
+    \item Le tracé est continu à cet endroit.
+\end{itemize}
+
+\paragraph{Exemples} :
+\begin{itemize}
+    \item Les points d'un cercle.
+    \item Les points d'une courbe.
+    \item Les sommets d'une vague.
+\end{itemize}
+
+\subsubsection{Le point mixte}
+
+Un \terme{point mixte} (ou \emph{hybrid point}) est un point qui combine les caractéristiques du point d'angle et du point lisse. Les poignées de direction peuvent être partiellement alignées.
+
+\subsection{Les poignées de direction}
+
+\subsubsection{Définition}
+
+Les \terme{poignées de direction} (ou \emph{handles}) sont des points de contrôle qui déterminent la courbure du tracé. Elles sont reliées à un point d'ancrage et peuvent être déplacées pour modifier la courbe.
+
+\subsubsection{Le rôle des poignées}
+
+Les poignées définissent :
+
+\begin{itemize}
+    \item \terme{La direction} de la courbe (tangente).
+    \item \terme{La longueur} de la courbe (influence).
+    \item \terme{La courbure} de la courbe (concavité).
+\end{itemize}
+
+\subsubsection{Les poignées symétriques}
+
+Pour un point lisse, les poignées sont \terme{symétriques} : elles ont la même longueur et sont alignées.
+
+\subsubsection{Les poignées indépendantes}
+
+Pour un point d'angle, les poignées sont \terme{indépendantes} : elles peuvent avoir des longueurs et des directions différentes.
+
+\subsection{Les courbes de Bézier}
+
+\subsubsection{Définition}
+
+Une \terme{courbe de Bézier} est une courbe mathématique définie par des points d'ancrage et des poignées de direction. Elle permet de créer des courbes précises et fluides.
+
+\subsubsection{Le principe}
+
+La courbe de Bézier est définie par :
+
+\begin{itemize}
+    \item \terme{Le point de départ} (point d'ancrage).
+    \item \terme{Le point d'arrivée} (point d'ancrage).
+    \item \terme{Les poignées de direction} (points de contrôle).
+\end{itemize}
+
+La courbe est influencée par les poignées : plus elles sont longues, plus la courbe est « tirée » vers elles.
+
+\subsubsection{Les degrés de Bézier}
+
+\begin{itemize}
+    \item \terme{Courbe du premier degré} : ligne droite (deux points, pas de poignée).
+    \item \terme{Courbe du deuxième degré} : courbe simple (trois points, une poignée).
+    \item \terme{Courbe du troisième degré} : courbe complexe (quatre points, deux poignées). C'est celle utilisée dans Illustrator.
+\end{itemize}
+
+\subsection{Les bons réflexes}
+
+\begin{itemize}
+    \item \terme{Comprendre} la différence entre point d'angle et point lisse.
+    \item \terme{Comprendre} le rôle des poignées de direction.
+    \item \terme{Comprendre} le principe des courbes de Bézier.
+    \item \terme{Utiliser} le bon type de point selon la forme.
+    \item \terme{Ne pas hésiter} à expérimenter.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{point d'ancrage} est un point qui définit un tracé. Il existe deux types principaux : le \terme{point d'angle} (segments indépendants) et le \terme{point lisse} (segments alignés). Les points d'ancrage sont reliés par des segments, dont la courbure est définie par des \terme{poignées de direction}. Les courbes de Bézier sont des courbes mathématiques définies par des points d'ancrage et des poignées. Comprendre ces notions est essentiel pour maîtriser la plume.
+
+Maintenant que nous comprenons les points d'ancrage, nous allons, dans la section suivante, approfondir la distinction entre \terme{points d'angle et points lisses}.
+
+% ============================================================
+\section{Les points d'angle et les points lisses}
+% ============================================================
+
+\subsection{Les points d'angle}
+
+\subsubsection{Définition}
+
+Un \terme{point d'angle} est un point où le tracé forme un angle. Les segments qui partent de ce point sont indépendants : leurs poignées de direction ne sont pas alignées.
+
+\subsubsection{Les types de points d'angle}
+
+\begin{itemize}
+    \item \terme{Point d'angle droit} : les segments forment un angle de 90° (par exemple, un coin de rectangle).
+    \item \terme{Point d'angle aigu} : les segments forment un angle inférieur à 90° (par exemple, une pointe d'étoile).
+    \item \terme{Point d'angle obtus} : les segments forment un angle supérieur à 90°.
+    \item \terme{Point d'angle courbe} : les segments sont courbes, mais leur courbure change brusquement au point.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+Les points d'angle sont utilisés pour :
+
+\begin{itemize}
+    \item Les formes géométriques (rectangles, polygones).
+    \item Les pointes (étoiles, flèches).
+    \item Les angles marqués (logo, pictogramme).
+    \item Les changements brusques de direction.
+\end{itemize}
+
+\subsubsection{Création avec la plume}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume (\texttt{P}).
+    \item Cliquer (sans glisser) pour créer un point d'angle.
+    \item Cliquer à nouveau pour créer un second point d'angle.
+    \item Un segment droit relie les deux points.
+\end{enumerate}
+
+\subsection{Les points lisses}
+
+\subsubsection{Définition}
+
+Un \terme{point lisse} est un point où le tracé est continu, sans angle. Les segments qui partent de ce point sont alignés : leurs poignées de direction sont sur la même ligne.
+
+\subsubsection{Les types de points lisses}
+
+\begin{itemize}
+    \item \terme{Point lisse symétrique} : les poignées ont la même longueur (courbe symétrique).
+    \item \terme{Point lisse asymétrique} : les poignées ont des longueurs différentes (courbe asymétrique).
+    \item \terme{Point lisse « coins »} : les poignées sont alignées, mais la courbure change (cas rare).
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+Les points lisses sont utilisés pour :
+
+\begin{itemize}
+    \item Les courbes (cercles, ellipses).
+    \item Les formes organiques (visages, animaux, plantes).
+    \item Les lignes fluides (vagues, routes).
+    \item Les lettrages calligraphiés.
+\end{itemize}
+
+\subsubsection{Création avec la plume}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume (\texttt{P}).
+    \item Cliquer-glisser pour créer un point lisse (les poignées apparaissent).
+    \item Cliquer-glisser à nouveau pour créer un second point lisse.
+    \item Une courbe relie les deux points.
+\end{enumerate}
+
+\subsection{Convertir un point d'angle en point lisse}
+
+\subsubsection{Avec l'outil Conversion de point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil \emph{Conversion de point} (dans le groupe de l'outil Plume).
+    \item Cliquer sur le point d'angle.
+    \item Le point devient lisse (avec des poignées).
+    \item Glisser pour ajuster la courbure.
+\end{enumerate}
+
+\subsubsection{Avec les raccourcis}
+
+\begin{itemize}
+    \item \terme{Alt + clic} sur un point (avec l'outil Plume) : convertit le point lisse en point d'angle.
+    \item \terme{Alt + glisser} sur une poignée : casse l'alignement des poignées.
+\end{itemize}
+
+\subsection{Convertir un point lisse en point d'angle}
+
+\subsubsection{Avec l'outil Conversion de point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil \emph{Conversion de point}.
+    \item Cliquer sur le point lisse.
+    \item Le point devient d'angle.
+\end{enumerate}
+
+\subsubsection{Avec les raccourcis}
+
+\begin{itemize}
+    \item \terme{Alt + clic} sur une poignée : supprime la poignée et crée un point d'angle.
+    \item \terme{Alt + glisser} sur une poignée : casse l'alignement.
+\end{itemize}
+
+\subsection{Les bons réflexes}
+
+\begin{itemize}
+    \item \terme{Utiliser} les points d'angle pour les formes géométriques.
+    \item \terme{Utiliser} les points lisses pour les courbes.
+    \item \terme{Convertir} les points si nécessaire.
+    \item \terme{Ajuster} les poignées pour la courbure.
+    \item \terme{Ne pas hésiter} à expérimenter.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{points d'angle} et les \terme{points lisses} sont les deux types principaux de points d'ancrage. Les points d'angle forment des angles (segments indépendants), les points lisses forment des courbes (segments alignés). On peut convertir un point d'angle en point lisse, et inversement, avec l'outil Conversion de point ou des raccourcis. Il est essentiel de choisir le bon type de point selon la forme à dessiner.
+
+Maintenant que nous connaissons les types de points, nous allons, dans la section suivante, apprendre à \terme{utiliser l'outil Plume}.
+
+% ============================================================
+\section{Utiliser l'outil Plume}
+% ============================================================
+
+\subsection{Présentation de l'outil Plume}
+
+\subsubsection{Définition}
+
+L'\terme{outil Plume} (\texttt{P}) est l'outil de dessin vectoriel principal d'Illustrator. Il permet de créer des tracés précis, composés de segments droits et de courbes de Bézier.
+
+\subsubsection{Les variantes de la Plume}
+
+\begin{itemize}
+    \item \terme{Plume} (\texttt{P}) : outil principal.
+    \item \terme{Ajouter un point d'ancrage} (+ sur la Plume) : ajoute un point à un tracé existant.
+    \item \terme{Supprimer un point d'ancrage} (- sur la Plume) : supprime un point.
+    \item \terme{Conversion de point} (Maj + C) : convertit un point.
+\end{itemize}
+
+\subsection{Le curseur de la Plume}
+
+\subsubsection{Les différents curseurs}
+
+Le curseur de la Plume change selon la situation :
+
+\begin{itemize}
+    \item \terme{Plume} : prêt à créer un nouveau tracé.
+    \item \terme{Plume +} : prêt à ajouter un point à un tracé existant.
+    \item \terme{Plume -} : prêt à supprimer un point.
+    \item \terme{Plume avec angle} : prêt à créer un point d'angle.
+    \item \terme{Plume avec courbe} : prêt à créer un point lisse.
+    \item \terme{Plume avec cercle} : prêt à fermer un tracé.
+    \item \terme{Plume avec flèche} : prêt à convertir un point.
+\end{itemize}
+
+\subsubsection{Comprendre les curseurs}
+
+Les curseurs indiquent ce qui va se passer quand on clique. Il est essentiel de les comprendre pour utiliser la Plume efficacement.
+
+\subsection{Créer un tracé avec la Plume}
+
+\subsubsection{Créer un point d'angle}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume (\texttt{P}).
+    \item Cliquer sur le plan de travail.
+    \item Un point d'angle est créé.
+    \item Cliquer à nouveau pour créer un second point.
+    \item Un segment droit relie les deux points.
+\end{enumerate}
+
+\subsubsection{Créer un point lisse}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer-glisser sur le plan de travail.
+    \item Un point lisse est créé, avec des poignées.
+    \item Cliquer-glisser à nouveau pour créer un second point lisse.
+    \item Une courbe relie les deux points.
+\end{enumerate}
+
+\subsubsection{Combiner points d'angle et points lisses}
+
+\begin{enumerate}
+    \item Créer un point d'angle (clic).
+    \item Créer un point lisse (clic-glisser).
+    \item Créer un point d'angle (clic).
+    \item Le tracé combine segments droits et courbes.
+\end{enumerate}
+
+\subsection{Les raccourcis de la Plume}
+
+\begin{itemize}
+    \item \terme{Maj} : contraint l'angle à 45°.
+    \item \terme{Alt} : casse l'alignement des poignées (point d'angle).
+    \item \terme{Ctrl} (ou \texttt{Cmd}) : active l'outil Sélection directe (pour déplacer un point).
+    \item \terme{Espace} : déplace la vue (Main).
+    \item \terme{Ctrl + Z} : annule la dernière action.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Cliquer} pour un point d'angle, \terme{cliquer-glisser} pour un point lisse.
+    \item \terme{Utiliser} \texttt{Maj} pour les angles à 45°.
+    \item \terme{Utiliser} \texttt{Alt} pour casser l'alignement.
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Ne pas hésiter} à annuler et recommencer.
+    \item \terme{Travailler} sur un calque dédié.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Plume} permet de créer des tracés précis. On clique pour créer un point d'angle, on clique-glisse pour créer un point lisse. Le curseur change selon la situation, indiquant ce qui va se passer. Les raccourcis (\texttt{Maj}, \texttt{Alt}, \texttt{Ctrl}) permettent d'affiner le dessin. Il est essentiel de comprendre les curseurs, d'utiliser les raccourcis, de zoomer pour plus de précision.
+
+Maintenant que nous savons utiliser la Plume, nous allons, dans la section suivante, apprendre à \terme{créer des segments droits}.
+
+% ============================================================
+\section{Créer des segments droits}
+% ============================================================
+
+\subsection{Le principe}
+
+Un \terme{segment droit} est une ligne droite qui relie deux points d'angle. Il est créé en cliquant (sans glisser) avec la Plume.
+
+\subsection{Créer un segment droit simple}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume (\texttt{P}).
+    \item Cliquer sur le plan de travail pour placer le premier point.
+    \item Cliquer à un autre endroit pour placer le second point.
+    \item Un segment droit relie les deux points.
+\end{enumerate}
+
+\subsection{Créer un segment droit avec une contrainte}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer pour placer le premier point.
+    \item Maintenir \texttt{Maj} et cliquer pour placer le second point.
+    \item Le segment est contraint à un angle de 45° (horizontal, vertical, ou diagonal).
+\end{enumerate}
+
+\subsection{Créer une suite de segments droits}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer pour placer le premier point.
+    \item Cliquer pour placer le second point.
+    \item Cliquer pour placer le troisième point.
+    \item Continuer pour créer la suite de segments.
+    \item Double-cliquer sur le dernier point pour terminer le tracé.
+\end{enumerate}
+
+\subsection{Créer un tracé fermé de segments droits}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer pour placer le premier point.
+    \item Cliquer pour placer les points suivants.
+    \item Cliquer sur le premier point pour fermer le tracé.
+    \item Le curseur affiche un cercle quand on approche du point de fermeture.
+\end{enumerate}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{Maj} : contraint l'angle à 45°.
+    \item \terme{Alt} : casse l'alignement des poignées (pour créer un point d'angle après un point lisse).
+    \item \terme{Ctrl} (ou \texttt{Cmd}) : déplace un point (Sélection directe).
+    \item \terme{Double-clic} : termine le tracé.
+\end{itemize}
+
+\subsection{Les usages}
+
+Les segments droits sont utilisés pour :
+
+\begin{itemize}
+    \item Les formes géométriques (rectangles, polygones).
+    \item Les pictogrammes (flèches, icônes).
+    \item Les tracés techniques (schémas, plans).
+    \item Les lettrages (caractères droits).
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Cliquer} (sans glisser) pour un point d'angle.
+    \item \terme{Utiliser} \texttt{Maj} pour les angles contraints.
+    \item \terme{Fermer} le tracé en cliquant sur le premier point.
+    \item \terme{Double-cliquer} pour terminer un tracé ouvert.
+    \item \terme{Zoomer} pour plus de précision.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{segments droits} sont des lignes droites qui relient deux points d'angle. Ils sont créés en cliquant (sans glisser) avec la Plume. On peut créer des segments simples, des suites de segments, des tracés fermés. Les raccourcis (\texttt{Maj}, \texttt{Alt}, \texttt{Ctrl}, double-clic) permettent d'affiner le dessin. Il est essentiel de cliquer sans glisser, d'utiliser \texttt{Maj}, de fermer les tracés.
+
+Maintenant que nous savons créer des segments droits, nous allons, dans la section suivante, apprendre à \terme{dessiner des courbes}.
+
+% ============================================================
+\section{Dessiner des courbes}
+% ============================================================
+
+\subsection{Le principe}
+
+Une \terme{courbe} est un segment qui n'est pas droit. Elle est créée en cliquant-glissant avec la Plume, ce qui crée un point lisse avec des poignées de direction.
+
+\subsection{Créer une courbe simple}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume (\texttt{P}).
+    \item Cliquer-glisser pour placer le premier point lisse.
+    \item Cliquer-glisser à un autre endroit pour placer le second point lisse.
+    \item Une courbe relie les deux points.
+\end{enumerate}
+
+\subsection{Créer une courbe en S}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer-glisser vers le haut pour le premier point.
+    \item Cliquer-glisser vers le bas pour le second point.
+    \item Une courbe en S relie les deux points.
+\end{enumerate}
+
+\subsection{Créer un cercle avec la Plume}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer-glisser vers la droite pour le premier point (haut du cercle).
+    \item Cliquer-glisser vers le bas pour le second point (droite du cercle).
+    \item Cliquer-glisser vers la gauche pour le troisième point (bas du cercle).
+    \item Cliquer-glisser vers le haut pour le quatrième point (gauche du cercle).
+    \item Cliquer-glisser vers la droite pour fermer le cercle (retour au premier point).
+\end{enumerate}
+
+\subsection{Créer une courbe avec des points d'angle}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer-glisser pour un point lisse.
+    \item Maintenir \texttt{Alt} et cliquer pour créer un point d'angle.
+    \item Cliquer-glisser pour un nouveau point lisse.
+    \item La courbe change de direction au point d'angle.
+\end{enumerate}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{Maj} : contraint l'angle de la courbe.
+    \item \terme{Alt} : casse l'alignement des poignées (point d'angle).
+    \item \terme{Ctrl} (ou \texttt{Cmd}) : déplace un point ou une poignée.
+    \item \terme{Espace} : déplace la vue.
+\end{itemize}
+
+\subsection{Les usages}
+
+Les courbes sont utilisées pour :
+
+\begin{itemize}
+    \item Les formes organiques (visages, animaux, plantes).
+    \item Les cercles et les ellipses.
+    \item Les vagues et les courbes.
+    \item Les lettrages calligraphiés.
+    \item Les illustrations détaillées.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Cliquer-glisser} dans la direction de la courbe.
+    \item \terme{Ajuster} les poignées pour la courbure.
+    \item \terme{Utiliser} \texttt{Alt} pour les points d'angle.
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Ne pas hésiter} à annuler et recommencer.
+    \item \terme{Pratiquer} régulièrement.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{courbes} sont des segments qui ne sont pas droits. Elles sont créées en cliquant-glissant avec la Plume, ce qui crée un point lisse avec des poignées de direction. On peut créer des courbes simples, des courbes en S, des cercles, des courbes avec des points d'angle. Les raccourcis (\texttt{Maj}, \texttt{Alt}, \texttt{Ctrl}) permettent d'affiner le dessin. Il est essentiel de cliquer-glisser dans la direction de la courbe, d'ajuster les poignées, de pratiquer régulièrement.
+
+Maintenant que nous savons dessiner des courbes, nous allons, dans la section suivante, apprendre à \terme{modifier les poignées de direction}.
+
+% ============================================================
+\section{Modifier les poignées de direction}
+% ============================================================
+
+\subsection{Pourquoi modifier les poignées ?}
+
+Les \terme{poignées de direction} déterminent la courbure du tracé. En les modifiant, on peut :
+
+\begin{itemize}
+    \item \terme{Ajuster} la courbure d'une courbe.
+    \item \terme{Corriger} une forme.
+    \item \terme{Préciser} un tracé.
+    \item \terme{Obtenir} le résultat souhaité.
+\end{itemize}
+
+\subsection{Les outils de modification}
+
+\subsubsection{L'outil Sélection directe}
+
+L'\terme{outil Sélection directe} (\texttt{A}) permet de sélectionner et de modifier les points d'ancrage et les poignées.
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe (\texttt{A}).
+    \item Cliquer sur un point d'ancrage pour le sélectionner.
+    \item Les poignées apparaissent.
+    \item Glisser une poignée pour modifier la courbure.
+\end{enumerate}
+
+\subsubsection{L'outil Conversion de point}
+
+L'\terme{outil Conversion de point} (Maj + C) permet de convertir un point d'angle en point lisse, ou inversement.
+
+\begin{enumerate}
+    \item Sélectionner l'outil Conversion de point.
+    \item Cliquer sur un point d'angle pour le convertir en point lisse.
+    \item Cliquer sur un point lisse pour le convertir en point d'angle.
+    \item Glisser sur un point lisse pour ajuster la courbure.
+\end{enumerate}
+
+\subsubsection{L'outil Plume (avec Alt)}
+
+Maintenir \texttt{Alt} avec la Plume permet de modifier les poignées :
+
+\begin{itemize}
+    \item \terme{Alt + clic} sur un point : convertit le point.
+    \item \terme{Alt + glisser} sur une poignée : casse l'alignement.
+\end{itemize}
+
+\subsection{Les types de modification}
+
+\subsubsection{Déplacer une poignée}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe.
+    \item Cliquer sur un point.
+    \item Glisser une poignée pour modifier la courbure.
+    \item Les deux poignées bougent ensemble (point lisse).
+\end{enumerate}
+
+\subsubsection{Casser l'alignement des poignées}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Conversion de point.
+    \item Cliquer sur le point pour casser l'alignement.
+    \item Ou maintenir \texttt{Alt} et glisser sur une poignée.
+    \item Les poignées deviennent indépendantes (point d'angle).
+\end{enumerate}
+
+\subsubsection{Réaligner les poignées}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Conversion de point.
+    \item Glisser sur une poignée pour réaligner.
+    \item Les deux poignées s'alignent à nouveau.
+\end{enumerate}
+
+\subsubsection{Supprimer une poignée}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Conversion de point.
+    \item Cliquer sur une poignée.
+    \item La poignée est supprimée (point d'angle).
+\end{enumerate}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{Alt + clic} (Plume) : convertit le point.
+    \item \terme{Alt + glisser} (Plume) : casse l'alignement.
+    \item \terme{Ctrl + Tab} : change d'outil.
+    \item \terme{Maj + C} : outil Conversion de point.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Utiliser} l'outil Sélection directe pour ajuster.
+    \item \terme{Utiliser} l'outil Conversion de point pour convertir.
+    \item \terme{Utiliser} \texttt{Alt} pour casser l'alignement.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Ne pas hésiter} à annuler et recommencer.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{poignées de direction} déterminent la courbure du tracé. On peut les modifier avec l'outil Sélection directe, l'outil Conversion de point, ou la Plume avec \texttt{Alt}. On peut déplacer une poignée, casser l'alignement, réaligner, supprimer. Il est essentiel de zoomer, d'utiliser les bons outils, de vérifier le résultat.
+
+Maintenant que nous savons modifier les poignées, nous allons, dans la section suivante, apprendre à \terme{corriger les tracés}.
+
+% ============================================================
+\section{Corriger les tracés}
+% ============================================================
+
+\subsection{Pourquoi corriger les tracés ?}
+
+Les tracés ne sont pas toujours parfaits du premier coup. Il faut souvent les \terme{corriger} pour :
+
+\begin{itemize}
+    \item \terme{Ajuster} la courbure.
+    \item \terme{Corriger} une erreur.
+    \item \terme{Préciser} une forme.
+    \item \terme{Améliorer} le tracé.
+    \item \terme{Obtenir} le résultat souhaité.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Point mal placé}
+
+Un point d'ancrage est mal placé, ce qui déforme le tracé.
+
+\subsubsection{Courbure incorrecte}
+
+La courbure ne correspond pas à la forme souhaitée.
+
+\subsubsection{Poignées mal alignées}
+
+Les poignées ne sont pas alignées, ce qui crée un angle indésirable.
+
+\subsubsection{Tracé incomplet}
+
+Le tracé n'est pas fermé ou n'est pas terminé.
+
+\subsubsection{Point en trop}
+
+Un point d'ancrage inutile crée une courbure indésirable.
+
+\subsection{Les techniques de correction}
+
+\subsubsection{Déplacer un point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe (\texttt{A}).
+    \item Cliquer sur le point à déplacer.
+    \item Glisser le point à la nouvelle position.
+\end{enumerate}
+
+\subsubsection{Déplacer une poignée}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe.
+    \item Cliquer sur le point.
+    \item Glisser une poignée pour modifier la courbure.
+\end{enumerate}
+
+\subsubsection{Convertir un point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Conversion de point.
+    \item Cliquer sur le point à convertir.
+    \item Ajuster la courbure.
+\end{enumerate}
+
+\subsubsection{Ajouter un point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer sur le tracé à l'endroit où ajouter un point.
+    \item Un point est ajouté.
+\end{enumerate}
+
+\subsubsection{Supprimer un point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Supprimer un point d'ancrage (dans le groupe de la Plume).
+    \item Cliquer sur le point à supprimer.
+    \item Le point est supprimé.
+\end{enumerate}
+
+\subsubsection{Fermer un tracé}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer sur le premier point du tracé.
+    \item Le tracé se ferme.
+\end{enumerate}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{A} : outil Sélection directe.
+    \item \terme{P} : outil Plume.
+    \item \terme{+} (Plume) : ajouter un point.
+    \item \terme{-} (Plume) : supprimer un point.
+    \item \terme{Maj + C} : outil Conversion de point.
+    \item \terme{Ctrl + Z} : annuler.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Utiliser} l'outil Sélection directe pour ajuster.
+    \item \terme{Utiliser} l'outil Conversion de point pour convertir.
+    \item \terme{Ajouter} ou \terme{supprimer} des points si nécessaire.
+    \item \terme{Fermer} les tracés.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Ne pas hésiter} à annuler et recommencer.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{tracés} doivent souvent être corrigés pour obtenir le résultat souhaité. On peut déplacer un point, déplacer une poignée, convertir un point, ajouter un point, supprimer un point, fermer un tracé. Les outils sont : Sélection directe, Plume, Conversion de point. Il est essentiel de zoomer, d'utiliser les bons outils, de vérifier le résultat.
+
+Maintenant que nous savons corriger les tracés, nous allons, dans la section suivante, apprendre à \terme{fermer un tracé}.
+
+% ============================================================
+\section{Fermer un tracé}
+% ============================================================
+
+\subsection{Pourquoi fermer un tracé ?}
+
+Un \terme{tracé fermé} est un tracé dont les extrémités sont connectées. Il est nécessaire pour :
+
+\begin{itemize}
+    \item \terme{Créer} une forme (rectangle, cercle, polygone).
+    \item \terme{Remplir} une zone avec une couleur.
+    \item \terme{Appliquer} un contour continu.
+    \item \terme{Éviter} les effets indésirables (contour ouvert).
+\end{itemize}
+
+\subsection{Les méthodes de fermeture}
+
+\subsubsection{Fermer avec la Plume}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Plume.
+    \item Cliquer sur le premier point du tracé.
+    \item Le tracé se ferme (le curseur affiche un cercle).
+\end{enumerate}
+
+\subsubsection{Fermer avec le menu}
+
+\begin{enumerate}
+    \item Sélectionner le tracé.
+    \item Utiliser \texttt{Objet > Tracé > Joindre} (\texttt{Ctrl + J}).
+    \item Le tracé se ferme.
+\end{enumerate}
+
+\subsubsection{Fermer avec le panneau Tracé}
+
+\begin{enumerate}
+    \item Sélectionner le tracé.
+    \item Ouvrir le panneau \emph{Tracé}.
+    \item Cliquer sur \emph{Fermer le tracé}.
+\end{enumerate}
+
+\subsection{Les tracés ouverts vs fermés}
+
+\subsubsection{Tracé ouvert}
+
+Un \terme{tracé ouvert} a deux extrémités non connectées. Il peut être :
+
+\begin{itemize}
+    \item \terme{Rempli} : la zone entre les extrémités est remplie.
+    \item \terme{Contourné} : le contour suit le tracé.
+    \item \terme{Non fermé} : les extrémités sont visibles.
+\end{itemize}
+
+\subsubsection{Tracé fermé}
+
+Un \terme{tracé fermé} a ses extrémités connectées. Il peut être :
+
+\begin{itemize}
+    \item \terme{Rempli} : la zone intérieure est remplie.
+    \item \terme{Contourné} : le contour suit le tracé.
+    \item \terme{Fermé} : les extrémités sont connectées.
+\end{itemize}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{Ctrl + J} : joindre deux points (fermer un tracé).
+    \item \terme{Ctrl + Maj + J} : joindre plusieurs points.
+    \item \terme{Alt + Ctrl + J} : joindre et moyenner les points.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Fermer} les tracés destinés à être remplis.
+    \item \terme{Utiliser} \texttt{Ctrl + J} pour joindre deux points.
+    \item \terme{Vérifier} que le tracé est bien fermé.
+    \item \terme{Corriger} les extrémités si nécessaire.
+    \item \terme{Zoomer} pour vérifier.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{tracé fermé} est un tracé dont les extrémités sont connectées. Il est nécessaire pour créer une forme, remplir une zone, appliquer un contour continu. On ferme un tracé avec la Plume (clic sur le premier point), avec le menu (\texttt{Objet > Tracé > Joindre}), ou avec le panneau Tracé. Il est essentiel de fermer les tracés destinés à être remplis, de vérifier le résultat, de zoomer.
+
+Maintenant que nous savons fermer un tracé, nous allons, dans la section suivante, apprendre à \terme{utiliser les outils de sélection}.
+
+% ============================================================
+\section{Utiliser les outils de sélection}
+% ============================================================
+
+\subsection{Pourquoi les outils de sélection ?}
+
+Les \terme{outils de sélection} sont essentiels pour manipuler les tracés dans Illustrator. Ils permettent de :
+
+\begin{itemize}
+    \item \terme{Sélectionner} un objet.
+    \item \terme{Modifier} les points d'ancrage et les poignées.
+    \item \terme{Déplacer} les objets.
+    \item \terme{Redimensionner} les objets.
+    \item \terme{Groupir} et organiser les objets.
+\end{itemize}
+
+\subsection{L'outil Sélection}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Sélection} (\texttt{V}, flèche noire) permet de sélectionner et de manipuler des objets entiers.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection (\texttt{V}).
+    \item Cliquer sur un objet pour le sélectionner.
+    \item L'objet est entouré d'une boîte de sélection.
+    \item Tirer sur les poignées pour redimensionner.
+    \item Glisser pour déplacer.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj + clic} : ajouter un objet à la sélection.
+    \item \terme{Alt + glisser} : dupliquer l'objet.
+    \item \terme{Maj + glisser} : déplacer horizontalement ou verticalement.
+    \item \terme{Alt + Maj + glisser} : dupliquer en déplaçant horizontalement ou verticalement.
+\end{itemize}
+
+\subsection{L'outil Sélection directe}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Sélection directe} (\texttt{A}, flèche blanche) permet de sélectionner et de manipuler les points d'ancrage et les poignées d'un objet.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe (\texttt{A}).
+    \item Cliquer sur un point d'ancrage pour le sélectionner.
+    \item Glisser pour déplacer le point.
+    \item Glisser une poignée pour modifier la courbure.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj + clic} : ajouter un point à la sélection.
+    \item \terme{Alt + glisser} : dupliquer le point.
+    \item \terme{Ctrl + Tab} : changer d'outil.
+\end{itemize}
+
+\subsection{L'outil Lasso}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Lasso} (\texttt{Q}) permet de sélectionner des objets ou des points en dessinant une forme à main levée.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Lasso (\texttt{Q}).
+    \item Dessiner une forme autour des objets à sélectionner.
+    \item Les objets sont sélectionnés.
+\end{enumerate}
+
+\subsection{L'outil Sélection de groupe}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Sélection de groupe} permet de sélectionner un groupe d'objets d'un seul clic.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection de groupe.
+    \item Cliquer sur un objet d'un groupe.
+    \item Le groupe entier est sélectionné.
+\end{enumerate}
+
+\subsection{L'outil Sélection à l'intérieur}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Sélection à l'intérieur} permet de sélectionner un objet à l'intérieur d'un groupe, sans sélectionner le groupe entier.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection à l'intérieur.
+    \item Cliquer sur un objet à l'intérieur d'un groupe.
+    \item L'objet est sélectionné individuellement.
+\end{enumerate}
+
+\subsection{Les raccourcis}
+
+\begin{itemize}
+    \item \terme{V} : outil Sélection.
+    \item \terme{A} : outil Sélection directe.
+    \item \terme{Q} : outil Lasso.
+    \item \terme{Ctrl + A} : tout sélectionner.
+    \item \terme{Ctrl + Maj + A} : désélectionner.
+    \item \terme{Maj + clic} : ajouter à la sélection.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} l'outil Sélection pour les objets entiers.
+    \item \terme{Utiliser} l'outil Sélection directe pour les points.
+    \item \terme{Utiliser} l'outil Lasso pour les sélections multiples.
+    \item \terme{Utiliser} \texttt{Maj} pour ajouter à la sélection.
+    \item \terme{Utiliser} \texttt{Alt + glisser} pour dupliquer.
+    \item \terme{Zoomer} pour plus de précision.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{outils de sélection} permettent de manipuler les tracés dans Illustrator. L'outil Sélection sélectionne les objets entiers, l'outil Sélection directe sélectionne les points, l'outil Lasso sélectionne à main levée, l'outil Sélection de groupe sélectionne un groupe, l'outil Sélection à l'intérieur sélectionne un objet dans un groupe. Il est essentiel de choisir le bon outil, d'utiliser \texttt{Maj}, de zoomer.
+
+Maintenant que nous savons utiliser les outils de sélection, nous allons, dans la section suivante, apprendre à \terme{simplifier les tracés}.
+
+% ============================================================
+\section{Simplifier les tracés}
+% ============================================================
+
+\subsection{Pourquoi simplifier les tracés ?}
+
+Les tracés peuvent être \terme{complexes}, avec de nombreux points d'ancrage. Simplifier les tracés permet de :
+
+\begin{itemize}
+    \item \terme{Réduire} le nombre de points.
+    \item \terme{Améliorer} la fluidité.
+    \item \terme{Faciliter} la modification.
+    \item \terme{Optimiser} le fichier.
+    \item \terme{Améliorer} le rendu final.
+\end{itemize}
+
+Un tracé simple est plus facile à modifier, plus léger, plus propre. Un tracé complexe peut être lourd, difficile à modifier, et présenter des irrégularités.
+
+\subsection{Les méthodes de simplification}
+
+\subsubsection{L'outil Simplifier}
+
+\begin{enumerate}
+    \item Sélectionner le tracé.
+    \item Utiliser \texttt{Objet > Tracé > Simplifier}.
+    \item Ajuster les options :
+    \begin{itemize}
+        \item \terme{Précision de la courbe} : plus la valeur est élevée, plus le tracé est simplifié.
+        \item \terme{Angle} : seuil d'angle pour conserver les coins.
+        \item \terme{Supprimer les points superflus} : supprime les points inutiles.
+        \item \terme{Conserver les coins} : conserve les points d'angle.
+        \item \terme{Afficher le tracé d'origine} : affiche le tracé original en arrière-plan.
+    \end{itemize}
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{L'outil Lissage}
+
+\begin{enumerate}
+    \item Sélectionner l'outil \emph{Lissage} (dans le groupe de la Plume).
+    \item Dessiner sur le tracé pour le lisser.
+    \item Ajuster la taille du pinceau et la force.
+\end{enumerate}
+
+\subsubsection{L'outil Gomme}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Gomme.
+    \item Effacer les points inutiles (attention : l'outil Gomme efface les pixels, pas les points).
+\end{enumerate}
+
+\subsubsection{Supprimer un point}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe.
+    \item Cliquer sur un point.
+    \item Appuyer sur \texttt{Suppr} pour le supprimer.
+\end{enumerate}
+
+\subsubsection{Le menu Joindre}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs points.
+    \item Utiliser \texttt{Objet > Tracé > Joindre} (\texttt{Ctrl + J}).
+    \item Les points sont joints.
+\end{enumerate}
+
+\subsection{Les options de simplification}
+
+\subsubsection{Précision de la courbe}
+
+La \terme{précision de la courbe} détermine à quel point le tracé est simplifié. Une valeur élevée simplifie plus le tracé ; une valeur faible conserve plus de détails.
+
+\subsubsection{Angle}
+
+L'\terme{angle} détermine le seuil à partir duquel un point est considéré comme un coin (et donc conservé).
+
+\subsubsection{Supprimer les points superflus}
+
+L'option \terme{supprimer les points superflus} supprime automatiquement les points qui ne servent pas à la forme.
+
+\subsubsection{Conserver les coins}
+
+L'option \terme{conserver les coins} conserve les points d'angle importants.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Simplifier} les tracés complexes.
+    \item \terme{Utiliser} l'outil Simplifier avec précaution.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Conserver} les points importants.
+    \item \terme{Ne pas trop simplifier} (perte de détails).
+    \item \terme{Travailler} sur une copie si nécessaire.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{simplification} des tracés permet de réduire le nombre de points, d'améliorer la fluidité, de faciliter la modification. On utilise l'outil Simplifier, l'outil Lissage, ou on supprime manuellement les points. Il est essentiel d'utiliser les options adaptées, de vérifier le résultat, de ne pas trop simplifier.
+
+Maintenant que nous savons simplifier les tracés, nous allons, dans la section suivante, apprendre à \terme{dessiner des icônes}.
+
+% ============================================================
+\section{Dessiner des icônes}
+% ============================================================
+
+\subsection{Pourquoi dessiner des icônes ?}
+
+Les \terme{icônes} sont des éléments graphiques essentiels. Elles sont utilisées pour :
+
+\begin{itemize}
+    \item Les \terme{interfaces} : boutons, menus, notifications.
+    \item La \terme{signalétique} : panneaux, indications.
+    \item Les \terme{infographies} : pictogrammes, symboles.
+    \item Les \terme{sites web} : navigation, fonctionnalités.
+    \item Les \terme{applications} : fonctionnalités, actions.
+\end{itemize}
+
+Les icônes sont simples, reconnaissables, mémorables. Elles transmettent une information en un coup d'œil.
+
+\subsection{Les principes des icônes}
+
+\subsubsection{La simplicité}
+
+Une icône doit être \terme{simple} : peu de détails, formes claires.
+
+\subsubsection{La lisibilité}
+
+Une icône doit être \terme{lisible} : reconnaissable à petite taille.
+
+\subsubsection{La cohérence}
+
+Une icône doit être \terme{cohérente} avec les autres icônes (style, épaisseur, couleur).
+
+\subsubsection{L'universalité}
+
+Une icône doit être \terme{universelle} : comprise par tous, sans texte.
+
+\subsection{La méthode de dessin}
+
+\subsubsection{Étape 1 : Analyser l'icône}
+
+\begin{itemize}
+    \item \terme{Quel est le sujet} de l'icône ?
+    \item \terme{Quelle est la fonction} de l'icône ?
+    \item \terme{Quel est le style} souhaité (flat, ligne, plein) ?
+\end{itemize}
+
+\subsubsection{Étape 2 : Esquisser}
+
+\begin{enumerate}
+    \item \terme{Dessiner} l'icône sur papier.
+    \item \terme{Simplifier} au maximum.
+    \item \terme{Tester} la reconnaissance.
+\end{enumerate}
+
+\subsubsection{Étape 3 : Créer les formes de base}
+
+\begin{enumerate}
+    \item \terme{Créer} les formes géométriques de base (cercle, carré, rectangle).
+    \item \terme{Positionner} les formes.
+    \item \terme{Aligner} les formes.
+\end{enumerate}
+
+\subsubsection{Étape 4 : Dessiner les détails}
+
+\begin{enumerate}
+    \item \terme{Dessiner} les courbes avec la Plume.
+    \item \terme{Combiner} les formes (Pathfinder, Concepteur de forme).
+    \item \terme{Simplifier} les tracés.
+\end{enumerate}
+
+\subsubsection{Étape 5 : Appliquer les couleurs}
+
+\begin{enumerate}
+    \item \terme{Appliquer} un remplissage (couleur unie).
+    \item \terme{Appliquer} un contour (si nécessaire).
+    \item \terme{Vérifier} la cohérence avec les autres icônes.
+\end{enumerate}
+
+\subsubsection{Étape 6 : Vérifier}
+
+\begin{enumerate}
+    \item \terme{Zoomer} pour vérifier à petite taille.
+    \item \terme{Vérifier} la reconnaissance.
+    \item \terme{Vérifier} la cohérence.
+\end{enumerate}
+
+\subsection{Les styles d'icônes}
+
+\subsubsection{Le style flat}
+
+Les icônes \terme{flat} sont composées de formes pleines, sans contour. Elles sont modernes, lisibles.
+
+\subsubsection{Le style ligne}
+
+Les icônes \terme{ligne} sont composées de contours uniquement. Elles sont élégantes, légères.
+
+\subsubsection{Le style plein}
+
+Les icônes \terme{plein} sont composées de formes remplies. Elles sont fortes, visibles.
+
+\subsubsection{Le style mixte}
+
+Les icônes \terme{mixte} combinent formes pleines et contours. Elles sont riches, détaillées.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Commencer} par esquisser.
+    \item \terme{Simplifier} au maximum.
+    \item \terme{Utiliser} des formes géométriques de base.
+    \item \terme{Combiner} les formes avec le Pathfinder.
+    \item \terme{Aligner} les éléments.
+    \item \terme{Vérifier} la lisibilité à petite taille.
+    \item \terme{Maintenir} la cohérence du style.
+    \item \terme{Tester} sur différents fonds.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{icônes} sont des éléments graphiques essentiels, utilisés dans les interfaces, la signalétique, les infographies. Elles doivent être simples, lisibles, cohérentes, universelles. La méthode de dessin suit plusieurs étapes : analyser, esquisser, créer les formes de base, dessiner les détails, appliquer les couleurs, vérifier. Il est essentiel de commencer par esquisser, de simplifier, d'utiliser des formes géométriques, de vérifier la lisibilité.
+
+Maintenant que nous savons dessiner des icônes, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{reproduire des formes complexes à partir de références}.
+
+% ============================================================
+\section{Reproduire des formes complexes à partir de références}
+% ============================================================
+
+\subsection{Pourquoi reproduire des formes ?}
+
+La \terme{reproduction} de formes complexes est une pratique courante. Elle permet de :
+
+\begin{itemize}
+    \item \terme{Vectoriser} un logo existant.
+    \item \terme{Recréer} un pictogramme.
+    \item \terme{Reproduire} une illustration.
+    \item \terme{Adapter} un visuel.
+    \item \terme{Apprendre} les techniques.
+\end{itemize}
+
+Reproduire une forme est un excellent exercice pour maîtriser la Plume.
+
+\subsection{Les étapes de reproduction}
+
+\subsubsection{Étape 1 : Importer la référence}
+
+\begin{enumerate}
+    \item \terme{Importer} l'image de référence (\texttt{Fichier > Importer}).
+    \item \terme{Placer} l'image sur le plan de travail.
+    \item \terme{Verrouiller} le calque de l'image.
+    \item \terme{Baisser} l'opacité (par exemple, 50\%).
+\end{enumerate}
+
+\subsubsection{Étape 2 : Créer un calque de travail}
+
+\begin{enumerate}
+    \item \terme{Créer} un nouveau calque.
+    \item \terme{Nommer} le calque.
+    \item \terme{Placer} le calque au-dessus du calque de référence.
+\end{enumerate}
+
+\subsubsection{Étape 3 : Tracer les formes}
+
+\begin{enumerate}
+    \item \terme{Sélectionner} l'outil Plume.
+    \item \terme{Tracer} les contours de la forme.
+    \item \terme{Utiliser} des points d'angle pour les angles.
+    \item \terme{Utiliser} des points lisses pour les courbes.
+    \item \terme{Suivre} les contours de la référence.
+\end{enumerate}
+
+\subsubsection{Étape 4 : Ajuster les tracés}
+
+\begin{enumerate}
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Ajuster} les points et les poignées.
+    \item \terme{Corriger} les erreurs.
+    \item \terme{Vérifier} la correspondance avec la référence.
+\end{enumerate}
+
+\subsubsection{Étape 5 : Simplifier}
+
+\begin{enumerate}
+    \item \terme{Simplifier} les tracés (outil Simplifier).
+    \item \terme{Supprimer} les points inutiles.
+    \item \terme{Vérifier} la fluidité.
+\end{enumerate}
+
+\subsubsection{Étape 6 : Appliquer les couleurs}
+
+\begin{enumerate}
+    \item \terme{Appliquer} les couleurs correspondantes.
+    \item \terme{Vérifier} la cohérence.
+\end{enumerate}
+
+\subsubsection{Étape 7 : Vérifier le résultat}
+
+\begin{enumerate}
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Comparer} avec la référence.
+    \item \terme{Corriger} les erreurs.
+\end{enumerate}
+
+\subsection{Les techniques avancées}
+
+\subsubsection{La vectorisation automatique}
+
+Illustrator propose une \terme{vectorisation automatique} (\texttt{Fenêtre > Vectorisation}) :
+
+\begin{enumerate}
+    \item Importer l'image.
+    \item Ouvrir le panneau \emph{Vectorisation}.
+    \item Choisir un préréglage (photo, illustration, logo).
+    \item Ajuster les options.
+    \item Cliquer sur \emph{Vectoriser}.
+\end{enumerate}
+
+Cette méthode est rapide, mais donne des résultats variables. Elle est utile pour les images simples, mais nécessite souvent des corrections manuelles.
+
+\subsubsection{La reproduction manuelle}
+
+La \terme{reproduction manuelle} est plus longue, mais donne des résultats plus précis :
+
+\begin{enumerate}
+    \item Tracer les contours avec la Plume.
+    \item Ajuster les points et les poignées.
+    \item Simplifier les tracés.
+    \item Appliquer les couleurs.
+\end{enumerate}
+
+C'est la méthode recommandée pour les logos et les formes précises.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Importer} la référence avec une bonne résolution.
+    \item \terme{Verrouiller} le calque de référence.
+    \item \terme{Baisser} l'opacité de la référence.
+    \item \terme{Zoomer} pour plus de précision.
+    \item \terme{Utiliser} la Plume pour les contours précis.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Vérifier} la correspondance avec la référence.
+    \item \terme{Corriger} les erreurs.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Trop de points}
+
+Trop de points d'ancrage rendent le tracé complexe, difficile à modifier.
+
+\subsubsection{Points mal placés}
+
+Les points ne correspondent pas aux contours de la référence.
+
+\subsubsection{Courbes irrégulières}
+
+Les courbes ne sont pas fluides, avec des angles indésirables.
+
+\subsubsection{Tracé non fermé}
+
+Le tracé n'est pas fermé, ce qui pose problème pour le remplissage.
+
+\subsubsection{Manque de précision}
+
+Le tracé ne correspond pas exactement à la référence.
+
+\subsection*{Conclusion de la section}
+
+La \terme{reproduction} de formes complexes à partir de références est une pratique courante et un excellent exercice pour maîtriser la Plume. La méthode consiste à importer la référence, créer un calque de travail, tracer les contours, ajuster, simplifier, appliquer les couleurs, vérifier. On peut utiliser la vectorisation automatique (rapide) ou la reproduction manuelle (précise). Il est essentiel de zoomer, d'utiliser la Plume, de simplifier, de vérifier le résultat.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 16. Nous avons appris à maîtriser la Plume et les courbes de Bézier dans Illustrator :
+
+\begin{itemize}
+    \item \terme{Points d'ancrage} : définition, types (angle, lisse), poignées de direction, courbes de Bézier.
+    \item \terme{Points d'angle et points lisses} : différence, création, conversion.
+    \item \terme{Outil Plume} : présentation, curseurs, utilisation, raccourcis.
+    \item \terme{Segments droits} : création, contraintes, tracés fermés.
+    \item \terme{Courbes} : création, courbes en S, cercles, courbes avec points d'angle.
+    \item \terme{Poignées de direction} : modification, alignement, conversion.
+    \item \terme{Correction des tracés} : déplacer, convertir, ajouter, supprimer des points.
+    \item \terme{Fermeture des tracés} : méthodes, importance, raccourcis.
+    \item \terme{Outils de sélection} : Sélection, Sélection directe, Lasso, Sélection de groupe, Sélection à l'intérieur.
+    \item \terme{Simplification des tracés} : outil Simplifier, options, bonnes pratiques.
+    \item \terme{Icônes} : principes, méthode, styles.
+    \item \terme{Reproduction de formes} : étapes, techniques, bonnes pratiques.
+\end{itemize}
+
+La Plume est l'outil emblématique d'Illustrator, et l'un des plus puissants du design graphique. Elle permet de dessiner des tracés précis, composés de segments droits et de courbes de Bézier. Avec la Plume, on peut tout dessiner : logos, icônes, pictogrammes, illustrations, lettrages. C'est l'outil qui distingue le designer professionnel de l'amateur.
+
+Mais la Plume est aussi l'outil le plus difficile à maîtriser. Beaucoup de débutants abandonnent devant la complexité des points d'ancrage, des poignées de direction, des courbes de Bézier. Pourtant, avec de la patience et de la pratique, la Plume devient un outil naturel, rapide, précis. C'est un investissement qui vaut largement l'effort : un designer qui maîtrise la Plume peut tout dessiner.
+
+Ce chapitre t'a donné les bases de la Plume et des courbes de Bézier. Mais la maîtrise vient avec la pratique. N'hésite pas à t'entraîner sur des formes variées : logos, icônes, illustrations, lettrages. Chaque forme est un nouveau défi, et chaque défi est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons la \terme{manipulation avancée des formes}. Tu apprendras à comprendre les tracés composés, à utiliser les opérations Pathfinder, à ajouter, soustraire et combiner des formes, à utiliser l'outil Concepteur de forme, à créer des intersections, à découper des formes, à utiliser les masques d'écrêtage, à organiser les objets et les groupes, à utiliser les transformations répétées, à construire des illustrations vectorielles propres. Ces compétences te permettront de créer des formes complexes et précises.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 16 --- La plume et les courbes de Bézier.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 17 --- Manipulation avancée des formes.}
+\end{center}

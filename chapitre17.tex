@@ -1,0 +1,1089 @@
+% ============================================================
+% CHAPITRE 17 — Manipulation avancée des formes
+% ============================================================
+
+\chapter{Manipulation avancée des formes}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons appris à maîtriser la Plume et les courbes de Bézier : nous savons désormais créer des tracés précis, des segments droits, des courbes fluides, des icônes. Mais un tracé seul ne suffit pas toujours : il faut souvent \emph{combiner} plusieurs formes pour en créer une nouvelle, \emph{soustraire} une forme d'une autre, \emph{intersecter} des tracés, \emph{découper} des objets, \emph{masquer} des zones. C'est l'objet de ce chapitre.}
+
+\vspace{1em}
+
+\noindent
+La \terme{manipulation avancée des formes} est ce qui distingue un dessinateur d'un designer. Un dessinateur crée des formes individuelles ; un designer sait les combiner, les soustraire, les intersecter, les organiser pour produire des illustrations propres, précises, efficaces. Les outils comme le Pathfinder, le Concepteur de forme, les masques d'écrêtage permettent de construire des formes complexes à partir de formes simples.
+
+\vspace{1em}
+
+\noindent
+Ces techniques sont indispensables pour créer des logos, des pictogrammes, des icônes, des illustrations techniques, des infographies. Elles permettent d'obtenir des contours nets, des formes précises, des compositions propres. Un designer qui ne maîtrise pas ces outils se contente d'empiler des formes approximatives ; un designer qui les maîtrise peut créer des illustrations complexes avec une grande économie de moyens.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser la manipulation avancée des formes dans Illustrator. Nous commencerons par comprendre les tracés composés. Nous étudierons ensuite les opérations Pathfinder, l'ajout, la soustraction et la combinaison de formes, l'outil Concepteur de forme, la création d'intersections, la découpe de formes, les masques d'écrêtage, l'organisation des objets et des groupes, les transformations répétées, et enfin la construction d'illustrations vectorielles propres. À la fin de ce chapitre, tu sauras manipuler les formes avec précision et efficacité.
+
+% ============================================================
+\section{Comprendre les tracés composés}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un tracé composé ?}
+
+\begin{quote}
+\textbf{Un tracé composé (ou \emph{compound path}) est un tracé qui combine plusieurs sous-tracés en un seul objet. Il permet de créer des formes avec des trous, des formes multiples, des formes complexes.}
+\end{quote}
+
+Un tracé composé est un objet unique composé de plusieurs sous-tracés. Ces sous-tracés peuvent être :
+
+\begin{itemize}
+    \item \terme{Séparés} : plusieurs formes distinctes dans un même objet.
+    \item \terme{Emboîtés} : une forme à l'intérieur d'une autre, créant un trou.
+    \item \terme{Intersectés} : des formes qui se chevauchent, créant des zones.
+\end{itemize}
+
+\subsection{Le principe des trous}
+
+\subsubsection{Le principe}
+
+Un tracé composé crée des trous en utilisant la \terme{règle de remplissage non nulle} ou la \terme{règle de remplissage paire-impaire}.
+
+\begin{itemize}
+    \item \terme{Règle non nulle} : si les sous-tracés tournent dans le même sens, ils se remplissent ; s'ils tournent dans des sens opposés, ils créent un trou.
+    \item \terme{Règle paire-impaire} : les zones où le nombre de sous-tracés est impair sont remplies, celles où il est pair sont vides.
+\end{itemize}
+
+\subsubsection{Exemple}
+
+Un cercle avec un cercle plus petit à l'intérieur :
+
+\begin{itemize}
+    \item Si les deux cercles tournent dans le même sens : le petit cercle est rempli (pas de trou).
+    \item Si les deux cercles tournent dans des sens opposés : le petit cercle crée un trou.
+\end{itemize}
+
+\subsection{Créer un tracé composé}
+
+\subsubsection{Par le menu}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs tracés.
+    \item Utiliser \texttt{Objet > Tracé composé > Créer} (\texttt{Ctrl + 8}).
+    \item Les tracés sont combinés en un seul objet.
+\end{enumerate}
+
+\subsubsection{Par le Pathfinder}
+
+Certaines opérations du Pathfinder (notamment \emph{Exclure}) créent des tracés composés.
+
+\subsubsection{Par le Concepteur de forme}
+
+L'outil Concepteur de forme peut créer des tracés composés avec des trous.
+
+\subsection{Modifier un tracé composé}
+
+\subsubsection{Sélectionner un sous-tracé}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection directe.
+    \item Cliquer sur un sous-tracé pour le sélectionner.
+    \item Modifier le sous-tracé.
+\end{enumerate}
+
+\subsubsection{Décomposer un tracé composé}
+
+\begin{enumerate}
+    \item Sélectionner le tracé composé.
+    \item Utiliser \texttt{Objet > Tracé composé > Libérer} (\texttt{Ctrl + Alt + 8}).
+    \item Les sous-tracés deviennent des objets séparés.
+\end{enumerate}
+
+\subsection{Les utilisations}
+
+Les tracés composés sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Logos} : lettres avec des trous (par exemple, le « o »).
+    \item \terme{Pictogrammes} : formes avec des ouvertures.
+    \item \terme{Icônes} : formes complexes.
+    \item \terme{Illustrations} : formes avec des trous (anneaux, donuts).
+    \item \terme{Typographie} : lettres avec des contre-poinçons.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Comprendre} la règle de remplissage.
+    \item \terme{Utiliser} \texttt{Ctrl + 8} pour créer un tracé composé.
+    \item \terme{Utiliser} \texttt{Ctrl + Alt + 8} pour le décomposer.
+    \item \terme{Vérifier} la direction des sous-tracés (sens horaire ou antihoraire).
+    \item \terme{Modifier} les sous-tracés avec l'outil Sélection directe.
+    \item \terme{Simplifier} les tracés après modification.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{tracé composé} est un objet unique composé de plusieurs sous-tracés. Il permet de créer des formes avec des trous, des formes multiples, des formes complexes. On le crée avec \texttt{Objet > Tracé composé > Créer} (\texttt{Ctrl + 8}). On peut le modifier avec l'outil Sélection directe, ou le décomposer avec \texttt{Objet > Tracé composé > Libérer} (\texttt{Ctrl + Alt + 8}). Les tracés composés sont utilisés pour les logos, les pictogrammes, les icônes, les illustrations.
+
+Maintenant que nous comprenons les tracés composés, nous allons, dans la section suivante, étudier les \terme{opérations Pathfinder}.
+
+% ============================================================
+\section{Utiliser les opérations Pathfinder}
+% ============================================================
+
+\subsection{Qu'est-ce que le Pathfinder ?}
+
+\begin{quote}
+\textbf{Le Pathfinder est un panneau d'Illustrator qui permet de combiner plusieurs formes en une seule, en utilisant des opérations booléennes : ajouter, soustraire, intersecter, exclure, diviser, etc.}
+\end{quote}
+
+Le Pathfinder est l'outil de référence pour combiner des formes. Il permet de créer des formes complexes à partir de formes simples, avec une grande précision.
+
+\subsection{Le panneau Pathfinder}
+
+\subsubsection{Accès au panneau}
+
+Le panneau \terme{Pathfinder} est accessible par \texttt{Fenêtre > Pathfinder}.
+
+\subsubsection{Les modes d'affichage}
+
+Le panneau propose deux modes :
+
+\begin{itemize}
+    \item \terme{Mode Formes} : opérations qui créent une nouvelle forme.
+    \item \terme{Mode Tracés} : opérations qui créent un tracé composé.
+\end{itemize}
+
+\subsection{Les opérations du Pathfinder}
+
+\subsubsection{Ajouter}
+
+L'opération \terme{Ajouter} combine plusieurs formes en une seule, en additionnant leurs surfaces.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer une forme unique à partir de plusieurs formes.
+    \item \terme{Exemple} : combiner deux cercles pour créer un ovale.
+\end{itemize}
+
+\subsubsection{Soustraire}
+
+L'opération \terme{Soustraire} soustrait les formes du dessus de la forme du dessous.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer un trou dans une forme.
+    \item \terme{Exemple} : soustraire un cercle d'un rectangle pour créer un trou.
+\end{itemize}
+
+\subsubsection{Intersecter}
+
+L'opération \terme{Intersecter} conserve uniquement la zone de chevauchement entre les formes.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer une forme à partir de l'intersection.
+    \item \terme{Exemple} : intersecter deux cercles pour créer une forme en amande.
+\end{itemize}
+
+\subsubsection{Exclure}
+
+L'opération \terme{Exclure} conserve les zones où les formes ne se chevauchent pas.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer une forme avec un trou au centre.
+    \item \terme{Exemple} : exclure deux cercles superposés pour créer un anneau.
+\end{itemize}
+
+\subsubsection{Diviser}
+
+L'opération \terme{Diviser} divise les formes en parties distinctes, en fonction des chevauchements.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer plusieurs formes à partir d'une forme complexe.
+    \item \terme{Exemple} : diviser un cercle et un rectangle pour obtenir quatre parties.
+\end{itemize}
+
+\subsubsection{Rogner}
+
+L'opération \terme{Rogner} rogne les formes qui se chevauchent.
+
+\begin{itemize}
+    \item \terme{Utilisation} : supprimer les zones de chevauchement.
+    \item \terme{Exemple} : rogner deux cercles pour obtenir deux demi-cercles.
+\end{itemize}
+
+\subsubsection{Fusionner}
+
+L'opération \terme{Fusionner} fusionne les formes qui se chevauchent en une seule.
+
+\begin{itemize}
+    \item \terme{Utilisation} : fusionner les formes de même couleur.
+    \item \terme{Exemple} : fusionner deux rectangles superposés.
+\end{itemize}
+
+\subsubsection{Contour}
+
+L'opération \terme{Contour} crée un contour des formes.
+
+\begin{itemize}
+    \item \terme{Utilisation} : créer un contour autour des formes.
+    \item \terme{Exemple} : créer un contour autour d'un texte.
+\end{itemize}
+
+\subsubsection{Moins devant}
+
+L'opération \terme{Moins devant} soustrait les formes du dessus.
+
+\begin{itemize}
+    \item \terme{Utilisation} : soustraire la forme du dessus des formes du dessous.
+    \item \terme{Exemple} : soustraire un cercle d'un rectangle.
+\end{itemize}
+
+\subsubsection{Moins derrière}
+
+L'opération \terme{Moins derrière} soustrait les formes du dessous.
+
+\begin{itemize}
+    \item \terme{Utilisation} : soustraire la forme du dessous des formes du dessus.
+    \item \terme{Exemple} : soustraire un rectangle d'un cercle.
+\end{itemize}
+
+\subsection{Utiliser le Pathfinder}
+
+\subsubsection{Étapes}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs formes (avec l'outil Sélection).
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur l'opération souhaitée.
+    \item Les formes sont combinées.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maintenir \texttt{Alt}} : appliquer l'opération sans supprimer les formes originales (pour les opérations de forme).
+    \item \terme{Maintenir \texttt{Maj}} : appliquer l'opération avec un aperçu.
+    \item \terme{Options} : accéder aux options avancées (précision, supprimer les points redondants).
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} le Pathfinder pour combiner des formes.
+    \item \terme{Choisir} la bonne opération selon le résultat souhaité.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés après l'opération.
+    \item \terme{Travailler} sur des copies si nécessaire.
+    \item \terme{Maintenir \texttt{Alt}} pour conserver les originales.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{Pathfinder} permet de combiner des formes avec des opérations booléennes : ajouter, soustraire, intersecter, exclure, diviser, rogner, fusionner, contour, moins devant, moins derrière. On utilise le panneau Pathfinder pour appliquer ces opérations. Il est essentiel de choisir la bonne opération, de vérifier le résultat, de simplifier les tracés.
+
+Maintenant que nous connaissons les opérations Pathfinder, nous allons, dans la section suivante, approfondir l'\terme{ajout, la soustraction et la combinaison de formes}.
+
+% ============================================================
+\section{Ajouter, soustraire et combiner des formes}
+% ============================================================
+
+\subsection{L'ajout de formes}
+
+\subsubsection{Le principe}
+
+L'\terme{ajout} combine plusieurs formes en une seule, en additionnant leurs surfaces. Le résultat est une forme unique qui englobe toutes les formes originales.
+
+\subsubsection{Utilisation du Pathfinder}
+
+\begin{enumerate}
+    \item Sélectionner les formes à ajouter.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur \emph{Ajouter} (ou \emph{Unifier}).
+\end{enumerate}
+
+\subsubsection{Exemple}
+
+Combiner un cercle et un rectangle pour créer une forme en « D ».
+
+\subsection{La soustraction de formes}
+
+\subsubsection{Le principe}
+
+La \terme{soustraction} retire une forme d'une autre. Le résultat est une forme avec un trou ou une ouverture.
+
+\subsubsection{Utilisation du Pathfinder}
+
+\begin{enumerate}
+    \item Placer la forme à soustraire au-dessus de la forme de base.
+    \item Sélectionner les deux formes.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur \emph{Soustraire} (ou \emph{Moins devant}).
+\end{enumerate}
+
+\subsubsection{Exemple}
+
+Soustraire un cercle d'un rectangle pour créer un rectangle avec un trou.
+
+\subsection{La combinaison de formes}
+
+\subsubsection{Le principe}
+
+La \terme{combinaison} consiste à utiliser plusieurs opérations (ajout, soustraction, intersection) pour créer une forme complexe.
+
+\subsubsection{Exemple}
+
+Créer un logo avec plusieurs formes :
+
+\begin{enumerate}
+    \item Créer un cercle.
+    \item Créer un rectangle.
+    \item Soustraire le rectangle du cercle.
+    \item Ajouter un triangle.
+    \item Le logo est formé.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Organiser} les formes (dessus/dessous) avant l'opération.
+    \item \terme{Choisir} la bonne opération.
+    \item \terme{Utiliser} \texttt{Alt} pour conserver les originales.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Combiner} plusieurs opérations pour des formes complexes.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{ajout}, la \terme{soustraction} et la \terme{combinaison} de formes sont des opérations courantes. On utilise le Pathfinder pour les appliquer. L'ajout combine les surfaces, la soustraction retire une forme, la combinaison utilise plusieurs opérations. Il est essentiel d'organiser les formes, de choisir la bonne opération, de vérifier le résultat.
+
+Maintenant que nous savons ajouter, soustraire et combiner des formes, nous allons, dans la section suivante, étudier l'\terme{outil Concepteur de forme}.
+
+% ============================================================
+\section{Utiliser l'outil Concepteur de forme}
+% ============================================================
+
+\subsection{Qu'est-ce que le Concepteur de forme ?}
+
+\begin{quote}
+\textbf{L'outil Concepteur de forme (Shape Builder) est un outil interactif qui permet de combiner, fusionner ou soustraire des formes en cliquant ou en glissant sur les zones.}
+\end{quote}
+
+Le Concepteur de forme est un outil intuitif et rapide pour combiner des formes. Il est plus visuel que le Pathfinder : on voit directement le résultat en cliquant sur les zones.
+
+\subsection{Utilisation de base}
+
+\subsubsection{Étapes}
+
+\begin{enumerate}
+    \item Sélectionner les formes à combiner (avec l'outil Sélection).
+    \item Sélectionner l'outil Concepteur de forme (Maj + M).
+    \item Cliquer-glisser sur les zones à fusionner.
+    \item Les formes sont fusionnées.
+\end{enumerate}
+
+\subsubsection{Les modes}
+
+\begin{itemize}
+    \item \terme{Fusionner} : cliquer-glisser sur les zones (mode par défaut).
+    \item \terme{Soustraire} : maintenir \texttt{Alt} et cliquer sur les zones.
+    \item \terme{Intersecter} : maintenir \texttt{Maj} et cliquer sur les zones.
+\end{itemize}
+
+\subsection{Le panneau Concepteur de forme}
+
+\subsubsection{Options}
+
+Dans la barre de contrôle, on peut choisir :
+
+\begin{itemize}
+    \item \terme{Fusionner} : fusionner les formes.
+    \item \terme{Soustraire} : soustraire les formes.
+    \item \terme{Intersecter} : intersecter les formes.
+\end{itemize}
+
+\subsubsection{Options avancées}
+
+\begin{itemize}
+    \item \terme{Supprimer les points superflus} : supprime les points inutiles après l'opération.
+    \item \terme{Considérer les contours} : prendre en compte les contours.
+\end{itemize}
+
+\subsection{Les avantages}
+
+\begin{itemize}
+    \item \terme{Intuitif} : on voit directement le résultat.
+    \item \terme{Rapide} : plus rapide que le Pathfinder.
+    \item \terme{Flexible} : on peut combiner plusieurs opérations en une seule.
+    \item \terme{Visuel} : on clique sur les zones à fusionner.
+\end{itemize}
+
+\subsection{Les utilisations}
+
+Le Concepteur de forme est utilisé pour :
+
+\begin{itemize}
+    \item \terme{Logos} : combiner des formes simples pour créer un logo.
+    \item \terme{Icônes} : fusionner des formes pour créer une icône.
+    \item \terme{Pictogrammes} : combiner des formes pour créer un pictogramme.
+    \item \terme{Illustrations} : fusionner des formes pour créer une illustration.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Sélectionner} les formes avant d'utiliser l'outil.
+    \item \terme{Utiliser} \texttt{Alt} pour soustraire.
+    \item \terme{Utiliser} \texttt{Maj} pour intersecter.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés après l'opération.
+    \item \terme{Combiner} plusieurs opérations.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Concepteur de forme} permet de combiner, fusionner ou soustraire des formes en cliquant ou en glissant. Il est intuitif, rapide, flexible. On l'utilise pour les logos, les icônes, les pictogrammes, les illustrations. Il est essentiel de sélectionner les formes, d'utiliser \texttt{Alt} pour soustraire, de vérifier le résultat.
+
+Maintenant que nous connaissons le Concepteur de forme, nous allons, dans la section suivante, apprendre à \terme{créer des intersections}.
+
+% ============================================================
+\section{Créer des intersections}
+% ============================================================
+
+\subsection{Qu'est-ce qu'une intersection ?}
+
+\begin{quote}
+\textbf{Une intersection est la zone commune entre deux ou plusieurs formes. Créer une intersection consiste à ne conserver que cette zone commune.}
+\end{quote}
+
+Les intersections sont utilisées pour :
+
+\begin{itemize}
+    \item \terme{Créer} des formes précises.
+    \item \terme{Isoler} une zone.
+    \item \terme{Combiner} des formes.
+    \item \terme{Créer} des pictogrammes.
+\end{itemize}
+
+\subsection{Créer une intersection avec le Pathfinder}
+
+\begin{enumerate}
+    \item Sélectionner les formes.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur \emph{Intersecter}.
+    \item Seule la zone de chevauchement est conservée.
+\end{enumerate}
+
+\subsection{Créer une intersection avec le Concepteur de forme}
+
+\begin{enumerate}
+    \item Sélectionner les formes.
+    \item Sélectionner l'outil Concepteur de forme (Maj + M).
+    \item Maintenir \texttt{Maj} et cliquer sur la zone de chevauchement.
+    \item Seule la zone de chevauchement est conservée.
+\end{enumerate}
+
+\subsection{Les utilisations}
+
+Les intersections sont utilisées pour :
+
+\begin{itemize}
+    \item \terme{Logos} : créer des formes précises.
+    \item \terme{Pictogrammes} : créer des symboles.
+    \item \terme{Illustrations} : créer des compositions.
+    \item \terme{Typographie} : créer des lettres personnalisées.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Organiser} les formes (dessus/dessous).
+    \item \terme{Choisir} la bonne opération.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Combiner} plusieurs intersections.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Une \terme{intersection} est la zone commune entre plusieurs formes. On la crée avec le Pathfinder (\emph{Intersecter}) ou le Concepteur de forme (\texttt{Maj}). Les intersections sont utilisées pour créer des formes précises, des logos, des pictogrammes, des illustrations. Il est essentiel d'organiser les formes, de choisir la bonne opération, de vérifier le résultat.
+
+Maintenant que nous savons créer des intersections, nous allons, dans la section suivante, apprendre à \terme{découper des formes}.
+
+% ============================================================
+\section{Découper des formes}
+% ============================================================
+
+\subsection{Qu'est-ce que la découpe ?}
+
+\begin{quote}
+\textbf{La découpe consiste à diviser une forme en plusieurs parties, en utilisant un tracé, une forme, ou l'outil Couteau.}
+\end{quote}
+
+La découpe est utilisée pour :
+
+\begin{itemize}
+    \item \terme{Diviser} une forme complexe.
+    \item \terme{Isoler} une partie.
+    \item \terme{Créer} des compositions.
+    \item \terme{Modifier} une forme existante.
+\end{itemize}
+
+\subsection{Les méthodes de découpe}
+
+\subsubsection{L'outil Couteau}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Couteau (dans le groupe de la Gomme).
+    \item Cliquer-glisser sur la forme pour la découper.
+    \item La forme est divisée en plusieurs parties.
+\end{enumerate}
+
+\subsubsection{L'outil Ciseaux}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Ciseaux (\texttt{C}).
+    \item Cliquer sur un point du tracé pour le couper.
+    \item Le tracé est divisé en deux.
+\end{enumerate}
+
+\subsubsection{Le Pathfinder (Diviser)}
+
+\begin{enumerate}
+    \item Sélectionner les formes à diviser.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur \emph{Diviser}.
+    \item Les formes sont divisées en parties.
+\end{enumerate}
+
+\subsubsection{Le Pathfinder (Rogner)}
+
+\begin{enumerate}
+    \item Sélectionner les formes à rogner.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur \emph{Rogner}.
+    \item Les zones de chevauchement sont supprimées.
+\end{enumerate}
+
+\subsection{Les utilisations}
+
+La découpe est utilisée pour :
+
+\begin{itemize}
+    \item \terme{Créer} des motifs.
+    \item \terme{Isoler} une partie d'une illustration.
+    \item \terme{Modifier} une forme existante.
+    \item \terme{Préparer} des éléments pour l'impression.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Choisir} la bonne méthode de découpe.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés après découpe.
+    \item \terme{Organiser} les parties découpées.
+    \item \terme{Travailler} sur des copies si nécessaire.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{découpe} divise une forme en plusieurs parties. On utilise l'outil Couteau, l'outil Ciseaux, ou le Pathfinder (\emph{Diviser}, \emph{Rogner}). Les découpes sont utilisées pour créer des motifs, isoler une partie, modifier une forme. Il est essentiel de choisir la bonne méthode, de vérifier le résultat, de simplifier les tracés.
+
+Maintenant que nous savons découper des formes, nous allons, dans la section suivante, étudier les \terme{masques d'écrêtage}.
+
+% ============================================================
+\section{Utiliser les masques d'écrêtage}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un masque d'écrêtage ?}
+
+\begin{quote}
+\textbf{Un masque d'écrêtage (ou \emph{clipping mask}) est un objet qui utilise sa forme pour masquer une partie d'un autre objet. Le masque agit comme une fenêtre : seul ce qui est à l'intérieur de la forme est visible.}
+\end{quote}
+
+Les masques d'écrêtage sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Limiter} la visibilité d'un objet à une forme.
+    \item \terme{Intégrer} une image dans une forme.
+    \item \terme{Créer} des effets de masque.
+    \item \terme{Contrôler} les zones visibles.
+\end{itemize}
+
+\subsection{Le principe du masque d'écrêtage}
+
+\subsubsection{Les éléments}
+
+Un masque d'écrêtage implique deux éléments :
+
+\begin{itemize}
+    \item \terme{Le masque} : la forme qui définit la zone visible.
+    \item \terme{Le contenu} : l'objet qui est masqué.
+\end{itemize}
+
+Le masque doit être placé \terme{au-dessus} du contenu.
+
+\subsubsection{Le résultat}
+
+Seul le contenu \terme{à l'intérieur} de la forme du masque est visible. Le contenu en dehors de la forme est masqué.
+
+\subsection{Créer un masque d'écrêtage}
+
+\subsubsection{Par le menu}
+
+\begin{enumerate}
+    \item Placer le masque au-dessus du contenu.
+    \item Sélectionner le masque et le contenu.
+    \item Utiliser \texttt{Objet > Masque d'écrêtage > Créer} (\texttt{Ctrl + 7}).
+    \item Le masque est créé.
+\end{enumerate}
+
+\subsubsection{Par le clic droit}
+
+\begin{enumerate}
+    \item Sélectionner le masque et le contenu.
+    \item Clic droit > \emph{Créer un masque d'écrêtage}.
+\end{enumerate}
+
+\subsection{Modifier un masque d'écrêtage}
+
+\subsubsection{Modifier le masque}
+
+\begin{enumerate}
+    \item Sélectionner le masque avec l'outil Sélection directe.
+    \item Modifier la forme du masque.
+    \item Le contenu s'adapte automatiquement.
+\end{enumerate}
+
+\subsubsection{Modifier le contenu}
+
+\begin{enumerate}
+    \item Sélectionner le contenu avec l'outil Sélection directe.
+    \item Déplacer ou transformer le contenu.
+    \item Le contenu reste masqué par la forme.
+\end{enumerate}
+
+\subsubsection{Libérer le masque}
+
+\begin{enumerate}
+    \item Sélectionner le masque.
+    \item Utiliser \texttt{Objet > Masque d'écrêtage > Libérer} (\texttt{Ctrl + Alt + 7}).
+    \item Le masque est libéré, les éléments sont séparés.
+\end{enumerate}
+
+\subsection{Les utilisations}
+
+Les masques d'écrêtage sont utilisés pour :
+
+\begin{itemize}
+    \item \terme{Logos} : intégrer un logo dans une forme.
+    \item \terme{Illustrations} : limiter une illustration à une forme.
+    \item \terme{Publicités} : intégrer une photo dans une forme.
+    \item \terme{Typographie} : remplir un texte avec une image.
+    \item \terme{Pictogrammes} : créer des icônes avec des formes.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Placer} le masque au-dessus du contenu.
+    \item \terme{Utiliser} \texttt{Ctrl + 7} pour créer.
+    \item \terme{Utiliser} \texttt{Ctrl + Alt + 7} pour libérer.
+    \item \terme{Modifier} le masque avec l'outil Sélection directe.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Organiser} les éléments dans le panneau Calques.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{masque d'écrêtage} utilise la forme d'un objet pour masquer une partie d'un autre objet. On le crée avec \texttt{Objet > Masque d'écrêtage > Créer} (\texttt{Ctrl + 7}). On peut modifier le masque ou le contenu, ou libérer le masque (\texttt{Ctrl + Alt + 7}). Les masques d'écrêtage sont utilisés pour intégrer une image dans une forme, limiter une illustration, remplir un texte.
+
+Maintenant que nous connaissons les masques d'écrêtage, nous allons, dans la section suivante, apprendre à \terme{organiser les objets et les groupes}.
+
+% ============================================================
+\section{Organiser les objets et les groupes}
+% ============================================================
+
+\subsection{Pourquoi organiser les objets ?}
+
+L'\terme{organisation} des objets est essentielle pour :
+
+\begin{itemize}
+    \item \terme{Comprendre} la structure du projet.
+    \item \terme{Modifier} facilement un élément.
+    \item \terme{Travailler} efficacement.
+    \item \terme{Collaborer} avec d'autres designers.
+    \item \terme{Préparer} les fichiers pour l'export.
+\end{itemize}
+
+Un projet bien organisé est plus facile à comprendre, à modifier, à transmettre.
+
+\subsection{Le panneau Calques}
+
+\subsubsection{Accès au panneau}
+
+Le panneau \terme{Calques} (\texttt{Fenêtre > Calques}) affiche la liste des calques et des objets du document.
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Nouveau calque} : créer un nouveau calque.
+    \item \terme{Dupliquer} : dupliquer un calque.
+    \item \terme{Supprimer} : supprimer un calque.
+    \item \terme{Nommer} : renommer un calque.
+    \item \terme{Verrouiller} : verrouiller un calque.
+    \item \terme{Masquer} : masquer un calque.
+    \item \terme{Colorer} : colorer un calque.
+\end{itemize}
+
+\subsection{Les calques}
+
+\subsubsection{Créer un calque}
+
+\begin{enumerate}
+    \item Cliquer sur \emph{Nouveau calque} dans le panneau Calques.
+    \item Nommer le calque.
+    \item Le calque est créé.
+\end{enumerate}
+
+\subsubsection{Organiser les calques}
+
+\begin{itemize}
+    \item \terme{Créer} un calque par catégorie (par exemple, « Logo », « Texte », « Image »).
+    \item \terme{Nommer} les calques de manière claire.
+    \item \terme{Colorer} les calques pour les identifier.
+    \item \terme{Verrouiller} les calques terminés.
+\end{itemize}
+
+\subsection{Les groupes}
+
+\subsubsection{Créer un groupe}
+
+\begin{enumerate}
+    \item Sélectionner les objets à grouper.
+    \item Utiliser \texttt{Objet > Grouper} (\texttt{Ctrl + G}).
+    \item Les objets sont groupés.
+\end{enumerate}
+
+\subsubsection{Dégrouper}
+
+\begin{enumerate}
+    \item Sélectionner le groupe.
+    \item Utiliser \texttt{Objet > Dégrouper} (\texttt{Ctrl + Maj + G}).
+    \item Les objets sont séparés.
+\end{enumerate}
+
+\subsubsection{Avantages des groupes}
+
+\begin{itemize}
+    \item \terme{Déplacer} plusieurs objets en même temps.
+    \item \terme{Redimensionner} plusieurs objets ensemble.
+    \item \terme{Appliquer} des transformations.
+    \item \terme{Organiser} les objets.
+\end{itemize}
+
+\subsection{L'ordre des objets}
+
+\subsubsection{Le principe}
+
+L'\terme{ordre des objets} détermine ce qui est devant et derrière. On peut :
+
+\begin{itemize}
+    \item \terme{Placer devant} : \texttt{Ctrl + Maj + ]}.
+    \item \terme{Placer derrière} : \texttt{Ctrl + Maj + [}.
+    \item \terme{Avancer} : \texttt{Ctrl + ]}.
+    \item \terme{Reculer} : \texttt{Ctrl + [}.
+\end{itemize}
+
+\subsubsection{Les utilisations}
+
+L'ordre des objets est important pour :
+
+\begin{itemize}
+    \item \terme{Créer} des superpositions.
+    \item \terme{Contrôler} la visibilité.
+    \item \terme{Organiser} la composition.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Organiser} les objets sur des calques.
+    \item \terme{Nommer} les calques.
+    \item \terme{Colorer} les calques.
+    \item \terme{Grouper} les objets liés.
+    \item \terme{Contrôler} l'ordre des objets.
+    \item \terme{Verrouiller} les calques terminés.
+    \item \terme{Enregistrer} régulièrement.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{organisation} des objets et des groupes est essentielle. On utilise le panneau Calques pour organiser les éléments, les groupes (\texttt{Ctrl + G}) pour regrouper, et l'ordre des objets (\texttt{Ctrl + ]}, \texttt{Ctrl + [}) pour contrôler la superposition. Il est essentiel de nommer les calques, de colorer, de grouper, de contrôler l'ordre.
+
+Maintenant que nous savons organiser les objets et les groupes, nous allons, dans la section suivante, apprendre à \terme{utiliser les transformations répétées}.
+
+% ============================================================
+\section{Utiliser les transformations répétées}
+% ============================================================
+
+\subsection{Qu'est-ce qu'une transformation répétée ?}
+
+\begin{quote}
+\textbf{Une transformation répétée consiste à appliquer une même transformation (rotation, mise à l'échelle, déplacement) plusieurs fois de suite, pour créer une série d'objets.}
+\end{quote}
+
+Les transformations répétées sont utilisées pour :
+
+\begin{itemize}
+    \item \terme{Créer} des motifs.
+    \item \terme{Générer} des séries d'objets.
+    \item \terme{Construire} des illustrations.
+    \item \terme{Gagner} du temps.
+\end{itemize}
+
+\subsection{Les méthodes de transformation répétée}
+
+\subsubsection{La commande Transformer à nouveau}
+
+\begin{enumerate}
+    \item Appliquer une transformation (par exemple, rotation de 15°).
+    \item Utiliser \texttt{Objet > Transformation > Transformer à nouveau} (\texttt{Ctrl + D}).
+    \item La transformation est répétée.
+\end{enumerate}
+
+\subsubsection{La duplication avec transformation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Utiliser \texttt{Objet > Transformation > Déplacer}.
+    \item Saisir un déplacement (horizontal ou vertical).
+    \item Cliquer sur \emph{Copier}.
+    \item Utiliser \texttt{Ctrl + D} pour répéter la duplication.
+\end{enumerate}
+
+\subsubsection{La rotation autour d'un point}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Rotation (\texttt{R}).
+    \item Maintenir \texttt{Alt} et cliquer sur le point de rotation.
+    \item Saisir un angle (par exemple, 30°).
+    \item Cliquer sur \emph{Copier}.
+    \item Utiliser \texttt{Ctrl + D} pour répéter la rotation.
+\end{enumerate}
+
+\subsubsection{La transformation avec l'outil Transformation manuelle}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Transformation manuelle (\texttt{E}).
+    \item Maintenir \texttt{Alt} et transformer (pour dupliquer).
+    \item Utiliser \texttt{Ctrl + D} pour répéter.
+\end{enumerate}
+
+\subsection{Les utilisations}
+
+Les transformations répétées sont utilisées pour :
+
+\begin{itemize}
+    \item \terme{Créer} des rosaces (rotations).
+    \item \terme{Créer} des motifs (répétitions).
+    \item \terme{Générer} des séries (duplications).
+    \item \terme{Construire} des illustrations géométriques.
+    \item \terme{Simuler} des effets (par exemple, des rayons).
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} \texttt{Ctrl + D} pour répéter.
+    \item \terme{Définir} un point de rotation précis (\texttt{Alt}).
+    \item \terme{Utiliser} des angles réguliers (15°, 30°, 45°, etc.).
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Grouper} les objets après la série.
+    \item \terme{Organiser} les éléments.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{transformations répétées} permettent d'appliquer une même transformation plusieurs fois. On utilise \texttt{Ctrl + D} pour répéter, l'outil Rotation avec \texttt{Alt} pour définir un point, l'outil Transformation manuelle pour dupliquer. Les transformations répétées sont utilisées pour créer des motifs, des séries, des illustrations géométriques. Il est essentiel d'utiliser \texttt{Ctrl + D}, de définir un point de rotation, de vérifier le résultat.
+
+Maintenant que nous savons utiliser les transformations répétées, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{construire des illustrations vectorielles propres}.
+
+% ============================================================
+\section{Construire des illustrations vectorielles propres}
+% ============================================================
+
+\subsection{Pourquoi des illustrations propres ?}
+
+Une \terme{illustration propre} est une illustration :
+
+\begin{itemize}
+    \item \terme{Précise} : les formes correspondent exactement à l'intention.
+    \item \terme{Simple} : peu de points, formes nettes.
+    \item \terme{Cohérente} : les éléments s'accordent.
+    \item \terme{Optimisée} : fichier léger, facile à modifier.
+    \item \terme{Professionnelle} : résultat soigné.
+\end{itemize}
+
+Une illustration propre est plus facile à modifier, à exporter, à transmettre. Elle donne une image professionnelle.
+
+\subsection{Les principes de construction}
+
+\subsubsection{La simplicité}
+
+Une illustration propre est \terme{simple} :
+
+\begin{itemize}
+    \item \terme{Limiter} le nombre de formes.
+    \item \terme{Limiter} le nombre de points.
+    \item \terme{Limiter} le nombre de couleurs.
+\end{itemize}
+
+\subsubsection{La cohérence}
+
+Une illustration propre est \terme{cohérente} :
+
+\begin{itemize}
+    \item \terme{Même} style de formes.
+    \item \terme{Même} épaisseur de contours.
+    \item \terme{Même} palette de couleurs.
+    \item \terme{Même} niveau de détail.
+\end{itemize}
+
+\subsubsection{La précision}
+
+Une illustration propre est \terme{précise} :
+
+\begin{itemize}
+    \item \terme{Points} bien placés.
+    \item \terme{Courbes} fluides.
+    \item \terme{Alignements} respectés.
+    \item \terme{Proportions} correctes.
+\end{itemize}
+
+\subsubsection{L'optimisation}
+
+Une illustration propre est \terme{optimisée} :
+
+\begin{itemize}
+    \item \terme{Points} superflus supprimés.
+    \item \terme{Tracés} simplifiés.
+    \item \terme{Calques} organisés.
+    \item \terme{Fichier} léger.
+\end{itemize}
+
+\subsection{Les étapes de construction}
+
+\subsubsection{Étape 1 : Concevoir}
+
+\begin{itemize}
+    \item \terme{Définir} l'objectif.
+    \item \terme{Esquisser} l'illustration.
+    \item \terme{Choisir} le style.
+\end{itemize}
+
+\subsubsection{Étape 2 : Construire les formes de base}
+
+\begin{itemize}
+    \item \terme{Créer} les formes géométriques de base.
+    \item \terme{Positionner} les formes.
+    \item \terme{Aligner} les formes.
+\end{itemize}
+
+\subsubsection{Étape 3 : Combiner les formes}
+
+\begin{itemize}
+    \item \terme{Utiliser} le Pathfinder pour combiner.
+    \item \terme{Utiliser} le Concepteur de forme pour fusionner.
+    \item \terme{Utiliser} les masques d'écrêtage pour limiter.
+\end{itemize}
+
+\subsubsection{Étape 4 : Dessiner les détails}
+
+\begin{itemize}
+    \item \terme{Dessiner} les courbes avec la Plume.
+    \item \terme{Ajouter} les détails.
+    \item \terme{Simplifier} les tracés.
+\end{itemize}
+
+\subsubsection{Étape 5 : Appliquer les couleurs}
+
+\begin{itemize}
+    \item \terme{Choisir} la palette.
+    \item \terme{Appliquer} les couleurs.
+    \item \terme{Vérifier} la cohérence.
+\end{itemize}
+
+\subsubsection{Étape 6 : Vérifier}
+
+\begin{itemize}
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Vérifier} la cohérence.
+    \item \terme{Vérifier} l'équilibre.
+    \item \terme{Vérifier} la lisibilité.
+\end{itemize}
+
+\subsubsection{Étape 7 : Optimiser}
+
+\begin{itemize}
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Supprimer} les points inutiles.
+    \item \terme{Organiser} les calques.
+    \item \terme{Nettoyer} le fichier.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Commencer} par concevoir.
+    \item \terme{Utiliser} des formes géométriques de base.
+    \item \terme{Combiner} les formes avec le Pathfinder.
+    \item \terme{Dessiner} avec la Plume.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Appliquer} une palette cohérente.
+    \item \terme{Organiser} les calques.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Optimiser} le fichier.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Une \terme{illustration vectorielle propre} est précise, simple, cohérente, optimisée, professionnelle. Elle repose sur la simplicité, la cohérence, la précision, l'optimisation. La construction suit plusieurs étapes : concevoir, construire les formes de base, combiner les formes, dessiner les détails, appliquer les couleurs, vérifier, optimiser. Il est essentiel de commencer par concevoir, d'utiliser des formes géométriques, de combiner, de simplifier, d'organiser, de vérifier.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 17. Nous avons appris à maîtriser la manipulation avancée des formes dans Illustrator :
+
+\begin{itemize}
+    \item \terme{Tracés composés} : sous-tracés, trous, règle de remplissage, création (\texttt{Ctrl + 8}), libération (\texttt{Ctrl + Alt + 8}).
+    \item \terme{Pathfinder} : ajouter, soustraire, intersecter, exclure, diviser, rogner, fusionner, contour, moins devant, moins derrière.
+    \item \terme{Ajout, soustraction, combinaison} : combiner des formes pour créer de nouvelles formes.
+    \item \terme{Concepteur de forme} : outil intuitif pour fusionner, soustraire, intersecter.
+    \item \terme{Intersections} : conserver uniquement la zone commune entre plusieurs formes.
+    \item \terme{Découpe} : Couteau, Ciseaux, Pathfinder (Diviser, Rogner).
+    \item \terme{Masques d'écrêtage} : limiter la visibilité d'un objet à une forme (\texttt{Ctrl + 7}).
+    \item \terme{Organisation} : calques, groupes, ordre des objets.
+    \item \terme{Transformations répétées} : \texttt{Ctrl + D}, rotations, duplications.
+    \item \terme{Illustrations vectorielles propres} : simplicité, cohérence, précision, optimisation.
+\end{itemize}
+
+La manipulation avancée des formes est ce qui distingue un dessinateur d'un designer. Un dessinateur crée des formes individuelles ; un designer sait les combiner, les soustraire, les intersecter, les organiser pour produire des illustrations propres, précises, efficaces. Les outils comme le Pathfinder, le Concepteur de forme, les masques d'écrêtage permettent de construire des formes complexes à partir de formes simples.
+
+Ces techniques sont indispensables pour créer des logos, des pictogrammes, des icônes, des illustrations techniques, des infographies. Elles permettent d'obtenir des contours nets, des formes précises, des compositions propres. Un designer qui ne maîtrise pas ces outils se contente d'empiler des formes approximatives ; un designer qui les maîtrise peut créer des illustrations complexes avec une grande économie de moyens.
+
+Ce chapitre t'a donné les bases de la manipulation avancée des formes. Mais la maîtrise vient avec la pratique. N'hésite pas à t'entraîner sur des projets variés : logos, pictogrammes, illustrations, infographies. Chaque projet est un nouveau défi, et chaque défi est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons les \terme{couleurs, dégradés et contours}. Tu apprendras à appliquer des couleurs aux objets, à utiliser les nuanciers, à créer et enregistrer des couleurs globales, à utiliser les dégradés linéaires et radiaux, à maîtriser les contours, à régler les extrémités et les angles, à créer des motifs répétitifs, à gérer les transparences, et à préparer les couleurs pour l'impression. Ces compétences te permettront de donner vie à tes illustrations.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 17 --- Manipulation avancée des formes.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 18 --- Couleurs, dégradés et contours.}
+\end{center}

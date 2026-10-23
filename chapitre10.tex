@@ -1,0 +1,1503 @@
+% ============================================================
+% CHAPITRE 10 — Retouche photographique
+% ============================================================
+
+\chapter{Retouche photographique}
+
+\noindent
+\textit{Dans les chapitres précédents, nous avons appris à créer des documents, à manipuler des images, à organiser des calques, à sélectionner et à détourer. Ces compétences sont essentielles pour composer. Mais avant de composer, il faut souvent \emph{corriger} : corriger une photo trop sombre, trop claire, trop froide, trop chaude, corriger une imperfection, corriger une dominante de couleur. C'est l'objet de ce chapitre.}
+
+\vspace{1em}
+
+\noindent
+La \terme{retouche photographique} est l'un des usages historiques de Photoshop. Elle consiste à corriger, améliorer, sublimer une photographie, sans la dénaturer. Une retouche réussie est une retouche \emph{invisible} : le spectateur ne voit pas qu'elle a été faite, il voit simplement une belle image. Une retouche ratée est une retouche \emph{visible} : couleurs irréalistes, peau en plastique, halos, contrastes excessifs, image qui semble fausse.
+
+\vspace{1em}
+
+\noindent
+La retouche photographique est un métier en soi, mais c'est aussi une compétence indispensable pour tout designer graphique. Que tu retouches une photo de produit pour une publicité, un portrait pour un magazine, un paysage pour une brochure, ou une image pour un site web, tu dois savoir corriger l'exposition, le contraste, la couleur, supprimer les imperfections, améliorer la netteté, tout en conservant un résultat naturel.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser les bases de la retouche photographique dans Photoshop. Nous commencerons par les principes généraux de la retouche. Nous apprendrons ensuite à corriger l'exposition et le contraste, à utiliser les niveaux et les courbes, à corriger la balance des couleurs, à ajuster la teinte et la saturation, à supprimer les imperfections, à utiliser les outils Correcteur et Tampon, à retoucher les portraits, à améliorer la netteté, à réduire les défauts visibles, à corriger les dominantes de couleur, et enfin à conserver un résultat naturel. À la fin de ce chapitre, tu sauras retoucher une photographie de manière professionnelle.
+
+% ============================================================
+\section{Principes de la retouche photo}
+% ============================================================
+
+\subsection{Qu'est-ce que la retouche photo ?}
+
+\begin{quote}
+\textbf{La retouche photo est l'ensemble des opérations qui consistent à corriger, améliorer ou transformer une photographie, en agissant sur la lumière, la couleur, les défauts, les détails, sans altérer son authenticité.}
+\end{quote}
+
+La retouche photo ne consiste pas à \emph{inventer} une image, mais à \emph{révéler} son potentiel. Une bonne photo mal exposée peut devenir excellente après retouche. Une mauvaise photo ne deviendra jamais excellente, même avec la meilleure retouche du monde.
+
+\subsection{Les objectifs de la retouche photo}
+
+\subsubsection{Corriger}
+
+La retouche permet de corriger les défauts d'une photo :
+
+\begin{itemize}
+    \item \terme{Exposition} : photo trop sombre ou trop claire.
+    \item \terme{Contraste} : photo terne ou trop contrastée.
+    \item \terme{Couleur} : balance des couleurs incorrecte, dominante.
+    \item \terme{Netteté} : photo floue ou manquant de piqué.
+    \item \terme{Imperfections} : taches, poussières, rayures.
+    \item \terme{Défauts} : yeux rouges, reflets, distorsions.
+\end{itemize}
+
+\subsubsection{Améliorer}
+
+La retouche permet d'améliorer une photo :
+
+\begin{itemize}
+    \item \terme{Éclaircir} les ombres.
+    \item \terme{Adoucir} les hautes lumières.
+    \item \terme{Augmenter} le contraste local.
+    \item \terme{Rehausser} les couleurs.
+    \item \terme{Accentuer} la netteté.
+    \item \terme{Améliorer} la peau, les yeux, les dents.
+\end{itemize}
+
+\subsubsection{Sublimer}
+
+La retouche permet de sublimer une photo :
+
+\begin{itemize}
+    \item \terme{Créer} une ambiance.
+    \item \terme{Donner} un style.
+    \item \terme{Corriger} les imperfections.
+    \item \terme{Harmoniser} les couleurs.
+    \item \terme{Préparer} la photo pour un usage spécifique.
+\end{itemize}
+
+\subsection{Les principes fondamentaux}
+
+\subsubsection{Le principe de non-destructivité}
+
+La retouche doit être \terme{non destructive} : on ne modifie pas les pixels d'origine. On utilise :
+
+\begin{itemize}
+    \item Des \terme{calques} pour superposer les corrections.
+    \item Des \terme{calques de réglage} pour les corrections globales.
+    \item Des \terme{masques} pour appliquer localement.
+    \item Des \terme{objets dynamiques} pour les transformations.
+\end{itemize}
+
+\subsubsection{Le principe de discrétion}
+
+La retouche doit être \terme{invisible} : le spectateur ne doit pas voir qu'elle a été faite. Il faut éviter :
+
+\begin{itemize}
+    \item Les \terme{couleurs irréalistes}.
+    \item Les \terme{contrastes excessifs}.
+    \item Les \terme{peaux en plastique}.
+    \item Les \terme{halos}.
+    \item Les \terme{sur-accentuations}.
+\end{itemize}
+
+\subsubsection{Le principe de naturalité}
+
+La retouche doit \terme{conserver la naturalité} de l'image. Une photo retouchée doit rester crédible : elle doit sembler avoir été prise ainsi, pas d'avoir été retouchée.
+
+\subsubsection{Le principe de respect}
+
+La retouche doit \terme{respecter le sujet} : on ne déforme pas, on ne transforme pas, on n'invente pas. On corrige, on améliore, on sublime, mais on respecte.
+
+\subsection{Les étapes de la retouche}
+
+\subsubsection{Étape 1 : Analyse}
+
+Analyser la photo avant de retoucher :
+
+\begin{itemize}
+    \item \terme{Exposition} : est-elle correcte ? Trop sombre ? Trop claire ?
+    \item \terme{Contraste} : est-il suffisant ? Trop fort ? Trop faible ?
+    \item \terme{Couleur} : la balance des couleurs est-elle correcte ? Y a-t-il une dominante ?
+    \item \terme{Netteté} : la photo est-elle nette ? Y a-t-il du flou ?
+    \item \terme{Imperfections} : y a-t-il des taches, des poussières, des défauts ?
+\end{itemize}
+
+\subsubsection{Étape 2 : Corrections globales}
+
+Commencer par les corrections globales :
+
+\begin{itemize}
+    \item \terme{Exposition} et \terme{contraste} (niveaux, courbes, luminosité/contraste).
+    \item \terme{Balance des couleurs} (balance des couleurs, teinte/saturation).
+    \item \terme{Saturation} et \terme{vibrance}.
+\end{itemize}
+
+\subsubsection{Étape 3 : Corrections locales}
+
+Ensuite, les corrections locales :
+
+\begin{itemize}
+    \item \terme{Suppression} des imperfections (Correcteur, Tampon).
+    \item \terme{Retouche} des portraits (peau, yeux, dents).
+    \item \terme{Éclaircissement} des ombres, \terme{adoucissement} des hautes lumières.
+    \item \terme{Accentuation} de la netteté.
+\end{itemize}
+
+\subsubsection{Étape 4 : Vérification}
+
+Vérifier le résultat :
+
+\begin{itemize}
+    \item \terme{Comparer} avec l'original (avant/après).
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Vérifier} la naturalité (pas de sur-retouche).
+    \item \terme{Vérifier} sur différents écrans.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-retoucher}
+
+Trop de contraste, trop de saturation, trop de netteté : la photo devient irréaliste.
+
+\subsubsection{Perdre la naturalité}
+
+Les peaux deviennent en plastique, les yeux surnaturels, les couleurs criardes.
+
+\subsubsection{Ne pas travailler en non destructif}
+
+Modifier directement les pixels empêche de revenir en arrière.
+
+\subsubsection{Négliger la colorimétrie}
+
+Travailler sans profil colorimétrique correct donne des couleurs fausses.
+
+\subsubsection{Ne pas vérifier}
+
+Ne pas comparer avec l'original, ne pas zoomer, ne pas tester sur différents écrans.
+
+\subsection*{Conclusion de la section}
+
+La \terme{retouche photo} consiste à corriger, améliorer, sublimer une photographie sans la dénaturer. Elle repose sur quatre principes : non-destructivité, discrétion, naturalité, respect. Les étapes sont : analyse, corrections globales, corrections locales, vérification. Les erreurs courantes sont : sur-retoucher, perdre la naturalité, ne pas travailler en non destructif, négliger la colorimétrie, ne pas vérifier.
+
+Maintenant que nous connaissons les principes, nous allons, dans la section suivante, apprendre à \terme{corriger l'exposition et le contraste}.
+
+% ============================================================
+\section{Corriger l'exposition et le contraste}
+% ============================================================
+
+\subsection{L'exposition}
+
+\subsubsection{Définition}
+
+L'\terme{exposition} est la quantité de lumière captée par la photo. Une photo \terme{sous-exposée} est trop sombre ; une photo \terme{surexposée} est trop claire.
+
+\subsubsection{Les symptômes d'une mauvaise exposition}
+
+\begin{itemize}
+    \item \terme{Sous-exposition} : image sombre, ombres bouchées, détails perdus dans les noirs.
+    \item \terme{Surexposition} : image claire, hautes lumières écrasées, détails perdus dans les blancs.
+\end{itemize}
+
+\subsubsection{Corriger l'exposition}
+
+\begin{itemize}
+    \item \terme{Luminosité/Contraste} (calque de réglage) : ajuster le curseur de luminosité.
+    \item \terme{Niveaux} (calque de réglage) : ajuster le point blanc et le point noir.
+    \item \terme{Courbes} (calque de réglage) : ajuster la courbe pour éclaircir ou assombrir.
+    \item \terme{Exposition} (calque de réglage) : ajuster l'exposition (pour les images HDR).
+    \item \terme{Camera Raw} (\texttt{Filtre > Camera Raw}) : ajuster l'exposition, les hautes lumières, les ombres.
+\end{itemize}
+
+\subsection{Le contraste}
+
+\subsubsection{Définition}
+
+Le \terme{contraste} est la différence entre les zones claires et les zones sombres d'une image. Un contraste élevé donne une image dynamique ; un contraste faible donne une image terne.
+
+\subsubsection{Les symptômes d'un mauvais contraste}
+
+\begin{itemize}
+    \item \terme{Contraste faible} : image terne, plate, sans relief.
+    \item \terme{Contraste excessif} : image dure, détails perdus dans les ombres et les hautes lumières.
+\end{itemize}
+
+\subsubsection{Corriger le contraste}
+
+\begin{itemize}
+    \item \terme{Luminosité/Contraste} : ajuster le curseur de contraste.
+    \item \terme{Niveaux} : ajuster les points noir et blanc.
+    \item \terme{Courbes} : ajuster la courbe en S pour augmenter le contraste.
+    \item \terme{Camera Raw} : ajuster le contraste, la clarté, la vibrance.
+\end{itemize}
+
+\subsection{La combinaison exposition/contraste}
+
+\subsubsection{Le principe}
+
+L'exposition et le contraste sont liés : augmenter l'exposition peut réduire le contraste, et inversement. Il faut donc ajuster les deux ensemble.
+
+\subsubsection{La méthode}
+
+\begin{enumerate}
+    \item Ajuster l'exposition (curseur de luminosité).
+    \item Ajuster le contraste (curseur de contraste).
+    \item Vérifier le résultat (histogramme, avant/après).
+\end{enumerate}
+
+\subsection{L'histogramme}
+
+\subsubsection{Définition}
+
+L'\terme{histogramme} est un graphique qui représente la distribution des luminances d'une image : les ombres à gauche, les tons moyens au centre, les hautes lumières à droite.
+
+\subsubsection{Utilisation}
+
+\begin{itemize}
+    \item \terme{Vérifier} l'exposition : l'histogramme doit être équilibré, sans pics aux extrémités.
+    \item \terme{Détecter} les zones bouchées (pics à gauche) ou écrasées (pics à droite).
+    \item \terme{Ajuster} les niveaux en fonction de l'histogramme.
+\end{itemize}
+
+\subsubsection{Les profils d'histogramme}
+
+\begin{itemize}
+    \item \terme{Histogramme équilibré} : bonne exposition.
+    \item \terme{Histogramme décalé à gauche} : sous-exposition.
+    \item \terme{Histogramme décalé à droite} : surexposition.
+    \item \terme{Histogramme écrasé} : manque de contraste.
+    \item \terme{Histogramme en pics} : saturation des noirs ou des blancs.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} des calques de réglage.
+    \item \terme{Travailler} en 16 bits pour plus de précision.
+    \item \terme{Vérifier} l'histogramme.
+    \item \terme{Comparer} avant/après.
+    \item \terme{Éviter} les contrastes excessifs.
+    \item \terme{Conserver} les détails dans les ombres et les hautes lumières.
+    \item \terme{Ajuster} exposition et contraste ensemble.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{exposition} et le \terme{contraste} sont les deux paramètres fondamentaux de la retouche photo. L'exposition est la quantité de lumière captée ; le contraste est la différence entre les zones claires et sombres. On les corrige avec les calques de réglage (Luminosité/Contraste, Niveaux, Courbes, Camera Raw). L'histogramme permet de vérifier l'équilibre. Il est essentiel de les ajuster ensemble, de vérifier l'histogramme, de comparer avant/après.
+
+Maintenant que nous savons corriger l'exposition et le contraste, nous allons, dans la section suivante, apprendre à \terme{régler les niveaux et les courbes}.
+
+% ============================================================
+\section{Régler les niveaux et les courbes}
+% ============================================================
+
+\subsection{Les niveaux}
+
+\subsubsection{Définition}
+
+Les \terme{niveaux} permettent d'ajuster les points noir, blanc et gris d'une image. On redistribue les luminances pour améliorer le contraste et l'exposition.
+
+\subsubsection{La boîte de dialogue Niveaux}
+
+\begin{itemize}
+    \item \terme{Point noir} : définit la valeur la plus sombre de l'image.
+    \item \terme{Point blanc} : définit la valeur la plus claire de l'image.
+    \item \terme{Tons moyens} : définit la luminosité des tons moyens (gamma).
+    \item \terme{Histogramme} : affiche la distribution des luminances.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Niveaux}.
+    \item Ajuster le point noir (curseur gauche) pour assombrir les ombres.
+    \item Ajuster le point blanc (curseur droit) pour éclaircir les hautes lumières.
+    \item Ajuster les tons moyens (curseur central) pour éclaircir ou assombrir les tons moyens.
+\end{enumerate}
+
+\subsubsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} les niveaux pour corriger l'exposition et le contraste.
+    \item \terme{Ne pas écraser} les noirs ou les blancs (sauf effet volontaire).
+    \item \terme{Travailler} en non destructif (calque de réglage).
+    \item \terme{Vérifier} l'histogramme.
+\end{itemize}
+
+\subsection{Les courbes}
+
+\subsubsection{Définition}
+
+Les \terme{courbes} sont un outil plus précis que les niveaux : elles permettent d'ajuster chaque tonalité de l'image, pas seulement les trois points (noir, blanc, gris).
+
+\subsubsection{La boîte de dialogue Courbes}
+
+\begin{itemize}
+    \item \terme{Courbe} : une courbe qui représente la relation entre les valeurs d'entrée (axe horizontal) et les valeurs de sortie (axe vertical).
+    \item \terme{Points de contrôle} : on peut ajouter des points sur la courbe pour ajuster des tonalités précises.
+    \item \terme{Histogramme} : affiche la distribution des luminances.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Ajouter des points de contrôle sur la courbe.
+    \item Déplacer les points vers le haut pour éclaircir, vers le bas pour assombrir.
+    \item Ajuster la courbe en S pour augmenter le contraste.
+\end{enumerate}
+
+\subsubsection{Les courbes courantes}
+
+\begin{itemize}
+    \item \terme{Courbe en S} : augmente le contraste (courbe qui monte légèrement dans les hautes lumières, descend légèrement dans les ombres).
+    \item \terme{Courbe inversée} : réduit le contraste (courbe qui descend dans les hautes lumières, monte dans les ombres).
+    \item \terme{Courbe en cloche} : éclaircit les tons moyens.
+    \item \terme{Courbe en U} : assombrit les tons moyens.
+\end{itemize}
+
+\subsubsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} les courbes pour les corrections précises.
+    \item \terme{Travailler} en non destructif (calque de réglage).
+    \item \terme{Ne pas déformer} excessivement la courbe.
+    \item \terme{Vérifier} l'histogramme.
+    \item \terme{Combiner} avec les niveaux si nécessaire.
+\end{itemize}
+
+\subsection{Comparaison niveaux / courbes}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{5cm}p{5cm}@{}}
+\toprule
+\textbf{Critère} & \textbf{Niveaux} & \textbf{Courbes} \\
+\midrule
+Précision & Moyenne (3 points) & Élevée (points multiples) \\
+Simplicité & Simple & Plus complexe \\
+Contrôle & Global & Précis \\
+Utilisation & Corrections rapides & Corrections fines \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison niveaux / courbes.}
+\end{table}
+
+\subsection{Les bonnes pratiques globales}
+
+\begin{itemize}
+    \item \terme{Commencer} par les niveaux pour corriger l'exposition globale.
+    \item \terme{Affiner} avec les courbes pour les corrections précises.
+    \item \terme{Travailler} en non destructif (calques de réglage).
+    \item \terme{Masquer} les réglages sur certaines zones si nécessaire.
+    \item \terme{Vérifier} l'histogramme.
+    \item \terme{Comparer} avant/après.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{niveaux} et les \terme{courbes} sont les outils essentiels pour corriger l'exposition et le contraste. Les niveaux ajustent les points noir, blanc et gris. Les courbes ajustent chaque tonalité de manière plus précise. On les utilise en non destructif (calques de réglage). Il est essentiel de commencer par les niveaux, d'affiner avec les courbes, de vérifier l'histogramme, de comparer avant/après.
+
+Maintenant que nous savons régler les niveaux et les courbes, nous allons, dans la section suivante, apprendre à \terme{corriger la balance des couleurs}.
+
+% ============================================================
+\section{Corriger la balance des couleurs}
+% ============================================================
+
+\subsection{La balance des couleurs}
+
+\subsubsection{Définition}
+
+La \terme{balance des couleurs} est l'équilibre entre les couleurs chaudes (rouge, jaune) et les couleurs froides (bleu, cyan) d'une image. Une balance correcte donne une image neutre ; une balance incorrecte donne une image avec une \terme{dominante} (trop chaude ou trop froide).
+
+\subsubsection{Les symptômes d'une mauvaise balance}
+
+\begin{itemize}
+    \item \terme{Dominante chaude} : image trop rouge, trop jaune, trop orange.
+    \item \terme{Dominante froide} : image trop bleue, trop cyan.
+    \item \terme{Dominante verte} : image trop verte.
+    \item \terme{Dominante magenta} : image trop magenta.
+\end{itemize}
+
+\subsubsection{Les causes}
+
+\begin{itemize}
+    \item \terme{Éclairage} : lumière incandescente (chaude), lumière fluorescente (froide ou verte), lumière du jour (neutre).
+    \item \terme{Réglages} de l'appareil photo (balance des blancs).
+    \item \terme{Post-traitement} incorrect.
+\end{itemize}
+
+\subsection{Corriger la balance des couleurs}
+
+\subsubsection{Le calque de réglage Balance des couleurs}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Balance des couleurs}.
+    \item Ajuster les curseurs \emph{Cyan-Rouge}, \emph{Magenta-Vert}, \emph{Jaune-Bleu}.
+    \item Cibler les tons concernés : \emph{Ombres}, \emph{Tons moyens}, \emph{Hautes lumières}.
+    \item Vérifier le résultat (avant/après).
+\end{enumerate}
+
+\subsubsection{Le calque de réglage Teinte/Saturation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Teinte/Saturation}.
+    \item Sélectionner la couleur concernée (par exemple, \emph{Rouges}).
+    \item Ajuster la \emph{Teinte} pour corriger la dominante.
+    \item Ajuster la \emph{Saturation} pour réduire l'intensité.
+\end{enumerate}
+
+\subsubsection{L'outil Échantillon de couleur neutre}
+
+Pour corriger précisément, on peut utiliser les \emph{pipettes} de la balance des couleurs :
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Utiliser la pipette \emph{Point noir} pour définir une zone neutre noire.
+    \item Utiliser la pipette \emph{Point gris} pour définir une zone neutre grise.
+    \item Utiliser la pipette \emph{Point blanc} pour définir une zone neutre blanche.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} la dominante (chaude, froide, verte, magenta).
+    \item \terme{Corriger} avec la balance des couleurs ou la teinte/saturation.
+    \item \terme{Utiliser} une zone neutre (blanc, gris, noir) pour la référence.
+    \item \terme{Travailler} en non destructif (calque de réglage).
+    \item \terme{Masquer} les réglages sur les zones non concernées.
+    \item \terme{Vérifier} le résultat (avant/après, sur plusieurs écrans).
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Corriger globalement une dominante localisée}
+
+Si la dominante n'est que sur une partie de l'image, il faut masquer le réglage sur les autres zones.
+
+\subsubsection{Sur-corriger}
+
+Trop corriger la balance donne une image irréaliste. Il faut corriger progressivement et vérifier.
+
+\subsubsection{Ne pas choisir la bonne référence}
+
+Choisir une zone qui n'est pas neutre (par exemple, un ciel bleu) comme référence fausse la correction.
+
+\subsection*{Conclusion de la section}
+
+La \terme{balance des couleurs} est l'équilibre entre les couleurs chaudes et froides. Une mauvaise balance donne une dominante (chaude, froide, verte, magenta). On la corrige avec la balance des couleurs, la teinte/saturation, ou les pipettes des courbes. Il est essentiel d'identifier la dominante, de corriger progressivement, de masquer les réglages, de vérifier le résultat.
+
+Maintenant que nous savons corriger la balance des couleurs, nous allons, dans la section suivante, apprendre à \terme{ajuster la teinte et la saturation}.
+
+% ============================================================
+\section{Ajuster la teinte et la saturation}
+% ============================================================
+
+\subsection{La teinte, la saturation et la luminosité}
+
+\subsubsection{Rappel}
+
+\begin{itemize}
+    \item \terme{Teinte} : la couleur elle-même (rouge, bleu, vert).
+    \item \terme{Saturation} : l'intensité de la couleur.
+    \item \terme{Luminosité} : la clarté de la couleur.
+\end{itemize}
+
+\subsection{Le calque de réglage Teinte/Saturation}
+
+\subsubsection{Présentation}
+
+Le calque de réglage \emph{Teinte/Saturation} permet d'ajuster la teinte, la saturation et la luminosité globalement ou sélectivement.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Teinte/Saturation}.
+    \item Choisir la plage de couleurs : \emph{Tout}, \emph{Rouges}, \emph{Jaunes}, \emph{Verts}, \emph{Cyans}, \emph{Bleus}, \emph{Magentas}.
+    \item Ajuster la \emph{Teinte}, la \emph{Saturation}, la \emph{Luminosité}.
+    \item Utiliser les pipettes pour sélectionner précisément une couleur.
+    \item Ajuster la plage avec les curseurs de limites.
+\end{enumerate}
+
+\subsubsection{Les applications}
+
+\begin{itemize}
+    \item \terme{Rehausser} une couleur spécifique (par exemple, un ciel bleu).
+    \item \terme{Réduire} la saturation d'une couleur (par exemple, un fond vert).
+    \item \terme{Changer} la couleur d'un élément (par exemple, une voiture rouge en bleu).
+    \item \terme{Corriger} une dominante localisée.
+\end{itemize}
+
+\subsection{Le calque de réglage Vibrance}
+
+\subsubsection{Présentation}
+
+Le calque de réglage \emph{Vibrance} ajuste la saturation de manière intelligente : il protège les tons chairs et évite la sur-saturation.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Vibrance}.
+    \item Ajuster le curseur \emph{Vibrance} pour la saturation intelligente.
+    \item Ajuster le curseur \emph{Saturation} pour la saturation globale.
+\end{enumerate}
+
+\subsubsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Protège} les tons chairs.
+    \item \terme{Évite} la sur-saturation.
+    \item \terme{Donne} un résultat naturel.
+\end{itemize}
+
+\subsection{Le calque de réglage Noir et blanc}
+
+\subsubsection{Présentation}
+
+Le calque de réglage \emph{Noir et blanc} convertit une image en noir et blanc, tout en permettant de contrôler la conversion des couleurs.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Noir et blanc}.
+    \item Ajuster les curseurs de chaque couleur (Rouges, Jaunes, Verts, Cyans, Bleus, Magentas) pour contrôler la conversion.
+    \item Utiliser l'option \emph{Teinte} pour ajouter une coloration sépia, cyanotype, etc.
+\end{enumerate}
+
+\subsubsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Contrôle} précis de la conversion.
+    \item \terme{Non destructif}.
+    \item \terme{Modifiable} à tout moment.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} la teinte/saturation pour les ajustements précis.
+    \item \terme{Utiliser} la vibrance pour la saturation naturelle.
+    \item \terme{Utiliser} le noir et blanc pour la conversion contrôlée.
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Masquer} les réglages sur les zones non concernées.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Ne pas sur-saturer} : les couleurs doivent rester naturelles.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-saturation}
+
+Les couleurs deviennent criardes, irréalistes. Il faut ajuster progressivement.
+
+\subsubsection{Saturer les tons chairs}
+
+Les tons chairs sont sensibles à la saturation. Il faut les protéger (vibrance, masque).
+
+\subsubsection{Changer une couleur globalement}
+
+Si on change une couleur globalement, toutes les zones de cette couleur changent. Il faut utiliser des masques.
+
+\subsection*{Conclusion de la section}
+
+La \terme{teinte}, la \terme{saturation} et la \terme{luminosité} sont les trois dimensions de la couleur. Le calque de réglage \emph{Teinte/Saturation} permet de les ajuster globalement ou sélectivement. Le calque \emph{Vibrance} ajuste la saturation de manière intelligente. Le calque \emph{Noir et blanc} convertit en noir et blanc avec contrôle. Il est essentiel de travailler en non destructif, de masquer les réglages, de vérifier le résultat, de ne pas sur-saturer.
+
+Maintenant que nous savons ajuster la teinte et la saturation, nous allons, dans la section suivante, apprendre à \terme{supprimer les imperfections}.
+
+% ============================================================
+\section{Supprimer les imperfections}
+% ============================================================
+
+\subsection{Les imperfections courantes}
+
+\subsubsection{Les imperfections de surface}
+
+\begin{itemize}
+    \item \terme{Taches} : sur la peau, sur les murs, sur les surfaces.
+    \item \terme{Poussières} : sur les capteurs, sur les objets.
+    \item \terme{Rayures} : sur les photos anciennes.
+    \item \terme{Craquelures} : sur les peintures, les photos.
+    \item \terme{Cheveux} : sur la peau, sur les vêtements.
+\end{itemize}
+
+\subsubsection{Les imperfections de contenu}
+
+\begin{itemize}
+    \item \terme{Objets indésirables} : un poteau, une personne, un élément distrayant.
+    \item \terme{Éléments parasites} : un fil, une poussière, une tache.
+    \item \terme{Défauts} : yeux rouges, reflets, distorsions.
+\end{itemize}
+
+\subsection{Les outils de suppression}
+
+\subsubsection{L'outil Correcteur}
+
+L'\terme{outil Correcteur} (Spot Healing Brush, \texttt{J}) supprime les imperfections en les remplaçant par les pixels environnants. Il est idéal pour les taches, les poussières, les petites imperfections.
+
+\subsubsection{L'outil Correcteur par plage}
+
+L'\terme{outil Correcteur par plage} (Healing Brush) supprime les imperfections en utilisant une zone source définie. Il est utile pour les imperfections plus grandes.
+
+\subsubsection{L'outil Pièce}
+
+L'\terme{outil Pièce} (Patch) remplace une zone par une autre, en respectant la texture et la couleur. Il est utile pour les imperfections de taille moyenne.
+
+\subsubsection{L'outil Tampon}
+
+L'\terme{outil Tampon} (Clone Stamp, \texttt{S}) duplique une partie d'une image sur une autre. Il est utile pour les imperfections complexes, mais il peut créer des répétitions.
+
+\subsubsection{L'outil Contenu génératif}
+
+L'\terme{outil Contenu génératif} (IA) supprime les imperfections en générant automatiquement un contenu cohérent. Il est utile pour les objets indésirables.
+
+\subsection{La méthode de suppression}
+
+\subsubsection{Étape 1 : Identifier les imperfections}
+
+Analyser l'image pour repérer les imperfections :
+
+\begin{itemize}
+    \item \terme{Taches} sur la peau, sur les murs.
+    \item \terme{Poussières} sur les surfaces.
+    \item \terme{Objets indésirables} dans la composition.
+    \item \terme{Défauts} (yeux rouges, reflets).
+\end{itemize}
+
+\subsubsection{Étape 2 : Choisir l'outil}
+
+Choisir l'outil adapté :
+
+\begin{itemize}
+    \item \terme{Correcteur} : petites imperfections (taches, poussières).
+    \item \terme{Correcteur par plage} : imperfections moyennes.
+    \item \terme{Pièce} : imperfections de taille moyenne.
+    \item \terme{Tampon} : imperfections complexes.
+    \item \terme{Contenu génératif} : objets indésirables.
+\end{itemize}
+
+\subsubsection{Étape 3 : Travailler en non destructif}
+
+\begin{itemize}
+    \item \terme{Dupliquer} le calque avant de retoucher.
+    \item \terme{Utiliser} des calques de correction (vide + tampon sur un calque séparé).
+    \item \terme{Utiliser} des masques pour limiter les corrections.
+\end{itemize}
+
+\subsubsection{Étape 4 : Vérifier le résultat}
+
+\begin{itemize}
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Comparer} avant/après.
+    \item \terme{Vérifier} qu'il n'y a pas de traces visibles.
+    \item \terme{Vérifier} que le résultat est naturel.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler} sur un calque dupliqué.
+    \item \terme{Zoomer} pour voir les détails.
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Utiliser} une taille de pinceau adaptée.
+    \item \terme{Échantillonner} une zone proche pour un résultat naturel.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Ne pas abuser} du tampon (répétitions visibles).
+    \item \terme{Utiliser} le contenu génératif pour les objets complexes.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Travailler directement sur le calque}
+
+Les modifications sont destructives. Il faut dupliquer le calque.
+
+\subsubsection{Aspect artificiel}
+
+Les corrections sont visibles (répétitions, textures différentes). Il faut varier les zones source, utiliser des pinceaux doux.
+
+\subsubsection{Sur-corriger}
+
+Trop de corrections enlève la texture naturelle. Il faut corriger avec parcimonie.
+
+\subsubsection{Ne pas vérifier}
+
+Ne pas zoomer, ne pas comparer. Il faut vérifier le résultat.
+
+\subsection*{Conclusion de la section}
+
+La \terme{suppression des imperfections} consiste à retirer les taches, poussières, objets indésirables, défauts. On utilise les outils Correcteur, Correcteur par plage, Pièce, Tampon, Contenu génératif. Il est essentiel de travailler en non destructif, de zoomer, d'utiliser un pinceau adapté, de vérifier le résultat. Il faut éviter les corrections visibles et les sur-corrections.
+
+Maintenant que nous savons supprimer les imperfections, nous allons, dans la section suivante, apprendre à \terme{utiliser les outils Correcteur et Tampon}.
+
+% ============================================================
+\section{Utiliser les outils Correcteur et Tampon}
+% ============================================================
+
+\subsection{L'outil Correcteur}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Correcteur} (Spot Healing Brush, \texttt{J}) supprime les imperfections en les remplaçant par les pixels environnants. Il est idéal pour les petites imperfections.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Correcteur (\texttt{J}).
+    \item Choisir la taille, la dureté, la forme du pinceau.
+    \item Cliquer sur l'imperfection.
+    \item Photoshop remplace l'imperfection par les pixels environnants.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Type} : \emph{Proximité concordante}, \emph{Créer une texture}, \emph{Contenu-Aware}.
+    \item \terme{Échantillonner tous les calques} : échantillonner sur tous les calques ou sur le calque actif.
+    \item \terme{Taille} : taille du pinceau.
+    \item \terme{Dureté} : dureté des bords.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Taches sur la peau.
+    \item Poussières sur les surfaces.
+    \item Petites imperfections sur les objets.
+    \item Cheveux sur la peau.
+\end{itemize}
+
+\subsection{L'outil Correcteur par plage}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Correcteur par plage} (Healing Brush) supprime les imperfections en utilisant une zone source définie manuellement. Il est utile pour les imperfections plus grandes.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Correcteur par plage (\texttt{J}).
+    \item Maintenir \texttt{Alt} (ou \texttt{Opt}) et cliquer sur une zone source (proche de l'imperfection).
+    \item Cliquer sur l'imperfection.
+    \item Photoshop remplace l'imperfection par la zone source.
+\end{enumerate}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Imperfections de taille moyenne.
+    \item Zones où l'outil Correcteur ne fonctionne pas bien.
+    \item Zones avec texture spécifique.
+\end{itemize}
+
+\subsection{L'outil Tampon}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Tampon} (Clone Stamp, \texttt{S}) duplique une partie d'une image sur une autre. Il est utile pour les imperfections complexes, mais il peut créer des répétitions.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Tampon (\texttt{S}).
+    \item Choisir la taille, la dureté, la forme du pinceau.
+    \item Maintenir \texttt{Alt} (ou \texttt{Opt}) et cliquer sur une zone source.
+    \item Peindre sur la zone à corriger.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Taille} : taille du pinceau.
+    \item \terme{Dureté} : dureté des bords.
+    \item \terme{Opacité} : opacité du tampon.
+    \item \terme{Flux} : flux du tampon.
+    \item \terme{Aligner} : alignement de la zone source.
+    \item \terme{Échantillonner tous les calques} : échantillonner sur tous les calques.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Imperfections complexes.
+    \item Zones avec texture répétitive.
+    \item Duplication d'éléments (par exemple, un motif).
+    \item Corrections sur des zones difficiles.
+\end{itemize}
+
+\subsubsection{Précautions}
+
+\begin{itemize}
+    \item \terme{Éviter} les répétitions visibles.
+    \item \terme{Varier} les zones source.
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Travailler} sur un calque dupliqué.
+\end{itemize}
+
+\subsection{Comparaison Correcteur / Tampon}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{5cm}p{5cm}@{}}
+\toprule
+\textbf{Critère} & \textbf{Correcteur} & \textbf{Tampon} \\
+\midrule
+Principe & Remplace par les pixels environnants & Duplique une zone source \\
+Automatique & Oui (proximité, contenu) & Non (source manuelle) \\
+Utilisation & Petites imperfections & Imperfections complexes \\
+Risque & Résultat parfois flou & Répétitions visibles \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison Correcteur / Tampon.}
+\end{table}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} le Correcteur pour les petites imperfections.
+    \item \terme{Utiliser} le Tampon pour les imperfections complexes.
+    \item \terme{Travailler} sur un calque dupliqué.
+    \item \terme{Zoomer} pour voir les détails.
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Varier} les zones source (tampon).
+    \item \terme{Vérifier} le résultat (avant/après).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Correcteur} et l'\terme{outil Tampon} sont les outils principaux pour supprimer les imperfections. Le Correcteur remplace automatiquement les imperfections par les pixels environnants ; le Tampon duplique une zone source manuellement. Chacun a ses usages : le Correcteur pour les petites imperfections, le Tampon pour les imperfections complexes. Il est essentiel de travailler en non destructif, de zoomer, d'utiliser un pinceau adapté, de varier les zones source, de vérifier le résultat.
+
+Maintenant que nous savons utiliser les outils Correcteur et Tampon, nous allons, dans la section suivante, apprendre à \terme{retoucher les portraits}.
+
+% ============================================================
+\section{Retoucher les portraits}
+% ============================================================
+
+\subsection{Les principes de la retouche portrait}
+
+\subsubsection{Les objectifs}
+
+La retouche portrait vise à :
+
+\begin{itemize}
+    \item \terme{Améliorer} la peau (imperfections, texture, éclat).
+    \item \terme{Corriger} les défauts (cernes, rougeurs, brillances).
+    \item \terme{Sublimer} les traits (yeux, dents, lèvres).
+    \item \terme{Harmoniser} les couleurs.
+    \item \terme{Conserver} la naturalité du visage.
+\end{itemize}
+
+\subsubsection{Les principes}
+
+\begin{itemize}
+    \item \terme{Discrétion} : la retouche doit être invisible.
+    \item \terme{Naturalité} : la peau doit rester texturée, pas lisse comme du plastique.
+    \item \terme{Respect} : on ne déforme pas le visage, on ne change pas les traits.
+    \item \terme{Non-destructivité} : on travaille sur des calques.
+\end{itemize}
+
+\subsection{La retouche de la peau}
+
+\subsubsection{Supprimer les imperfections}
+
+\begin{enumerate}
+    \item Dupliquer le calque.
+    \item Utiliser l'outil Correcteur pour les petites imperfections (boutons, taches).
+    \item Utiliser l'outil Correcteur par plage pour les imperfections plus grandes.
+    \item Utiliser l'outil Pièce pour les zones plus larges.
+\end{enumerate}
+
+\subsubsection{Adoucir la peau}
+
+\begin{enumerate}
+    \item Dupliquer le calque.
+    \item Appliquer un flou (\texttt{Filtre > Flou > Flou gaussien}) avec un rayon modéré (par exemple, 3 à 5 px).
+    \item Ajouter un masque de fusion au calque.
+    \item Peindre en noir sur le masque pour masquer les zones qui doivent rester nettes (yeux, bouche, nez, cheveux, contours).
+    \item Ajuster l'opacité du calque pour un résultat naturel (par exemple, 50\%).
+\end{enumerate}
+
+\subsubsection{La méthode de la fréquence séparée}
+
+La \terme{méthode de la fréquence séparée} est une technique avancée pour adoucir la peau tout en préservant la texture :
+
+\begin{enumerate}
+    \item Dupliquer le calque deux fois.
+    \item Sur le calque du bas, appliquer un flou gaussien (couleur).
+    \item Sur le calque du haut, appliquer un filtre \emph{Passe-haut} (texture).
+    \item Changer le mode de fusion du calque du haut en \emph{Lumière linéaire}.
+    \item Masquer les zones qui doivent rester nettes.
+\end{enumerate}
+
+\subsection{La retouche des yeux}
+
+\subsubsection{Éclaircir les yeux}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Éclaircir légèrement.
+    \item Masquer tout, puis peindre en blanc sur les yeux.
+\end{enumerate}
+
+\subsubsection{Augmenter la netteté des yeux}
+
+\begin{enumerate}
+    \item Dupliquer le calque.
+    \item Appliquer un filtre \emph{Accentuation}.
+    \item Masquer tout, puis peindre en blanc sur les yeux.
+\end{enumerate}
+
+\subsubsection{Supprimer les yeux rouges}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Œil rouge (\texttt{J}).
+    \item Cliquer sur les yeux rouges.
+    \item Ajuster la pupille et l'assombrissement.
+\end{enumerate}
+
+\subsection{La retouche des dents}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Teinte/Saturation}.
+    \item Sélectionner la plage \emph{Jaunes}.
+    \item Réduire la saturation et éclaircir légèrement.
+    \item Masquer tout, puis peindre en blanc sur les dents.
+\end{enumerate}
+
+\subsection{La retouche des lèvres}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Teinte/Saturation}.
+    \item Sélectionner la plage \emph{Rouges}.
+    \item Augmenter légèrement la saturation et ajuster la teinte.
+    \item Masquer tout, puis peindre en blanc sur les lèvres.
+\end{enumerate}
+
+\subsection{La retouche des cheveux}
+
+\begin{enumerate}
+    \item Détourer les cheveux (voir chapitre 9).
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Éclaircir ou assombrir les cheveux.
+    \item Masquer tout, puis peindre en blanc sur les cheveux.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler} sur des calques dupliqués.
+    \item \terme{Utiliser} des calques de réglage avec masques.
+    \item \terme{Zoomer} pour voir les détails.
+    \item \terme{Comparer} avant/après.
+    \item \terme{Conserver} la texture de la peau.
+    \item \terme{Respecter} les traits du visage.
+    \item \terme{Ne pas sur-retoucher} (effet plastique).
+    \item \terme{Vérifier} la naturalité du résultat.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Peau en plastique}
+
+Trop de flou ou trop de corrections enlèvent la texture de la peau. Il faut préserver la texture.
+
+\subsubsection{Yeux surnaturels}
+
+Trop d'éclaircissement ou trop de netteté donnent un regard artificiel.
+
+\subsubsection{Traits déformés}
+
+Les corrections excessives (liquéfier, déformer) changent les traits du visage.
+
+\subsubsection{Couleurs irréalistes}
+
+Trop de saturation, teintes modifiées : la peau devient irréaliste.
+
+\subsection*{Conclusion de la section}
+
+La \terme{retouche portrait} vise à améliorer la peau, corriger les défauts, sublimer les traits, harmoniser les couleurs, tout en conservant la naturalité. On retouche la peau (imperfections, adoucissement, fréquence séparée), les yeux (éclaircissement, netteté, yeux rouges), les dents, les lèvres, les cheveux. Il est essentiel de travailler en non destructif, de zoomer, de comparer avant/après, de conserver la texture, de respecter les traits, de ne pas sur-retoucher.
+
+Maintenant que nous savons retoucher les portraits, nous allons, dans la section suivante, apprendre à \terme{améliorer la netteté}.
+
+% ============================================================
+\section{Améliorer la netteté}
+% ============================================================
+
+\subsection{La netteté}
+
+\subsubsection{Définition}
+
+La \terme{netteté} est la qualité d'une image qui présente des contours bien définis. Une image nette a des transitions franches entre les zones claires et sombres ; une image floue a des transitions douces.
+
+\subsubsection{Les causes du flou}
+
+\begin{itemize}
+    \item \terme{Mouvement} de l'appareil ou du sujet.
+    \item \terme{Mise au point} incorrecte.
+    \item \terme{Diaphragme} trop ouvert (profondeur de champ limitée).
+    \item \terme{Compression} excessive (JPEG).
+    \item \terme{Redimensionnement} excessif.
+\end{itemize}
+
+\subsection{Améliorer la netteté}
+
+\subsubsection{Le filtre Accentuation}
+
+Le filtre \terme{Accentuation} (\texttt{Filtre > Netteté > Accentuation}) augmente la netteté en accentuant le contraste local.
+
+\begin{itemize}
+    \item \terme{Gain} : intensité de l'accentuation (par exemple, 50\% à 150\%).
+    \item \terme{Rayon} : rayon de l'accentuation (par exemple, 0,5 à 2 px).
+    \item \terme{Seuil} : seuil de déclenchement (par exemple, 0 à 5 niveaux).
+\end{itemize}
+
+\subsubsection{Le filtre Netteté optimisée}
+
+Le filtre \terme{Netteté optimisée} (\texttt{Filtre > Netteté > Netteté optimisée}) propose des options avancées :
+
+\begin{itemize}
+    \item \terme{Gain} : intensité de l'accentuation.
+    \item \terme{Rayon} : rayon de l'accentuation.
+    \item \terme{Réduire le bruit} : réduit le bruit avant l'accentuation.
+    \item \terme{Supprimer les effets de halo} : réduit les halos.
+\end{itemize}
+
+\subsubsection{Le filtre Passe-haut}
+
+Le filtre \terme{Passe-haut} est une technique avancée pour accentuer la netteté :
+
+\begin{enumerate}
+    \item Dupliquer le calque.
+    \item Appliquer un filtre \emph{Passe-haut} (\texttt{Filtre > Autre > Passe-haut}) avec un rayon modéré (par exemple, 1 à 3 px).
+    \item Changer le mode de fusion du calque en \emph{Lumière tamisée}, \emph{Lumière crue}, ou \emph{Superposition}.
+    \item Ajuster l'opacité pour un résultat naturel.
+\end{enumerate}
+
+\subsubsection{Le filtre Camera Raw}
+
+Le filtre \terme{Camera Raw} (\texttt{Filtre > Camera Raw}) propose un curseur de \emph{Netteté} avec des options avancées (masquage, réduction du bruit).
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler} sur un calque dupliqué.
+    \item \terme{Utiliser} un rayon adapté (petit pour les détails, grand pour les contours).
+    \item \terme{Utiliser} un seuil adapté (pour éviter d'accentuer le bruit).
+    \item \terme{Travailler} en non destructif (filtre dynamique sur objet dynamique).
+    \item \terme{Masquer} l'accentuation sur les zones qui doivent rester douces (peau, ciel).
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Comparer} avant/après.
+    \item \terme{Ne pas sur-accentuer} (halos, bruit).
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-accentuer}
+
+Trop d'accentuation crée des halos, du bruit, un aspect artificiel.
+
+\subsubsection{Accentuer le bruit}
+
+L'accentuation augmente le bruit (grain). Il faut réduire le bruit avant ou utiliser un masque.
+
+\subsubsection{Accentuer les zones douces}
+
+Accentuer la peau, le ciel, les surfaces douces crée un aspect artificiel. Il faut masquer ces zones.
+
+\subsubsection{Appliquer l'accentuation après redimensionnement}
+
+L'accentuation doit être appliquée après redimensionnement, à la taille finale de l'image.
+
+\subsection*{Conclusion de la section}
+
+L'\terme{amélioration de la netteté} consiste à accentuer le contraste local pour rendre les contours plus nets. On utilise les filtres Accentuation, Netteté optimisée, Passe-haut, Camera Raw. Il est essentiel de travailler en non destructif, de choisir un rayon et un seuil adaptés, de masquer les zones douces, de vérifier le résultat, de ne pas sur-accentuer.
+
+Maintenant que nous savons améliorer la netteté, nous allons, dans la section suivante, apprendre à \terme{réduire les défauts visibles}.
+
+% ============================================================
+\section{Réduire les défauts visibles}
+% ============================================================
+
+\subsection{Les défauts visibles}
+
+\subsubsection{Les défauts courants}
+
+\begin{itemize}
+    \item \terme{Bruit} : grain visible sur l'image.
+    \item \terme{Artefacts} : blocs, bandes, halos (compression, accentuation).
+    \item \terme{Moiré} : motifs d'interférence (photos d'écrans, textiles).
+    \item \terme{Distorsions} : barillet, coussinet (objectifs).
+    \item \terme{Aberrations chromatiques} : franges colorées sur les contours.
+    \item \terme{Vignettage} : assombrissement des coins.
+    \item \terme{Perspective} : lignes qui convergent (photos d'architecture).
+\end{itemize}
+
+\subsection{Réduire le bruit}
+
+\subsubsection{Le filtre Réduction du bruit}
+
+Le filtre \terme{Réduction du bruit} (\texttt{Filtre > Bruit > Réduction du bruit}) propose des options :
+
+\begin{itemize}
+    \item \terme{Force} : intensité de la réduction.
+    \item \terme{Préserver les détails} : préservation des détails fins.
+    \item \terme{Réduire le bruit de couleur} : réduction du bruit coloré.
+    \item \terme{Réduire le bruit de luminance} : réduction du bruit de luminosité.
+\end{itemize}
+
+\subsubsection{Le filtre Camera Raw}
+
+Le filtre \terme{Camera Raw} (\texttt{Filtre > Camera Raw}) propose des curseurs de \emph{Réduction du bruit} (luminance, couleur, détails).
+
+\subsubsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Réduire} le bruit avant l'accentuation.
+    \item \terme{Utiliser} un masque pour appliquer la réduction sur les zones bruitées.
+    \item \terme{Préserver} les détails (ne pas trop réduire).
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Vérifier} le résultat (zoomer).
+\end{itemize}
+
+\subsection{Réduire les artefacts}
+
+\subsubsection{Les artefacts de compression}
+
+Les artefacts de compression (JPEG) apparaissent comme des blocs ou des bandes. On peut les réduire avec :
+
+\begin{itemize}
+    \item \terme{Flou gaussien} léger (masqué).
+    \item \terme{Réduction du bruit}.
+    \item \terme{Épuration} (filtre \emph{Épuration}).
+\end{itemize}
+
+\subsubsection{Les halos}
+
+Les halos apparaissent après une accentuation excessive. On peut les réduire avec :
+
+\begin{itemize}
+    \item \terme{Moins d'accentuation}.
+    \item \terme{Seuil plus élevé}.
+    \item \terme{Masquage} des zones de halo.
+\end{itemize}
+
+\subsection{Corriger les aberrations chromatiques}
+
+\subsubsection{Le filtre Aberration chromatique}
+
+Le filtre \terme{Aberration chromatique} (\texttt{Filtre > Correction d'objectif > Aberration chromatique}) corrige les franges colorées.
+
+\subsubsection{Camera Raw}
+
+Le filtre \terme{Camera Raw} propose une correction automatique des aberrations chromatiques.
+
+\subsection{Corriger la distorsion}
+
+\subsubsection{Le filtre Correction d'objectif}
+
+Le filtre \terme{Correction d'objectif} (\texttt{Filtre > Correction d'objectif}) propose :
+
+\begin{itemize}
+    \item \terme{Distorsion} : barillet, coussinet.
+    \item \terme{Vignettage} : assombrissement des coins.
+    \item \terme{Aberration chromatique}.
+    \item \terme{Perspective} : correction de la perspective.
+\end{itemize}
+
+\subsubsection{Camera Raw}
+
+Le filtre \terme{Camera Raw} propose une correction automatique de la distorsion et de la perspective.
+
+\subsection{Corriger la perspective}
+
+\subsubsection{L'outil Perspective}
+
+L'outil \terme{Perspective} (dans le groupe de l'outil Recadrage, \texttt{C}) permet de corriger la perspective des photos d'architecture.
+
+\subsubsection{Le filtre Perspective}
+
+Le filtre \terme{Perspective} (\texttt{Édition > Transformation > Perspective}) permet d'ajuster la perspective manuellement.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} le défaut (bruit, artefacts, distorsion, etc.).
+    \item \terme{Choisir} l'outil adapté.
+    \item \terme{Travailler} en non destructif (filtres dynamiques).
+    \item \terme{Masquer} les corrections sur les zones non concernées.
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Comparer} avant/après.
+    \item \terme{Ne pas sur-corriger} (perte de détails).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{défauts visibles} sont nombreux : bruit, artefacts, moiré, distorsions, aberrations chromatiques, vignettage, perspective. On les réduit avec les filtres adaptés : Réduction du bruit, Camera Raw, Correction d'objectif, Aberration chromatique, Perspective. Il est essentiel d'identifier le défaut, de choisir l'outil adapté, de travailler en non destructif, de masquer les corrections, de vérifier le résultat, de ne pas sur-corriger.
+
+Maintenant que nous savons réduire les défauts visibles, nous allons, dans la section suivante, apprendre à \terme{corriger les dominantes de couleur}.
+
+% ============================================================
+\section{Corriger les dominantes de couleur}
+% ============================================================
+
+\subsection{Les dominantes de couleur}
+
+\subsubsection{Définition}
+
+Une \terme{dominante de couleur} est une couleur qui domine l'image, la rendant trop chaude, trop froide, trop verte ou trop magenta. Elle est due à un éclairage incorrect, à une balance des blancs mal réglée, ou à un post-traitement incorrect.
+
+\subsubsection{Les types de dominante}
+
+\begin{itemize}
+    \item \terme{Dominante chaude} : trop rouge, trop jaune, trop orange.
+    \item \terme{Dominante froide} : trop bleue, trop cyan.
+    \item \terme{Dominante verte} : trop verte.
+    \item \terme{Dominante magenta} : trop magenta.
+\end{itemize}
+
+\subsection{Identifier la dominante}
+
+\subsubsection{À l'œil}
+
+Observer l'image : les blancs sont-ils neutres ? Les gris sont-ils neutres ? Si les blancs tirent vers le jaune, l'image est trop chaude ; vers le bleu, trop froide.
+
+\subsubsection{Avec l'histogramme}
+
+L'histogramme peut révéler la dominante : si les pics sont décalés dans un canal, il y a une dominante.
+
+\subsubsection{Avec la pipette}
+
+Utiliser la pipette pour mesurer les valeurs RVB dans les zones neutres (blancs, gris). Si les valeurs sont déséquilibrées, il y a une dominante.
+
+\subsection{Corriger la dominante}
+
+\subsubsection{Avec la balance des couleurs}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Balance des couleurs}.
+    \item Ajuster les curseurs pour équilibrer les couleurs.
+    \item Cibler les tons concernés (Ombres, Tons moyens, Hautes lumières).
+\end{enumerate}
+
+\subsubsection{Avec les courbes}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Sélectionner le canal concerné (Rouge, Vert, Bleu).
+    \item Ajuster la courbe pour équilibrer les couleurs.
+\end{enumerate}
+
+\subsubsection{Avec Camera Raw}
+
+\begin{enumerate}
+    \item Ouvrir Camera Raw (\texttt{Filtre > Camera Raw}).
+    \item Ajuster la \emph{Température} (chaud/froid) et la \emph{Teinte} (vert/magenta).
+    \item Utiliser la pipette pour définir une zone neutre.
+\end{enumerate}
+
+\subsubsection{Avec la pipette neutre}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Utiliser la pipette \emph{Point gris} pour définir une zone neutre.
+    \item Ajuster les courbes pour équilibrer.
+\end{enumerate}
+
+\subsection{Corriger les dominantes localisées}
+
+\subsubsection{Le principe}
+
+Une dominante peut être localisée (par exemple, une zone éclairée par une lumière jaune dans une pièce). Il faut alors appliquer la correction localement.
+
+\subsubsection{La méthode}
+
+\begin{enumerate}
+    \item Créer un calque de réglage (balance des couleurs, courbes, etc.).
+    \item Appliquer la correction.
+    \item Masquer tout (avec un masque noir).
+    \item Peindre en blanc sur les zones à corriger.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} la dominante (chaude, froide, verte, magenta).
+    \item \terme{Utiliser} une zone neutre comme référence.
+    \item \terme{Corriger} avec la balance des couleurs, les courbes, ou Camera Raw.
+    \item \terme{Travailler} en non destructif (calques de réglage).
+    \item \terme{Masquer} les corrections sur les zones non concernées.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Ne pas sur-corriger} (image irréaliste).
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-corriger}
+
+Trop corriger donne une image irréaliste (trop neutre, sans ambiance).
+
+\subsubsection{Choisir une mauvaise référence}
+
+Choisir une zone qui n'est pas neutre fausse la correction.
+
+\subsubsection{Corriger globalement}
+
+Corriger globalement une dominante localisée fausse le reste de l'image.
+
+\subsection*{Conclusion de la section}
+
+Les \terme{dominantes de couleur} sont des couleurs qui dominent l'image. On les identifie à l'œil, avec l'histogramme, ou avec la pipette. On les corrige avec la balance des couleurs, les courbes, ou Camera Raw. Il est essentiel d'identifier la dominante, d'utiliser une zone neutre, de corriger progressivement, de travailler en non destructif, de masquer les corrections, de vérifier le résultat, de ne pas sur-corriger.
+
+Maintenant que nous savons corriger les dominantes de couleur, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{conserver un résultat naturel}.
+
+% ============================================================
+\section{Conserver un résultat naturel}
+% ============================================================
+
+\subsection{Pourquoi conserver un résultat naturel ?}
+
+La retouche photo vise à \emph{améliorer} une image, pas à la \emph{transformer}. Un résultat naturel est un résultat qui :
+
+\begin{itemize}
+    \item \terme{Semble} avoir été pris ainsi.
+    \item \terme{Respecte} la réalité du sujet.
+    \item \terme{Conserve} les textures, les couleurs, les détails.
+    \item \terme{Ne présente} pas de traces visibles de retouche.
+\end{itemize}
+
+Un résultat non naturel (sur-retouché) est immédiatement repérable : peau en plastique, couleurs criardes, contrastes excessifs, halos, yeux surnaturels. Il décrédibilise la photo et le photographe.
+
+\subsection{Les principes du résultat naturel}
+
+\subsubsection{La modération}
+
+Toutes les corrections doivent être \terme{modérées} : exposition, contraste, saturation, netteté, retouches. Mieux vaut des corrections légères et multiples que des corrections fortes.
+
+\subsubsection{La texture}
+
+La \terme{texture} doit être préservée : peau, cheveux, tissus, surfaces. Une peau sans texture est une peau artificielle.
+
+\subsubsection{La couleur}
+
+Les \terme{couleurs} doivent rester naturelles : pas de sur-saturation, pas de dominantes excessives, pas de teintes irréalistes.
+
+\subsubsection{Le contraste}
+
+Le \terme{contraste} doit rester équilibré : pas de noirs bouchés, pas de blancs écrasés, pas de halos.
+
+\subsubsection{La netteté}
+
+La \terme{netteté} doit être adaptée : ni floue, ni sur-accentuée. Éviter les halos et le bruit.
+
+\subsubsection{Les détails}
+
+Les \terme{détails} doivent être préservés : pas de zones bouchées, pas de zones écrasées, pas de perte de texture.
+
+\subsection{Comment vérifier le résultat naturel ?}
+
+\subsubsection{Comparer avant/après}
+
+Toujours comparer avec l'original : le résultat doit être meilleur, mais crédible.
+
+\subsubsection{Zoomer}
+
+Zoomer pour vérifier les détails : texture, halos, bruit, contours.
+
+\subsubsection{Vérifier sur différents écrans}
+
+Les couleurs et les contrastes varient selon les écrans. Vérifier sur plusieurs écrans.
+
+\subsubsection{Demander un avis extérieur}
+
+Un regard extérieur permet de détecter les sur-retouches.
+
+\subsubsection{Faire une pause}
+
+Après une retouche, faire une pause, puis revenir à l'image avec un regard neuf.
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-exposition}
+
+L'image est trop claire, les hautes lumières sont écrasées.
+
+\subsubsection{Sur-contraste}
+
+L'image est trop dure, les ombres sont bouchées, les hautes lumières sont écrasées.
+
+\subsubsection{Sur-saturation}
+
+Les couleurs sont criardes, irréalistes.
+
+\subsubsection{Sur-netteté}
+
+L'image est trop accentuée, avec des halos et du bruit.
+
+\subsubsection{Sur-retouche de la peau}
+
+La peau est en plastique, sans texture.
+
+\subsubsection{Sur-retouche des yeux}
+
+Les yeux sont surnaturels (trop blancs, trop nets).
+
+\subsubsection{Sur-détourage}
+
+Les contours sont trop nets, sans transition, avec des halos.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Modérer} toutes les corrections.
+    \item \terme{Préserver} la texture.
+    \item \terme{Conserver} les couleurs naturelles.
+    \item \terme{Équilibrer} le contraste.
+    \item \terme{Adapter} la netteté.
+    \item \terme{Préserver} les détails.
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Comparer} avant/après.
+    \item \terme{Zoomer} pour vérifier.
+    \item \terme{Vérifier} sur différents écrans.
+    \item \terme{Demander} un avis extérieur.
+    \item \terme{Faire} une pause.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{résultat naturel} est essentiel en retouche photo : il respecte la réalité du sujet, préserve les textures, conserve les couleurs naturelles, équilibre le contraste, adapte la netteté, préserve les détails. Il repose sur la modération, la texture, la couleur, le contraste, la netteté, les détails. Il est essentiel de comparer avant/après, de zoomer, de vérifier sur différents écrans, de demander un avis extérieur, de faire une pause.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 10. Nous avons appris à maîtriser les bases de la retouche photographique dans Photoshop :
+
+\begin{itemize}
+    \item \terme{Principes de la retouche} : corriger, améliorer, sublimer ; non-destructivité, discrétion, naturalité, respect ; étapes (analyse, corrections globales, corrections locales, vérification).
+    \item \terme{Exposition et contraste} : corriger avec Luminosité/Contraste, Niveaux, Courbes, Camera Raw ; vérifier avec l'histogramme.
+    \item \terme{Niveaux et courbes} : ajuster les points noir, blanc, gris (niveaux) ; ajuster chaque tonalité (courbes).
+    \item \terme{Balance des couleurs} : corriger les dominantes (chaude, froide, verte, magenta) avec Balance des couleurs, Teinte/Saturation, pipettes.
+    \item \terme{Teinte et saturation} : ajuster avec Teinte/Saturation, Vibrance, Noir et blanc.
+    \item \terme{Suppression des imperfections} : Correcteur, Correcteur par plage, Pièce, Tampon, Contenu génératif.
+    \item \terme{Correcteur et Tampon} : le Correcteur remplace automatiquement, le Tampon duplique manuellement.
+    \item \terme{Retouche portrait} : peau, yeux, dents, lèvres, cheveux ; fréquence séparée ; naturalité.
+    \item \terme{Netteté} : Accentuation, Netteté optimisée, Passe-haut, Camera Raw ; masquer les zones douces.
+    \item \terme{Défauts visibles} : bruit, artefacts, moiré, distorsions, aberrations chromatiques, vignettage, perspective ; filtres adaptés.
+    \item \terme{Dominantes de couleur} : identifier (œil, histogramme, pipette) ; corriger (balance des couleurs, courbes, Camera Raw).
+    \item \terme{Résultat naturel} : modération, texture, couleur, contraste, netteté, détails ; comparer, zoomer, vérifier, demander un avis.
+\end{itemize}
+
+La retouche photographique est l'un des usages historiques de Photoshop, et l'une des compétences les plus recherchées chez un designer. Elle permet de corriger, d'améliorer, de sublimer une image, sans la dénaturer. Un designer qui maîtrise la retouche peut donner à ses visuels un rendu professionnel ; un designer qui ne la maîtrise pas se contente de visuels approximatifs.
+
+Ce chapitre t'a donné les bases de la retouche photographique. Mais la maîtrise vient avec la pratique. N'hésite pas à t'entraîner sur des images variées : portraits, paysages, produits, scènes de rue. Chaque image est un nouveau défi, et chaque défi est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons le \terme{photomontage et la manipulation d'images}. Tu apprendras à assembler plusieurs images, à harmoniser les dimensions, les perspectives, la lumière, les couleurs, à créer des ombres réalistes, à ajouter des effets de profondeur, à intégrer du texte, à corriger les incohérences visuelles. Ces compétences te permettront de créer des compositions complexes et spectaculaires.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 10 --- Retouche photographique.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 11 --- Photomontage et manipulation d'images.}
+\end{center}

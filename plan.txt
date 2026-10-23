@@ -1,0 +1,1222 @@
+Nous allons transformer la roadmap en un véritable plan de cours de design graphique, organisé en chapitres et en sections, avec une progression pédagogique allant des fondamentaux jusqu'à la pratique professionnelle.
+
+Puisque tu as choisi Adobe Photoshop et Adobe Illustrator, nous allons construire le programme autour de ces deux logiciels. Tu apprendras également les principes théoriques qui te permettront de créer des visuels professionnels, plutôt que de simplement reproduire des tutoriels.
+
+PLAN DE COURS COMPLET : DESIGN GRAPHIQUE
+
+Niveau : Débutant à professionnel
+Logiciels principaux : Adobe Photoshop et Adobe Illustrator
+Approche pédagogique : Théorie, démonstrations, exercices pratiques et projets.
+
+PARTIE I — FONDEMENTS DU DESIGN GRAPHIQUE
+
+Chapitre 1 — Introduction au design graphique
+
+1. Définition du design graphique.
+
+
+2. Histoire et évolution du design graphique.
+
+
+3. Rôle et importance du design graphique dans la communication.
+
+
+4. Les différents domaines du design graphique.
+
+
+5. Les missions et responsabilités du graphiste.
+
+
+6. Différence entre design graphique, illustration, photographie et design UI/UX.
+
+
+7. Les qualités et compétences d'un graphiste professionnel.
+
+
+8. Le processus de création graphique, de l'idée au produit final.
+
+
+
+Chapitre 2 — Principes fondamentaux de la composition graphique
+
+1. Définition de la composition graphique.
+
+
+2. Les éléments fondamentaux du langage visuel.
+
+
+3. Les principes de l'équilibre visuel.
+
+
+4. La hiérarchie visuelle.
+
+
+5. L'alignement des éléments.
+
+
+6. Le contraste et la mise en évidence.
+
+
+7. La proximité et le regroupement des éléments.
+
+
+8. La répétition, le rythme et la cohérence visuelle.
+
+
+9. Les espaces négatifs et leur utilisation.
+
+
+10. Les grilles de composition.
+
+
+11. Les erreurs courantes de composition.
+
+
+
+Chapitre 3 — Théorie des couleurs
+
+1. Définition et rôle de la couleur en design graphique.
+
+
+2. Le cercle chromatique.
+
+
+3. Les couleurs primaires, secondaires et tertiaires.
+
+
+4. Les couleurs chaudes et froides.
+
+
+5. La teinte, la saturation et la luminosité.
+
+
+6. Les harmonies chromatiques.
+
+
+7. Les couleurs complémentaires et analogues.
+
+
+8. La psychologie des couleurs et ses limites culturelles.
+
+
+9. La création d'une palette de couleurs.
+
+
+10. Les systèmes colorimétriques RVB et CMJN.
+
+
+11. La gestion des couleurs pour les écrans et l'impression.
+
+
+12. Les erreurs courantes dans l'utilisation des couleurs.
+
+
+
+Chapitre 4 — Typographie et communication visuelle
+
+1. Définition et histoire de la typographie.
+
+
+2. Anatomie des caractères typographiques.
+
+
+3. Les grandes familles de polices.
+
+
+4. Les polices avec empattements et sans empattements.
+
+
+5. Les polices manuscrites et décoratives.
+
+
+6. La lisibilité et la facilité de lecture.
+
+
+7. La taille des caractères et les unités typographiques.
+
+
+8. L'interlignage, le crénage et l'approche.
+
+
+9. L'association des polices.
+
+
+10. La hiérarchie typographique.
+
+
+11. La typographie dans la publicité.
+
+
+12. Les erreurs typographiques à éviter.
+
+
+
+Chapitre 5 — Culture visuelle et analyse graphique
+
+1. Développer son regard de graphiste.
+
+
+2. Observer et analyser une composition graphique.
+
+
+3. Décomposer une affiche publicitaire.
+
+
+4. Étudier les identités visuelles de marques.
+
+
+5. Comprendre les tendances graphiques.
+
+
+6. Rechercher des références visuelles.
+
+
+7. Créer un moodboard.
+
+
+8. Distinguer inspiration, imitation et plagiat.
+
+
+9. Construire une bibliothèque de références.
+
+
+10. Développer sa créativité par la pratique.
+
+
+
+Projet de la partie I : analyser plusieurs affiches professionnelles et concevoir une composition originale en appliquant les principes étudiés.
+
+
+---
+
+PARTIE II — MAÎTRISE D'ADOBE PHOTOSHOP
+
+Chapitre 6 — Introduction à Adobe Photoshop
+
+1. Présentation d'Adobe Photoshop.
+
+
+2. Les domaines d'utilisation de Photoshop.
+
+
+3. Comprendre les images matricielles.
+
+
+4. Pixels, dimensions et résolution.
+
+
+5. Formats d'image : JPEG, PNG, TIFF, PSD et autres.
+
+
+6. Installation et configuration du logiciel.
+
+
+7. Découverte de l'interface.
+
+
+8. La barre de menus et les panneaux.
+
+
+9. Les outils essentiels.
+
+
+10. Création, ouverture et enregistrement d'un document.
+
+
+11. Les raccourcis clavier fondamentaux.
+
+
+12. Organisation de l'espace de travail.
+
+
+
+Chapitre 7 — Documents, images et transformations
+
+1. Créer un nouveau document.
+
+
+2. Comprendre la largeur, la hauteur et la résolution.
+
+
+3. Choisir les dimensions d'un document selon son utilisation.
+
+
+4. Différence entre redimensionner une image et la recadrer.
+
+
+5. Utiliser l'outil Recadrage.
+
+
+6. Déplacer et transformer des objets.
+
+
+7. Effectuer une rotation et une mise à l'échelle.
+
+
+8. Utiliser les repères et les règles.
+
+
+9. Comprendre les proportions et les déformations.
+
+
+10. Préparer un document pour un écran ou pour l'impression.
+
+
+
+Chapitre 8 — Calques et organisation des projets
+
+1. Définition et fonctionnement des calques.
+
+
+2. Créer, supprimer et dupliquer un calque.
+
+
+3. Renommer et organiser les calques.
+
+
+4. Utiliser les groupes de calques.
+
+
+5. Comprendre l'opacité et le fond.
+
+
+6. Les modes de fusion.
+
+
+7. Les calques de réglage.
+
+
+8. Les objets dynamiques.
+
+
+9. Les masques de fusion.
+
+
+10. Les masques d'écrêtage.
+
+
+11. Les méthodes de travail non destructives.
+
+
+12. Organiser un fichier PSD professionnel.
+
+
+
+Chapitre 9 — Sélection et détourage
+
+1. Comprendre les sélections.
+
+
+2. L'outil Rectangle de sélection.
+
+
+3. L'outil Lasso.
+
+
+4. La sélection d'objets.
+
+
+5. La sélection rapide.
+
+
+6. La baguette magique.
+
+
+7. Les fonctions de sélection du sujet.
+
+
+8. Affiner les contours.
+
+
+9. Détourer une personne ou un objet.
+
+
+10. Supprimer ou remplacer un arrière-plan.
+
+
+11. Utiliser les masques pour un détourage propre.
+
+
+12. Corriger les erreurs de sélection.
+
+
+
+Chapitre 10 — Retouche photographique
+
+1. Principes de la retouche photo.
+
+
+2. Corriger l'exposition et le contraste.
+
+
+3. Régler les niveaux et les courbes.
+
+
+4. Corriger la balance des couleurs.
+
+
+5. Ajuster la teinte et la saturation.
+
+
+6. Supprimer les imperfections.
+
+
+7. Utiliser les outils Correcteur et Tampon.
+
+
+8. Retoucher les portraits.
+
+
+9. Améliorer la netteté.
+
+
+10. Réduire les défauts visibles.
+
+
+11. Corriger les dominantes de couleur.
+
+
+12. Conserver un résultat naturel.
+
+
+
+Chapitre 11 — Photomontage et manipulation d'images
+
+1. Principes du photomontage.
+
+
+2. Choisir des images compatibles.
+
+
+3. Détourer les éléments à assembler.
+
+
+4. Harmoniser les dimensions et les perspectives.
+
+
+5. Adapter la lumière et les couleurs.
+
+
+6. Créer des ombres réalistes.
+
+
+7. Ajouter des effets de profondeur.
+
+
+8. Harmoniser les arrière-plans.
+
+
+9. Intégrer du texte dans une composition.
+
+
+10. Corriger les incohérences visuelles.
+
+
+11. Utiliser les filtres de manière maîtrisée.
+
+
+12. Finaliser un photomontage professionnel.
+
+
+
+Chapitre 12 — Texte et effets graphiques dans Photoshop
+
+1. Créer du texte.
+
+
+2. Modifier les propriétés typographiques.
+
+
+3. Organiser une hiérarchie de titres.
+
+
+4. Utiliser les styles de calque.
+
+
+5. Créer des ombres portées.
+
+
+6. Appliquer des contours et des dégradés.
+
+
+7. Créer des effets de profondeur.
+
+
+8. Intégrer des textures.
+
+
+9. Construire une composition publicitaire.
+
+
+10. Éviter la surcharge d'effets.
+
+
+
+Chapitre 13 — Création de supports publicitaires avec Photoshop
+
+1. Méthodologie de création d'une affiche.
+
+
+2. Conception d'un flyer commercial.
+
+
+3. Création de visuels pour les réseaux sociaux.
+
+
+4. Réalisation d'une affiche événementielle.
+
+
+5. Création d'une bannière publicitaire.
+
+
+6. Intégration des photographies et des textes.
+
+
+7. Organisation de la hiérarchie visuelle.
+
+
+8. Déclinaison d'un visuel en plusieurs formats.
+
+
+9. Contrôle de la qualité.
+
+
+10. Exportation des fichiers finaux.
+
+
+
+Projet de la partie II : concevoir une affiche publicitaire complète avec retouche photographique, détourage, photomontage et typographie.
+
+
+---
+
+PARTIE III — MAÎTRISE D'ADOBE ILLUSTRATOR
+
+Chapitre 14 — Introduction à Adobe Illustrator
+
+1. Présentation d'Adobe Illustrator.
+
+
+2. Les domaines d'utilisation d'Illustrator.
+
+
+3. Comprendre les images vectorielles.
+
+
+4. Différence entre images matricielles et vectorielles.
+
+
+5. Découverte de l'interface.
+
+
+6. Les plans de travail.
+
+
+7. Les outils essentiels.
+
+
+8. Création et enregistrement d'un document.
+
+
+9. Les raccourcis clavier fondamentaux.
+
+
+10. Les formats AI, SVG, EPS et PDF.
+
+
+
+Chapitre 15 — Dessin vectoriel et formes géométriques
+
+1. Comprendre les tracés vectoriels.
+
+
+2. Utiliser les outils Rectangle et Ellipse.
+
+
+3. Créer des polygones et des étoiles.
+
+
+4. Modifier les dimensions des formes.
+
+
+5. Utiliser les outils de transformation.
+
+
+6. Aligner et distribuer les objets.
+
+
+7. Dupliquer et organiser les éléments.
+
+
+8. Comprendre les contours et les fonds.
+
+
+9. Combiner des formes géométriques.
+
+
+10. Créer des compositions simples.
+
+
+
+Chapitre 16 — La plume et les courbes de Bézier
+
+1. Comprendre les points d'ancrage.
+
+
+2. Les points d'angle et les points lisses.
+
+
+3. Utiliser l'outil Plume.
+
+
+4. Créer des segments droits.
+
+
+5. Dessiner des courbes.
+
+
+6. Modifier les poignées de direction.
+
+
+7. Corriger les tracés.
+
+
+8. Fermer un tracé.
+
+
+9. Utiliser les outils de sélection.
+
+
+10. Simplifier les tracés.
+
+
+11. Dessiner des icônes.
+
+
+12. Reproduire des formes complexes à partir de références.
+
+
+
+Chapitre 17 — Manipulation avancée des formes
+
+1. Comprendre les tracés composés.
+
+
+2. Utiliser les opérations Pathfinder.
+
+
+3. Ajouter, soustraire et combiner des formes.
+
+
+4. Utiliser l'outil Concepteur de forme.
+
+
+5. Créer des intersections.
+
+
+6. Découper des formes.
+
+
+7. Utiliser les masques d'écrêtage.
+
+
+8. Organiser les objets et les groupes.
+
+
+9. Utiliser les transformations répétées.
+
+
+10. Construire des illustrations vectorielles propres.
+
+
+
+Chapitre 18 — Couleurs, dégradés et contours
+
+1. Appliquer des couleurs aux objets.
+
+
+2. Utiliser les nuanciers.
+
+
+3. Créer et enregistrer des couleurs globales.
+
+
+4. Utiliser les dégradés linéaires.
+
+
+5. Utiliser les dégradés radiaux.
+
+
+6. Maîtriser les contours.
+
+
+7. Régler les extrémités et les angles des contours.
+
+
+8. Créer des motifs répétitifs.
+
+
+9. Gérer les transparences.
+
+
+10. Préparer les couleurs pour l'impression.
+
+
+
+Chapitre 19 — Typographie et lettrage dans Illustrator
+
+1. Créer et modifier du texte.
+
+
+2. Comprendre les propriétés typographiques.
+
+
+3. Régler le crénage et l'interlignage.
+
+
+4. Créer des compositions typographiques.
+
+
+5. Utiliser le texte sur un tracé.
+
+
+6. Vectoriser du texte lorsque nécessaire.
+
+
+7. Personnaliser des lettres.
+
+
+8. Créer un lettrage simple.
+
+
+9. Concevoir un titre publicitaire.
+
+
+10. Préserver les versions modifiables des textes.
+
+
+
+Chapitre 20 — Création de logos professionnels
+
+1. Comprendre la fonction d'un logo.
+
+
+2. Les principales catégories de logos.
+
+
+3. Analyser un brief de création.
+
+
+4. Effectuer des recherches visuelles.
+
+
+5. Esquisser plusieurs concepts.
+
+
+6. Construire un logo géométrique.
+
+
+7. Créer un logo typographique.
+
+
+8. Créer un symbole vectoriel.
+
+
+9. Évaluer la lisibilité à différentes tailles.
+
+
+10. Tester les versions monochromes.
+
+
+11. Préparer les variantes d'un logo.
+
+
+12. Organiser les fichiers sources et les exports.
+
+
+
+Chapitre 21 — Illustration vectorielle et identité visuelle
+
+1. Les principes de l'illustration vectorielle.
+
+
+2. Créer des icônes.
+
+
+3. Concevoir des pictogrammes.
+
+
+4. Créer des illustrations simples.
+
+
+5. Harmoniser les formes et les couleurs.
+
+
+6. Développer un système graphique cohérent.
+
+
+7. Concevoir une palette de marque.
+
+
+8. Associer les couleurs et les typographies.
+
+
+9. Créer des éléments de papeterie.
+
+
+10. Présenter une identité visuelle.
+
+
+
+Projet de la partie III : créer une identité visuelle comprenant un logo, une palette de couleurs, des règles typographiques et plusieurs applications graphiques.
+
+
+---
+
+PARTIE IV — DESIGN PUBLICITAIRE ET COMMUNICATION VISUELLE
+
+Chapitre 22 — Méthodologie de conception graphique
+
+1. Comprendre le besoin du client.
+
+
+2. Rédiger et analyser un brief.
+
+
+3. Définir le public cible.
+
+
+4. Identifier le message principal.
+
+
+5. Déterminer les objectifs de communication.
+
+
+6. Rechercher des références pertinentes.
+
+
+7. Construire un moodboard.
+
+
+8. Réaliser des esquisses.
+
+
+9. Développer plusieurs pistes créatives.
+
+
+10. Sélectionner et améliorer la proposition finale.
+
+
+
+Chapitre 23 — Création d'affiches et de flyers
+
+1. Les caractéristiques d'une affiche efficace.
+
+
+2. Choisir le format adapté.
+
+
+3. Définir une hiérarchie visuelle.
+
+
+4. Organiser les textes et les images.
+
+
+5. Utiliser les couleurs à bon escient.
+
+
+6. Créer une affiche commerciale.
+
+
+7. Créer une affiche événementielle.
+
+
+8. Concevoir un flyer promotionnel.
+
+
+9. Adapter un visuel à plusieurs formats.
+
+
+10. Contrôler la qualité avant livraison.
+
+
+
+Chapitre 24 — Design pour les réseaux sociaux
+
+1. Comprendre les objectifs de la communication numérique.
+
+
+2. Concevoir des publications statiques.
+
+
+3. Créer des visuels promotionnels.
+
+
+4. Construire une série de publications cohérentes.
+
+
+5. Adapter les compositions aux différents formats.
+
+
+6. Concevoir des couvertures et des bannières.
+
+
+7. Organiser une campagne visuelle.
+
+
+8. Préparer des exports adaptés aux plateformes.
+
+
+9. Éviter les problèmes de lisibilité sur téléphone.
+
+
+10. Évaluer la cohérence d'une campagne.
+
+
+
+Chapitre 25 — Branding et systèmes d'identité visuelle
+
+1. Définition de la marque et de l'identité visuelle.
+
+
+2. Différence entre logo, identité visuelle et branding.
+
+
+3. Recherche et positionnement visuel.
+
+
+4. Création d'un logo et de ses variantes.
+
+
+5. Choix des couleurs de marque.
+
+
+6. Définition du système typographique.
+
+
+7. Création d'éléments graphiques secondaires.
+
+
+8. Applications sur les supports de communication.
+
+
+9. Élaboration d'une charte graphique.
+
+
+10. Présentation d'un projet d'identité visuelle.
+
+
+
+Chapitre 26 — Photomontage publicitaire avancé
+
+1. Analyse du concept publicitaire.
+
+
+2. Recherche et sélection des photographies.
+
+
+3. Construction de la composition.
+
+
+4. Détourage avancé.
+
+
+5. Harmonisation de la lumière.
+
+
+6. Gestion des ombres et des reflets.
+
+
+7. Intégration du produit.
+
+
+8. Traitement colorimétrique.
+
+
+9. Intégration de la typographie.
+
+
+10. Finition et contrôle qualité.
+
+
+
+Projet de la partie IV : réaliser une campagne publicitaire cohérente pour une entreprise fictive, avec une affiche principale et plusieurs déclinaisons.
+
+
+---
+
+PARTIE V — DESIGN ÉDITORIAL ET PRÉPARATION À L'IMPRESSION
+
+Chapitre 27 — Fondamentaux de la production imprimée
+
+1. Comprendre les étapes de fabrication d'un imprimé.
+
+
+2. Différence entre RVB et CMJN.
+
+
+3. Résolution des images et dimensions physiques.
+
+
+4. Formats normalisés et formats personnalisés.
+
+
+5. Marges de sécurité.
+
+
+6. Fonds perdus et traits de coupe.
+
+
+7. Profils colorimétriques et gestion des couleurs.
+
+
+8. Incorporation et vectorisation des polices.
+
+
+9. Contrôle des images et des liens.
+
+
+10. Préparation des fichiers pour l'imprimeur.
+
+
+
+Chapitre 28 — Création de documents professionnels
+
+1. Conception de cartes de visite.
+
+
+2. Création de papier à en-tête.
+
+
+3. Réalisation de dépliants.
+
+
+4. Conception de brochures commerciales.
+
+
+5. Création de menus.
+
+
+6. Mise en page de catalogues.
+
+
+7. Conception d'étiquettes.
+
+
+8. Création de supports grand format.
+
+
+9. Préparation des PDF pour l'impression.
+
+
+10. Vérification et validation des fichiers finaux.
+
+
+
+Chapitre 29 — Packaging et supports de marque
+
+1. Introduction au design de packaging.
+
+
+2. Comprendre les contraintes physiques d'un emballage.
+
+
+3. Analyser les dimensions et les gabarits.
+
+
+4. Organiser les informations sur une étiquette.
+
+
+5. Créer une étiquette de produit.
+
+
+6. Concevoir un emballage simple.
+
+
+7. Respecter les contraintes de découpe et de pliage.
+
+
+8. Gérer les couleurs et les textes techniques.
+
+
+9. Préparer les fichiers pour la fabrication.
+
+
+10. Présenter le produit à l'aide de maquettes.
+
+
+
+Projet de la partie V : préparer un support commercial et une étiquette de produit avec leurs fichiers finaux destinés à l'impression.
+
+
+---
+
+PARTIE VI — MÉTHODES DE TRAVAIL PROFESSIONNELLES
+
+Chapitre 30 — Organisation et gestion des fichiers
+
+1. Organiser les dossiers d'un projet.
+
+
+2. Adopter une convention de nommage.
+
+
+3. Gérer les versions des fichiers.
+
+
+4. Préserver les fichiers sources modifiables.
+
+
+5. Archiver les ressources utilisées.
+
+
+6. Vérifier les liens et les polices.
+
+
+7. Créer des sauvegardes.
+
+
+8. Préparer les fichiers pour la livraison.
+
+
+9. Utiliser des formats d'export adaptés.
+
+
+10. Contrôler les fichiers avant leur transmission.
+
+
+
+Chapitre 31 — Gestion d'un projet client
+
+1. Comprendre la demande du client.
+
+
+2. Définir le périmètre du projet.
+
+
+3. Établir un calendrier de travail.
+
+
+4. Organiser les étapes de validation.
+
+
+5. Présenter une proposition graphique.
+
+
+6. Recueillir et traiter les commentaires.
+
+
+7. Gérer les demandes de modification.
+
+
+8. Préparer la livraison.
+
+
+9. Comprendre les droits d'utilisation des créations.
+
+
+10. Évaluer le projet après livraison.
+
+
+
+Chapitre 32 — Estimation du travail et tarification
+
+1. Comprendre les facteurs qui influencent le prix.
+
+
+2. Estimer le temps de réalisation.
+
+
+3. Distinguer les prestations simples et complexes.
+
+
+4. Prendre en compte les révisions.
+
+
+5. Comprendre la différence entre prix, coûts et bénéfices.
+
+
+6. Construire un devis.
+
+
+7. Présenter une proposition commerciale.
+
+
+8. Définir les conditions de livraison.
+
+
+9. Gérer les retards et les changements de périmètre.
+
+
+10. Entretenir une relation professionnelle avec le client.
+
+
+
+
+---
+
+PARTIE VII — PORTFOLIO ET INSERTION PROFESSIONNELLE
+
+Chapitre 33 — Construction d'un portfolio
+
+1. Définition et objectifs du portfolio.
+
+
+2. Sélectionner ses meilleurs travaux.
+
+
+3. Construire une présentation cohérente.
+
+
+4. Présenter le contexte de chaque projet.
+
+
+5. Expliquer les choix graphiques.
+
+
+6. Montrer les étapes de conception.
+
+
+7. Présenter les résultats finaux.
+
+
+8. Éviter les erreurs de présentation.
+
+
+9. Mettre à jour son portfolio.
+
+
+10. Préparer une présentation professionnelle de ses compétences.
+
+
+
+Chapitre 34 — Projets de synthèse
+
+1. Créer une identité visuelle complète.
+
+
+2. Concevoir une campagne publicitaire.
+
+
+3. Réaliser une affiche promotionnelle.
+
+
+4. Concevoir une brochure commerciale.
+
+
+5. Créer une étiquette de produit.
+
+
+6. Préparer les fichiers pour l'impression.
+
+
+7. Organiser les fichiers sources.
+
+
+8. Présenter les projets sous forme de portfolio.
+
+
+9. Réaliser une autoévaluation.
+
+
+10. Corriger les défauts et finaliser les projets.

@@ -1,0 +1,1404 @@
+% ============================================================
+% CHAPITRE 9 — Sélection et détourage
+% ============================================================
+
+\chapter{Sélection et détourage}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons appris à maîtriser les calques, à les organiser, à utiliser les masques, les calques de réglage, les objets dynamiques, et à travailler de manière non destructive. Ces compétences sont fondamentales pour structurer un projet. Mais avant de composer, avant d'assembler, avant de photomonter, il faut savoir \emph{sélectionner}. C'est l'objet de ce chapitre.}
+
+\vspace{1em}
+
+\noindent
+La \terme{sélection} est l'une des opérations les plus fréquentes dans Photoshop. Elle consiste à isoler une partie d'une image pour la modifier, la déplacer, la copier, la détourer, l'extraire. Sans sélection, on ne peut travailler que sur l'image entière : avec la sélection, on peut manipuler chaque élément indépendamment. C'est la sélection qui permet de détourer un sujet, de remplacer un arrière-plan, de composer un photomontage, de créer un visuel professionnel.
+
+\vspace{1em}
+
+\noindent
+Le \terme{détourage} est l'application la plus spectaculaire de la sélection : il consiste à isoler un sujet de son arrière-plan pour l'utiliser dans une autre composition. Le détourage est l'une des compétences les plus recherchées chez un designer, car il conditionne la qualité des photomontages et des compositions publicitaires. Un détourage approximatif se voit immédiatement ; un détourage soigné est invisible.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser les sélections et les détourages dans Photoshop. Nous commencerons par comprendre ce qu'est une sélection. Nous étudierons ensuite les principaux outils : Rectangle de sélection, Lasso, Sélection rapide, Baguette magique, Sélection d'objet, Sélection du sujet. Nous verrons comment affiner les contours, comment détourer une personne ou un objet, comment supprimer ou remplacer un arrière-plan, comment utiliser les masques pour un détourage propre, et enfin comment corriger les erreurs de sélection. À la fin de ce chapitre, tu sauras sélectionner et détourer avec précision et professionnalisme.
+
+% ============================================================
+\section{Comprendre les sélections}
+% ============================================================
+
+\subsection{Qu'est-ce qu'une sélection ?}
+
+\begin{quote}
+\textbf{Une sélection est une zone délimitée d'une image, à l'intérieur de laquelle les modifications s'appliquent. Tout ce qui est en dehors de la sélection est protégé.}
+\end{quote}
+
+La sélection est l'outil fondamental de Photoshop : elle permet de délimiter la zone sur laquelle on veut travailler. Sans sélection, les modifications s'appliquent à tout le calque. Avec une sélection, elles s'appliquent uniquement à la zone sélectionnée.
+
+\subsection{À quoi sert une sélection ?}
+
+Une sélection permet de :
+
+\begin{itemize}
+    \item \terme{Modifier} une partie d'une image (éclaircir, assombrir, changer la couleur).
+    \item \terme{Déplacer} une partie d'une image.
+    \item \terme{Copier} une partie d'une image dans un autre calque ou document.
+    \item \terme{Supprimer} une partie d'une image.
+    \item \terme{Détourer} un sujet de son arrière-plan.
+    \item \terme{Appliquer} un filtre ou un effet localement.
+    \item \terme{Remplir} une zone avec une couleur, un motif, une image.
+    \item \terme{Créer} un masque de fusion à partir d'une sélection.
+\end{itemize}
+
+\subsection{Les types de sélection}
+
+\subsubsection{Sélection rectangulaire}
+
+La \terme{sélection rectangulaire} est une zone en forme de rectangle ou de carré. Elle est créée avec l'outil Rectangle de sélection.
+
+\subsubsection{Sélection elliptique}
+
+La \terme{sélection elliptique} est une zone en forme d'ellipse ou de cercle. Elle est créée avec l'outil Ellipse de sélection.
+
+\subsubsection{Sélection libre}
+
+La \terme{sélection libre} est une zone dessinée à main levée. Elle est créée avec l'outil Lasso.
+
+\subsubsection{Sélection polygonale}
+
+La \terme{sélection polygonale} est une zone composée de segments droits. Elle est créée avec l'outil Lasso polygonal.
+
+\subsubsection{Sélection automatique}
+
+La \terme{sélection automatique} est une zone détectée automatiquement par le logiciel, en fonction de la couleur, de la texture, ou du contenu. Elle est créée avec les outils Sélection rapide, Baguette magique, Sélection d'objet, Sélection du sujet.
+
+\subsubsection{Sélection par plage de couleurs}
+
+La \terme{sélection par plage de couleurs} sélectionne tous les pixels d'une couleur donnée dans l'image.
+
+\subsection{Les propriétés d'une sélection}
+
+\subsubsection{Le contour}
+
+Le \terme{contour} d'une sélection est la ligne qui délimite la zone sélectionnée. Il est matérialisé par une ligne pointillée animée (les « fourmis »).
+
+\subsubsection{Le contour progressif}
+
+Le \terme{contour progressif} (ou \emph{feather}) est un adoucissement des bords de la sélection. Il permet de créer des transitions douces entre la zone sélectionnée et le reste de l'image.
+
+\subsubsection{L'anti-aliasing}
+
+L'\terme{anti-aliasing} (ou \emph{lissage}) est un adoucissement des bords de la sélection pour éviter les effets d'escalier. Il est activé par défaut.
+
+\subsubsection{La sélection partielle}
+
+Une sélection peut être \terme{partielle} : certains pixels peuvent être partiellement sélectionnés (à 50\%, par exemple). Cela permet des transitions douces.
+
+\subsection{Les modes de sélection}
+
+\subsubsection{Nouvelle sélection}
+
+Créer une nouvelle sélection, en remplaçant la sélection existante.
+
+\subsubsection{Ajouter à la sélection}
+
+Ajouter une nouvelle zone à la sélection existante. Raccourci : \texttt{Maj} + clic ou \texttt{Maj} + dessin.
+
+\subsubsection{Soustraire de la sélection}
+
+Retirer une zone de la sélection existante. Raccourci : \texttt{Alt} + clic (ou \texttt{Opt} + clic) ou \texttt{Alt} + dessin.
+
+\subsubsection{Intersection avec la sélection}
+
+Garder uniquement la zone commune entre la sélection existante et la nouvelle zone. Raccourci : \texttt{Maj + Alt} + clic.
+
+\subsection{Les raccourcis de sélection}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Action} & \textbf{Raccourci} \\
+\midrule
+Tout sélectionner & Ctrl + A (Cmd + A) \\
+Désélectionner & Ctrl + D (Cmd + D) \\
+Réactiver la sélection & Ctrl + Maj + D (Cmd + Maj + D) \\
+Inverser la sélection & Ctrl + Maj + I (Cmd + Maj + I) \\
+Contour progressif & Maj + F6 \\
+Remplir la sélection & Maj + F5 \\
+Copier la sélection & Ctrl + C (Cmd + C) \\
+Couper la sélection & Ctrl + X (Cmd + X) \\
+Coller la sélection & Ctrl + V (Cmd + V) \\
+Déplacer la sélection & Flèches \\
+Ajouter à la sélection & Maj + clic / Maj + dessin \\
+Soustraire de la sélection & Alt + clic / Alt + dessin \\
+Intersection & Maj + Alt + clic \\
+\bottomrule
+\end{tabular}
+\caption{Raccourcis des sélections.}
+\end{table}
+
+\subsection*{Conclusion de la section}
+
+Une \terme{sélection} est une zone délimitée d'une image, à l'intérieur de laquelle les modifications s'appliquent. Elle permet de modifier, déplacer, copier, supprimer, détourer, appliquer des effets localement. Il existe plusieurs types de sélection : rectangulaire, elliptique, libre, polygonale, automatique, par plage de couleurs. Les sélections ont des propriétés (contour, contour progressif, anti-aliasing, sélection partielle) et des modes (nouvelle, ajouter, soustraire, intersection). Maîtriser les sélections est indispensable pour travailler efficacement dans Photoshop.
+
+Maintenant que nous comprenons les sélections, nous allons, dans la section suivante, étudier l'\terme{outil Rectangle de sélection}.
+
+% ============================================================
+\section{L'outil Rectangle de sélection}
+% ============================================================
+
+\subsection{Présentation de l'outil}
+
+L'\terme{outil Rectangle de sélection} (\texttt{M}) permet de créer des sélections rectangulaires ou carrées. C'est l'outil de sélection le plus simple et le plus utilisé.
+
+\subsection{Utilisation de base}
+
+\subsubsection{Sélectionner l'outil}
+
+Appuie sur \texttt{M} pour sélectionner l'outil Rectangle de sélection. Le curseur devient une croix.
+
+\subsubsection{Créer une sélection}
+
+Clique-glisse sur l'image pour dessiner un rectangle. Relâche la souris pour valider la sélection.
+
+\subsubsection{Créer un carré}
+
+Maintiens \texttt{Maj} pendant le dessin pour créer un carré parfait.
+
+\subsubsection{Créer une sélection depuis le centre}
+
+Maintiens \texttt{Alt} (ou \texttt{Opt}) pendant le dessin pour créer une sélection depuis le centre.
+
+\subsubsection{Combiner}
+
+Maintiens \texttt{Maj} + \texttt{Alt} pour combiner les deux options (carré depuis le centre).
+
+\subsection{Les options de la barre d'options}
+
+\subsubsection{Les modes de sélection}
+
+La barre d'options propose quatre modes :
+
+\begin{itemize}
+    \item \terme{Nouvelle sélection} : remplace la sélection existante.
+    \item \terme{Ajouter à la sélection} : ajoute la nouvelle zone à la sélection existante.
+    \item \terme{Soustraire de la sélection} : retire la nouvelle zone de la sélection existante.
+    \item \terme{Intersection avec la sélection} : garde uniquement la zone commune.
+\end{itemize}
+
+\subsubsection{Le contour progressif}
+
+Le champ \terme{Contour progressif} permet d'adoucir les bords de la sélection. Une valeur de 0 donne des bords nets, une valeur plus élevée donne des bords flous.
+
+\subsubsection{Le lissage}
+
+L'option \terme{Lissage} active l'anti-aliasing pour éviter les effets d'escalier.
+
+\subsubsection{Le style}
+
+Le menu \terme{Style} propose trois options :
+
+\begin{itemize}
+    \item \terme{Normal} : sélection libre.
+    \item \terme{Ratio fixe} : sélection avec un ratio largeur/hauteur fixe (par exemple, 16:9).
+    \item \terme{Taille fixe} : sélection avec une taille fixe en pixels (par exemple, 800 × 600 px).
+\end{itemize}
+
+\subsubsection{La taille et le ratio}
+
+Selon le style choisi, on peut définir la \terme{largeur} et la \terme{hauteur} de la sélection, ou le \terme{ratio}.
+
+\subsubsection{Affiner}
+
+L'option \terme{Affiner} ouvre une boîte de dialogue pour affiner les contours de la sélection (voir section 8).
+
+\subsection{Utilisations courantes}
+
+\subsubsection{Sélectionner une zone rectangulaire}
+
+Pour sélectionner une zone rectangulaire (par exemple, un logo carré, une image à recadrer).
+
+\subsubsection{Sélectionner toute l'image}
+
+\texttt{Ctrl + A} (ou \texttt{Cmd + A}) sélectionne toute l'image.
+
+\subsubsection{Sélectionner une zone pour un masque}
+
+Sélectionner une zone, puis cliquer sur \terme{Masque de fusion} pour créer un masque à partir de la sélection.
+
+\subsubsection{Sélectionner une zone pour la remplir}
+
+Sélectionner une zone, puis \texttt{Édition > Remplir} pour la remplir avec une couleur, un motif, etc.
+
+\subsubsection{Sélectionner une zone pour la supprimer}
+
+Sélectionner une zone, puis \texttt{Suppr} pour la supprimer.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser \texttt{Maj}} pour les carrés.
+    \item \terme{Utiliser \texttt{Alt}} pour dessiner depuis le centre.
+    \item \terme{Utiliser les modes} (ajouter, soustraire, intersection) pour combiner les sélections.
+    \item \terme{Utiliser le contour progressif} pour adoucir les bords.
+    \item \terme{Utiliser les styles} (ratio fixe, taille fixe) pour les sélections précises.
+    \item \terme{Utiliser l'option Affiner} pour les bords complexes.
+    \item \terme{Ne pas hésiter à recommencer} si la sélection n'est pas parfaite.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Rectangle de sélection} permet de créer des sélections rectangulaires ou carrées. Il propose plusieurs options : modes de sélection, contour progressif, lissage, style, taille, ratio, affiner. Il est utilisé pour sélectionner des zones rectangulaires, remplir, supprimer, créer des masques. Il est simple mais très utile, et il est essentiel de le maîtriser.
+
+Maintenant que nous connaissons l'outil Rectangle de sélection, nous allons, dans la section suivante, étudier l'\terme{outil Lasso}.
+
+% ============================================================
+\section{L'outil Lasso}
+% ============================================================
+
+\subsection{Présentation de l'outil Lasso}
+
+L'\terme{outil Lasso} (\texttt{L}) permet de créer des sélections à main levée. Il est utile pour sélectionner des formes irrégulières ou organiques.
+
+\subsection{Les variantes du Lasso}
+
+Photoshop propose trois variantes du Lasso :
+
+\begin{itemize}
+    \item \terme{Lasso} : sélection à main levée.
+    \item \terme{Lasso polygonal} : sélection avec des segments droits.
+    \item \terme{Lasso magnétique} : sélection qui suit les contours des objets.
+\end{itemize}
+
+\subsection{L'outil Lasso}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Lasso (\texttt{L}).
+    \item Cliquer sur l'image et maintenir le clic.
+    \item Dessiner le contour de la sélection à main levée.
+    \item Relâcher pour fermer la sélection.
+\end{enumerate}
+
+\subsubsection{Options}
+
+\begin{itemize}
+    \item \terme{Contour progressif} : adoucit les bords.
+    \item \terme{Lissage} : anti-aliasing.
+    \item \terme{Mode} : nouvelle sélection, ajouter, soustraire, intersection.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Sélectionner une forme organique (par exemple, un visage, une fleur).
+    \item Sélectionner une zone irrégulière.
+    \item Détourer un objet de forme complexe.
+\end{itemize}
+
+\subsection{L'outil Lasso polygonal}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Lasso polygonal (dans le groupe du Lasso).
+    \item Cliquer sur l'image pour placer le premier point.
+    \item Cliquer pour placer les points suivants.
+    \item Double-cliquer pour fermer la sélection (ou cliquer sur le premier point).
+\end{enumerate}
+
+\subsubsection{Options}
+
+\begin{itemize}
+    \item \terme{Contour progressif} : adoucit les bords.
+    \item \terme{Lissage} : anti-aliasing.
+    \item \terme{Mode} : nouvelle sélection, ajouter, soustraire, intersection.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Sélectionner une forme avec des segments droits (par exemple, un bâtiment, un objet géométrique).
+    \item Détourer un objet aux contours nets.
+\end{itemize}
+
+\subsection{L'outil Lasso magnétique}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Lasso magnétique.
+    \item Cliquer sur le bord de l'objet à détourer.
+    \item Suivre le contour de l'objet (le lasso s'accroche automatiquement aux contours).
+    \item Cliquer pour valider les points d'ancrage.
+    \item Double-cliquer pour fermer la sélection.
+\end{enumerate}
+
+\subsubsection{Options}
+
+\begin{itemize}
+    \item \terme{Largeur} : largeur de la zone de détection.
+    \item \terme{Contraste} : contraste entre l'objet et le fond (pour la détection).
+    \item \terme{Fréquence} : fréquence des points d'ancrage.
+    \item \terme{Stylet} : pression du stylet.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Détourer un objet aux contours nets et contrastés.
+    \item Sélectionner une forme complexe mais bien délimitée.
+\end{itemize}
+
+\subsubsection{Limites}
+
+\begin{itemize}
+    \item \terme{Contours flous} : le lasso magnétique ne fonctionne pas bien.
+    \item \terme{Faible contraste} : le lasso magnétique ne détecte pas les contours.
+    \item \terme{Bruit} : le lasso magnétique peut être perturbé par le bruit.
+\end{itemize}
+
+\subsection{Comparaison des Lasso}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{4cm}p{5cm}@{}}
+\toprule
+\textbf{Outil} & \textbf{Type de sélection} & \textbf{Utilisation} \\
+\midrule
+Lasso & Main levée & Formes organiques, irrégulières \\
+Lasso polygonal & Segments droits & Formes géométriques, contours nets \\
+Lasso magnétique & Suit les contours & Objets contrastés, contours nets \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison des variantes du Lasso.}
+\end{table}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} le Lasso pour les formes organiques.
+    \item \terme{Utiliser} le Lasso polygonal pour les formes géométriques.
+    \item \terme{Utiliser} le Lasso magnétique pour les objets contrastés.
+    \item \terme{Combiner} les outils (par exemple, Lasso + Rectangle de sélection).
+    \item \terme{Affiner} les sélections avec l'option \emph{Affiner}.
+    \item \terme{Utiliser le contour progressif} pour adoucir les bords.
+    \item \terme{Ne pas hésiter} à recommencer si la sélection n'est pas parfaite.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Lasso} permet de créer des sélections à main levée. Il propose trois variantes : Lasso, Lasso polygonal, Lasso magnétique. Chacune a ses usages : formes organiques, formes géométriques, objets contrastés. Il est essentiel de choisir la bonne variante selon la forme à sélectionner, et de combiner les outils pour plus de précision.
+
+Maintenant que nous connaissons le Lasso, nous allons, dans la section suivante, étudier la \terme{sélection d'objets}.
+
+% ============================================================
+\section{La sélection d'objets}
+% ============================================================
+
+\subsection{Présentation de l'outil Sélection d'objet}
+
+L'\terme{outil Sélection d'objet} (dans le groupe de l'outil Sélection rapide) permet de sélectionner automatiquement un objet dans une image. Il utilise l'intelligence artificielle pour détecter les objets.
+
+\subsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection d'objet.
+    \item Cliquer-glisser un rectangle autour de l'objet à sélectionner.
+    \item Photoshop détecte automatiquement l'objet et crée une sélection.
+\end{enumerate}
+
+\subsection{Les options}
+
+\begin{itemize}
+    \item \terme{Mode} : nouvelle sélection, ajouter, soustraire, intersection.
+    \item \terme{Échantillonner tous les calques} : sélectionner sur tous les calques ou sur le calque actif.
+    \item \terme{Contour progressif} : adoucir les bords.
+    \item \terme{Sélectionner le sujet} : sélectionner le sujet principal de l'image.
+    \item \terme{Affiner} : affiner les contours.
+\end{itemize}
+
+\subsection{Utilisations}
+
+\begin{itemize}
+    \item Sélectionner un objet rapidement (personne, animal, produit).
+    \item Détourer un sujet pour le placer dans une autre composition.
+    \item Remplacer un arrière-plan.
+    \item Isoler un élément pour le modifier.
+\end{itemize}
+
+\subsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Rapide} : sélection en quelques secondes.
+    \item \terme{Précis} : détection fine des contours.
+    \item \terme{Intelligent} : utilise l'IA pour détecter les objets.
+    \item \terme{Évolutif} : les algorithmes s'améliorent avec les versions.
+\end{itemize}
+
+\subsection{Limites}
+
+\begin{itemize}
+    \item \terme{Objets complexes} : certains objets (transparents, très fins, flous) peuvent être mal détectés.
+    \item \terme{Arrière-plan chargé} : si l'arrière-plan est complexe, la détection peut être moins précise.
+    \item \terme{Objets multiples} : si plusieurs objets sont présents, il faut parfois préciser lequel sélectionner.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} l'outil Sélection d'objet pour les objets simples.
+    \item \terme{Combiner} avec d'autres outils pour affiner.
+    \item \terme{Vérifier} le résultat (zoomer pour voir les contours).
+    \item \terme{Utiliser l'option Affiner} pour les bords complexes.
+    \item \terme{Ne pas hésiter} à recommencer si le résultat n'est pas satisfaisant.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Sélection d'objet} permet de sélectionner automatiquement un objet dans une image, grâce à l'intelligence artificielle. Il est rapide, précis, intelligent. Il est utilisé pour détourer un sujet, remplacer un arrière-plan, isoler un élément. Il a des limites (objets complexes, arrière-plan chargé), mais il est un outil puissant pour gagner du temps.
+
+Maintenant que nous connaissons la sélection d'objets, nous allons, dans la section suivante, étudier la \terme{sélection rapide}.
+
+% ============================================================
+\section{La sélection rapide}
+% ============================================================
+
+\subsection{Présentation de l'outil Sélection rapide}
+
+L'\terme{outil Sélection rapide} (\texttt{W}) permet de sélectionner des zones en fonction de la couleur et de la texture, en utilisant un pinceau. Il est plus rapide que le Lasso pour les formes complexes.
+
+\subsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection rapide (\texttt{W}).
+    \item Choisir la taille du pinceau dans la barre d'options.
+    \item Peindre sur la zone à sélectionner.
+    \item La sélection s'étend automatiquement en fonction de la couleur et de la texture.
+    \item Utiliser \texttt{Alt} (ou \texttt{Opt}) pour soustraire.
+\end{enumerate}
+
+\subsection{Les options}
+
+\begin{itemize}
+    \item \terme{Taille du pinceau} : taille de la zone de détection.
+    \item \terme{Dureté} : dureté des bords.
+    \item \terme{Mode} : nouvelle sélection, ajouter, soustraire, intersection.
+    \item \terme{Échantillonner tous les calques} : sélectionner sur tous les calques ou sur le calque actif.
+    \item \terme{Contour progressif} : adoucir les bords.
+    \item \terme{Affiner} : affiner les contours.
+\end{itemize}
+
+\subsection{Utilisations}
+
+\begin{itemize}
+    \item Sélectionner un objet aux contours complexes.
+    \item Sélectionner une zone de couleur similaire.
+    \item Détourer un sujet (en combinaison avec d'autres outils).
+    \item Sélectionner rapidement une zone pour la modifier.
+\end{itemize}
+
+\subsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Rapide} : sélection en quelques coups de pinceau.
+    \item \terme{Intuitif} : on peint sur la zone à sélectionner.
+    \item \terme{Adaptatif} : la sélection s'étend en fonction de la couleur et de la texture.
+\end{itemize}
+
+\subsection{Limites}
+
+\begin{itemize}
+    \item \terme{Contours flous} : la sélection peut déborder sur les zones adjacentes.
+    \item \terme{Couleurs similaires} : si l'objet et le fond ont des couleurs similaires, la sélection est difficile.
+    \item \terme{Textures complexes} : les textures complexes peuvent perturber la sélection.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Ajuster la taille du pinceau} pour plus de précision.
+    \item \terme{Utiliser \texttt{Alt}} pour soustraire les zones en trop.
+    \item \terme{Combiner} avec d'autres outils (Lasso, Sélection d'objet).
+    \item \terme{Affiner} les contours pour un résultat propre.
+    \item \terme{Vérifier} le résultat (zoomer).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Sélection rapide} permet de sélectionner des zones en fonction de la couleur et de la texture. Il est rapide, intuitif, adaptatif. Il est utilisé pour les objets aux contours complexes, les zones de couleur similaire, les détourages. Il a des limites (contours flous, couleurs similaires, textures complexes), mais il est un outil précieux pour gagner du temps.
+
+Maintenant que nous connaissons la sélection rapide, nous allons, dans la section suivante, étudier la \terme{baguette magique}.
+
+% ============================================================
+\section{La baguette magique}
+% ============================================================
+
+\subsection{Présentation de l'outil Baguette magique}
+
+L'\terme{outil Baguette magique} (\texttt{W}) permet de sélectionner des zones de couleur similaire en un clic. Il est utile pour sélectionner un fond uni, une zone de couleur, un élément distinct.
+
+\subsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Baguette magique (\texttt{W}).
+    \item Cliquer sur la zone à sélectionner.
+    \item Photoshop sélectionne tous les pixels de couleur similaire connectés (ou tous les pixels de couleur similaire, selon l'option).
+\end{enumerate}
+
+\subsection{Les options}
+
+\begin{itemize}
+    \item \terme{Tolérance} : définit la plage de couleurs sélectionnées. Une tolérance basse sélectionne peu de pixels, une tolérance élevée sélectionne beaucoup de pixels.
+    \item \terme{Échantillonner tous les calques} : sélectionner sur tous les calques ou sur le calque actif.
+    \item \terme{Contigu} : si activé, sélectionne uniquement les pixels connectés. Si désactivé, sélectionne tous les pixels de couleur similaire, même non connectés.
+    \item \terme{Contour progressif} : adoucir les bords.
+    \item \terme{Mode} : nouvelle sélection, ajouter, soustraire, intersection.
+\end{itemize}
+
+\subsection{Utilisations}
+
+\begin{itemize}
+    \item Sélectionner un fond uni (ciel bleu, mur blanc).
+    \item Sélectionner une zone de couleur (un logo, une forme).
+    \item Sélectionner une zone pour la remplacer.
+    \item Détourer un objet sur fond uni.
+\end{itemize}
+
+\subsection{Avantages}
+
+\begin{itemize}
+    \item \terme{Rapide} : sélection en un clic.
+    \item \terme{Simple} : pas besoin de dessiner.
+    \item \terme{Précis} : pour les zones de couleur uniforme.
+\end{itemize}
+
+\subsection{Limites}
+
+\begin{itemize}
+    \item \terme{Fonds complexes} : la baguette magique ne fonctionne pas bien sur les fonds texturés.
+    \item \terme{Dégradés} : les dégradés ne sont pas bien gérés (la sélection est fragmentée).
+    \item \terme{Tolérance} : il faut ajuster la tolérance pour un résultat optimal.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Ajuster la tolérance} en fonction de l'image.
+    \item \terme{Utiliser l'option Contigu} pour les zones connectées.
+    \item \terme{Combiner} avec d'autres outils pour affiner.
+    \item \terme{Utiliser le contour progressif} pour adoucir les bords.
+    \item \terme{Vérifier} le résultat (zoomer).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{outil Baguette magique} permet de sélectionner des zones de couleur similaire en un clic. Il est rapide, simple, précis pour les zones uniformes. Il est utilisé pour sélectionner un fond uni, une zone de couleur, un élément distinct. Il a des limites (fonds complexes, dégradés) et il faut ajuster la tolérance pour un résultat optimal.
+
+Maintenant que nous connaissons la baguette magique, nous allons, dans la section suivante, étudier les \terme{fonctions de sélection du sujet}.
+
+% ============================================================
+\section{Les fonctions de sélection du sujet}
+% ============================================================
+
+\subsection{Présentation des fonctions de sélection du sujet}
+
+Photoshop propose plusieurs fonctions avancées pour sélectionner automatiquement le sujet principal d'une image :
+
+\begin{itemize}
+    \item \terme{Sélection du sujet} (\texttt{Sélection > Sujet}).
+    \item \terme{Sélectionner et masquer} (boîte de dialogue avancée).
+    \item \terme{Sélection d'objet} (outil).
+    \item \terme{Neural Filters} (filtres IA).
+\end{itemize}
+
+\subsection{Sélection > Sujet}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Ouvrir l'image.
+    \item Utiliser \texttt{Sélection > Sujet}.
+    \item Photoshop détecte automatiquement le sujet principal (personne, animal, objet).
+    \item Une sélection est créée.
+\end{enumerate}
+
+\subsubsection{Options}
+
+\begin{itemize}
+    \item \terme{Échantillonner tous les calques} : sélectionner sur tous les calques ou sur le calque actif.
+    \item \terme{Affiner} : affiner les contours.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Détourer rapidement un sujet.
+    \item Remplacer un arrière-plan.
+    \item Isoler un élément.
+\end{itemize}
+
+\subsection{Sélectionner et masquer}
+
+\subsubsection{Présentation}
+
+La boîte de dialogue \terme{Sélectionner et masquer} (\texttt{Sélection > Sélectionner et masquer}) permet d'affiner les sélections complexes (cheveux, poils, contours flous).
+
+\subsubsection{Options}
+
+\begin{itemize}
+    \item \terme{Mode de sélection} : sélectionner, masquer, etc.
+    \item \terme{Affichage} : voir la sélection sous différentes formes (fourmis, noir et blanc, sur fond noir, etc.).
+    \item \terme{Affiner les contours} : lisser, adoucir, contracter/dilater.
+    \item \terme{Contour progressif} : adoucir les bords.
+    \item \terme{Améliorer le contour} : détecter les cheveux, les poils.
+    \item \terme{Sortie vers} : sélection, masque, nouveau calque, nouveau document.
+\end{itemize}
+
+\subsubsection{Utilisations}
+
+\begin{itemize}
+    \item Détourer des cheveux, des poils, des contours flous.
+    \item Affiner une sélection complexe.
+    \item Créer un masque de fusion à partir d'une sélection.
+\end{itemize}
+
+\subsection{Les Neural Filters}
+
+\subsubsection{Présentation}
+
+Les \terme{Neural Filters} (\texttt{Filtre > Neural Filters}) sont des filtres basés sur l'intelligence artificielle. Ils proposent notamment :
+
+\begin{itemize}
+    \item \terme{Suppression d'arrière-plan}.
+    \item \terme{Colorisation}.
+    \item \terme{Amélioration des portraits}.
+    \item \terme{Transfert de style}.
+    \item \terme{Changement d'expression}.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Ouvrir l'image.
+    \item Utiliser \texttt{Filtre > Neural Filters}.
+    \item Activer le filtre souhaité.
+    \item Ajuster les paramètres.
+    \item Valider.
+\end{enumerate}
+
+\subsection{Comparaison des fonctions}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{@{}p{3.5cm}p{5cm}p{4.5cm}@{}}
+\toprule
+\textbf{Fonction} & \textbf{Usage} & \textbf{Niveau} \\
+\midrule
+Sélection > Sujet & Sélection rapide du sujet & Simple \\
+Sélection d'objet & Sélection précise d'un objet & Intermédiaire \\
+Sélectionner et masquer & Affinage des contours & Avancé \\
+Neural Filters & Détourage IA & Variable \\
+\bottomrule
+\end{tabular}
+\caption{Comparaison des fonctions de sélection du sujet.}
+\end{table}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser Sélection > Sujet} pour un détourage rapide.
+    \item \terme{Utiliser Sélectionner et masquer} pour affiner les contours complexes.
+    \item \terme{Utiliser les Neural Filters} pour les détourages automatiques.
+    \item \terme{Combiner} plusieurs fonctions pour un résultat optimal.
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Corriger} les erreurs manuellement si nécessaire.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Photoshop propose plusieurs fonctions avancées pour sélectionner automatiquement le sujet principal : Sélection > Sujet, Sélectionner et masquer, Sélection d'objet, Neural Filters. Ces fonctions utilisent l'intelligence artificielle pour détecter les contours, affiner les sélections, détourer automatiquement. Elles sont utilisées pour les détourages rapides et complexes. Il est essentiel de les combiner, de vérifier le résultat et de corriger manuellement si nécessaire.
+
+Maintenant que nous connaissons les fonctions de sélection du sujet, nous allons, dans la section suivante, apprendre à \terme{affiner les contours}.
+
+% ============================================================
+\section{Affiner les contours}
+% ============================================================
+
+\subsection{Pourquoi affiner les contours ?}
+
+L'\terme{affinage des contours} est essentiel pour obtenir un détourage propre. Une sélection brute a souvent des bords irréguliers, flous, ou crénelés. L'affinage permet de :
+
+\begin{itemize}
+    \item \terme{Adoucir} les bords.
+    \item \terme{Lisser} les contours.
+    \item \terme{Contracter} ou \terme{dilater} la sélection.
+    \item \terme{Détecter} les cheveux, les poils.
+    \item \terme{Améliorer} la qualité du détourage.
+\end{itemize}
+
+\subsection{La boîte de dialogue Affiner}
+
+\subsubsection{Accès}
+
+La boîte de dialogue \terme{Affiner} est accessible par :
+
+\begin{itemize}
+    \item \texttt{Sélection > Affiner les contours} (dans les anciennes versions).
+    \item \texttt{Sélection > Sélectionner et masquer} (dans les versions récentes).
+    \item Le bouton \terme{Affiner} dans la barre d'options de certains outils de sélection.
+\end{itemize}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Affichage} : voir la sélection sous différentes formes.
+    \item \terme{Affiner les contours} :
+    \begin{itemize}
+        \item \terme{Lisser} : lisser les contours.
+        \item \terme{Contour progressif} : adoucir les bords.
+        \item \terme{Contraste} : ajuster le contraste.
+        \item \terme{Contraction/Dilatation} : contracter ou dilater la sélection.
+    \end{itemize}
+    \item \terme{Améliorer le contour} :
+    \begin{itemize}
+        \item \terme{Détecter les cheveux} : détecter les cheveux, les poils.
+        \item \terme{Rayon} : rayon de détection.
+    \end{itemize}
+    \item \terme{Sortie vers} : sélection, masque, nouveau calque, nouveau document.
+\end{itemize}
+
+\subsection{Les étapes d'affinage}
+
+\subsubsection{Étape 1 : Vérifier la sélection}
+
+Ouvrir la boîte de dialogue \emph{Affiner}. Choisir un mode d'affichage (par exemple, \emph{Sur fond noir}) pour bien voir les contours.
+
+\subsubsection{Étape 2 : Adoucir les bords}
+
+Ajuster le \terme{Contour progressif} pour adoucir les bords. Utiliser une valeur faible (0,5 à 2 px) pour les contours nets, une valeur plus élevée pour les contours flous.
+
+\subsubsection{Étape 3 : Lisser les contours}
+
+Ajuster le \terme{Lissage} pour lisser les irrégularités. Utiliser une valeur de 1 à 3 px.
+
+\subsubsection{Étape 4 : Contraster}
+
+Ajuster le \terme{Contraste} pour renforcer les contours. Utiliser une valeur de 10\% à 30\%.
+
+\subsubsection{Étape 5 : Contracter/Dilater}
+
+Utiliser la \terme{Contraction/Dilatation} pour ajuster la taille de la sélection. Contracter de 1 à 2 px pour éviter les halos, dilater pour inclure les contours.
+
+\subsubsection{Étape 6 : Détecter les cheveux}
+
+Pour les portraits, activer \terme{Détecter les cheveux} et ajuster le rayon. Photoshop détecte automatiquement les cheveux et les poils.
+
+\subsubsection{Étape 7 : Sortie}
+
+Choisir \terme{Sortie vers} :
+\begin{itemize}
+    \item \terme{Sélection} : garder la sélection.
+    \item \terme{Masque de fusion} : créer un masque de fusion à partir de la sélection.
+    \item \terme{Nouveau calque} : créer un nouveau calque avec la sélection.
+    \item \terme{Nouveau document} : créer un nouveau document avec la sélection.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Vérifier} la sélection sur fond contrasté (noir, blanc).
+    \item \terme{Adoucir} les bords progressivement.
+    \item \terme{Lisser} les irrégularités.
+    \item \terme{Contraster} les contours.
+    \item \terme{Contracter} légèrement pour éviter les halos.
+    \item \terme{Détecter les cheveux} pour les portraits.
+    \item \terme{Sortir} vers un masque de fusion pour un travail non destructif.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{affinage des contours} est essentiel pour obtenir un détourage propre. Il permet d'adoucir, de lisser, de contracter, de dilater, de détecter les cheveux. La boîte de dialogue \emph{Affiner} propose plusieurs options. Les étapes d'affinage consistent à vérifier, adoucir, lisser, contraster, contracter, détecter les cheveux, et sortir vers un masque. Il est essentiel de maîtriser l'affinage pour obtenir un détourage professionnel.
+
+Maintenant que nous savons affiner les contours, nous allons, dans la section suivante, apprendre à \terme{détourer une personne ou un objet}.
+
+% ============================================================
+\section{Détourer une personne ou un objet}
+% ============================================================
+
+\subsection{Qu'est-ce que le détourage ?}
+
+\begin{quote}
+\textbf{Le détourage consiste à isoler un sujet (personne, animal, objet) de son arrière-plan, pour l'utiliser dans une autre composition ou le modifier indépendamment.}
+\end{quote}
+
+Le détourage est l'une des compétences les plus recherchées chez un designer. Il conditionne la qualité des photomontages, des compositions publicitaires, des visuels produits.
+
+\subsection{Les étapes du détourage}
+
+\subsubsection{Étape 1 : Analyser l'image}
+
+Avant de détourer, il faut analyser l'image :
+
+\begin{itemize}
+    \item \terme{Contraste} : le sujet se détache-t-il bien du fond ?
+    \item \terme{Complexité} : les contours sont-ils nets ou flous ? Y a-t-il des cheveux, des poils, des zones transparentes ?
+    \item \terme{Couleurs} : les couleurs du sujet et du fond sont-elles similaires ?
+\end{itemize}
+
+\subsubsection{Étape 2 : Choisir la méthode}
+
+Selon l'image, choisir la méthode de détourage :
+
+\begin{itemize}
+    \item \terme{Fond uni} : Baguette magique, Sélection rapide.
+    \item \terme{Contours nets} : Lasso polygonal, Lasso magnétique.
+    \item \terme{Contours complexes} : Sélection d'objet, Sélection > Sujet.
+    \item \terme{Portraits (cheveux)} : Sélectionner et masquer, Détecter les cheveux.
+\end{itemize}
+
+\subsubsection{Étape 3 : Créer la sélection}
+
+Utiliser l'outil choisi pour créer la sélection.
+
+\subsubsection{Étape 4 : Affiner la sélection}
+
+Utiliser la boîte de dialogue \emph{Affiner} pour améliorer les contours.
+
+\subsubsection{Étape 5 : Créer un masque de fusion}
+
+Créer un masque de fusion à partir de la sélection. Le sujet est isolé, l'arrière-plan est masqué.
+
+\subsubsection{Étape 6 : Vérifier le résultat}
+
+Zoomer pour vérifier les contours. Corriger les erreurs avec le pinceau sur le masque (noir pour masquer, blanc pour révéler).
+
+\subsection{Le détourage d'une personne}
+
+\subsubsection{Les spécificités du détourage d'une personne}
+
+Le détourage d'une personne est plus complexe que le détourage d'un objet, car :
+
+\begin{itemize}
+    \item Les contours sont souvent flous (cheveux, poils, peau).
+    \item Les vêtements peuvent être complexes (textures, motifs).
+    \item L'arrière-plan peut être chargé.
+\end{itemize}
+
+\subsubsection{Les étapes}
+
+\begin{enumerate}
+    \item Sélectionner le sujet avec \texttt{Sélection > Sujet}.
+    \item Affiner avec \emph{Sélectionner et masquer}.
+    \item Activer \emph{Détecter les cheveux}.
+    \item Ajuster le rayon.
+    \item Sortir vers un masque de fusion.
+    \item Corriger les erreurs avec le pinceau sur le masque.
+\end{enumerate}
+
+\subsubsection{Les zones délicates}
+
+\begin{itemize}
+    \item \terme{Cheveux} : les cheveux sont difficiles à détourer. Utiliser \emph{Détecter les cheveux}.
+    \item \terme{Poils} : les poils d'animaux sont également difficiles. Utiliser \emph{Détecter les cheveux} avec un rayon adapté.
+    \item \terme{Vêtements} : les vêtements avec textures ou motifs peuvent être difficiles. Travailler manuellement si nécessaire.
+    \item \terme{Peau} : la peau est souvent bien détectée, mais il faut vérifier les contours.
+\end{itemize}
+
+\subsection{Le détourage d'un objet}
+
+\subsubsection{Les spécificités du détourage d'un objet}
+
+Le détourage d'un objet est généralement plus simple que le détourage d'une personne, car :
+
+\begin{itemize}
+    \item Les contours sont souvent nets.
+    \item Les objets ont des formes géométriques.
+    \item L'arrière-plan peut être uni.
+\end{itemize}
+
+\subsubsection{Les étapes}
+
+\begin{enumerate}
+    \item Sélectionner l'objet avec l'outil approprié (Baguette magique, Lasso, Sélection d'objet).
+    \item Affiner avec \emph{Sélectionner et masquer}.
+    \item Ajuster le contour progressif.
+    \item Sortir vers un masque de fusion.
+    \item Corriger les erreurs avec le pinceau sur le masque.
+\end{enumerate}
+
+\subsection{Le détourage d'un produit}
+
+\subsubsection{Les spécificités}
+
+Le détourage d'un produit (packshot) est souvent destiné à la publicité ou à l'e-commerce. Il doit être parfait : contours nets, aucune erreur.
+
+\subsubsection{Les étapes}
+
+\begin{enumerate}
+    \item Sélectionner le produit avec le Lasso polygonal ou l'outil Plume.
+    \item Affiner avec \emph{Sélectionner et masquer}.
+    \item Vérifier les contours (zoomer).
+    \item Créer un masque de fusion.
+    \item Ajouter une ombre portée si nécessaire.
+    \item Placer le produit sur un fond neutre.
+\end{enumerate}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Contours irréguliers}
+
+Les contours sont crénelés ou irréguliers. Il faut affiner avec \emph{Lissage} et \emph{Contour progressif}.
+
+\subsubsection{Halos}
+
+Des halos apparaissent autour du sujet (bande de pixels de l'arrière-plan). Il faut \emph{Contracter} la sélection de 1 à 2 px.
+
+\subsubsection{Cheveux mal détourés}
+
+Les cheveux sont mal détourés (bloc, manque de finesse). Il faut utiliser \emph{Détecter les cheveux}.
+
+\subsubsection{Détourage incomplet}
+
+Des parties du sujet sont manquantes. Il faut corriger avec le pinceau sur le masque (blanc pour révéler).
+
+\subsubsection{Détourage excessif}
+
+Des parties de l'arrière-plan sont incluses. Il faut corriger avec le pinceau sur le masque (noir pour masquer).
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Analyser} l'image avant de détourer.
+    \item \terme{Choisir} la méthode adaptée.
+    \item \terme{Affiner} les contours.
+    \item \terme{Travailler} sur un masque de fusion (non destructif).
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Corriger} les erreurs avec le pinceau.
+    \item \terme{Placer} le sujet sur un fond contrasté pour vérifier.
+    \item \terme{Enregistrer} le fichier avec les masques (PSD).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{détourage} consiste à isoler un sujet de son arrière-plan. Il est essentiel pour les photomontages, les compositions publicitaires, les visuels produits. Le détourage d'une personne est plus complexe que le détourage d'un objet (cheveux, poils, textures). Le détourage d'un produit doit être parfait. Il est essentiel de choisir la bonne méthode, d'affiner les contours, de travailler sur un masque, de vérifier le résultat, et de corriger les erreurs.
+
+Maintenant que nous savons détourer une personne ou un objet, nous allons, dans la section suivante, apprendre à \terme{supprimer ou remplacer un arrière-plan}.
+
+% ============================================================
+\section{Supprimer ou remplacer un arrière-plan}
+% ============================================================
+
+\subsection{Pourquoi supprimer ou remplacer un arrière-plan ?}
+
+La suppression ou le remplacement de l'arrière-plan est une opération courante en design graphique. Elle permet de :
+
+\begin{itemize}
+    \item \terme{Isoler} un sujet pour le placer dans une autre composition.
+    \item \terme{Remplacer} un fond inadapté par un fond adapté.
+    \item \terme{Créer} un visuel produit sur fond neutre.
+    \item \terme{Améliorer} une photo (fond plus esthétique).
+    \item \terme{Adapter} un visuel à un support (fond transparent, fond coloré).
+\end{itemize}
+
+\subsection{Supprimer un arrière-plan}
+
+\subsubsection{Par détourage}
+
+\begin{enumerate}
+    \item Détourer le sujet (voir section 9).
+    \item Créer un masque de fusion.
+    \item L'arrière-plan est masqué, le sujet est isolé.
+\end{enumerate}
+
+\subsubsection{Par l'outil Suppression d'arrière-plan}
+
+Photoshop propose un outil dédié : \texttt{Filtre > Neural Filters > Suppression d'arrière-plan} (ou \texttt{Propriétés > Supprimer l'arrière-plan} selon les versions).
+
+\begin{enumerate}
+    \item Ouvrir l'image.
+    \item Utiliser \texttt{Filtre > Neural Filters > Suppression d'arrière-plan}.
+    \item Photoshop supprime automatiquement l'arrière-plan.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{Par Sélection > Sujet}
+
+\begin{enumerate}
+    \item Utiliser \texttt{Sélection > Sujet}.
+    \item Inverser la sélection (\texttt{Ctrl + Maj + I}).
+    \item Supprimer (\texttt{Suppr}) ou créer un masque.
+\end{enumerate}
+
+\subsection{Remplacer un arrière-plan}
+
+\subsubsection{Par un fond uni}
+
+\begin{enumerate}
+    \item Détourer le sujet.
+    \item Créer un nouveau calque sous le sujet.
+    \item Remplir le calque avec une couleur unie (\texttt{Édition > Remplir}).
+\end{enumerate}
+
+\subsubsection{Par une image}
+
+\begin{enumerate}
+    \item Détourer le sujet.
+    \item Importer une image de fond (\texttt{Fichier > Importer et placer}).
+    \item Placer l'image de fond sous le sujet.
+    \item Ajuster la taille, la position, la couleur.
+\end{enumerate}
+
+\subsubsection{Par un dégradé}
+
+\begin{enumerate}
+    \item Détourer le sujet.
+    \item Créer un nouveau calque sous le sujet.
+    \item Utiliser l'outil Dégradé pour créer un dégradé.
+\end{enumerate}
+
+\subsubsection{Par le contenu génératif}
+
+Photoshop propose une fonction de \terme{contenu génératif} (IA) pour remplacer automatiquement l'arrière-plan :
+
+\begin{enumerate}
+    \item Sélectionner l'arrière-plan.
+    \item Utiliser \texttt{Édition > Remplir en fonction du contenu} ou \texttt{Générer un arrière-plan}.
+    \item Photoshop génère un nouvel arrière-plan cohérent.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Détourer} le sujet avec soin (contours nets, pas de halos).
+    \item \terme{Travailler} sur des masques de fusion (non destructif).
+    \item \terme{Choisir} un arrière-plan adapté au sujet et au message.
+    \item \terme{Ajuster} la couleur, la luminosité, le contraste du sujet et du fond pour qu'ils s'harmonisent.
+    \item \terme{Ajouter} une ombre portée si nécessaire (pour un effet réaliste).
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Enregistrer} le fichier avec les masques (PSD).
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Halos}
+
+Des halos apparaissent autour du sujet. Il faut contracter la sélection ou affiner les contours.
+
+\subsubsection{Contours irréguliers}
+
+Les contours sont crénelés. Il faut affiner avec \emph{Lissage} et \emph{Contour progressif}.
+
+\subsubsection{Manque d'harmonie}
+
+Le sujet et le fond ne s'harmonisent pas (couleurs, luminosité, perspective). Il faut ajuster.
+
+\subsubsection{Pas d'ombre}
+
+Le sujet ne semble pas intégré au fond (il flotte). Il faut ajouter une ombre portée.
+
+\subsection*{Conclusion de la section}
+
+La \terme{suppression ou le remplacement d'un arrière-plan} est une opération courante en design graphique. On peut supprimer l'arrière-plan par détourage, par l'outil Suppression d'arrière-plan, ou par Sélection > Sujet. On peut remplacer l'arrière-plan par un fond uni, une image, un dégradé, ou par le contenu génératif. Il est essentiel de détourer avec soin, de travailler sur des masques, de choisir un arrière-plan adapté, d'harmoniser le sujet et le fond, d'ajouter une ombre, et de vérifier le résultat.
+
+Maintenant que nous savons supprimer ou remplacer un arrière-plan, nous allons, dans la section suivante, apprendre à \terme{utiliser les masques pour un détourage propre}.
+
+% ============================================================
+\section{Utiliser les masques pour un détourage propre}
+% ============================================================
+
+\subsection{Pourquoi utiliser les masques pour le détourage ?}
+
+Les \terme{masques} sont l'outil idéal pour le détourage, car ils permettent de :
+
+\begin{itemize}
+    \item \terme{Travailler} de manière non destructive.
+    \item \terme{Modifier} le détourage à tout moment.
+    \item \terme{Corriger} les erreurs avec le pinceau.
+    \item \terme{Adoucir} les transitions.
+    \item \terme{Revenir} en arrière sans perte.
+    \item \terme{Combiner} plusieurs détourages.
+\end{itemize}
+
+\subsection{Le masque de fusion pour le détourage}
+
+\subsubsection{Créer le masque}
+
+\begin{enumerate}
+    \item Détourer le sujet (avec un outil de sélection).
+    \item Cliquer sur le bouton \terme{Masque de fusion} en bas du panneau Calques.
+    \item Le masque est créé à partir de la sélection : les zones sélectionnées sont blanches (visibles), les zones non sélectionnées sont noires (masquées).
+\end{enumerate}
+
+\subsubsection{Corriger le détourage}
+
+\begin{enumerate}
+    \item Sélectionner le masque (cliquer sur la vignette du masque).
+    \item Sélectionner l'outil Pinceau (\texttt{B}).
+    \item Peindre en \terme{noir} pour masquer (enlever les zones en trop).
+    \item Peindre en \terme{blanc} pour révéler (ajouter les zones manquantes).
+    \item Utiliser un pinceau doux pour les transitions, un pinceau dur pour les bords nets.
+\end{enumerate}
+
+\subsection{Le masque vectoriel pour le détourage}
+
+\subsubsection{Principe}
+
+Le \terme{masque vectoriel} est basé sur un tracé vectoriel. Il est plus précis qu'un masque de fusion classique pour les formes géométriques.
+
+\subsubsection{Création}
+
+\begin{enumerate}
+    \item Créer un tracé avec l'outil Plume (\texttt{P}).
+    \item Clic droit sur le calque > \texttt{Ajouter un masque vectoriel}.
+    \item Le tracé devient un masque vectoriel.
+\end{enumerate}
+
+\subsubsection{Utilisation}
+
+Le masque vectoriel est idéal pour :
+
+\begin{itemize}
+    \item Les formes géométriques.
+    \item Les contours nets.
+    \item Les logos.
+    \item Les objets manufacturés.
+\end{itemize}
+
+\subsection{Combiner masque de fusion et masque vectoriel}
+
+\subsubsection{Principe}
+
+On peut combiner les deux types de masques pour un détourage très précis :
+
+\begin{itemize}
+    \item \terme{Masque de fusion} : pour les contours organiques, les cheveux, les poils.
+    \item \terme{Masque vectoriel} : pour les contours nets, les formes géométriques.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Créer un masque vectoriel pour les contours nets.
+    \item Créer un masque de fusion pour les contours organiques.
+    \item Combiner les deux masques sur le même calque.
+\end{enumerate}
+
+\subsection{Le masque d'écrêtage pour le détourage}
+
+\subsubsection{Principe}
+
+Le \terme{masque d'écrêtage} utilise les pixels d'un calque comme masque pour un autre calque. Il est utilisé pour :
+
+\begin{itemize}
+    \item Intégrer une image dans une forme.
+    \item Créer un texte rempli d'une image.
+    \item Limiter une retouche à une zone.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Placer le calque de base (forme) en dessous.
+    \item Placer le calque à écrêter (image) au-dessus.
+    \item Clic droit sur le calque écrêté > \texttt{Créer un masque d'écrêtage}.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Toujours travailler} sur un masque de fusion (non destructif).
+    \item \terme{Nommer} le masque (si plusieurs masques).
+    \item \terme{Corriger} les erreurs avec le pinceau.
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Utiliser} un pinceau dur pour les bords nets.
+    \item \terme{Combiner} masque de fusion et masque vectoriel pour plus de précision.
+    \item \terme{Vérifier} le résultat (zoomer).
+    \item \terme{Enregistrer} le fichier avec les masques (PSD).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{masques} sont l'outil idéal pour le détourage. Ils permettent de travailler de manière non destructive, de modifier, de corriger, d'adoucir, de revenir en arrière. On utilise principalement le masque de fusion (pour les contours organiques) et le masque vectoriel (pour les contours nets). On peut combiner les deux pour un détourage très précis. Le masque d'écrêtage est utilisé pour intégrer une image dans une forme. Il est essentiel de maîtriser les masques pour obtenir un détourage professionnel.
+
+Maintenant que nous savons utiliser les masques pour un détourage propre, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{corriger les erreurs de sélection}.
+
+% ============================================================
+\section{Corriger les erreurs de sélection}
+% ============================================================
+
+\subsection{Pourquoi corriger les erreurs de sélection ?}
+
+Les sélections ne sont jamais parfaites du premier coup. Il y a toujours des erreurs :
+
+\begin{itemize}
+    \item Des zones en trop (incluses à tort).
+    \item Des zones manquantes (exclues à tort).
+    \item Des contours irréguliers.
+    \item Des halos.
+    \item Des transitions brutales.
+\end{itemize}
+
+Il est donc essentiel de savoir corriger ces erreurs pour obtenir un résultat propre.
+
+\subsection{Les erreurs courantes et leurs corrections}
+
+\subsubsection{Zones en trop}
+
+\textbf{Symptôme} : des zones de l'arrière-plan sont incluses dans la sélection.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Utiliser l'outil de sélection en mode \emph{Soustraire} (\texttt{Alt} + clic).
+    \item Peindre en noir sur le masque de fusion.
+    \item Affiner les contours avec \emph{Contraction}.
+\end{itemize}
+
+\subsubsection{Zones manquantes}
+
+\textbf{Symptôme} : des zones du sujet sont exclues de la sélection.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Utiliser l'outil de sélection en mode \emph{Ajouter} (\texttt{Maj} + clic).
+    \item Peindre en blanc sur le masque de fusion.
+    \item Dilater la sélection.
+\end{itemize}
+
+\subsubsection{Contours irréguliers}
+
+\textbf{Symptôme} : les contours sont crénelés, dentelés, irréguliers.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Utiliser \emph{Lissage} dans la boîte de dialogue \emph{Affiner}.
+    \item Utiliser \emph{Contour progressif} pour adoucir.
+    \item Utiliser un pinceau doux sur le masque.
+\end{itemize}
+
+\subsubsection{Halos}
+
+\textbf{Symptôme} : une bande de pixels de l'arrière-plan apparaît autour du sujet.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Contracter la sélection de 1 à 2 px.
+    \item Utiliser \emph{Contraction} dans \emph{Affiner}.
+    \item Peindre en noir sur le masque pour supprimer les halos.
+\end{itemize}
+
+\subsubsection{Transitions brutales}
+
+\textbf{Symptôme} : les bords sont nets, sans transition, ce qui donne un effet artificiel.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Utiliser \emph{Contour progressif}.
+    \item Utiliser un pinceau doux sur le masque.
+    \item Adoucir les transitions avec un flou léger.
+\end{itemize}
+
+\subsubsection{Détourage incomplet}
+
+\textbf{Symptôme} : le détourage n'est pas terminé, certaines zones ne sont pas traitées.
+
+\textbf{Correction} :
+\begin{itemize}
+    \item Reprendre la sélection.
+    \item Compléter avec le pinceau sur le masque.
+    \item Vérifier l'ensemble de l'image (zoomer).
+\end{itemize}
+
+\subsection{Les techniques de correction}
+
+\subsubsection{Le pinceau sur le masque}
+
+C'est la technique la plus polyvalente :
+
+\begin{enumerate}
+    \item Sélectionner le masque.
+    \item Sélectionner l'outil Pinceau (\texttt{B}).
+    \item Choisir la taille, la dureté, l'opacité.
+    \item Peindre en noir (masquer) ou en blanc (révéler).
+    \item Travailler avec un pinceau doux pour les transitions, un pinceau dur pour les bords nets.
+\end{enumerate}
+
+\subsubsection{La gomme sur le masque}
+
+La gomme peut être utilisée sur le masque pour supprimer les zones en trop :
+
+\begin{enumerate}
+    \item Sélectionner le masque.
+    \item Sélectionner l'outil Gomme (\texttt{E}).
+    \item Effacer les zones en trop.
+\end{enumerate}
+
+\subsubsection{Les sélections partielles}
+
+On peut créer des sélections partielles pour ajuster manuellement :
+
+\begin{enumerate}
+    \item Créer une sélection.
+    \item Utiliser \emph{Sélectionner et masquer} avec un contour progressif élevé.
+    \item Appliquer sur le masque.
+\end{enumerate}
+
+\subsubsection{Les calques de réglage}
+
+Pour corriger les couleurs des bords, on peut utiliser des calques de réglage avec masque :
+
+\begin{enumerate}
+    \item Créer un calque de réglage (teinte/saturation, courbes, etc.).
+    \item Peindre sur le masque du calque de réglage pour appliquer le réglage aux zones concernées.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Vérifier} le résultat (zoomer, changer le fond).
+    \item \terme{Travailler} sur un masque de fusion (non destructif).
+    \item \terme{Utiliser} un pinceau doux pour les transitions.
+    \item \terme{Utiliser} un pinceau dur pour les bords nets.
+    \item \terme{Combiner} les techniques (pinceau, gomme, sélections partielles).
+    \item \terme{Ne pas hésiter} à recommencer si nécessaire.
+    \item \terme{Enregistrer} régulièrement.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{erreurs de sélection} sont fréquentes et doivent être corrigées. On peut corriger les zones en trop, les zones manquantes, les contours irréguliers, les halos, les transitions brutales, les détourages incomplets. Les techniques de correction sont : pinceau sur le masque, gomme sur le masque, sélections partielles, calques de réglage. Il est essentiel de vérifier le résultat, de travailler sur un masque, d'utiliser un pinceau adapté, et de ne pas hésiter à recommencer.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 9. Nous avons appris à maîtriser les sélections et les détourages dans Photoshop :
+
+\begin{itemize}
+    \item \terme{Comprendre les sélections} : définition, utilité, types, propriétés, modes, raccourcis.
+    \item \terme{Outils de sélection} : Rectangle de sélection, Lasso, Sélection d'objet, Sélection rapide, Baguette magique.
+    \item \terme{Fonctions de sélection du sujet} : Sélection > Sujet, Sélectionner et masquer, Neural Filters.
+    \item \terme{Affiner les contours} : lissage, contour progressif, contraction/dilatation, détection des cheveux.
+    \item \terme{Détourer une personne ou un objet} : analyse, choix de la méthode, affinage, masque.
+    \item \terme{Supprimer ou remplacer un arrière-plan} : détourage, outil Suppression d'arrière-plan, fond uni, image, contenu génératif.
+    \item \terme{Utiliser les masques pour un détourage propre} : masque de fusion, masque vectoriel, masque d'écrêtage.
+    \item \terme{Corriger les erreurs de sélection} : zones en trop, zones manquantes, contours irréguliers, halos, transitions brutales.
+\end{itemize}
+
+La sélection et le détourage sont au cœur de la pratique de Photoshop. Ils conditionnent la qualité des compositions, des photomontages, des visuels produits. Un designer qui maîtrise les sélections peut isoler n'importe quel élément, l'intégrer dans une composition, créer des visuels professionnels. Un designer qui ne les maîtrise pas reste limité à des modifications globales.
+
+Ce chapitre t'a donné les compétences essentielles pour sélectionner et détourer avec précision. Mais la maîtrise vient avec la pratique. N'hésite pas à t'entraîner sur des images variées : portraits, objets, produits, paysages. Chaque image est un nouveau défi, et chaque défi est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons la \terme{retouche photographique}. Tu apprendras à corriger l'exposition, le contraste, les niveaux, les courbes, la balance des couleurs, à supprimer les imperfections, à utiliser les outils Correcteur et Tampon, à retoucher les portraits, à améliorer la netteté, à corriger les dominantes de couleur. Ces compétences te permettront de donner à tes images un rendu professionnel.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 9 --- Sélection et détourage.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 10 --- Retouche photographique.}
+\end{center}

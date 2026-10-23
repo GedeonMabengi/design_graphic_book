@@ -1,0 +1,1323 @@
+% ============================================================
+% CHAPITRE 15 — Dessin vectoriel et formes géométriques
+% ============================================================
+
+\chapter{Dessin vectoriel et formes géométriques}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons découvert Adobe Illustrator : son histoire, ses domaines d'utilisation, les notions d'image vectorielle, l'interface, les plans de travail, les outils essentiels, les raccourcis clavier et les formats de fichiers. Ce premier contact avec le logiciel t'a permis d'acquérir les bases. Il est maintenant temps de passer à la pratique et d'apprendre à dessiner avec Illustrator.}
+
+\vspace{1em}
+
+\noindent
+Le \terme{dessin vectoriel} est au cœur d'Illustrator. Il repose sur des formes géométriques (rectangles, cercles, polygones, étoiles, tracés) décrites mathématiquement. Ces formes sont précises, nettes, redimensionnables à l'infini. Elles servent de base à tous les projets : logos, illustrations, pictogrammes, mises en page. Maîtriser le dessin vectoriel, c'est maîtriser le langage fondamental d'Illustrator.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser les bases du dessin vectoriel et des formes géométriques dans Illustrator. Nous commencerons par comprendre les tracés vectoriels. Nous apprendrons ensuite à utiliser les outils Rectangle et Ellipse, à créer des polygones et des étoiles, à modifier les dimensions des formes, à utiliser les outils de transformation, à aligner et distribuer les objets, à dupliquer et organiser les éléments, à comprendre les contours et les fonds, à combiner des formes géométriques, et enfin à créer des compositions simples. À la fin de ce chapitre, tu sauras dessiner avec précision dans Illustrator.
+
+% ============================================================
+\section{Comprendre les tracés vectoriels}
+% ============================================================
+
+\subsection{Qu'est-ce qu'un tracé vectoriel ?}
+
+\begin{quote}
+\textbf{Un tracé vectoriel (ou \emph{path}) est une suite de segments connectés par des points d'ancrage. Il peut être ouvert (ligne) ou fermé (forme). C'est l'élément fondamental du dessin vectoriel.}
+\end{quote}
+
+Tout objet vectoriel dans Illustrator est constitué de tracés. Un rectangle, un cercle, une étoile, une illustration complexe : tout est composé de tracés. Comprendre les tracés est donc essentiel pour dessiner.
+
+\subsection{Les éléments d'un tracé}
+
+\subsubsection{Le point d'ancrage}
+
+Un \terme{point d'ancrage} (ou \emph{anchor point}) est un point qui définit un tracé. Il a des coordonnées (x, y). On distingue deux types de points d'ancrage :
+
+\begin{itemize}
+    \item \terme{Point d'angle} : les segments qui partent de ce point forment un angle (coin). Les poignées de direction sont indépendantes.
+    \item \terme{Point lisse} : les segments qui partent de ce point forment une courbe lisse. Les poignées de direction sont alignées.
+\end{itemize}
+
+\subsubsection{Le segment}
+
+Un \terme{segment} est une ligne qui relie deux points d'ancrage. Il peut être droit ou courbe.
+
+\subsubsection{La poignée de direction}
+
+Une \terme{poignée de direction} (ou \emph{handle}) est un point de contrôle qui définit la courbure d'un segment. Elle est reliée à un point d'ancrage, et peut être déplacée pour modifier la courbe.
+
+\subsubsection{La courbe de Bézier}
+
+Une \terme{courbe de Bézier} est une courbe définie par des points d'ancrage et des poignées de direction. Elle permet de créer des courbes précises et fluides.
+
+\subsection{Les types de tracés}
+
+\subsubsection{Le tracé ouvert}
+
+Un \terme{tracé ouvert} est une ligne dont les extrémités ne sont pas connectées. Il est utilisé pour :
+
+\begin{itemize}
+    \item Les lignes.
+    \item Les courbes.
+    \item Les tracés de texte.
+    \item Les contours ouverts.
+\end{itemize}
+
+\subsubsection{Le tracé fermé}
+
+Un \terme{tracé fermé} est une forme dont les extrémités sont connectées. Il est utilisé pour :
+
+\begin{itemize}
+    \item Les formes géométriques (rectangles, cercles, polygones).
+    \item Les illustrations.
+    \item Les logos.
+    \item Les pictogrammes.
+\end{itemize}
+
+\subsection{Le remplissage et le contour}
+
+\subsubsection{Le remplissage}
+
+Le \terme{remplissage} (ou \emph{fill}) est la couleur, le dégradé ou le motif qui remplit l'intérieur d'un tracé fermé. Il peut être :
+
+\begin{itemize}
+    \item \terme{Aucun} : le tracé est transparent à l'intérieur.
+    \item \terme{Couleur unie} : une couleur unique.
+    \item \terme{Dégradé} : une transition entre plusieurs couleurs.
+    \item \terme{Motif} : un motif répété.
+\end{itemize}
+
+\subsubsection{Le contour}
+
+Le \terme{contour} (ou \emph{stroke}) est la ligne visible qui dessine le tracé. Il a plusieurs propriétés :
+
+\begin{itemize}
+    \item \terme{Couleur} : la couleur du contour.
+    \item \terme{Épaisseur} : l'épaisseur du contour (en points).
+    \item \terme{Style} : le style du contour (continu, pointillé, tiret).
+    \item \terme{Extrémité} : le bout du contour (bout, rond, carré).
+    \item \terme{Angle} : le coin du contour (angle, arrondi, biseau).
+\end{itemize}
+
+\subsection{Les modes de dessin}
+
+\subsubsection{Le mode Tracé}
+
+En mode \terme{Tracé}, on dessine des tracés sans remplissage ni contour. Les tracés sont invisibles tant qu'on ne leur applique pas de contour.
+
+\subsubsection{Le mode Forme}
+
+En mode \terme{Forme}, on dessine des formes avec un remplissage et un contour. C'est le mode le plus courant pour les formes géométriques.
+
+\subsubsection{Le mode Grille}
+
+En mode \terme{Grille}, on dessine des grilles de distorsion ou de repères.
+
+\subsection{Les bons réflexes}
+
+\begin{itemize}
+    \item \terme{Comprendre} la différence entre point d'angle et point lisse.
+    \item \terme{Utiliser} la plume pour les tracés précis.
+    \item \terme{Utiliser} les formes pour les tracés géométriques.
+    \item \terme{Comprendre} la différence entre remplissage et contour.
+    \item \terme{Choisir} le bon mode de dessin.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Un \terme{tracé vectoriel} est une suite de segments connectés par des points d'ancrage. Il peut être ouvert ou fermé. Il est composé de points d'ancrage, de segments, de poignées de direction, de courbes de Bézier. Il a un remplissage et un contour. Maîtriser les tracés est essentiel pour dessiner dans Illustrator.
+
+Maintenant que nous comprenons les tracés, nous allons, dans la section suivante, apprendre à \terme{utiliser les outils Rectangle et Ellipse}.
+
+% ============================================================
+\section{Utiliser les outils Rectangle et Ellipse}
+% ============================================================
+
+\subsection{L'outil Rectangle}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Rectangle} (\texttt{M}) permet de créer des rectangles et des carrés. C'est l'outil de forme le plus utilisé.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Rectangle (\texttt{M}).
+    \item Cliquer-glisser sur le plan de travail pour dessiner un rectangle.
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : créer un carré parfait.
+    \item \terme{Alt} (ou \texttt{Opt}) : dessiner depuis le centre.
+    \item \terme{Maj + Alt} : créer un carré depuis le centre.
+    \item \terme{Espace} : déplacer la forme pendant le dessin.
+\end{itemize}
+
+\subsubsection{Créer un rectangle précis}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Rectangle.
+    \item Cliquer sur le plan de travail (sans glisser).
+    \item Une boîte de dialogue s'ouvre.
+    \item Saisir la largeur et la hauteur.
+    \item Cliquer sur OK.
+\end{enumerate}
+
+\subsubsection{Les options avancées}
+
+\begin{itemize}
+    \item \terme{Rayon des angles} : arrondir les coins du rectangle.
+    \item \terme{Contour} : définir le contour.
+    \item \terme{Remplissage} : définir le remplissage.
+\end{itemize}
+
+\subsection{L'outil Rectangle arrondi}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Rectangle arrondi} permet de créer des rectangles à coins arrondis. Il est utilisé pour les boutons, les cartes, les interfaces.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Rectangle arrondi (dans le groupe de l'outil Rectangle).
+    \item Cliquer-glisser pour dessiner.
+    \item Ajuster le rayon des angles (avec les flèches haut/bas, ou dans la boîte de dialogue).
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Rayon} : ajuster le rayon des angles pendant le dessin (avec les flèches haut/bas).
+    \item \terme{Maj} : créer un carré arrondi.
+    \item \terme{Alt} : dessiner depuis le centre.
+\end{itemize}
+
+\subsection{L'outil Ellipse}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Ellipse} (\texttt{L}) permet de créer des ellipses et des cercles.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Ellipse (\texttt{L}).
+    \item Cliquer-glisser pour dessiner.
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : créer un cercle parfait.
+    \item \terme{Alt} : dessiner depuis le centre.
+    \item \terme{Maj + Alt} : créer un cercle depuis le centre.
+    \item \terme{Espace} : déplacer la forme pendant le dessin.
+\end{itemize}
+
+\subsubsection{Créer une ellipse précise}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Ellipse.
+    \item Cliquer sur le plan de travail (sans glisser).
+    \item Une boîte de dialogue s'ouvre.
+    \item Saisir la largeur et la hauteur.
+    \item Cliquer sur OK.
+\end{enumerate}
+
+\subsection{Les autres outils de forme}
+
+\subsubsection{L'outil Polygone}
+
+Permet de créer des polygones réguliers (voir section suivante).
+
+\subsubsection{L'outil Étoile}
+
+Permet de créer des étoiles (voir section suivante).
+
+\subsubsection{L'outil Spirale}
+
+Permet de créer des spirales.
+
+\subsubsection{L'outil Trait}
+
+Permet de créer des traits.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} \texttt{Maj} pour les carrés et les cercles.
+    \item \terme{Utiliser} \texttt{Alt} pour dessiner depuis le centre.
+    \item \terme{Utiliser} la boîte de dialogue pour les dimensions précises.
+    \item \terme{Ajuster} le rayon des angles pour les rectangles arrondis.
+    \item \terme{Comprendre} la différence entre remplissage et contour.
+    \item \terme{Organiser} les formes sur des calques.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{outils Rectangle et Ellipse} permettent de créer des rectangles, des carrés, des ellipses et des cercles. On peut utiliser \texttt{Maj} pour les formes parfaites, \texttt{Alt} pour dessiner depuis le centre, et la boîte de dialogue pour les dimensions précises. On peut ajuster le rayon des angles pour les rectangles arrondis. Il est essentiel de maîtriser ces outils pour créer des formes géométriques de base.
+
+Maintenant que nous savons utiliser les outils Rectangle et Ellipse, nous allons, dans la section suivante, apprendre à \terme{créer des polygones et des étoiles}.
+
+% ============================================================
+\section{Créer des polygones et des étoiles}
+% ============================================================
+
+\subsection{L'outil Polygone}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Polygone} permet de créer des polygones réguliers (pentagone, hexagone, octogone, etc.). Il est utilisé pour les formes géométriques, les pictogrammes, les illustrations.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Polygone (dans le groupe de l'outil Rectangle).
+    \item Cliquer-glisser pour dessiner.
+    \item Ajuster le nombre de côtés (avec les flèches haut/bas).
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Côtés} : nombre de côtés du polygone (3 à 1000).
+    \item \terme{Maj} : orientation fixe.
+    \item \terme{Alt} : dessiner depuis le centre.
+    \item \terme{Flèches haut/bas} : ajuster le nombre de côtés pendant le dessin.
+\end{itemize}
+
+\subsubsection{Créer un polygone précis}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Polygone.
+    \item Cliquer sur le plan de travail (sans glisser).
+    \item Une boîte de dialogue s'ouvre.
+    \item Saisir le rayon et le nombre de côtés.
+    \item Cliquer sur OK.
+\end{enumerate}
+
+\subsection{L'outil Étoile}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Étoile} permet de créer des étoiles. Il est utilisé pour les décorations, les pictogrammes, les illustrations.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Étoile (dans le groupe de l'outil Rectangle).
+    \item Cliquer-glisser pour dessiner.
+    \item Ajuster le nombre de branches et le rayon intérieur (avec les flèches haut/bas).
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Branches} : nombre de branches de l'étoile (3 à 1000).
+    \item \terme{Rayon 1} : rayon extérieur (distance entre le centre et les pointes).
+    \item \terme{Rayon 2} : rayon intérieur (distance entre le centre et les creux).
+    \item \terme{Maj} : orientation fixe.
+    \item \terme{Alt} : dessiner depuis le centre.
+    \item \terme{Flèches haut/bas} : ajuster le nombre de branches pendant le dessin.
+    \item \terme{Ctrl} : ajuster le rayon intérieur pendant le dessin.
+\end{itemize}
+
+\subsubsection{Créer une étoile précise}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Étoile.
+    \item Cliquer sur le plan de travail (sans glisser).
+    \item Une boîte de dialogue s'ouvre.
+    \item Saisir le rayon 1, le rayon 2, le nombre de branches.
+    \item Cliquer sur OK.
+\end{enumerate}
+
+\subsection{L'outil Spirale}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Spirale} permet de créer des spirales. Il est utilisé pour les décorations, les illustrations.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Spirale (dans le groupe de l'outil Rectangle).
+    \item Cliquer-glisser pour dessiner.
+    \item Ajuster le nombre de segments et la décroissance (avec les flèches haut/bas).
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsection{L'outil Ligne}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Ligne} (ou \emph{Trait}) permet de créer des lignes droites. Il est utilisé pour les traits, les séparations, les bordures.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Ligne (\texttt{\textbackslash}).
+    \item Cliquer-glisser pour dessiner une ligne.
+    \item Relâcher pour valider.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : créer une ligne horizontale, verticale ou à 45°.
+    \item \terme{Alt} : dessiner depuis le centre.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} les flèches haut/bas pour ajuster les paramètres pendant le dessin.
+    \item \terme{Utiliser} la boîte de dialogue pour les valeurs précises.
+    \item \terme{Utiliser} \texttt{Maj} pour les orientations fixes.
+    \item \terme{Utiliser} \texttt{Alt} pour dessiner depuis le centre.
+    \item \terme{Combiner} plusieurs formes pour créer des compositions.
+    \item \terme{Organiser} les formes sur des calques.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{outils Polygone, Étoile, Spirale et Ligne} permettent de créer des formes géométriques variées. On peut ajuster les paramètres (nombre de côtés, branches, rayons) avec les flèches haut/bas ou dans la boîte de dialogue. On peut utiliser \texttt{Maj} et \texttt{Alt} pour les orientations et le centre. Il est essentiel de maîtriser ces outils pour créer des formes géométriques précises.
+
+Maintenant que nous savons créer des polygones et des étoiles, nous allons, dans la section suivante, apprendre à \terme{modifier les dimensions des formes}.
+
+% ============================================================
+\section{Modifier les dimensions des formes}
+% ============================================================
+
+\subsection{Pourquoi modifier les dimensions ?}
+
+Modifier les dimensions d'une forme est une opération courante. Cela permet de :
+
+\begin{itemize}
+    \item \terme{Ajuster} la taille d'un élément.
+    \item \terme{Adapter} une forme à un format.
+    \item \terme{Corriger} une erreur de dimension.
+    \item \terme{Créer} des variantes d'une forme.
+    \item \terme{Aligner} les formes entre elles.
+\end{itemize}
+
+\subsection{Les outils de modification}
+
+\subsubsection{L'outil Sélection}
+
+L'\terme{outil Sélection} (\texttt{V}) permet de modifier les dimensions d'une forme en tirant sur les poignées.
+
+\begin{enumerate}
+    \item Sélectionner la forme avec l'outil Sélection.
+    \item Tirer sur une poignée pour redimensionner.
+    \item Maintenir \texttt{Maj} pour conserver les proportions.
+    \item Maintenir \texttt{Alt} pour redimensionner depuis le centre.
+\end{enumerate}
+
+\subsubsection{L'outil Transformation manuelle}
+
+L'\terme{outil Transformation manuelle} (\texttt{E}) permet de transformer une forme librement (déplacer, redimensionner, pivoter).
+
+\subsubsection{L'outil Mise à l'échelle}
+
+L'\terme{outil Mise à l'échelle} (\texttt{S}) permet de redimensionner une forme en pourcentage.
+
+\subsubsection{Le panneau Transformation}
+
+Le \terme{panneau Transformation} (\texttt{Fenêtre > Transformation}) permet de saisir les dimensions précises (largeur, hauteur), la position (X, Y), l'angle de rotation, etc.
+
+\subsection{Les méthodes de modification}
+
+\subsubsection{Modifier visuellement}
+
+\begin{enumerate}
+    \item Sélectionner la forme.
+    \item Tirer sur une poignée pour redimensionner.
+    \item Maintenir \texttt{Maj} pour conserver les proportions.
+\end{enumerate}
+
+\subsubsection{Modifier avec précision}
+
+\begin{enumerate}
+    \item Sélectionner la forme.
+    \item Ouvrir le panneau \emph{Transformation}.
+    \item Saisir les dimensions (L, H) dans les champs.
+    \item Valider avec \texttt{Entrée}.
+\end{enumerate}
+
+\subsubsection{Modifier avec l'outil Mise à l'échelle}
+
+\begin{enumerate}
+    \item Sélectionner la forme.
+    \item Sélectionner l'outil Mise à l'échelle (\texttt{S}).
+    \item Cliquer-glisser pour redimensionner.
+    \item Saisir un pourcentage dans la boîte de dialogue (si on clique).
+\end{enumerate}
+
+\subsection{Les options de modification}
+
+\subsubsection{Conserver les proportions}
+
+Maintenir \texttt{Maj} pendant le redimensionnement pour conserver les proportions.
+
+\subsubsection{Redimensionner depuis le centre}
+
+Maintenir \texttt{Alt} pendant le redimensionnement pour redimensionner depuis le centre.
+
+\subsubsection{Redimensionner avec précision}
+
+Utiliser le panneau \emph{Transformation} pour saisir les dimensions exactes.
+
+\subsubsection{Redimensionner avec l'outil Mise à l'échelle}
+
+Utiliser l'outil Mise à l'échelle pour redimensionner en pourcentage.
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} \texttt{Maj} pour conserver les proportions.
+    \item \terme{Utiliser} \texttt{Alt} pour redimensionner depuis le centre.
+    \item \terme{Utiliser} le panneau \emph{Transformation} pour les dimensions précises.
+    \item \terme{Vérifier} les dimensions dans le panneau.
+    \item \terme{Ne pas déformer} les formes (sauf si volontaire).
+    \item \terme{Travailler} sur des copies pour ne pas altérer l'original.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Modifier les dimensions d'une forme est une opération courante. On peut utiliser l'outil Sélection, l'outil Transformation manuelle, l'outil Mise à l'échelle, ou le panneau Transformation. On peut maintenir \texttt{Maj} pour conserver les proportions, \texttt{Alt} pour redimensionner depuis le centre. Il est essentiel de vérifier les dimensions et de ne pas déformer les formes.
+
+Maintenant que nous savons modifier les dimensions, nous allons, dans la section suivante, apprendre à \terme{utiliser les outils de transformation}.
+
+% ============================================================
+\section{Utiliser les outils de transformation}
+% ============================================================
+
+\subsection{Les outils de transformation}
+
+Illustrator propose plusieurs outils de transformation :
+
+\begin{itemize}
+    \item \terme{Déplacement} : déplacer les objets.
+    \item \terme{Rotation} (\texttt{R}) : faire pivoter les objets.
+    \item \terme{Mise à l'échelle} (\texttt{S}) : redimensionner les objets.
+    \item \terme{Miroir} (\texttt{O}) : retourner les objets.
+    \item \terme{Transformation manuelle} (\texttt{E}) : transformer librement.
+    \item \terme{Déformation} (Maj + R) : déformer les objets.
+    \item \terme{Largeur} : modifier l'épaisseur d'un tracé.
+    \item \terme{Concepteur de forme} (Maj + M) : combiner, fusionner, soustraire.
+    \item \terme{Ciseaux} (\texttt{C}) : couper un tracé.
+    \item \terme{Couteau} : découper un objet.
+\end{itemize}
+
+\subsection{L'outil Rotation}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Rotation} (\texttt{R}) permet de faire pivoter des objets autour d'un point.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Rotation (\texttt{R}).
+    \item Cliquer-glisser pour faire pivoter.
+    \item Maintenir \texttt{Maj} pour une rotation par incréments de 45°.
+    \item Maintenir \texttt{Alt} pour définir le point de rotation.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : rotation par incréments de 45°.
+    \item \terme{Alt} : définir le point de rotation (cliquer).
+    \item \terme{Boîte de dialogue} : saisir un angle précis (cliquer sur l'outil).
+\end{itemize}
+
+\subsection{L'outil Mise à l'échelle}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Mise à l'échelle} (\texttt{S}) permet de redimensionner des objets.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Mise à l'échelle (\texttt{S}).
+    \item Cliquer-glisser pour redimensionner.
+    \item Maintenir \texttt{Maj} pour conserver les proportions.
+    \item Maintenir \texttt{Alt} pour redimensionner depuis le centre.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : conserver les proportions.
+    \item \terme{Alt} : redimensionner depuis le centre.
+    \item \terme{Boîte de dialogue} : saisir un pourcentage précis.
+\end{itemize}
+
+\subsection{L'outil Miroir}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Miroir} (\texttt{O}) permet de retourner des objets horizontalement ou verticalement.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Miroir (\texttt{O}).
+    \item Cliquer-glisser pour définir l'axe de symétrie.
+    \item Maintenir \texttt{Maj} pour un axe horizontal, vertical ou à 45°.
+    \item Maintenir \texttt{Alt} pour définir le point de symétrie.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Maj} : axe horizontal, vertical ou à 45°.
+    \item \terme{Alt} : définir le point de symétrie.
+    \item \terme{Boîte de dialogue} : choisir l'axe (horizontal, vertical, angle).
+\end{itemize}
+
+\subsection{L'outil Transformation manuelle}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Transformation manuelle} (\texttt{E}) permet de transformer librement des objets (déplacer, redimensionner, pivoter, déformer).
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Transformation manuelle (\texttt{E}).
+    \item Tirer sur les poignées pour transformer.
+    \item Maintenir \texttt{Ctrl} pour déformer.
+    \item Maintenir \texttt{Maj} pour conserver les proportions.
+\end{enumerate}
+
+\subsection{L'outil Déformation}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Déformation} permet de déformer des objets (infléchir, tordre, etc.).
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Sélectionner l'outil Déformation (Maj + R).
+    \item Cliquer-glisser pour déformer.
+\end{enumerate}
+
+\subsubsection{Les styles de déformation}
+
+\begin{itemize}
+    \item \terme{Arc} : courber l'objet.
+    \item \terme{Arc supérieur} : courber le haut.
+    \item \terme{Arc inférieur} : courber le bas.
+    \item \terme{Drapeau} : onduler l'objet.
+    \item \terme{Poisson} : déformer comme un poisson.
+    \item \terme{Élargir} : élargir une partie.
+    \item \terme{Bulles} : gonfler une partie.
+    \item \terme{Torsion} : tordre l'objet.
+\end{itemize}
+
+\subsection{L'outil Concepteur de forme}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Concepteur de forme} (Maj + M) permet de combiner, fusionner ou soustraire des formes.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs formes (avec l'outil Sélection).
+    \item Sélectionner l'outil Concepteur de forme (Maj + M).
+    \item Cliquer-glisser sur les formes pour les fusionner.
+    \item Maintenir \texttt{Alt} pour soustraire.
+    \item Maintenir \texttt{Maj} pour intersecter.
+\end{enumerate}
+
+\subsection{L'outil Ciseaux}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Ciseaux} (\texttt{C}) permet de couper un tracé.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Ciseaux (\texttt{C}).
+    \item Cliquer sur un point du tracé pour le couper.
+    \item Le tracé est divisé en deux.
+\end{enumerate}
+
+\subsection{L'outil Couteau}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Couteau} permet de découper un objet en plusieurs parties.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner l'outil Couteau.
+    \item Cliquer-glisser sur l'objet pour le découper.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} l'outil adapté à la transformation.
+    \item \terme{Utiliser} \texttt{Maj} pour les contraintes.
+    \item \terme{Utiliser} \texttt{Alt} pour le centre.
+    \item \terme{Utiliser} le panneau \emph{Transformation} pour les valeurs précises.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Travailler} sur des copies pour ne pas altérer l'original.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{outils de transformation} permettent de modifier les objets : rotation, mise à l'échelle, miroir, transformation manuelle, déformation, concepteur de forme, ciseaux, couteau. Chacun a ses usages et ses options. Il est essentiel de choisir le bon outil, d'utiliser les contraintes (\texttt{Maj}, \texttt{Alt}), de vérifier le résultat.
+
+Maintenant que nous savons utiliser les outils de transformation, nous allons, dans la section suivante, apprendre à \terme{aligner et distribuer les objets}.
+
+% ============================================================
+\section{Aligner et distribuer les objets}
+% ============================================================
+
+\subsection{L'importance de l'alignement}
+
+L'\terme{alignement} est essentiel en design graphique. Il permet de :
+
+\begin{itemize}
+    \item \terme{Créer} de l'ordre.
+    \item \terme{Assurer} la cohérence.
+    \item \terme{Faciliter} la lecture.
+    \item \terme{Donner} un aspect professionnel.
+    \item \terme{Gagner} du temps.
+\end{itemize}
+
+\subsection{Le panneau Alignement}
+
+\subsubsection{Accès au panneau}
+
+Le panneau \terme{Alignement} (\texttt{Fenêtre > Alignement}) permet d'aligner et de distribuer les objets.
+
+\subsubsection{Les options d'alignement}
+
+\begin{itemize}
+    \item \terme{Aligner à gauche} : aligne les objets sur le bord gauche.
+    \item \terme{Aligner au centre horizontal} : aligne les objets sur l'axe horizontal.
+    \item \terme{Aligner à droite} : aligne les objets sur le bord droit.
+    \item \terme{Aligner en haut} : aligne les objets sur le bord supérieur.
+    \item \terme{Aligner au centre vertical} : aligne les objets sur l'axe vertical.
+    \item \terme{Aligner en bas} : aligne les objets sur le bord inférieur.
+\end{itemize}
+
+\subsubsection{Les options de distribution}
+
+\begin{itemize}
+    \item \terme{Distribuer en haut} : répartit les objets uniformément en haut.
+    \item \terme{Distribuer au centre vertical} : répartit les objets uniformément sur l'axe vertical.
+    \item \terme{Distribuer en bas} : répartit les objets uniformément en bas.
+    \item \terme{Distribuer à gauche} : répartit les objets uniformément à gauche.
+    \item \terme{Distribuer au centre horizontal} : répartit les objets uniformément sur l'axe horizontal.
+    \item \terme{Distribuer à droite} : répartit les objets uniformément à droite.
+    \item \terme{Distribuer l'espacement} : répartit l'espace entre les objets uniformément.
+\end{itemize}
+
+\subsubsection{Les options de référence}
+
+\begin{itemize}
+    \item \terme{Aligner sur la sélection} : aligne les objets sur la sélection.
+    \item \terme{Aligner sur le plan de travail} : aligne les objets sur le plan de travail.
+    \item \terme{Aligner sur le objet clé} : aligne les objets sur un objet clé (sélectionné avec \texttt{Ctrl}).
+\end{itemize}
+
+\subsection{Aligner les objets}
+
+\subsubsection{Aligner sur la sélection}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs objets.
+    \item Ouvrir le panneau \emph{Alignement}.
+    \item Choisir \emph{Aligner sur la sélection}.
+    \item Cliquer sur l'option d'alignement souhaitée.
+\end{enumerate}
+
+\subsubsection{Aligner sur le plan de travail}
+
+\begin{enumerate}
+    \item Sélectionner un objet.
+    \item Ouvrir le panneau \emph{Alignement}.
+    \item Choisir \emph{Aligner sur le plan de travail}.
+    \item Cliquer sur l'option d'alignement souhaitée.
+\end{enumerate}
+
+\subsubsection{Aligner sur l'objet clé}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs objets.
+    \item Cliquer sur l'objet clé (avec \texttt{Ctrl} ou \texttt{Cmd}).
+    \item Choisir \emph{Aligner sur l'objet clé}.
+    \item Cliquer sur l'option d'alignement souhaitée.
+\end{enumerate}
+
+\subsection{Distribuer les objets}
+
+\subsubsection{Distribuer uniformément}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs objets (au moins trois).
+    \item Ouvrir le panneau \emph{Alignement}.
+    \item Cliquer sur une option de distribution.
+\end{enumerate}
+
+\subsubsection{Distribuer avec un espacement précis}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs objets.
+    \item Ouvrir le panneau \emph{Alignement}.
+    \item Cliquer sur l'option \emph{Distribuer l'espacement}.
+    \item Saisir une valeur d'espacement.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} le panneau \emph{Alignement} pour aligner et distribuer.
+    \item \terme{Choisir} la bonne référence (sélection, plan de travail, objet clé).
+    \item \terme{Utiliser} les options de distribution pour répartir uniformément.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Utiliser} les repères commentés pour affiner.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le panneau \terme{Alignement} permet d'aligner et de distribuer les objets. On peut aligner sur la sélection, sur le plan de travail, ou sur un objet clé. On peut distribuer uniformément ou avec un espacement précis. Il est essentiel de choisir la bonne référence, d'utiliser les options adaptées, de vérifier le résultat.
+
+Maintenant que nous savons aligner et distribuer les objets, nous allons, dans la section suivante, apprendre à \terme{dupliquer et organiser les éléments}.
+
+% ============================================================
+\section{Dupliquer et organiser les éléments}
+% ============================================================
+
+\subsection{Pourquoi dupliquer et organiser ?}
+
+La \terme{duplication} et l'\terme{organisation} des éléments sont essentielles pour :
+
+\begin{itemize}
+    \item \terme{Gagner} du temps.
+    \item \terme{Créer} des séries d'éléments.
+    \item \terme{Organiser} les éléments par catégorie.
+    \item \terme{Faciliter} les modifications.
+    \item \terme{Structurer} le projet.
+\end{itemize}
+
+\subsection{Dupliquer un élément}
+
+\subsubsection{Dupliquer par copier-coller}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Utiliser \texttt{Ctrl + C} puis \texttt{Ctrl + V}.
+    \item L'objet est dupliqué au centre du plan de travail.
+\end{enumerate}
+
+\subsubsection{Dupliquer par Alt + glisser}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Maintenir \texttt{Alt} (ou \texttt{Opt}) et glisser.
+    \item L'objet est dupliqué.
+\end{enumerate}
+
+\subsubsection{Dupliquer par le menu}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Utiliser \texttt{Objet > Transformation > Déplacer} (avec l'option Copier).
+    \item Ou \texttt{Édition > Coller devant} / \texttt{Coller derrière}.
+\end{enumerate}
+
+\subsubsection{Dupliquer en série}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Utiliser \texttt{Objet > Transformation > Déplacer}.
+    \item Saisir un déplacement (horizontal ou vertical).
+    \item Cliquer sur \emph{Copier}.
+    \item Utiliser \texttt{Ctrl + D} (ou \texttt{Cmd + D}) pour répéter la duplication.
+\end{enumerate}
+
+\subsection{Organiser les éléments}
+
+\subsubsection{Les calques}
+
+Les \terme{calques} permettent d'organiser les éléments :
+
+\begin{itemize}
+    \item \terme{Créer} un calque par catégorie.
+    \item \terme{Nommer} les calques.
+    \item \terme{Colorer} les calques.
+    \item \terme{Verrouiller} les calques.
+    \item \terme{Masquer} les calques.
+\end{itemize}
+
+\subsubsection{Les groupes}
+
+Les \terme{groupes} permettent de regrouper plusieurs objets :
+
+\begin{itemize}
+    \item \terme{Grouper} : \texttt{Ctrl + G} (ou \texttt{Cmd + G}).
+    \item \terme{Dégrouper} : \texttt{Ctrl + Maj + G} (ou \texttt{Cmd + Maj + G}).
+    \item \terme{Sélectionner} un groupe d'un clic.
+    \item \terme{Modifier} un groupe (déplacer, redimensionner).
+\end{itemize}
+
+\subsubsection{L'ordre des objets}
+
+L'\terme{ordre des objets} détermine ce qui est devant et derrière :
+
+\begin{itemize}
+    \item \terme{Placer devant} : \texttt{Ctrl + Maj + ]}.
+    \item \terme{Placer derrière} : \texttt{Ctrl + Maj + [}.
+    \item \terme{Avancer} : \texttt{Ctrl + ]}.
+    \item \terme{Reculer} : \texttt{Ctrl + [}.
+\end{itemize}
+
+\subsubsection{Les repères}
+
+Les \terme{repères} aident à positionner les objets :
+
+\begin{itemize}
+    \item \terme{Afficher} les règles : \texttt{Ctrl + R}.
+    \item \terme{Créer} un repère : cliquer sur la règle et glisser.
+    \item \terme{Déplacer} un repère : le glisser.
+    \item \terme{Supprimer} un repère : le glisser vers la règle.
+    \item \terme{Verrouiller} les repères : \texttt{Affichage > Repères > Verrouiller les repères}.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} \texttt{Alt + glisser} pour dupliquer rapidement.
+    \item \terme{Utiliser} \texttt{Ctrl + D} pour répéter la duplication.
+    \item \terme{Organiser} les éléments sur des calques.
+    \item \terme{Grouper} les éléments liés.
+    \item \terme{Utiliser} les repères pour positionner.
+    \item \terme{Nommer} les calques.
+    \item \terme{Colorer} les calques pour les identifier.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{duplication} et l'\terme{organisation} des éléments sont essentielles. On peut dupliquer par copier-coller, par \texttt{Alt + glisser}, par le menu, en série avec \texttt{Ctrl + D}. On peut organiser les éléments sur des calques, dans des groupes, dans un ordre précis, avec des repères. Il est essentiel d'utiliser les bons raccourcis, d'organiser les éléments, de nommer les calques.
+
+Maintenant que nous savons dupliquer et organiser les éléments, nous allons, dans la section suivante, apprendre à \terme{comprendre les contours et les fonds}.
+
+% ============================================================
+\section{Comprendre les contours et les fonds}
+% ============================================================
+
+\subsection{Le remplissage}
+
+\subsubsection{Définition}
+
+Le \terme{remplissage} (ou \emph{fill}) est la couleur, le dégradé ou le motif qui remplit l'intérieur d'un tracé fermé. Il peut être :
+
+\begin{itemize}
+    \item \terme{Aucun} : pas de remplissage.
+    \item \terme{Couleur unie} : une couleur unique.
+    \item \terme{Dégradé} : une transition entre plusieurs couleurs.
+    \item \terme{Motif} : un motif répété.
+\end{itemize}
+
+\subsubsection{Appliquer un remplissage}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Ouvrir le panneau \emph{Couleur} ou \emph{Nuancier}.
+    \item Choisir une couleur (ou un dégradé, ou un motif).
+    \item Le remplissage est appliqué.
+\end{enumerate}
+
+\subsection{Le contour}
+
+\subsubsection{Définition}
+
+Le \terme{contour} (ou \emph{stroke}) est la ligne visible qui dessine le tracé. Il a plusieurs propriétés :
+
+\begin{itemize}
+    \item \terme{Couleur} : la couleur du contour.
+    \item \terme{Épaisseur} : l'épaisseur du contour (en points).
+    \item \terme{Style} : le style du contour (continu, pointillé, tiret).
+    \item \terme{Extrémité} : le bout du contour (bout, rond, carré).
+    \item \terme{Angle} : le coin du contour (angle, arrondi, biseau).
+\end{itemize}
+
+\subsubsection{Appliquer un contour}
+
+\begin{enumerate}
+    \item Sélectionner l'objet.
+    \item Ouvrir le panneau \emph{Contour}.
+    \item Choisir la couleur, l'épaisseur, le style.
+    \item Le contour est appliqué.
+\end{enumerate}
+
+\subsection{Le panneau Contour}
+
+\subsubsection{Accès au panneau}
+
+Le panneau \terme{Contour} (\texttt{Fenêtre > Contour}) permet de modifier les propriétés du contour.
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Épaisseur} : l'épaisseur du contour (en points).
+    \item \terme{Extrémité} : bout (butt), rond (round), carré (square).
+    \item \terme{Angle} : angle (miter), arrondi (round), biseau (bevel).
+    \item \terme{Profil} : profil du contour (uniforme, triangulaire, etc.).
+    \item \terme{Pointillés} : pointillés (dash), espaces (gap).
+    \item \terme{Flèches} : flèches de début et de fin.
+\end{itemize}
+
+\subsection{Les modes de contour}
+
+\subsubsection{Le contour centré}
+
+Le contour est centré sur le tracé : il s'étend à parts égales de part et d'autre du tracé.
+
+\subsubsection{Le contour intérieur}
+
+Le contour est à l'intérieur du tracé.
+
+\subsubsection{Le contour extérieur}
+
+Le contour est à l'extérieur du tracé.
+
+\subsection{Le panneau Nuancier}
+
+\subsubsection{Accès au panneau}
+
+Le panneau \terme{Nuancier} (\texttt{Fenêtre > Nuancier}) regroupe des couleurs prédéfinies ou enregistrées.
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Couleurs} : couleurs enregistrées.
+    \item \terme{Dégradés} : dégradés enregistrés.
+    \item \terme{Motifs} : motifs enregistrés.
+    \item \terme{Groupes de couleurs} : groupes de couleurs.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Comprendre} la différence entre remplissage et contour.
+    \item \terme{Utiliser} le panneau \emph{Contour} pour modifier les propriétés.
+    \item \terme{Utiliser} le panneau \emph{Nuancier} pour choisir les couleurs.
+    \item \terme{Enregistrer} ses couleurs dans le nuancier.
+    \item \terme{Utiliser} des couleurs cohérentes.
+    \item \terme{Vérifier} le rendu final.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{remplissage} et le \terme{contour} sont les deux propriétés principales d'un tracé. Le remplissage est la couleur (ou dégradé, ou motif) qui remplit l'intérieur. Le contour est la ligne qui dessine le tracé. On peut modifier leurs propriétés via les panneaux \emph{Couleur}, \emph{Nuancier}, \emph{Contour}. Il est essentiel de comprendre la différence et de choisir les bonnes couleurs.
+
+Maintenant que nous comprenons les contours et les fonds, nous allons, dans la section suivante, apprendre à \terme{combiner des formes géométriques}.
+
+% ============================================================
+\section{Combiner des formes géométriques}
+% ============================================================
+
+\subsection{Pourquoi combiner des formes ?}
+
+La \terme{combinaison} de formes permet de :
+
+\begin{itemize}
+    \item \terme{Créer} de nouvelles formes.
+    \item \terme{Dessiner} des pictogrammes.
+    \item \terme{Construire} des illustrations.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Obtenir} des résultats précis.
+\end{itemize}
+
+\subsection{L'outil Concepteur de forme}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Concepteur de forme} (Maj + M) permet de combiner, fusionner ou soustraire des formes.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs formes (avec l'outil Sélection).
+    \item Sélectionner l'outil Concepteur de forme (Maj + M).
+    \item Cliquer-glisser sur les formes pour les fusionner.
+    \item Maintenir \texttt{Alt} pour soustraire.
+    \item Maintenir \texttt{Maj} pour intersecter.
+\end{enumerate}
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Fusionner} : additionne les formes.
+    \item \terme{Soustraire} : soustrait les formes.
+    \item \terme{Intersecter} : garde l'intersection.
+    \item \terme{Exclure} : garde la différence.
+\end{itemize}
+
+\subsection{Le panneau Pathfinder}
+
+\subsubsection{Présentation}
+
+Le panneau \terme{Pathfinder} (\texttt{Fenêtre > Pathfinder}) permet de combiner des formes avec précision.
+
+\subsubsection{Les options}
+
+\begin{itemize}
+    \item \terme{Ajouter} : additionne les formes.
+    \item \terme{Soustraire} : soustrait les formes.
+    \item \terme{Intersecter} : garde l'intersection.
+    \item \terme{Exclure} : garde la différence.
+    \item \terme{Diviser} : divise les formes en parties.
+    \item \terme{Rogner} : rogne les formes.
+    \item \terme{Fusionner} : fusionne les formes.
+    \item \terme{Contour} : crée un contour des formes.
+    \item \terme{Moins devant} : soustrait la forme du dessus.
+    \item \terme{Moins derrière} : soustrait la forme du dessous.
+\end{itemize}
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs formes.
+    \item Ouvrir le panneau \emph{Pathfinder}.
+    \item Cliquer sur l'option souhaitée.
+\end{enumerate}
+
+\subsection{L'outil Forme de fusion}
+
+\subsubsection{Présentation}
+
+L'\terme{outil Forme de fusion} permet de combiner des formes en gardant les contours.
+
+\subsubsection{Utilisation}
+
+\begin{enumerate}
+    \item Sélectionner plusieurs formes.
+    \item Utiliser \texttt{Effet > Chemin de fusion} ou \texttt{Objet > Chemin de fusion}.
+    \item Ajuster les options (fusion, fusion avec contour, etc.).
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} le Concepteur de forme pour combiner rapidement.
+    \item \terme{Utiliser} le Pathfinder pour combiner précisément.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} les tracés.
+    \item \terme{Nommer} les objets.
+    \item \terme{Travailler} sur des copies.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{combinaison} de formes permet de créer de nouvelles formes, de dessiner des pictogrammes, de construire des illustrations. On utilise l'outil Concepteur de forme, le panneau Pathfinder, ou l'outil Forme de fusion. Il est essentiel de choisir l'outil adapté, de vérifier le résultat, de simplifier les tracés.
+
+Maintenant que nous savons combiner des formes, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{créer des compositions simples}.
+
+% ============================================================
+\section{Créer des compositions simples}
+% ============================================================
+
+\subsection{L'importance des compositions simples}
+
+Les \terme{compositions simples} sont essentielles en design graphique. Elles permettent de :
+
+\begin{itemize}
+    \item \terme{Comprendre} les principes de base.
+    \item \terme{Maîtriser} les outils.
+    \item \terme{Produire} des résultats propres.
+    \item \terme{Éviter} la surcharge.
+    \item \terme{Communiquer} clairement.
+\end{itemize}
+
+\subsection{Les principes de composition}
+
+\subsubsection{La simplicité}
+
+Une composition simple est plus efficace qu'une composition surchargée. Il faut :
+
+\begin{itemize}
+    \item \terme{Limiter} le nombre d'éléments.
+    \item \terme{Limiter} le nombre de couleurs.
+    \item \terme{Limiter} le nombre de formes.
+\end{itemize}
+
+\subsubsection{L'équilibre}
+
+Une composition équilibrée est plus agréable qu'une composition déséquilibrée. Il faut :
+
+\begin{itemize}
+    \item \terme{Répartir} les masses visuelles.
+    \item \terme{Créer} des relations entre les éléments.
+    \item \terme{Éviter} les zones vides ou surchargées.
+\end{itemize}
+
+\subsubsection{La hiérarchie}
+
+Une composition hiérarchisée est plus lisible qu'une composition confuse. Il faut :
+
+\begin{itemize}
+    \item \terme{Définir} un élément principal.
+    \item \terme{Définir} des éléments secondaires.
+    \item \terme{Guider} le regard.
+\end{itemize}
+
+\subsubsection{L'alignement}
+
+Une composition alignée est plus propre qu'une composition désordonnée. Il faut :
+
+\begin{itemize}
+    \item \terme{Aligner} les éléments.
+    \item \terme{Créer} des relations visuelles.
+    \item \terme{Éviter} les alignements approximatifs.
+\end{itemize}
+
+\subsection{Les étapes de création}
+
+\subsubsection{Étape 1 : Définir l'objectif}
+
+Quel est le but de la composition ? (illustration, pictogramme, logo, etc.)
+
+\subsubsection{Étape 2 : Esquisser}
+
+Dessiner rapidement plusieurs pistes (sur papier).
+
+\subsubsection{Étape 3 : Choisir la piste}
+
+Sélectionner la piste la plus pertinente.
+
+\subsubsection{Étape 4 : Créer}
+
+Créer la composition dans Illustrator :
+
+\begin{itemize}
+    \item \terme{Créer} les formes de base.
+    \item \terme{Combiner} les formes.
+    \item \terme{Aligner} les éléments.
+    \item \terme{Appliquer} les couleurs.
+    \item \terme{Ajuster} les détails.
+\end{itemize}
+
+\subsubsection{Étape 5 : Vérifier}
+
+Vérifier la composition :
+
+\begin{itemize}
+    \item \terme{Équilibre} : la composition est-elle équilibrée ?
+    \item \terme{Hiérarchie} : l'élément principal est-il clair ?
+    \item \terme{Alignement} : les éléments sont-ils alignés ?
+    \item \terme{Cohérence} : les éléments sont-ils cohérents ?
+\end{itemize}
+
+\subsection{Exemples de compositions simples}
+
+\subsubsection{Un pictogramme}
+
+\begin{enumerate}
+    \item Créer un cercle.
+    \item Créer un rectangle.
+    \item Combiner les formes avec le Pathfinder.
+    \item Appliquer une couleur.
+    \item Vérifier le résultat.
+\end{enumerate}
+
+\subsubsection{Un logo simple}
+
+\begin{enumerate}
+    \item Créer une forme géométrique.
+    \item Ajouter un texte.
+    \item Combiner les éléments.
+    \item Appliquer une couleur.
+    \item Vérifier le résultat.
+\end{enumerate}
+
+\subsubsection{Une icône}
+
+\begin{enumerate}
+    \item Créer les formes de base.
+    \item Combiner les formes.
+    \item Simplifier les tracés.
+    \item Appliquer une couleur.
+    \item Vérifier le résultat.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Commencer} simple.
+    \item \terme{Esquisser} avant de créer.
+    \item \terme{Limiter} le nombre d'éléments.
+    \item \terme{Limiter} le nombre de couleurs.
+    \item \terme{Aligner} les éléments.
+    \item \terme{Combiner} les formes.
+    \item \terme{Vérifier} le résultat.
+    \item \terme{Simplifier} si nécessaire.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{compositions simples} sont essentielles en design graphique. Elles reposent sur la simplicité, l'équilibre, la hiérarchie, l'alignement. La création suit plusieurs étapes : définir l'objectif, esquisser, choisir la piste, créer, vérifier. Il est essentiel de commencer simple, d'esquisser, de limiter les éléments, d'aligner, de combiner, de vérifier.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 15. Nous avons appris à maîtriser les bases du dessin vectoriel et des formes géométriques dans Illustrator :
+
+\begin{itemize}
+    \item \terme{Tracés vectoriels} : points d'ancrage, segments, poignées de direction, courbes de Bézier ; tracés ouverts/fermés ; remplissage et contour.
+    \item \terme{Outils Rectangle et Ellipse} : rectangles, carrés, ellipses, cercles ; options (\texttt{Maj}, \texttt{Alt}) ; dimensions précises.
+    \item \terme{Polygones et étoiles} : polygones réguliers, étoiles, spirales, lignes ; options et paramètres.
+    \item \terme{Modification des dimensions} : outil Sélection, Transformation manuelle, Mise à l'échelle, panneau Transformation.
+    \item \terme{Outils de transformation} : rotation, mise à l'échelle, miroir, transformation manuelle, déformation, concepteur de forme, ciseaux, couteau.
+    \item \terme{Alignement et distribution} : panneau Alignement, options d'alignement et de distribution, référence (sélection, plan de travail, objet clé).
+    \item \terme{Duplication et organisation} : copier-coller, \texttt{Alt + glisser}, \texttt{Ctrl + D}, calques, groupes, ordre des objets, repères.
+    \item \terme{Contours et fonds} : remplissage, contour, panneau Contour, panneau Nuancier.
+    \item \terme{Combinaison de formes} : Concepteur de forme, Pathfinder, Forme de fusion.
+    \item \terme{Compositions simples} : simplicité, équilibre, hiérarchie, alignement, étapes de création.
+\end{itemize}
+
+Le dessin vectoriel est au cœur d'Illustrator. Il permet de créer des formes précises, nettes, redimensionnables à l'infini. Ces formes servent de base à tous les projets : logos, illustrations, pictogrammes, mises en page. Un designer qui maîtrise le dessin vectoriel peut créer des visuels de qualité professionnelle ; un designer qui ne le maîtrise pas reste limité à des formes approximatives.
+
+Ce chapitre t'a donné les bases du dessin vectoriel et des formes géométriques. Mais la maîtrise vient avec la pratique. N'hésite pas à expérimenter, à créer des formes variées, à les combiner, à les transformer. Chaque projet est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons la \terme{plume et les courbes de Bézier}. Tu apprendras à comprendre les points d'ancrage, les points d'angle et les points lisses, à utiliser l'outil Plume, à créer des segments droits, à dessiner des courbes, à modifier les poignées de direction, à corriger les tracés, à fermer un tracé, à utiliser les outils de sélection, à simplifier les tracés, à dessiner des icônes, à reproduire des formes complexes. Ces compétences te permettront de dessiner avec précision et liberté.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 15 --- Dessin vectoriel et formes géométriques.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 16 --- La plume et les courbes de Bézier.}
+\end{center}

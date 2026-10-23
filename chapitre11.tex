@@ -1,0 +1,1663 @@
+% ============================================================
+% CHAPITRE 11 — Photomontage et manipulation d'images
+% ============================================================
+
+\chapter{Photomontage et manipulation d'images}
+
+\noindent
+\textit{Dans le chapitre précédent, nous avons appris à retoucher une photographie : corriger l'exposition, le contraste, la couleur, supprimer les imperfections, améliorer la netteté, tout en conservant un résultat naturel. La retouche consiste à améliorer une image existante. Le photomontage va plus loin : il consiste à \emph{assembler} plusieurs images pour en créer une nouvelle, à \emph{manipuler} le réel pour produire un visuel qui n'existe pas tel quel.}
+
+\vspace{1em}
+
+\noindent
+Le \terme{photomontage} est l'une des pratiques les plus spectaculaires de Photoshop. Il permet de créer des compositions impossibles : un homme qui vole, une ville flottant dans les nuages, un produit dans un univers imaginaire, une scène historique reconstituée, une publicité onirique. Le photomontage est utilisé dans la publicité, le cinéma, l'illustration, l'édition, la presse. Il est au cœur de nombreuses campagnes visuelles.
+
+\vspace{1em}
+
+\noindent
+Mais le photomontage est aussi l'une des pratiques les plus difficiles. Il ne suffit pas de superposer des images : il faut les \emph{harmoniser}, les \emph{intégrer}, les \emph{faire coexister} de manière crédible. Un photomontage réussi est un photomontage où l'on ne voit pas le montage : les images semblent avoir été prises ensemble, dans le même lieu, à la même lumière. Un photomontage raté est immédiatement repérable : perspectives incohérentes, lumières contradictoires, ombres absentes, couleurs discordantes.
+
+\vspace{1em}
+
+\noindent
+Ce chapitre a pour objectif de te faire maîtriser les bases du photomontage dans Photoshop. Nous commencerons par les principes du photomontage. Nous apprendrons ensuite à choisir des images compatibles, à détourer les éléments à assembler, à harmoniser les dimensions et les perspectives, à adapter la lumière et les couleurs, à créer des ombres réalistes, à ajouter des effets de profondeur, à harmoniser les arrière-plans, à intégrer du texte, à corriger les incohérences visuelles, à utiliser les filtres de manière maîtrisée, et enfin à finaliser un photomontage professionnel. À la fin de ce chapitre, tu sauras créer des compositions complexes et crédibles.
+
+% ============================================================
+\section{Principes du photomontage}
+% ============================================================
+
+\subsection{Qu'est-ce que le photomontage ?}
+
+\begin{quote}
+\textbf{Le photomontage est l'assemblage de plusieurs images (photographies, illustrations, textures) pour créer une image nouvelle, qui peut être réaliste ou surréaliste, cohérente ou onirique.}
+\end{quote}
+
+Le photomontage ne consiste pas à \emph{superposer} des images, mais à les \emph{intégrer} pour qu'elles forment un tout cohérent. C'est un travail de \emph{composition}, de \emph{raccord}, d'\emph{harmonisation}.
+
+\subsection{Les types de photomontage}
+
+\subsubsection{Le photomontage réaliste}
+
+Le \terme{photomontage réaliste} vise à créer une image crédible, comme si elle avait été prise en une seule fois. Il est utilisé pour :
+
+\begin{itemize}
+    \item Les publicités de produits (packshots, mises en situation).
+    \item Les retouches de photos de groupe (ajout ou suppression de personnes).
+    \item Les reconstructions historiques.
+    \item Les images d'architecture (ajout de bâtiments, de paysages).
+\end{itemize}
+
+\subsubsection{Le photomontage surréaliste}
+
+Le \terme{photomontage surréaliste} vise à créer une image impossible, onirique, poétique. Il est utilisé pour :
+
+\begin{itemize}
+    \item Les campagnes publicitaires créatives.
+    \item Les couvertures de magazines.
+    \item Les illustrations éditoriales.
+    \item Les visuels d'art.
+\end{itemize}
+
+\subsubsection{Le photomontage conceptuel}
+
+Le \terme{photomontage conceptuel} vise à transmettre une idée, un message, une métaphore. Il est utilisé pour :
+
+\begin{itemize}
+    \item Les campagnes de sensibilisation.
+    \item Les illustrations de presse.
+    \item Les visuels d'entreprise (rapports, présentations).
+\end{itemize}
+
+\subsection{Les principes du photomontage}
+
+\subsubsection{Le principe de cohérence}
+
+Toutes les images assemblées doivent être \terme{cohérentes} entre elles :
+
+\begin{itemize}
+    \item \terme{Perspective} : les points de fuite doivent correspondre.
+    \item \terme{Lumière} : la direction, l'intensité, la couleur de la lumière doivent être cohérentes.
+    \item \terme{Ombres} : les ombres doivent être cohérentes (direction, dureté, couleur).
+    \item \terme{Couleur} : les couleurs doivent être harmonisées.
+    \item \terme{Échelle} : les éléments doivent être à la bonne échelle.
+    \item \terme{Résolution} : les images doivent avoir une résolution comparable.
+\end{itemize}
+
+\subsubsection{Le principe de crédibilité}
+
+Le photomontage doit être \terme{crédible} : le spectateur doit y croire, même si l'image est surréaliste. La crédibilité repose sur la cohérence des éléments et sur la qualité de l'intégration.
+
+\subsubsection{Le principe de naturel}
+
+Le photomontage doit être \terme{naturel} : les éléments ne doivent pas sembler « collés ». Il faut éviter :
+
+\begin{itemize}
+    \item Les contours nets (détourage approximatif).
+    \item Les ombres absentes.
+    \item Les lumières contradictoires.
+    \item Les couleurs discordantes.
+    \item Les perspectives incohérentes.
+\end{itemize}
+
+\subsubsection{Le principe de non-destructivité}
+
+Comme toujours dans Photoshop, le photomontage doit être \terme{non destructif} : on conserve les calques, les masques, les réglages. Cela permet de modifier, de corriger, de revenir en arrière à tout moment.
+
+\subsection{Les étapes du photomontage}
+
+\subsubsection{Étape 1 : Conception}
+
+Avant de commencer, il faut \terme{concevoir} le photomontage :
+
+\begin{itemize}
+    \item \terme{Définir} l'idée, le concept.
+    \item \terme{Esquisser} la composition (croquis, moodboard).
+    \item \terme{Rassembler} les images nécessaires.
+    \item \terme{Anticiper} les difficultés techniques.
+\end{itemize}
+
+\subsubsection{Étape 2 : Préparation}
+
+\begin{itemize}
+    \item \terme{Vérifier} la résolution des images.
+    \item \terme{Détourer} les éléments à assembler.
+    \item \terme{Préparer} les calques (nommage, organisation).
+\end{itemize}
+
+\subsubsection{Étape 3 : Assemblage}
+
+\begin{itemize}
+    \item \terme{Placer} les éléments dans la composition.
+    \item \terme{Ajuster} les dimensions, les positions, les perspectives.
+    \item \terme{Organiser} les calques (avant-plan, arrière-plan).
+\end{itemize}
+
+\subsubsection{Étape 4 : Intégration}
+
+\begin{itemize}
+    \item \terme{Harmoniser} la lumière et les couleurs.
+    \item \terme{Créer} les ombres.
+    \item \terme{Ajouter} des effets de profondeur.
+    \item \terme{Corriger} les incohérences.
+\end{itemize}
+
+\subsubsection{Étape 5 : Finition}
+
+\begin{itemize}
+    \item \terme{Vérifier} la cohérence globale.
+    \item \terme{Corriger} les détails.
+    \item \terme{Appliquer} les derniers réglages.
+    \item \terme{Exporter} le fichier final.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Concevoir} avant de créer.
+    \item \terme{Choisir} des images compatibles.
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Harmoniser} lumière, couleurs, ombres.
+    \item \terme{Vérifier} la cohérence globale.
+    \item \terme{Corriger} les incohérences.
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Comparer} avec des références.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{photomontage} est l'assemblage de plusieurs images pour en créer une nouvelle. Il peut être réaliste, surréaliste ou conceptuel. Il repose sur quatre principes : cohérence, crédibilité, naturel, non-destructivité. Les étapes sont : conception, préparation, assemblage, intégration, finition. Il est essentiel de concevoir avant de créer, de choisir des images compatibles, de travailler en non destructif, d'harmoniser, de vérifier, de corriger.
+
+Maintenant que nous connaissons les principes, nous allons, dans la section suivante, apprendre à \terme{choisir des images compatibles}.
+
+% ============================================================
+\section{Choisir des images compatibles}
+% ============================================================
+
+\subsection{Pourquoi choisir des images compatibles ?}
+
+Le choix des images est \terme{critique} en photomontage. Des images incompatibles rendent le montage impossible, ou donnent un résultat médiocre. Des images compatibles facilitent le travail et donnent un résultat crédible.
+
+Les critères de compatibilité sont :
+
+\begin{itemize}
+    \item \terme{Résolution} : les images doivent avoir une résolution comparable.
+    \item \terme{Lumière} : la direction, l'intensité, la couleur de la lumière doivent être compatibles.
+    \item \terme{Perspective} : les points de fuite doivent correspondre.
+    \item \terme{Échelle} : les proportions doivent être cohérentes.
+    \item \terme{Style} : les images doivent avoir un style compatible (photographique, illustratif, etc.).
+    \item \terme{Qualité} : les images doivent être de qualité comparable.
+\end{itemize}
+
+\subsection{La résolution}
+
+\subsubsection{Le principe}
+
+Les images d'un photomontage doivent avoir une \terme{résolution comparable}. Si une image est en haute résolution et une autre en basse résolution, la différence sera visible.
+
+\subsubsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Choisir} des images de résolution suffisante (au moins 300 ppi pour l'impression).
+    \item \terme{Éviter} les images de basse résolution (pixellisation).
+    \item \terme{Redimensionner} les images si nécessaire, mais avec précaution.
+    \item \terme{Utiliser} des objets dynamiques pour préserver la qualité.
+\end{itemize}
+
+\subsection{La lumière}
+
+\subsubsection{Les paramètres de la lumière}
+
+La \terme{lumière} a plusieurs paramètres :
+
+\begin{itemize}
+    \item \terme{Direction} : d'où vient la lumière ?
+    \item \terme{Intensité} : la lumière est-elle forte ou faible ?
+    \item \terme{Couleur} : la lumière est-elle chaude (jaune), froide (bleue), neutre (blanche) ?
+    \item \terme{Dureté} : la lumière est-elle dure (ombres nettes) ou douce (ombres floues) ?
+\end{itemize}
+
+\subsubsection{La cohérence de la lumière}
+
+Toutes les images doivent avoir une lumière \terme{cohérente} :
+
+\begin{itemize}
+    \item \terme{Même direction} : la lumière doit venir du même côté.
+    \item \terme{Même intensité} : les niveaux de luminosité doivent être comparables.
+    \item \terme{Même couleur} : la température de couleur doit être comparable.
+    \item \terme{Même dureté} : les ombres doivent avoir une dureté comparable.
+\end{itemize}
+
+\subsubsection{Exemple}
+
+Si vous assemblez un portrait éclairé par une lumière douce venant de la gauche avec un paysage éclairé par un soleil dur venant de la droite, le résultat sera incohérent. Il faut choisir des images compatibles, ou corriger la lumière.
+
+\subsection{La perspective}
+
+\subsubsection{Définition}
+
+La \terme{perspective} est la représentation de l'espace en trois dimensions sur une surface plane. Elle est définie par des \terme{points de fuite} (les points où convergent les lignes parallèles).
+
+\subsubsection{La cohérence de la perspective}
+
+Toutes les images doivent avoir une perspective \terme{cohérente} :
+
+\begin{itemize}
+    \item \terme{Même point de fuite} : les lignes doivent converger vers le même point.
+    \item \terme{Même horizon} : la ligne d'horizon doit être cohérente.
+    \item \terme{Même angle de vue} : la caméra doit être à la même hauteur.
+\end{itemize}
+
+\subsubsection{Exemple}
+
+Si vous placez un objet photographié d'en dessous dans un paysage photographié d'en haut, le résultat sera incohérent. Il faut choisir des images avec une perspective compatible, ou corriger la perspective.
+
+\subsection{L'échelle}
+
+\subsubsection{Le principe}
+
+Les éléments du photomontage doivent être à la \terme{bonne échelle} les uns par rapport aux autres :
+
+\begin{itemize}
+    \item \terme{Proportions} : les proportions doivent être respectées.
+    \item \terme{Taille relative} : les éléments doivent avoir une taille cohérente.
+    \item \terme{Distance} : les éléments doivent être à la bonne distance.
+\end{itemize}
+
+\subsubsection{Exemple}
+
+Si vous placez un homme de 1,80 m à côté d'une maison de 2 m de haut, le résultat sera incohérent (la maison est trop petite). Il faut choisir des images à la bonne échelle, ou ajuster la taille.
+
+\subsection{Le style}
+
+\subsubsection{Le principe}
+
+Les images du photomontage doivent avoir un \terme{style compatible} :
+
+\begin{itemize}
+    \item \terme{Photographique} : toutes les images doivent être photographiques, ou toutes illustratives.
+    \item \terme{Époque} : les images doivent être de la même époque (par exemple, pas une voiture de 2020 dans une scène des années 1950).
+    \item \terme{Ambiance} : les images doivent avoir une ambiance compatible.
+\end{itemize}
+
+\subsection{La qualité}
+
+\subsubsection{Le principe}
+
+Les images du photomontage doivent être de \terme{qualité comparable} :
+
+\begin{itemize}
+    \item \terme{Netteté} : les images doivent être nettes.
+    \item \terme{Contraste} : les images doivent avoir un contraste comparable.
+    \item \terme{Saturation} : les images doivent avoir une saturation comparable.
+    \item \terme{Bruit} : les images doivent avoir un bruit comparable.
+\end{itemize}
+
+\subsection{Les sources d'images}
+
+\subsubsection{Banques d'images}
+
+\begin{itemize}
+    \item \terme{Unsplash, Pexels, Pixabay} : images gratuites, libres de droits.
+    \item \terme{Adobe Stock, Shutterstock, Getty Images} : images payantes, de haute qualité.
+    \item \terme{Stocks spécialisés} : images de produits, de personnes, de lieux.
+\end{itemize}
+
+\subsubsection{Images personnelles}
+
+\begin{itemize}
+    \item \terme{Photos} prises par vous-même.
+    \item \terme{Scans} de documents.
+    \item \terme{Captures} d'écran.
+\end{itemize}
+
+\subsubsection{Images générées}
+
+\begin{itemize}
+    \item \terme{Intelligence artificielle} (Midjourney, DALL·E, Adobe Firefly) : images générées par IA.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Définir} le concept avant de chercher des images.
+    \item \terme{Chercher} des images compatibles (résolution, lumière, perspective, échelle, style).
+    \item \terme{Privilégier} des images de haute qualité.
+    \item \terme{Éviter} les images de basse résolution.
+    \item \terme{Vérifier} les droits d'utilisation.
+    \item \terme{Constituer} une bibliothèque d'images.
+    \item \terme{Anticiper} les corrections nécessaires.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le choix des images est critique en photomontage. Les images doivent être compatibles : résolution, lumière, perspective, échelle, style, qualité. On peut utiliser des banques d'images, des images personnelles, ou des images générées par IA. Il est essentiel de définir le concept avant de chercher, de privilégier la qualité, de vérifier les droits d'utilisation.
+
+Maintenant que nous savons choisir des images compatibles, nous allons, dans la section suivante, apprendre à \terme{détourer les éléments à assembler}.
+
+% ============================================================
+\section{Détourer les éléments à assembler}
+% ============================================================
+
+\subsection{Pourquoi détourer ?}
+
+Le \terme{détourage} est la première étape technique du photomontage. Il consiste à isoler les éléments à assembler (personnes, objets, animaux) de leur arrière-plan, pour les placer dans une nouvelle composition.
+
+Un détourage soigné est \terme{essentiel} : un détourage approximatif se voit immédiatement et ruine la crédibilité du montage.
+
+\subsection{Les méthodes de détourage}
+
+\subsubsection{Sélection > Sujet}
+
+La méthode la plus rapide pour les sujets simples :
+
+\begin{enumerate}
+    \item Ouvrir l'image.
+    \item Utiliser \texttt{Sélection > Sujet}.
+    \item Photoshop détecte automatiquement le sujet.
+    \item Affiner avec \emph{Sélectionner et masquer}.
+\end{enumerate}
+
+\subsubsection{Sélection d'objet}
+
+Pour les objets précis :
+
+\begin{enumerate}
+    \item Sélectionner l'outil Sélection d'objet.
+    \item Cliquer-glisser un rectangle autour de l'objet.
+    \item Photoshop détecte l'objet.
+    \item Affiner.
+\end{enumerate}
+
+\subsubsection{Lasso et Lasso polygonal}
+
+Pour les objets aux contours nets :
+
+\begin{enumerate}
+    \item Utiliser le Lasso polygonal pour les formes géométriques.
+    \item Utiliser le Lasso pour les formes irrégulières.
+    \item Affiner.
+\end{enumerate}
+
+\subsubsection{Plume}
+
+Pour les objets aux contours nets et précis (produits manufacturés, formes géométriques) :
+
+\begin{enumerate}
+    \item Utiliser l'outil Plume (\texttt{P}).
+    \item Tracer le contour de l'objet.
+    \item Convertir le tracé en sélection.
+    \item Affiner.
+\end{enumerate}
+
+\subsubsection{Sélection rapide et Baguette magique}
+
+Pour les objets sur fond uni :
+
+\begin{enumerate}
+    \item Utiliser la Sélection rapide pour les objets complexes.
+    \item Utiliser la Baguette magique pour les fonds unis.
+    \item Affiner.
+\end{enumerate}
+
+\subsection{Affiner le détourage}
+
+\subsubsection{La boîte de dialogue Sélectionner et masquer}
+
+\begin{enumerate}
+    \item Après avoir créé la sélection, utiliser \texttt{Sélection > Sélectionner et masquer}.
+    \item Choisir un affichage (par exemple, \emph{Sur fond noir}) pour voir les contours.
+    \item Ajuster \emph{Contour progressif} pour adoucir les bords.
+    \item Ajuster \emph{Lissage} pour lisser les irrégularités.
+    \item Ajuster \emph{Contraction/Dilatation} pour ajuster la taille.
+    \item Activer \emph{Détecter les cheveux} pour les portraits.
+    \item Sortir vers un \emph{Masque de fusion} ou un \emph{Nouveau calque}.
+\end{enumerate}
+
+\subsubsection{Corriger le masque}
+
+\begin{enumerate}
+    \item Sélectionner le masque du calque.
+    \item Utiliser l'outil Pinceau (\texttt{B}).
+    \item Peindre en \terme{noir} pour masquer les zones en trop.
+    \item Peindre en \terme{blanc} pour révéler les zones manquantes.
+    \item Utiliser un pinceau doux pour les transitions, un pinceau dur pour les bords nets.
+\end{enumerate}
+
+\subsection{Le détourage des éléments difficiles}
+
+\subsubsection{Les cheveux}
+
+\begin{itemize}
+    \item Utiliser \emph{Détecter les cheveux} dans \emph{Sélectionner et masquer}.
+    \item Ajuster le rayon.
+    \item Corriger manuellement avec un pinceau fin.
+\end{itemize}
+
+\subsubsection{Les poils d'animaux}
+
+\begin{itemize}
+    \item Même approche que pour les cheveux.
+    \item Utiliser \emph{Détecter les cheveux} avec un rayon adapté.
+    \item Corriger manuellement.
+\end{itemize}
+
+\subsubsection{Les objets transparents}
+
+\begin{itemize}
+    \item Les objets transparents (verre, eau, fumée) sont difficiles à détourer.
+    \item Utiliser des masques de fusion avec des dégradés.
+    \item Combiner avec des modes de fusion (Écran, Multiplier).
+\end{itemize}
+
+\subsubsection{Les objets flous}
+
+\begin{itemize}
+    \item Les objets flous (mouvement, profondeur de champ) sont difficiles à détourer.
+    \item Utiliser un contour progressif élevé.
+    \item Adoucir les bords avec un pinceau doux.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Travailler} sur un calque dupliqué.
+    \item \terme{Utiliser} un masque de fusion (non destructif).
+    \item \terme{Zoomer} pour vérifier les contours.
+    \item \terme{Corriger} les erreurs avec le pinceau.
+    \item \terme{Affiner} avec \emph{Sélectionner et masquer}.
+    \item \terme{Vérifier} sur fond contrasté (noir, blanc).
+    \item \terme{Préserver} les détails (cheveux, poils, textures).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Le \terme{détourage} est la première étape technique du photomontage. Il consiste à isoler les éléments de leur arrière-plan. On utilise Sélection > Sujet, Sélection d'objet, Lasso, Plume, Sélection rapide, Baguette magique. On affine avec \emph{Sélectionner et masquer}. On corrige avec le pinceau sur le masque. Il est essentiel de travailler en non destructif, de zoomer, de vérifier sur fond contrasté, de préserver les détails.
+
+Maintenant que nous savons détourer les éléments, nous allons, dans la section suivante, apprendre à \terme{harmoniser les dimensions et les perspectives}.
+
+% ============================================================
+\section{Harmoniser les dimensions et les perspectives}
+% ============================================================
+
+\subsection{L'importance de l'harmonisation}
+
+Une fois les éléments détourés, il faut les \terme{harmoniser} : ajuster leurs dimensions, leurs positions, leurs perspectives pour qu'ils forment un ensemble cohérent. Sans cette harmonisation, les éléments semblent « collés » et le photomontage est raté.
+
+\subsection{Les dimensions}
+
+\subsubsection{Le principe}
+
+Les éléments doivent être à la \terme{bonne échelle} les uns par rapport aux autres :
+
+\begin{itemize}
+    \item \terme{Proportions} : les proportions doivent être respectées.
+    \item \terme{Taille relative} : les éléments doivent avoir une taille cohérente.
+    \item \terme{Distance} : les éléments doivent être à la bonne distance.
+\end{itemize}
+
+\subsubsection{Les méthodes}
+
+\begin{itemize}
+    \item \terme{Transformation libre} (\texttt{Ctrl + T}) : redimensionner visuellement.
+    \item \terme{Taille précise} : saisir la largeur et la hauteur dans la barre d'options.
+    \item \terme{Repères} : utiliser des repères pour comparer les tailles.
+    \item \terme{Référence} : utiliser un élément de référence (par exemple, une personne) pour évaluer les proportions.
+\end{itemize}
+
+\subsection{Les perspectives}
+
+\subsubsection{Le principe}
+
+Les éléments doivent avoir une \terme{perspective cohérente} :
+
+\begin{itemize}
+    \item \terme{Point de fuite} : les lignes doivent converger vers le même point.
+    \item \terme{Horizon} : la ligne d'horizon doit être cohérente.
+    \item \terme{Angle de vue} : la caméra doit être à la même hauteur.
+\end{itemize}
+
+\subsubsection{Les méthodes}
+
+\begin{itemize}
+    \item \terme{Transformation Perspective} : \texttt{Édition > Transformation > Perspective}.
+    \item \terme{Déformation} : \texttt{Édition > Transformation > Déformation}.
+    \item \terme{Transformation manuelle} : ajuster les coins avec \texttt{Ctrl} (ou \texttt{Cmd}).
+    \item \terme{Filtre Perspective} : \texttt{Édition > Transformation > Perspective}.
+\end{itemize}
+
+\subsection{Les positions}
+
+\subsubsection{Le principe}
+
+Les éléments doivent être \terme{bien positionnés} dans la composition :
+
+\begin{itemize}
+    \item \terme{Point de contact} : les éléments doivent reposer sur une surface commune.
+    \item \terme{Alignement} : les éléments doivent être alignés avec la perspective.
+    \item \terme{Profondeur} : les éléments doivent être placés à la bonne profondeur.
+\end{itemize}
+
+\subsubsection{Les méthodes}
+
+\begin{itemize}
+    \item \terme{Déplacement} (\texttt{V}) : déplacer les éléments.
+    \item \terme{Repères} : utiliser des repères pour aligner.
+    \item \terme{Grille} : utiliser une grille pour vérifier les alignements.
+\end{itemize}
+
+\subsection{L'ordre des calques}
+
+\subsubsection{Le principe}
+
+L'\terme{ordre des calques} détermine la profondeur des éléments :
+
+\begin{itemize}
+    \item \terme{Avant-plan} : les éléments les plus proches, en haut de la pile.
+    \item \terme{Plan moyen} : les éléments intermédiaires, au milieu.
+    \item \terme{Arrière-plan} : les éléments les plus éloignés, en bas de la pile.
+\end{itemize}
+
+\subsubsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Organiser} les calques en groupes : Avant-plan, Plan moyen, Arrière-plan.
+    \item \terme{Nommer} les calques.
+    \item \terme{Utiliser} des masques pour les transitions entre plans.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} des repères pour les proportions.
+    \item \terme{Utiliser} une référence pour l'échelle.
+    \item \terme{Vérifier} la perspective avec des lignes de fuite.
+    \item \terme{Utiliser} des objets dynamiques pour les transformations.
+    \item \terme{Organiser} les calques par profondeur.
+    \item \terme{Vérifier} sur fond contrasté.
+    \item \terme{Comparer} avec des références.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{harmonisation des dimensions et des perspectives} est essentielle pour un photomontage crédible. Les éléments doivent être à la bonne échelle, à la bonne perspective, à la bonne position, dans le bon ordre. On utilise la transformation libre, la perspective, la déformation, les repères, la grille. Il est essentiel de vérifier les proportions, la perspective, l'ordre des calques.
+
+Maintenant que nous savons harmoniser les dimensions et les perspectives, nous allons, dans la section suivante, apprendre à \terme{adapter la lumière et les couleurs}.
+
+% ============================================================
+\section{Adapter la lumière et les couleurs}
+% ============================================================
+
+\subsection{L'importance de la lumière et des couleurs}
+
+La \terme{lumière} et les \terme{couleurs} sont les éléments qui unifient un photomontage. Si les éléments ont des lumières ou des couleurs différentes, le montage est visible. Il faut harmoniser la lumière et les couleurs pour que l'ensemble paraisse cohérent.
+
+\subsection{L'adaptation de la lumière}
+
+\subsubsection{La direction de la lumière}
+
+Tous les éléments doivent avoir une lumière venant de la \terme{même direction} :
+
+\begin{itemize}
+    \item \terme{Identifier} la direction de la lumière dans l'image principale.
+    \item \terme{Adapter} la lumière des éléments ajoutés.
+    \item \terme{Utiliser} des calques de réglage (courbes, niveaux) pour éclaircir ou assombrir.
+\end{itemize}
+
+\subsubsection{L'intensité de la lumière}
+
+Tous les éléments doivent avoir une \terme{intensité de lumière} comparable :
+
+\begin{itemize}
+    \item \terme{Comparer} la luminosité des éléments.
+    \item \terme{Ajuster} avec des calques de réglage.
+    \item \terme{Utiliser} des masques pour appliquer localement.
+\end{itemize}
+
+\subsubsection{La couleur de la lumière}
+
+Tous les éléments doivent avoir une \terme{température de couleur} comparable :
+
+\begin{itemize}
+    \item \terme{Identifier} la température de couleur de l'image principale (chaude, froide, neutre).
+    \item \terme{Adapter} la température des éléments ajoutés.
+    \item \terme{Utiliser} la balance des couleurs ou la teinte/saturation.
+\end{itemize}
+
+\subsubsection{La dureté de la lumière}
+
+Tous les éléments doivent avoir une \terme{dureté de lumière} comparable :
+
+\begin{itemize}
+    \item \terme{Lumière dure} : ombres nettes, contraste élevé.
+    \item \terme{Lumière douce} : ombres floues, contraste faible.
+    \item \terme{Adapter} les ombres et le contraste en fonction.
+\end{itemize}
+
+\subsection{L'adaptation des couleurs}
+
+\subsubsection{L'harmonisation globale}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} \emph{Balance des couleurs} : harmoniser les couleurs.
+    \item \terme{Calque de réglage} \emph{Teinte/Saturation} : harmoniser les saturations.
+    \item \terme{Calque de réglage} \emph{Courbes} : harmoniser les luminosités.
+\end{itemize}
+
+\subsubsection{L'harmonisation locale}
+
+\begin{itemize}
+    \item \terme{Masquer} tout.
+    \item \terme{Peindre} en blanc sur les zones à corriger.
+    \item \terme{Ajuster} les réglages pour un résultat cohérent.
+\end{itemize}
+
+\subsubsection{L'utilisation des modes de fusion}
+
+Les \terme{modes de fusion} peuvent aider à harmoniser :
+
+\begin{itemize}
+    \item \terme{Multiplier} : assombrit et mélange les couleurs.
+    \item \terme{Écran} : éclaircit et mélange les couleurs.
+    \item \terme{Superposition} : augmente le contraste et la saturation.
+    \item \terme{Couleur} : applique la couleur sans modifier la luminosité.
+\end{itemize}
+
+\subsection{Les techniques d'harmonisation}
+
+\subsubsection{La technique du calque de couleur}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Couleur unie}.
+    \item Choisir une couleur qui correspond à l'ambiance.
+    \item Changer le mode de fusion en \emph{Couleur} ou \emph{Superposition}.
+    \item Ajuster l'opacité.
+    \item Masquer les zones non concernées.
+\end{enumerate}
+
+\subsubsection{La technique du filtre Camera Raw}
+
+\begin{enumerate}
+    \item Ouvrir \emph{Camera Raw} sur un calque (convertir en objet dynamique pour un filtre dynamique).
+    \item Ajuster la \emph{Température}, la \emph{Teinte}, la \emph{Saturation}.
+    \item Appliquer à l'ensemble du calque, ou masquer si nécessaire.
+\end{enumerate}
+
+\subsubsection{La technique de la courbe par canal}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes}.
+    \item Sélectionner un canal (Rouge, Vert, Bleu).
+    \item Ajuster la courbe pour harmoniser.
+    \item Masquer si nécessaire.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} la lumière principale (direction, intensité, couleur, dureté).
+    \item \terme{Adapter} chaque élément à cette lumière.
+    \item \terme{Travailler} avec des calques de réglage.
+    \item \terme{Masquer} les corrections sur les zones non concernées.
+    \item \terme{Utiliser} des modes de fusion pour harmoniser.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Comparer} avec des références.
+    \item \terme{Ne pas sur-corriger} (perte de naturel).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{adaptation de la lumière et des couleurs} est essentielle pour un photomontage crédible. Il faut harmoniser la direction, l'intensité, la couleur, la dureté de la lumière. Il faut harmoniser les couleurs avec des calques de réglage, des masques, des modes de fusion. Il est essentiel d'identifier la lumière principale, d'adapter chaque élément, de travailler en non destructif, de vérifier le résultat.
+
+Maintenant que nous savons adapter la lumière et les couleurs, nous allons, dans la section suivante, apprendre à \terme{créer des ombres réalistes}.
+
+% ============================================================
+\section{Créer des ombres réalistes}
+% ============================================================
+
+\subsection{L'importance des ombres}
+
+Les \terme{ombres} sont essentielles en photomontage : elles \emph{ancrent} les éléments dans le décor, elles \emph{créent} la profondeur, elles \emph{renforcent} le réalisme. Sans ombres, les éléments semblent « flotter ». Avec des ombres réalistes, les éléments semblent appartenir au décor.
+
+\subsection{Les types d'ombres}
+
+\subsubsection{Les ombres portées}
+
+Les \terme{ombres portées} sont les ombres projetées par un objet sur une surface. Elles ont plusieurs caractéristiques :
+
+\begin{itemize}
+    \item \terme{Direction} : dépend de la source de lumière.
+    \item \terme{Longueur} : dépend de la hauteur de la source de lumière.
+    \item \terme{Dureté} : dépend de la dureté de la source de lumière.
+    \item \terme{Couleur} : dépend de la couleur de la lumière et de la surface.
+\end{itemize}
+
+\subsubsection{Les ombres propres}
+
+Les \terme{ombres propres} sont les zones de l'objet qui ne sont pas éclairées (côté opposé à la lumière). Elles sont essentielles pour donner du volume à l'objet.
+
+\subsubsection{Les ombres de contact}
+
+Les \terme{ombres de contact} sont les ombres très sombres qui se forment là où l'objet touche la surface. Elles sont essentielles pour \emph{ancrer} l'objet.
+
+\subsection{Créer une ombre portée}
+
+\subsubsection{La méthode de base}
+
+\begin{enumerate}
+    \item Dupliquer le calque de l'élément.
+    \item Placer le calque dupliqué sous le calque de l'élément.
+    \item Remplir le calque dupliqué de noir (ou d'une couleur sombre).
+    \item Appliquer un flou (Flou gaussien) pour adoucir.
+    \item Déformer l'ombre (Transformation > Déformation) pour qu'elle corresponde à la perspective.
+    \item Réduire l'opacité (par exemple, 50\% à 70\%).
+    \item Appliquer un mode de fusion (Multiplier, Superposition).
+    \item Masquer les zones non concernées.
+\end{enumerate}
+
+\subsubsection{La méthode du style de calque}
+
+\begin{enumerate}
+    \item Clic droit sur le calque de l'élément > \emph{Options de fusion}.
+    \item Cocher \emph{Ombre interne} ou \emph{Ombre portée}.
+    \item Ajuster les paramètres : angle, distance, extension, taille, opacité.
+    \item Cette méthode est simple mais moins flexible.
+\end{enumerate}
+
+\subsubsection{La méthode avancée}
+
+\begin{enumerate}
+    \item Créer un nouveau calque.
+    \item Dessiner l'ombre avec un pinceau noir doux.
+    \item Appliquer un flou pour adoucir.
+    \item Ajuster l'opacité et le mode de fusion.
+    \item Utiliser un masque pour ajuster la forme.
+\end{enumerate}
+
+\subsection{Créer une ombre propre}
+
+\subsubsection{La méthode de base}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Courbes} ou \emph{Niveaux}.
+    \item Assombrir les zones d'ombre propre.
+    \item Masquer tout, puis peindre en blanc sur les zones d'ombre.
+    \item Ajuster l'intensité.
+\end{enumerate}
+
+\subsubsection{La méthode du pinceau}
+
+\begin{enumerate}
+    \item Créer un nouveau calque.
+    \item Mode de fusion : \emph{Multiplier}.
+    \item Peindre en noir (ou en couleur sombre) avec un pinceau doux.
+    \item Ajuster l'opacité.
+\end{enumerate}
+
+\subsection{Créer une ombre de contact}
+
+\begin{enumerate}
+    \item Créer un nouveau calque sous l'élément.
+    \item Peindre une zone sombre au contact de l'objet et de la surface.
+    \item Appliquer un léger flou.
+    \item Mode de fusion : \emph{Multiplier}.
+    \item Ajuster l'opacité.
+\end{enumerate}
+
+\subsection{La couleur des ombres}
+
+\subsubsection{Le principe}
+
+Les ombres ne sont pas toujours noires : elles prennent souvent la couleur de la lumière ou de la surface. Par exemple :
+
+\begin{itemize}
+    \item \terme{Lumière chaude} : ombres légèrement bleutées (complémentaire).
+    \item \terme{Lumière froide} : ombres légèrement chaudes.
+    \item \terme{Surface colorée} : ombres teintées de la couleur de la surface.
+\end{itemize}
+
+\subsubsection{La méthode}
+
+\begin{enumerate}
+    \item Remplir l'ombre avec une couleur sombre (pas noir pur).
+    \item Ajuster la teinte pour correspondre à l'ambiance.
+    \item Utiliser un mode de fusion (Multiplier, Couleur brûlée).
+    \item Vérifier le résultat.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} la source de lumière (direction, intensité, couleur, dureté).
+    \item \terme{Créer} l'ombre en cohérence avec la lumière.
+    \item \terme{Utiliser} un flou pour adoucir l'ombre.
+    \item \terme{Déformer} l'ombre pour la perspective.
+    \item \terme{Réduire} l'opacité pour un résultat naturel.
+    \item \terme{Utiliser} un mode de fusion (Multiplier).
+    \item \terme{Ajouter} une ombre de contact pour ancrer.
+    \item \terme{Colorer} les ombres (pas noir pur).
+    \item \terme{Vérifier} le résultat (avant/après).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{ombres} sont essentielles en photomontage : elles ancrent les éléments, créent la profondeur, renforcent le réalisme. On distingue les ombres portées, propres, de contact. On les crée avec des calques, des flous, des modes de fusion, des masques. Il est essentiel d'identifier la source de lumière, de créer des ombres cohérentes, d'adoucir, de déformer, d'ajuster l'opacité, de colorer, de vérifier.
+
+Maintenant que nous savons créer des ombres réalistes, nous allons, dans la section suivante, apprendre à \terme{ajouter des effets de profondeur}.
+
+% ============================================================
+\section{Ajouter des effets de profondeur}
+% ============================================================
+
+\subsection{L'importance de la profondeur}
+
+La \terme{profondeur} est la sensation de distance entre les éléments d'une image. Elle est essentielle en photomontage : elle \emph{crée} l'espace, elle \emph{sépare} les plans, elle \emph{renforce} le réalisme. Sans profondeur, les éléments semblent collés les uns aux autres.
+
+\subsection{Les techniques de profondeur}
+
+\subsubsection{La perspective atmosphérique}
+
+La \terme{perspective atmosphérique} est l'effet de l'atmosphère sur les éléments éloignés :
+
+\begin{itemize}
+    \item \terme{Contraste} : les éléments éloignés ont moins de contraste.
+    \item \terme{Saturation} : les éléments éloignés sont moins saturés.
+    \item \terme{Netteté} : les éléments éloignés sont moins nets.
+    \item \terme{Couleur} : les éléments éloignés tirent vers le bleu (ou la couleur de l'atmosphère).
+\end{itemize}
+
+\subsubsection{La profondeur de champ}
+
+La \terme{profondeur de champ} est la zone de netteté d'une image :
+
+\begin{itemize}
+    \item \terme{Plan net} : les éléments au premier plan sont nets.
+    \item \terme{Plan flou} : les éléments à l'arrière-plan sont flous.
+    \item \terme{Transition} : la transition entre net et flou est progressive.
+\end{itemize}
+
+\subsubsection{Le flou d'arrière-plan}
+
+Le \terme{flou d'arrière-plan} est un flou appliqué aux éléments éloignés :
+
+\begin{enumerate}
+    \item Dupliquer le calque de l'élément.
+    \item Appliquer un flou (Flou gaussien, Flou de l'objectif).
+    \item Masquer les zones qui doivent rester nettes.
+    \item Ajuster l'intensité.
+\end{enumerate}
+
+\subsubsection{Le voile atmosphérique}
+
+Le \terme{voile atmosphérique} est un effet de brume, de brouillard, qui sépare les plans :
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Couleur unie} (couleur claire, bleutée).
+    \item Changer le mode de fusion en \emph{Écran} ou \emph{Superposition}.
+    \item Masquer les zones proches.
+    \item Peindre en blanc sur les zones éloignées.
+    \item Ajuster l'opacité.
+\end{enumerate}
+
+\subsection{Les effets de profondeur par calques}
+
+\subsubsection{La séparation des plans}
+
+\begin{enumerate}
+    \item Organiser les calques en groupes : Avant-plan, Plan moyen, Arrière-plan.
+    \item Appliquer des réglages différents à chaque groupe.
+    \item Avant-plan : net, contrasté, saturé.
+    \item Arrière-plan : flou, moins contrasté, moins saturé.
+\end{enumerate}
+
+\subsubsection{Le flou progressif}
+
+\begin{enumerate}
+    \item Dupliquer le calque de l'arrière-plan.
+    \item Appliquer un flou.
+    \item Masquer les zones proches avec un dégradé.
+    \item Ajuster l'intensité.
+\end{enumerate}
+
+\subsection{Les effets de profondeur par filtres}
+
+\subsubsection{Le filtre Flou de l'objectif}
+
+Le filtre \terme{Flou de l'objectif} (\texttt{Filtre > Flou > Flou de l'objectif}) simule un flou de profondeur de champ :
+
+\begin{enumerate}
+    \item Convertir le calque en objet dynamique.
+    \item Appliquer \emph{Flou de l'objectif}.
+    \item Ajuster le rayon, le diaphragme, les distorsions.
+    \item Ajuster le point de mise au point.
+\end{enumerate}
+
+\subsubsection{Le filtre Flou gaussien}
+
+Le filtre \terme{Flou gaussien} (\texttt{Filtre > Flou > Flou gaussien}) est un flou uniforme :
+
+\begin{enumerate}
+    \item Convertir le calque en objet dynamique.
+    \item Appliquer \emph{Flou gaussien}.
+    \item Ajuster le rayon.
+    \item Masquer les zones nettes.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Identifier} les plans (avant-plan, plan moyen, arrière-plan).
+    \item \terme{Appliquer} des réglages différents à chaque plan.
+    \item \terme{Utiliser} la perspective atmosphérique (contraste, saturation, couleur).
+    \item \terme{Utiliser} le flou d'arrière-plan.
+    \item \terme{Ajouter} un voile atmosphérique.
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Ne pas sur-flouter} (perte de détails).
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{effets de profondeur} sont essentiels en photomontage : ils créent l'espace, séparent les plans, renforcent le réalisme. On utilise la perspective atmosphérique (contraste, saturation, couleur), le flou de profondeur de champ, le voile atmosphérique. On peut utiliser des calques, des filtres (Flou de l'objectif, Flou gaussien). Il est essentiel d'identifier les plans, d'appliquer des réglages différents, de travailler en non destructif, de vérifier.
+
+Maintenant que nous savons ajouter des effets de profondeur, nous allons, dans la section suivante, apprendre à \terme{harmoniser les arrière-plans}.
+
+% ============================================================
+\section{Harmoniser les arrière-plans}
+% ============================================================
+
+\subsection{L'importance de l'arrière-plan}
+
+L'\terme{arrière-plan} est souvent négligé en photomontage, mais il est essentiel : il \emph{situe} les éléments, il \emph{crée} l'ambiance, il \emph{renforce} la cohérence. Un arrière-plan mal harmonisé peut ruiner un photomontage, même si les éléments sont bien intégrés.
+
+\subsection{Les types d'arrière-plan}
+
+\subsubsection{Les arrière-plans photographiques}
+
+\begin{itemize}
+    \item \terme{Paysages} : nature, urbain, intérieur.
+    \item \terme{Textures} : murs, papiers, tissus.
+    \item \terme{Ciels} : nuages, couchers de soleil.
+\end{itemize}
+
+\subsubsection{Les arrière-plans graphiques}
+
+\begin{itemize}
+    \item \terme{Couleurs unies} : fonds neutres.
+    \item \terme{Dégradés} : transitions douces.
+    \item \terme{Motifs} : répétitions graphiques.
+    \item \terme{Formes} : abstraites ou géométriques.
+\end{itemize}
+
+\subsubsection{Les arrière-plans générés}
+
+\begin{itemize}
+    \item \terme{IA} : arrière-plans générés par intelligence artificielle.
+    \item \terme{Contenu génératif} : remplissage automatique.
+\end{itemize}
+
+\subsection{L'harmonisation de l'arrière-plan}
+
+\subsubsection{L'harmonisation de la lumière}
+
+\begin{itemize}
+    \item \terme{Direction} : la lumière de l'arrière-plan doit correspondre à celle des éléments.
+    \item \terme{Intensité} : la luminosité de l'arrière-plan doit être cohérente.
+    \item \terme{Couleur} : la température de couleur doit être harmonisée.
+\end{itemize}
+
+\subsubsection{L'harmonisation des couleurs}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} : Balance des couleurs, Teinte/Saturation.
+    \item \terme{Masque} : appliquer les réglages sur l'arrière-plan.
+    \item \terme{Modes de fusion} : Multiplier, Écran, Superposition.
+\end{itemize}
+
+\subsubsection{L'harmonisation de la netteté}
+
+\begin{itemize}
+    \item \terme{Flou} : l'arrière-plan peut être légèrement flou (profondeur de champ).
+    \item \terme{Accentuation} : l'arrière-plan peut être accentué si nécessaire.
+    \item \terme{Masque} : ajuster la netteté localement.
+\end{itemize}
+
+\subsection{La création d'un arrière-plan}
+
+\subsubsection{À partir d'une image}
+
+\begin{enumerate}
+    \item Importer l'image d'arrière-plan.
+    \item Ajuster la taille et la position.
+    \item Harmoniser la lumière et les couleurs.
+    \item Appliquer un flou si nécessaire.
+\end{enumerate}
+
+\subsubsection{À partir d'un dégradé}
+
+\begin{enumerate}
+    \item Créer un nouveau calque.
+    \item Utiliser l'outil Dégradé.
+    \item Choisir les couleurs et la direction.
+    \item Appliquer le dégradé.
+\end{enumerate}
+
+\subsubsection{À partir d'une couleur unie}
+
+\begin{enumerate}
+    \item Créer un calque de réglage \emph{Couleur unie}.
+    \item Choisir la couleur.
+    \item Ajuster l'opacité si nécessaire.
+\end{enumerate}
+
+\subsubsection{À partir du contenu génératif}
+
+\begin{enumerate}
+    \item Sélectionner la zone de l'arrière-plan.
+    \item Utiliser \texttt{Édition > Remplir en fonction du contenu} ou \texttt{Générer un arrière-plan}.
+    \item Ajuster le résultat.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Choisir} un arrière-plan adapté au sujet et au message.
+    \item \terme{Harmoniser} la lumière, les couleurs, la netteté.
+    \item \terme{Travailler} en non destructif (calques, masques).
+    \item \terme{Utiliser} des calques de réglage.
+    \item \terme{Appliquer} un léger flou pour la profondeur.
+    \item \terme{Vérifier} la cohérence globale.
+    \item \terme{Ne pas surcharger} l'arrière-plan.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{arrière-plan} est essentiel en photomontage : il situe les éléments, crée l'ambiance, renforce la cohérence. On utilise des arrière-plans photographiques, graphiques, générés. On harmonise la lumière, les couleurs, la netteté. On peut créer un arrière-plan à partir d'une image, d'un dégradé, d'une couleur unie, ou du contenu génératif. Il est essentiel de choisir un arrière-plan adapté, d'harmoniser, de travailler en non destructif, de vérifier.
+
+Maintenant que nous savons harmoniser les arrière-plans, nous allons, dans la section suivante, apprendre à \terme{intégrer du texte dans une composition}.
+
+% ============================================================
+\section{Intégrer du texte dans une composition}
+% ============================================================
+
+\subsection{L'importance du texte}
+
+Le \terme{texte} est souvent un élément essentiel d'un photomontage : il porte le message, il identifie la marque, il donne les informations. Un texte mal intégré peut ruiner un photomontage, même si les images sont bien harmonisées.
+
+\subsection{Les principes d'intégration du texte}
+
+\subsubsection{La lisibilité}
+
+Le texte doit être \terme{lisible} :
+
+\begin{itemize}
+    \item \terme{Contraste} : le texte doit contraster avec le fond.
+    \item \terme{Taille} : le texte doit être suffisamment grand.
+    \item \terme{Police} : la police doit être adaptée (lisible, cohérente avec l'ambiance).
+\end{itemize}
+
+\subsubsection{La cohérence}
+
+Le texte doit être \terme{cohérent} avec le reste de la composition :
+
+\begin{itemize}
+    \item \terme{Style} : la typographie doit correspondre à l'ambiance.
+    \item \terme{Couleur} : la couleur du texte doit s'harmoniser.
+    \item \terme{Place} : le texte doit être bien placé (pas au détriment de l'image).
+\end{itemize}
+
+\subsubsection{L'intégration}
+
+Le texte doit être \terme{intégré} dans la composition, pas « collé » :
+
+\begin{itemize}
+    \item \terme{Ombre} : ajouter une ombre portée pour détacher le texte.
+    \item \terme{Contour} : ajouter un contour pour améliorer la lisibilité.
+    \item \terme{Mode de fusion} : utiliser un mode de fusion pour intégrer le texte.
+    \item \terme{Déformation} : déformer le texte pour l'intégrer dans une perspective.
+\end{itemize}
+
+\subsection{Les techniques d'intégration}
+
+\subsubsection{L'ombre portée}
+
+\begin{enumerate}
+    \item Double-cliquer sur le calque de texte (ou clic droit > Options de fusion).
+    \item Cocher \emph{Ombre portée}.
+    \item Ajuster : angle, distance, extension, taille, opacité, couleur.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{Le contour}
+
+\begin{enumerate}
+    \item Double-cliquer sur le calque de texte.
+    \item Cocher \emph{Contour}.
+    \item Ajuster : taille, position, couleur, opacité.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{Le mode de fusion}
+
+\begin{enumerate}
+    \item Sélectionner le calque de texte.
+    \item Choisir un mode de fusion (par exemple, \emph{Superposition}, \emph{Écran}, \emph{Multiplier}).
+    \item Ajuster l'opacité.
+\end{enumerate}
+
+\subsubsection{La déformation}
+
+\begin{enumerate}
+    \item Sélectionner le calque de texte.
+    \item Utiliser \texttt{Édition > Transformation > Déformation}.
+    \item Ajuster la déformation.
+    \item Valider.
+\end{enumerate}
+
+\subsubsection{L'intégration par masque}
+
+\begin{enumerate}
+    \item Sélectionner le calque de texte.
+    \item Créer un masque de fusion.
+    \item Peindre en noir pour masquer certaines zones du texte.
+    \item Utiliser un pinceau doux pour les transitions.
+\end{enumerate}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Choisir} une typographie adaptée à l'ambiance.
+    \item \terme{Assurer} la lisibilité (contraste, taille).
+    \item \terme{Ajouter} une ombre ou un contour si nécessaire.
+    \item \terme{Utiliser} un mode de fusion pour intégrer.
+    \item \terme{Déformer} le texte pour la perspective.
+    \item \terme{Placer} le texte judicieusement (pas au détriment de l'image).
+    \item \terme{Travailler} sur un calque de texte (modifiable).
+    \item \terme{Vérifier} la lisibilité sur différents fonds.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+L'\terme{intégration du texte} est essentielle en photomontage : le texte porte le message, identifie la marque, donne les informations. On respecte la lisibilité, la cohérence, l'intégration. On utilise des ombres, des contours, des modes de fusion, des déformations, des masques. Il est essentiel de choisir une typographie adaptée, d'assurer la lisibilité, d'intégrer le texte dans la composition.
+
+Maintenant que nous savons intégrer du texte, nous allons, dans la section suivante, apprendre à \terme{corriger les incohérences visuelles}.
+
+% ============================================================
+\section{Corriger les incohérences visuelles}
+% ============================================================
+
+\subsection{L'importance de la correction}
+
+Les \terme{incohérences visuelles} sont les éléments qui trahissent le montage : contours nets, ombres absentes, lumières contradictoires, couleurs discordantes, perspectives incohérentes. Il faut les identifier et les corriger pour que le montage soit crédible.
+
+\subsection{Les incohérences courantes}
+
+\subsubsection{Les incohérences de lumière}
+
+\begin{itemize}
+    \item \terme{Direction} : la lumière ne vient pas de la même direction.
+    \item \terme{Intensité} : les éléments ont des luminosités différentes.
+    \item \terme{Couleur} : les éléments ont des températures de couleur différentes.
+    \item \terme{Dureté} : les éléments ont des duretés de lumière différentes.
+\end{itemize}
+
+\subsubsection{Les incohérences d'ombre}
+
+\begin{itemize}
+    \item \terme{Absence} : les éléments n'ont pas d'ombre.
+    \item \terme{Direction} : les ombres ne correspondent pas à la lumière.
+    \item \terme{Longueur} : les ombres sont trop courtes ou trop longues.
+    \item \terme{Dureté} : les ombres sont trop dures ou trop douces.
+    \item \terme{Couleur} : les ombres sont noires au lieu d'être colorées.
+\end{itemize}
+
+\subsubsection{Les incohérences de perspective}
+
+\begin{itemize}
+    \item \terme{Point de fuite} : les éléments ne convergent pas vers le même point.
+    \item \terme{Horizon} : les éléments ne sont pas sur la même ligne d'horizon.
+    \item \terme{Angle} : les éléments ne sont pas vus sous le même angle.
+\end{itemize}
+
+\subsubsection{Les incohérences d'échelle}
+
+\begin{itemize}
+    \item \terme{Proportions} : les éléments n'ont pas les bonnes proportions.
+    \item \terme{Taille relative} : les éléments sont trop grands ou trop petits.
+    \item \terme{Distance} : les éléments sont à la mauvaise distance.
+\end{itemize}
+
+\subsubsection{Les incohérences de couleur}
+
+\begin{itemize}
+    \item \terme{Teinte} : les éléments ont des teintes différentes.
+    \item \terme{Saturation} : les éléments ont des saturations différentes.
+    \item \terme{Température} : les éléments ont des températures différentes.
+\end{itemize}
+
+\subsubsection{Les incohérences de netteté}
+
+\begin{itemize}
+    \item \terme{Flou} : les éléments ont des flous différents.
+    \item \terme{Accentuation} : les éléments ont des accentuations différentes.
+    \item \terme{Bruit} : les éléments ont des bruits différents.
+\end{itemize}
+
+\subsubsection{Les incohérences de contour}
+
+\begin{itemize}
+    \item \terme{Détourage} : les contours sont visibles (halos, bords nets).
+    \item \terme{Transition} : les transitions sont brutales (pas de dégradé).
+    \item \terme{Texture} : les textures ne correspondent pas.
+\end{itemize}
+
+\subsection{Comment corriger les incohérences}
+
+\subsubsection{Corriger la lumière}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} \emph{Courbes} : éclaircir ou assombrir.
+    \item \terme{Calque de réglage} \emph{Balance des couleurs} : harmoniser la température.
+    \item \terme{Masque} : appliquer localement.
+\end{itemize}
+
+\subsubsection{Corriger les ombres}
+
+\begin{itemize}
+    \item \terme{Ajouter} une ombre portée (voir section 6).
+    \item \terme{Ajuster} la direction, la longueur, la dureté, la couleur.
+    \item \terme{Utiliser} un mode de fusion (Multiplier).
+\end{itemize}
+
+\subsubsection{Corriger la perspective}
+
+\begin{itemize}
+    \item \terme{Transformation Perspective} : ajuster la perspective.
+    \item \terme{Déformation} : déformer l'élément.
+    \item \terme{Repères} : vérifier les points de fuite.
+\end{itemize}
+
+\subsubsection{Corriger l'échelle}
+
+\begin{itemize}
+    \item \terme{Transformation libre} : redimensionner.
+    \item \terme{Référence} : comparer avec un élément de référence.
+    \item \terme{Repères} : vérifier les proportions.
+\end{itemize}
+
+\subsubsection{Corriger les couleurs}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} \emph{Teinte/Saturation} : harmoniser les couleurs.
+    \item \terme{Calque de réglage} \emph{Balance des couleurs} : harmoniser les températures.
+    \item \terme{Masque} : appliquer localement.
+\end{itemize}
+
+\subsubsection{Corriger la netteté}
+
+\begin{itemize}
+    \item \terme{Flou} : appliquer un flou si nécessaire.
+    \item \terme{Accentuation} : accentuer si nécessaire.
+    \item \terme{Masque} : ajuster localement.
+\end{itemize}
+
+\subsubsection{Corriger les contours}
+
+\begin{itemize}
+    \item \terme{Affiner} le détourage (Sélectionner et masquer).
+    \item \terme{Corriger} le masque avec le pinceau.
+    \item \terme{Contracter} la sélection pour éviter les halos.
+    \item \terme{Adoucir} les transitions avec un pinceau doux.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Vérifier} le montage sur fond contrasté.
+    \item \terme{Zoomer} pour voir les détails.
+    \item \terme{Comparer} avec des références.
+    \item \terme{Faire} une pause pour un regard neuf.
+    \item \terme{Demander} un avis extérieur.
+    \item \terme{Corriger} les incohérences une par une.
+    \item \terme{Travailler} en non destructif.
+    \item \terme{Vérifier} le résultat final.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+Les \terme{incohérences visuelles} sont les éléments qui trahissent le montage : lumière, ombres, perspective, échelle, couleur, netteté, contours. On les corrige avec des calques de réglage, des masques, des transformations, des flous, des accentuations. Il est essentiel de vérifier le montage, de zoomer, de comparer, de faire une pause, de demander un avis, de corriger une par une, de travailler en non destructif.
+
+Maintenant que nous savons corriger les incohérences, nous allons, dans la section suivante, apprendre à \terme{utiliser les filtres de manière maîtrisée}.
+
+% ============================================================
+\section{Utiliser les filtres de manière maîtrisée}
+% ============================================================
+
+\subsection{L'importance des filtres}
+
+Les \terme{filtres} sont des outils puissants pour améliorer, transformer, styliser une image. Ils peuvent :
+
+\begin{itemize}
+    \item \terme{Améliorer} la netteté, le contraste, la couleur.
+    \item \terme{Corriger} la distorsion, le bruit, les aberrations.
+    \item \terme{Créer} des effets (flou, texture, éclairage).
+    \item \terme{Styliser} une image (peinture, dessin, aquarelle).
+\end{itemize}
+
+Mais les filtres peuvent aussi \terme{nuire} à une image s'ils sont mal utilisés : sur-flou, sur-accentuation, effets excessifs. Il faut les utiliser avec \terme{maîtrise}.
+
+\subsection{Les principes d'utilisation des filtres}
+
+\subsubsection{La modération}
+
+Les filtres doivent être utilisés avec \terme{modération} :
+
+\begin{itemize}
+    \item \terme{Intensité} : ne pas sur-appliquer les filtres.
+    \item \terme{Quantité} : ne pas empiler trop de filtres.
+    \item \terme{Cohérence} : les filtres doivent être cohérents avec l'ambiance.
+\end{itemize}
+
+\subsubsection{La non-destructivité}
+
+Les filtres doivent être appliqués de manière \terme{non destructive} :
+
+\begin{itemize}
+    \item \terme{Objets dynamiques} : convertir en objet dynamique avant d'appliquer un filtre.
+    \item \terme{Filtres dynamiques} : les filtres restent modifiables.
+    \item \terme{Masques} : appliquer localement si nécessaire.
+\end{itemize}
+
+\subsubsection{La finalité}
+
+Les filtres doivent avoir une \terme{finalité} :
+
+\begin{itemize}
+    \item \terme{Améliorer} l'image (netteté, contraste, couleur).
+    \item \terme{Corriger} les défauts (distorsion, bruit).
+    \item \terme{Créer} un effet (flou, texture).
+    \item \terme{Styliser} l'image (peinture, dessin).
+\end{itemize}
+
+\subsection{Les filtres utiles en photomontage}
+
+\subsubsection{Les filtres de flou}
+
+\begin{itemize}
+    \item \terme{Flou gaussien} : flou uniforme.
+    \item \terme{Flou de l'objectif} : flou de profondeur de champ.
+    \item \terme{Flou de mouvement} : flou directionnel.
+    \item \terme{Flou radial} : flou circulaire.
+\end{itemize}
+
+\subsubsection{Les filtres de netteté}
+
+\begin{itemize}
+    \item \terme{Accentuation} : accentue la netteté.
+    \item \terme{Netteté optimisée} : accentue avec options avancées.
+    \item \terme{Passe-haut} : accentue via un mode de fusion.
+\end{itemize}
+
+\subsubsection{Les filtres de correction}
+
+\begin{itemize}
+    \item \terme{Réduction du bruit} : réduit le bruit.
+    \item \terme{Correction d'objectif} : corrige la distorsion, le vignettage, les aberrations.
+    \item \terme{Aberration chromatique} : corrige les franges colorées.
+\end{itemize}
+
+\subsubsection{Les filtres d'effet}
+
+\begin{itemize}
+    \item \terme{Éclairage} : ajoute un éclairage.
+    \item \terme{Nuages} : crée des nuages.
+    \item \terme{Texturiser} : ajoute une texture.
+    \item \terme{Galerie de filtres} : applique des effets artistiques.
+\end{itemize}
+
+\subsubsection{Les filtres IA}
+
+\begin{itemize}
+    \item \terme{Neural Filters} : filtres basés sur l'IA (colorisation, style, etc.).
+    \item \terme{Super zoom} : agrandit les images avec IA.
+    \item \terme{Suppression d'arrière-plan} : détoure automatiquement.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Utiliser} des objets dynamiques.
+    \item \terme{Appliquer} les filtres de manière non destructive.
+    \item \terme{Masquer} les filtres si nécessaire.
+    \item \terme{Ajuster} l'intensité.
+    \item \terme{Ne pas empiler} trop de filtres.
+    \item \terme{Vérifier} le résultat (avant/après).
+    \item \terme{Zoomer} pour vérifier les détails.
+    \item \terme{Ne pas sur-utiliser} les filtres.
+\end{itemize}
+
+\subsection{Les erreurs courantes}
+
+\subsubsection{Sur-flou}
+
+Trop de flou donne une image irréaliste. Il faut ajuster l'intensité.
+
+\subsubsection{Sur-accentuation}
+
+Trop d'accentuation crée des halos, du bruit. Il faut ajuster le rayon et le seuil.
+
+\subsubsection{Filtres empilés}
+
+Trop de filtres empilés donnent un résultat artificiel. Il faut limiter.
+
+\subsubsection{Filtres incohérents}
+
+Des filtres qui ne correspondent pas à l'ambiance. Il faut choisir des filtres adaptés.
+
+\subsection*{Conclusion de la section}
+
+Les \terme{filtres} sont des outils puissants pour améliorer, corriger, créer, styliser. Ils doivent être utilisés avec maîtrise : modération, non-destructivité, finalité. On utilise des filtres de flou, de netteté, de correction, d'effet, IA. Il est essentiel de travailler en non destructif, d'ajuster l'intensité, de masquer, de ne pas empiler, de vérifier.
+
+Maintenant que nous savons utiliser les filtres, nous allons, dans la dernière section de ce chapitre, apprendre à \terme{finaliser un photomontage professionnel}.
+
+% ============================================================
+\section{Finaliser un photomontage professionnel}
+% ============================================================
+
+\subsection{L'importance de la finalisation}
+
+La \terme{finalisation} est l'étape qui transforme un photomontage en un visuel professionnel. Elle consiste à :
+
+\begin{itemize}
+    \item \terme{Vérifier} la cohérence globale.
+    \item \terme{Corriger} les derniers détails.
+    \item \terme{Ajuster} les réglages finaux.
+    \item \terme{Préparer} l'export.
+    \item \terme{Organiser} le fichier.
+\end{itemize}
+
+\subsection{La vérification globale}
+
+\subsubsection{Vérifier la cohérence}
+
+\begin{itemize}
+    \item \terme{Lumière} : direction, intensité, couleur, dureté.
+    \item \terme{Ombres} : présence, direction, longueur, dureté, couleur.
+    \item \terme{Perspective} : points de fuite, horizon, angle.
+    \item \terme{Échelle} : proportions, taille relative, distance.
+    \item \terme{Couleur} : teinte, saturation, température.
+    \item \terme{Netteté} : flou, accentuation, bruit.
+    \item \terme{Contours} : détourage, transitions.
+\end{itemize}
+
+\subsubsection{Vérifier la qualité}
+
+\begin{itemize}
+    \item \terme{Résolution} : suffisante pour l'usage.
+    \item \terme{Compression} : adaptée au support.
+    \item \terme{Netteté} : suffisante, sans halos.
+    \item \terme{Bruit} : réduit si nécessaire.
+\end{itemize}
+
+\subsubsection{Vérifier le message}
+
+\begin{itemize}
+    \item \terme{Message} : clair, lisible.
+    \item \terme{Public} : adapté au public cible.
+    \item \terme{Objectif} : atteint.
+    \item \terme{Impact} : fort, mémorable.
+\end{itemize}
+
+\subsection{La correction des derniers détails}
+
+\subsubsection{Les détails à vérifier}
+
+\begin{itemize}
+    \item \terme{Bords} : pas de halos, pas de contours nets.
+    \item \terme{Transitions} : douces, naturelles.
+    \item \terme{Couleurs} : cohérentes, harmonisées.
+    \item \terme{Lumière} : cohérente, naturelle.
+    \item \terme{Ombres} : présentes, cohérentes.
+    \item \terme{Texte} : lisible, intégré.
+\end{itemize}
+
+\subsubsection{Les outils de correction}
+
+\begin{itemize}
+    \item \terme{Pinceau} : corriger les masques.
+    \item \terme{Calques de réglage} : ajuster les couleurs, la lumière.
+    \item \terme{Filtres} : flou, netteté.
+    \item \terme{Transformation} : perspective, échelle.
+\end{itemize}
+
+\subsection{Les ajustements finaux}
+
+\subsubsection{Le contraste global}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} \emph{Courbes} : ajuster le contraste.
+    \item \terme{Calque de réglage} \emph{Niveaux} : ajuster les niveaux.
+\end{itemize}
+
+\subsubsection{La couleur globale}
+
+\begin{itemize}
+    \item \terme{Calque de réglage} \emph{Balance des couleurs} : harmoniser.
+    \item \terme{Calque de réglage} \emph{Vibrance} : ajuster la saturation.
+\end{itemize}
+
+\subsubsection{La netteté finale}
+
+\begin{itemize}
+    \item \terme{Accentuation} : accentuer légèrement.
+    \item \terme{Masque} : appliquer localement.
+\end{itemize}
+
+\subsubsection{Le vignettage}
+
+\begin{itemize}
+    \item \terme{Ajouter} un vignettage léger pour attirer le regard au centre.
+    \item \terme{Utiliser} un calque de réglage \emph{Courbes} avec un masque radial.
+\end{itemize}
+
+\subsection{L'export}
+
+\subsubsection{Le format}
+
+\begin{itemize}
+    \item \terme{PSD} : fichier source, conservé pour modification.
+    \item \terme{JPEG} : pour le web, les présentations.
+    \item \terme{PNG} : pour la transparence.
+    \item \terme{TIFF} : pour l'impression.
+    \item \terme{PDF} : pour les documents.
+\end{itemize}
+
+\subsubsection{Les paramètres}
+
+\begin{itemize}
+    \item \terme{Résolution} : 72 ppi (web) ou 300 ppi (impression).
+    \item \terme{Profil colorimétrique} : sRGB (web) ou CMJN (impression).
+    \item \terme{Compression} : adaptée au support.
+    \item \terme{Dimensions} : adaptées au support.
+\end{itemize}
+
+\subsection{L'organisation du fichier}
+
+\subsubsection{Le nommage}
+
+\begin{itemize}
+    \item \terme{Nom} : descriptif (par exemple, « photomontage-produit-v1.psd »).
+    \item \terme{Version} : numéroter les versions (v1, v2, v3).
+    \item \terme{Date} : ajouter la date si nécessaire.
+\end{itemize}
+
+\subsubsection{Les calques}
+
+\begin{itemize}
+    \item \terme{Nommer} les calques.
+    \item \terme{Grouper} les calques par catégorie.
+    \item \terme{Colorer} les calques.
+    \item \terme{Supprimer} les calques inutiles.
+\end{itemize}
+
+\subsubsection{Les ressources}
+
+\begin{itemize}
+    \item \terme{Conserver} les images sources.
+    \item \terme{Conserver} les polices utilisées.
+    \item \terme{Conserver} les fichiers PSD.
+\end{itemize}
+
+\subsection{Les bonnes pratiques}
+
+\begin{itemize}
+    \item \terme{Vérifier} la cohérence globale.
+    \item \terme{Corriger} les derniers détails.
+    \item \terme{Ajuster} les réglages finaux.
+    \item \terme{Exporter} dans le bon format.
+    \item \terme{Organiser} le fichier.
+    \item \terme{Conserver} les ressources.
+    \item \terme{Faire} une pause avant de finaliser.
+    \item \terme{Demander} un avis extérieur.
+\end{itemize}
+
+\subsection*{Conclusion de la section}
+
+La \terme{finalisation} transforme un photomontage en un visuel professionnel. Elle consiste à vérifier la cohérence globale, à corriger les derniers détails, à ajuster les réglages finaux, à exporter dans le bon format, à organiser le fichier. Il est essentiel de vérifier, de corriger, d'ajuster, d'exporter, d'organiser, de conserver les ressources.
+
+% ============================================================
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion du chapitre}
+% ============================================================
+
+Nous voici au terme du chapitre 11. Nous avons appris à maîtriser les bases du photomontage dans Photoshop :
+
+\begin{itemize}
+    \item \terme{Principes du photomontage} : types (réaliste, surréaliste, conceptuel), cohérence, crédibilité, naturel, non-destructivité, étapes.
+    \item \terme{Choix des images} : compatibilité (résolution, lumière, perspective, échelle, style, qualité), sources (banques, personnelles, IA).
+    \item \terme{Détourage} : méthodes (Sujet, Sélection d'objet, Lasso, Plume), affinage (Sélectionner et masquer), correction (pinceau sur masque).
+    \item \terme{Harmonisation} : dimensions, perspectives, positions, ordre des calques.
+    \item \terme{Lumière et couleurs} : direction, intensité, couleur, dureté ; calques de réglage, modes de fusion.
+    \item \terme{Ombres} : portées, propres, contact ; création, couleur, modes de fusion.
+    \item \terme{Profondeur} : perspective atmosphérique, flou d'arrière-plan, voile atmosphérique.
+    \item \terme{Arrière-plan} : types (photographique, graphique, généré), harmonisation (lumière, couleur, netteté).
+    \item \terme{Texte} : lisibilité, cohérence, intégration ; ombres, contours, modes de fusion, déformations.
+    \item \terme{Incohérences} : lumière, ombres, perspective, échelle, couleur, netteté, contours ; identification et correction.
+    \item \terme{Filtres} : flou, netteté, correction, effet, IA ; modération, non-destructivité, finalité.
+    \item \terme{Finalisation} : vérification, correction, ajustements, export, organisation.
+\end{itemize}
+
+Le photomontage est l'une des pratiques les plus spectaculaires de Photoshop, et l'une des plus difficiles. Il ne suffit pas de superposer des images : il faut les harmoniser, les intégrer, les faire coexister. Un photomontage réussi est un photomontage où l'on ne voit pas le montage.
+
+Ce chapitre t'a donné les bases du photomontage. Mais la maîtrise vient avec la pratique. N'hésite pas à t'entraîner sur des projets variés : publicités, affiches, couvertures, illustrations. Chaque projet est un nouveau défi, et chaque défi est une occasion de progresser.
+
+Dans le chapitre suivant, nous aborderons le \terme{texte et les effets graphiques dans Photoshop}. Tu apprendras à créer du texte, à modifier ses propriétés, à organiser une hiérarchie de titres, à utiliser les styles de calque, à créer des ombres portées, des contours, des dégradés, des effets de profondeur, à intégrer des textures, à construire une composition publicitaire, à éviter la surcharge d'effets. Ces compétences te permettront de créer des visuels typographiques professionnels.
+
+\vspace{2em}
+
+\begin{center}
+\textit{Fin du chapitre 11 --- Photomontage et manipulation d'images.}
+
+\vspace{1em}
+
+\textbf{Prochain chapitre : Chapitre 12 --- Texte et effets graphiques dans Photoshop.}
+\end{center}
