@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"^\\\\\\\\\\\\\\\\section\" chapitre3.tex chapitre4.tex chapitre5.tex)",
+      "Bash(grep -v '^[0-9]*-$')",
+      "Bash(grep -n \"^\\\\\\\\\\\\\\\\section\\\\|^\\\\\\\\\\\\\\\\subsection\" chapitre3.tex)",
+      "Bash(grep -n \"^\\\\\\\\\\\\\\\\section\\\\|^\\\\\\\\\\\\\\\\subsection\\\\|^\\\\\\\\\\\\\\\\chapter\\\\|^% ====\" chapitre3.tex)",
+      "Bash(wc -l chapitre1.tex /tmp/chapitre1.bak /tmp/ch1_head.tex 2>&1 | head)",
+      "Read(//tmp/**)",
+      "Bash(pdflatex -interaction=nonstopmode main.tex)",
+      "Bash(grep -n \"Overfull \\\\\\\\\\\\\\\\hbox\" /tmp/o.log)",
+      "Bash(awk -F'[ \\(]' '{print}')",
+      "Bash(sort -t'\\(' -k2 -n -r)",
+      "Bash(perl -0777 -ne 'print scalar\\(\\(\\)=/\\\\\\\\subsection\\\\*\\\\{Conclusion de la section\\\\}\\\\n\\\\n/g\\), \"\\\\n\"' chapitre4.tex)",
+      "Bash(perl -0777 -ne 'print scalar\\(\\(\\)=/Conclusion de la section\\\\}\\\\n\\\\n\\(?!\\\\\\\\begin\\)/g\\), \"\\\\n\"' chapitre4.tex)"
+    ]
+  }
+}

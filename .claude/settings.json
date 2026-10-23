@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -)",
+      "Bash(pdflatex -interaction=nonstopmode main.tex)",
+      "Read(//tmp/**)",
+      "Bash(:)",
+      "Bash(pdftotext -layout main.pdf /tmp/all.txt)",
+      "Bash(python3 -c 1)"
+    ]
+  }
+}
